@@ -1,5 +1,5 @@
 """
-Genera Formato de Presupuesto_RevB.xlsx para las BL Montaje Mecanico + OOCC
+Genera 'Formato de Presupuesto.xlsx' para las BL Montaje Mecanico + OOCC
 del proyecto BAE 12803 Taltal SWRO.
 
 Mantiene exactamente la estructura visual de Rev 0 (6 columnas, estilos, paleta)
@@ -10,16 +10,24 @@ y reemplaza los placeholders por TAGs y descripciones reales extraidas de:
   - P22-DWG-06-006-107 Rev 0 Cuadernillo de Soportes (11 tipos SP-XX, 67 unidades)
   - Memorias OOCC L&A P22-MC-00-002-001/002/004/005 (fundaciones)
 
-Rev B (28-May-2026): amplia el Cap. 1 con 11 sub-partidas de soportes HDPE
-(SP-01 a SP-11 con CANT del cuadernillo) y el Cap. 4 con 3 sub-partidas extra
-de obras civiles (4.6 excavacion, 4.7 relleno+base, 4.8 sistema drenaje).
+Historico de iteraciones (28-May-2026):
+  - Rev A: 22 sub-items (13 lineas + 2 estanque + 2 bomba + 5 fundaciones).
+  - Rev B: 36 sub-items = Rev A + 11 soportes HDPE (SP-01 a SP-11) +
+    3 obras civiles extra (4.6 excavacion, 4.7 relleno+base, 4.8 drenaje).
+  - Consolidacion: tras validacion visual, el usuario eliminó los archivos
+    intermedios y dejo solo 'Formato de Presupuesto.xlsx' como vigente.
 
-Restricciones:
+ADVERTENCIA: el script sobreescribe 'Formato de Presupuesto.xlsx' en cada
+corrida. Si el archivo tiene ediciones manuales (P.UNI cotizados, cubicaciones
+en Cap. 4), se perderan. Para preservar ediciones manuales, hacer copia
+de respaldo antes de re-ejecutar el script.
+
+Restricciones de formato:
   - 6 columnas EXACTAS (ITEM | PARTIDA | UNID. | CANT. | P.UNI. | TOTAL).
   - No agregar capitulos nuevos (4 capitulos del Rev 0).
   - Capitulo 4 (Obras Civiles) con CANT y P.UNI vacios excepto 4.8 (CANT=1 gl).
   - Sin notas en cursiva entre titulo de capitulo y sub-items.
-  - Idempotente: cada corrida regenera el archivo.
+  - Idempotente: cada corrida regenera el archivo desde cero.
 """
 
 from pathlib import Path
@@ -29,7 +37,7 @@ from openpyxl.utils import get_column_letter
 
 # ---------- Rutas ----------
 BASE_DIR = Path(__file__).resolve().parent.parent
-OUTPUT_PATH = BASE_DIR / "Formato de Presupuesto_RevB.xlsx"
+OUTPUT_PATH = BASE_DIR / "Formato de Presupuesto.xlsx"
 
 # ---------- Paleta y fuentes (extraidas del Rev 0) ----------
 FONT_NAME = "Aptos Narrow"
