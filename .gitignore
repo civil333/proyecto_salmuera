@@ -1,0 +1,19 @@
+# Basura del sistema
+.DS_Store
+._*
+Thumbs.db
+
+# Locks de Microsoft Office
+~$*
+
+# Respaldos manuales: el historial vive en git, no en copias .bak
+*.bak
+*.bak_*
+*.bak-*
+
+# Corridas de auditoria y de anti-ia (se regeneran)
+.multi-audit-*/
+
+# Temporales de render y extraccion
+*_extracted.md
+render_*/
