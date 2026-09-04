@@ -1,0 +1,65 @@
+PAQUETE DE LICITACION - MONTAJE MECANICO Y OBRAS CIVILES
+Modulo de Segunda Etapa de Salmuera - Planta Desaladora Taltal
+Codigo: P22-BL-06-000-001-0  |  Revision 0  |  Fecha: 28-05-2026  |  Actualizacion: 25-06-2026
+================================================================================
+
+Documentacion para la cotizacion del servicio. Los documentos se entregan en PDF
+(no editable); la planilla economica en Excel. Ordenado por carpetas:
+
+1. BASES DE LICITACION
+   - BL_MONTAJE_TALTAL_REV0.pdf
+   - BL_MONTAJE_TALTAL_REV0.docx   (Word editable de las Bases)
+
+2. FORMATO DE LICITACION (A9)
+   - Formato de Presupuesto.xlsx   (planilla de oferta economica que completa el oferente)
+
+3. ET MONTAJE
+   - A12 - Montaje Electromecanico  (estanque TK-06-001 y bomba BH-06-001) -> PDF + anexos
+   - A13 - Montaje Canerias HDPE    (cañerias HDPE PE100, electrofusion)   -> PDF + anexo xlsx
+
+4. ING. DETALLE MECANICA (A1)        Compilado Rev 0 de Ingenieria de Detalle Mecanica
+   - 00_GENERAL                      Listado de entregables
+   - 01_PROCESOS_E_INSTRUMENTACION   P&IDs, datasheets/LI de instrumentos, logica de control
+   - 02_MECANICA                     Planos de montaje y listado de equipos
+   - 03_CANERIAS                     Planos de cañerias, Cuadernillo de Isometrias,
+                                     Cuadernillo de Soportes (Anexo A3),
+                                     ET de Cañerias de Fabricacion P22-ET-06-006-001,
+                                     Listados de Lineas / Materiales / Valvulas
+   - 04_ MODELO                      Modelo 3D Navisworks (Maqueta Gral.nwd)
+
+5. OBRAS CIVILES (A2)
+   - PLANOS (18 laminas) / ET (2 Rev 1) de la ingenieria de detalle OOCC y estructuras
+     metalicas. Las memorias de calculo (MC) NO forman parte del paquete.
+   - Set COMPLETO en Rev 0, APTO PARA CONSTRUCCION. Con la ENTREGA 9 de L&A (transmittal
+     TT-010, 22-06-2026) se completaron las 18 laminas en Rev 0; la ENTREGA 10 (TT-011,
+     23-06-2026) corrigio el estado del cajetin de las 18 laminas de "PARA USO E
+     INFORMACION" a "APTO PARA CONSTRUCCION" (y la portada de las 2 ET de "Aprobado
+     Cliente" a "Apto para Construccion"). ET a Rev 1. Verificacion interna ADASA y
+     observaciones menores de carry-forward registradas en el LEEME.
+   - Cambio de alcance (18-06-2026): la cubierta metalica (cobertizo) del sistema
+     CIP NO se construye en esta licitacion (solo su fundacion, con pernos de
+     anclaje colados); la estructura metalica la ejecuta ADASA en etapa posterior.
+     Se retiraron los documentos del "fierro" de la cubierta (P22-DWG-00-003-001,
+     P22-MC-00-003-001, P22-ET-00-010-103). La fundacion se mantiene (detalle en
+     P22-DWG-00-002-007 LAM3).
+
+6. BASES ADMINISTRATIVAS (A10) - PENDIENTE
+   - El indice esta en el BL (Anexo A10). El documento administrativo final se incorpora al redactarse.
+
+--------------------------------------------------------------------------------
+MAPA DE ANEXOS DEL BL -> UBICACION EN ESTE PAQUETE
+  A1  Compilado Rev 0 mecanico ............ Carpeta 4
+  A2  Planos y ET de obras civiles ........ Carpeta 5 (18 laminas en Rev 0 apto para construccion, set completo; ET Rev 1)
+  A3  Cuadernillo de Soportes ............. Carpeta 4 / 03_CANERIAS
+  A8  Listado de suministros ADASA ........ dentro del BL (cuerpo)
+  A9  Formato de Licitacion ............... Carpeta 2
+  A10 Bases Administrativas ............... Carpeta 6 (PENDIENTE)
+  A11 Permisos de trabajo en M3 ........... dentro del BL (cuerpo)
+  A12 ET Montaje Electromecanico .......... Carpeta 3
+  A13 ET Montaje Cañerias HDPE ............ Carpeta 3
+  ET Cañerias de Fabricacion (006-001) .... Carpeta 4 / 03_CANERIAS
+
+Notas:
+ - Documentos en PDF; las Bases de Licitacion se incluyen ademas en Word editable. Planos del Compilado en PDF; modelo 3D en Navisworks (.nwd).
+ - Los planos editables (DWG) no se incluyen en este paquete.
+ - Para distribucion conviene comprimir la carpeta en ZIP (algunas rutas internas del Compilado son largas).

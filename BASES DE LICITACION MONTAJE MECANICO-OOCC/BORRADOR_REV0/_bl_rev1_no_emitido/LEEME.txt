@@ -1,0 +1,51 @@
+BASES DE LICITACION REVISION 1 — GENERADA Y NO EMITIDA
+Fecha: 04-09-2026
+================================================================================
+
+NO USAR. Este documento no es el contractual y contradice al que si lo es.
+
+QUE ES
+  Una revision 1 de las Bases de Licitacion que se genero el 04-09-2026 a partir del
+  archivo fuente BL_MONTAJE_TALTAL_REV0.md del repositorio, para incorporar los
+  cambios de ingenieria de las entregas de agosto y septiembre.
+
+POR QUE NO SE EMITE
+  Al compararla contra el paquete que realmente se licito se descubrio que el
+  documento contractual NO desciende del archivo fuente del repositorio. El
+  BL_MONTAJE_TALTAL_REV1 que esta en manos del contratista lo edito Jorge Valdes
+  directamente sobre el Word el 25-06-2026, y esa rama nunca volvio al .md. Contiene
+  al menos lo siguiente, que el .md del repositorio no tiene:
+
+    - Seccion 3.2 "Capacidad personal clave requerida": Administrador titulado con 5
+      años de experiencia, Supervisor tecnico de nivel superior con 3 años, curriculum,
+      copia de titulo y certificados de experiencia de ambos, estado y certificacion de
+      los equipos, y calificacion de los operadores de electrofusion respaldada por
+      procedimientos WPS/PQR aprobados por ADASA/ITO antes de cualquier intervencion
+      en obra.
+    - Plazo total de construccion de 3 meses, no de 4, en la seccion de plazo y en el
+      programa referencial.
+    - Titulo de la Seccion 4 cambiado a "Alcance Montaje Incluido".
+    - Tabla 10.3 "Listado de Documentos Obras Civiles" y el item de analisis de riesgos
+      del trabajo.
+
+  Emitir este documento habria devuelto el plazo a 4 meses y borrado el requisito de
+  calificacion de los soldadores. Ademas el contrato ya esta adjudicado, de modo que
+  no corresponde reemitir las Bases.
+
+CUAL ES EL DOCUMENTO CONTRACTUAL
+  BL_MONTAJE_TALTAL_REV1.docx y .pdf del 25-06-2026, en el paquete licitado:
+  /Volumes/RESPALDO NUBE/ONE DRIVE ADASA/PLANTA DE SALMUERA TALTAL/
+  FASE_06_CONTRUCCION/BASES_OOCC_MECANICA_PIPING/1. BASES DE LICITACION/
+  Su codigo interno dice P22-BL-06-000-001-0 y su encabezado dice "Revision N: 1":
+  la inconsistencia viene de origen y se deja constancia de ella aqui.
+
+QUE SI SE APROVECHO DE ESTE TRABAJO
+  El contenido tecnico verificado, que vive en _ANALISIS_CAMBIOS_REV0_A_REV1.md y en la
+  planilla de control de cambios del paquete de construccion: las cuatro cotas de
+  tie-in nuevas, la cubicacion de la zona CIP y la tabla de pesos de la revision B del
+  plano civil del proveedor.
+
+DEUDA ABIERTA
+  El archivo BL_MONTAJE_TALTAL_REV0.md del repositorio esta desactualizado respecto del
+  documento contractual. Quien lo regenere sin portar antes los cambios de Jorge Valdes
+  volvera a producir un documento que borra la seccion de personal y el plazo de 3 meses.

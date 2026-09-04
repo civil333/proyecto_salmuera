@@ -1,0 +1,77 @@
+OBRAS CIVILES (A2) - Ingenieria de detalle OOCC y Estructuras Metalicas
+Actualizado: 25-06-2026 (con la ENTREGA 10 de L&A, transmittal 067-032-032-COR-TT-011 del 23-06-2026)
+================================================================================
+
+Contenido: planos y especificaciones tecnicas del consultor de obras civiles. Con la
+ENTREGA 9, L&A emitio en REVISION 0 las 5 laminas que quedaban pendientes tras la
+ENTREGA 8. El set de planos civiles queda COMPLETO: las 18 laminas estan en Rev 0.
+
+ENTREGA 10 (TT-011, 23-06-2026) - correccion de cajetin/estado de la Rev 0: L&A
+re-emitio el set completo corrigiendo el ESTADO. En las 18 laminas, la fila Rev 0 de la
+tabla REVISIONES pasa de "PARA USO E INFORMACION" a "APTO PARA CONSTRUCCION" (misma
+geometria y contenido; misma Rev 0). En las 2 ET (Movimiento de Tierra y Obras Civiles,
+Rev 1) la portada pasa del estado "Aprobado Cliente" a "Apto para Construccion". Las 18
+laminas + 2 ET del paquete se actualizaron a esta version E10 (cajetin verificado por
+render con large-pdf-reader modo drawing; archivos byte-identicos a la fuente E10). Las
+versiones anteriores ("PARA USO E INFORMACION") se archivaron en
+BORRADOR_REV0/_dossier_superseded_pre-E10/.
+
+Estructura:
+  PLANOS/    18 laminas PDF (todas en Rev 0)
+  ET/        2 especificaciones tecnicas (Rev 1)
+
+Las MEMORIAS DE CALCULO (MC) NO forman parte de este paquete (decision del mandante);
+se conservan, por trazabilidad, en BORRADOR_REV0/_memorias_excluidas_del_paquete/.
+
+Cambio de alcance (vigente) - Cubierta metalica (cobertizo) CIP:
+ - En esta licitacion NO se construye la cubierta metalica del sistema CIP; solo
+   su FUNDACION (con 24 pernos de anclaje F-1554 3/4" colados + proteccion interina).
+   La estructura metalica la suministra e instala ADASA en una etapa posterior.
+ - Se mantienen FUERA del paquete los documentos del "fierro" de la cubierta
+   (P22-DWG-00-003-001 y P22-ET-00-010-103). Se conservan en
+   BORRADOR_REV0/_cubierta_excluida_del_paquete/.
+ - La FUNDACION de la cubierta SI se mantiene: su detalle (formas, armaduras y detalle
+   del perno PA-1) esta en P22-DWG-00-002-007 LAM3, en Rev 0 (cubicacion de hormigon
+   G25 = 2,38 m3, consistente con la partida 4.3 del Formato de Licitacion).
+
+Laminas incorporadas con la ENTREGA 9 (TT-010, 22-06-2026) - pasaron a Rev 0:
+ - P22-DWG-00-001-001 LAM1/LAM2 (Excavaciones y movimiento de tierras) ... Rev C -> Rev 0
+ - P22-DWG-00-002-003 LAM2/LAM3 (Fundacion del contenedor del modulo OI) . Rev C -> Rev 0
+ - P22-DWG-00-002-007 LAM2 (Fundacion equipos/estanque del sistema CIP) .. Rev B -> Rev 0
+ - P22-DWG-00-002-004 LAM1 (Fosa de drenajes) re-emitida en Rev 0 completa. Reemplaza la
+   version que se habia incorporado con la ENTREGA 8 SIN cajetin ni anotaciones (stub de
+   exportacion: solo figuras geometricas). La E8 defectuosa se archivo.
+
+Las laminas superadas (Rev C/B + el stub E8 de 002-004 LAM1) se archivaron en
+BORRADOR_REV0/_dossier_superseded_pre-E9/. Las superadas anteriores (pre-E8) estan en
+BORRADOR_REV0/_dossier_superseded_pre-E8/.
+
+Verificacion interna de la ENTREGA 9 (revision cruzada ADASA, 23-06-2026):
+ - Las 6 laminas estan en Rev 0. Los puntos rectores que arrastraba el stream OOCC
+   quedaron RESUELTOS:
+   * Excavaciones (001-001): la Rev 0 cubre la excavacion de las fundaciones, la cota de
+     plataforma y el sello de fundacion (la Rev C cubria solo zanjas de drenaje); trae la
+     tabla de cubicaciones de movimiento de tierra (referencial, sin esponjamiento).
+   * N.T.N. acotado por zona en excavaciones y en los planos de fundacion.
+   * Fosa de drenajes rotulada correctamente TK-06-004 (cajetin y rotulo en planta).
+   * 002-003 LAM2 con contenido propio (sistema de fijacion + detalle INS-1); ya no
+     duplica la LAM1.
+ - Observaciones menores registradas (carry-forward de transmittales OOCC previos, sin
+   hallazgos nuevos; no bloquean la licitacion, se incorporan al cerrar la ingenieria):
+   * La nota particular de mejoramiento de suelo (ET-101: ensayos previos a fundar +
+     determinacion de la necesidad de mejoramiento) figura en los planos de FORMAS
+     (002-001/002/003/004/007 LAM1) pero no esta repetida en las laminas de ARMADURA/
+     detalle (002-003 LAM2/LAM3, 002-007 LAM2), que remiten a la matriz de notas (002-001).
+   * El anclaje de los equipos de etapa posterior (pernos post-instalados) queda diferido
+     a los planos vendor (nota en 002-007 LAM1); en Rev 0 solo se detallan los pernos
+     colados (cobertizo PA-1, inserto INS-1 del contenedor).
+
+Notas de completitud:
+ - P22-DWG-00-002-005 (detalles de anclaje y conexiones): NO se emite; los detalles de
+   anclaje estan dentro de los planos de fundaciones (002-002, 002-003, 002-007).
+   Retirado de las referencias del BL.
+ - P22-MC-00-002-003 (memoria de calculo del sistema de drenajes): no forma parte del
+   paquete (las MC no se distribuyen); su no-entrega no afecta el dossier de licitacion.
+ - Los itemizados, las memorias de calculo y la estimacion de inversion del consultor
+   NO forman parte del paquete; la planilla economica del proceso es el Formato de
+   Licitacion (Carpeta 2, Anexo A9).

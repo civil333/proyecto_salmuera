@@ -1,0 +1,46 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir /O-D \"c:\\\\SynologyDrive\\\\SynologyDrive\\\\DESAROLLO PROYECTOS CLAUDE\\\\MODULO DE SALMUERA TALTAL\\\\CORREOS\")",
+      "Bash(mkdir:*)",
+      "Bash(python:*)",
+      "Bash(pip install:*)",
+      "Bash(move:*)",
+      "Bash(dir:*)",
+      "Bash(del \"c:\\\\SynologyDrive\\\\SynologyDrive\\\\DESAROLLO PROYECTOS CLAUDE\\\\MODULO DE SALMUERA TALTAL\\\\CORREOS\\\\CORREOS COMPRA EQUIPOS\\\\VALVULAS\\\\generate_word.py\")",
+      "Skill(large-pdf-reader)",
+      "Skill(large-pdf-reader:*)",
+      "Bash(ls:*)",
+      "Bash(rm:*)",
+      "Bash(python3:*)",
+      "Bash(curl -s https://claudefa.st/blog/guide/mechanics/auto-dream)",
+      "Read(//c/Users/luisr/.claude/**)",
+      "Bash(for dir:*)",
+      "Bash(do echo:*)",
+      "Bash(__NEW_LINE_bb803e5ebbb38d86__ ls:*)",
+      "Bash(__NEW_LINE_bb803e5ebbb38d86__ echo:*)",
+      "Bash(__NEW_LINE_bb803e5ebbb38d86__ done:*)",
+      "Bash(cd /c/\"SynologyDrive/SynologyDrive/DESAROLLO PROYECTOS CLAUDE/MODULO DE SALMUERA TALTAL\")",
+      "Bash(done)",
+      "Bash(grep -E \"\\\\.\\(md|MD\\)$\")",
+      "Bash(fi)",
+      "Bash(find \"ENTREGAS_BWWATER/PRELIMINAR  LAYOUT\" -type f -exec basename {})",
+      "Bash(grep -r \"TM.*BW Water\\\\|BW Water.*TM\\\\|Technical Review Transmittal\" 'C:\\\\SynologyDrive\\\\SynologyDrive\\\\DESAROLLO PROYECTOS CLAUDE\\\\MODULO DE SALMUERA TALTAL\\\\CORREOS' --include=*.py)",
+      "Bash(grep -r 'Technical Review Transmittal' 'C:\\\\SynologyDrive\\\\SynologyDrive\\\\DESAROLLO PROYECTOS CLAUDE\\\\MODULO DE SALMUERA TALTAL\\\\CORREOS/Marzo 2026' --include=*.py)",
+      "Bash(grep -E \"\\\\.\\(py|xlsx\\)$\")",
+      "mcp__ide__executeCode",
+      "Bash(cp c:/Users/luisr/.claude/skills/template-adasa/ejemplo_documento.py 'c:/SynologyDrive/SynologyDrive/DESAROLLO PROYECTOS CLAUDE/MODULO DE SALMUERA TALTAL/.claude/skills/template-adasa/ejemplo_documento.py')",
+      "Bash(cp c:/Users/luisr/.claude/skills/template-adasa/Template_ADASA.docx 'c:/SynologyDrive/SynologyDrive/DESAROLLO PROYECTOS CLAUDE/MODULO DE SALMUERA TALTAL/.claude/skills/template-adasa/Template_ADASA.docx')",
+      "Bash(cp c:/Users/luisr/.claude/skills/template-adasa/config_defaults.py 'c:/SynologyDrive/SynologyDrive/DESAROLLO PROYECTOS CLAUDE/MODULO DE SALMUERA TALTAL/.claude/skills/template-adasa/config_defaults.py')",
+      "Bash(cp c:/Users/luisr/.claude/skills/template-adasa/table_utils.py 'c:/SynologyDrive/SynologyDrive/DESAROLLO PROYECTOS CLAUDE/MODULO DE SALMUERA TALTAL/.claude/skills/template-adasa/table_utils.py')",
+      "Read(//c/tmp/**)",
+      "Bash(cp \"C:/Users/luisr/.claude/skills/template-lrg/Template_LRG.docx\" lrg_check.zip)",
+      "Bash(unzip -p lrg_check.zip word/numbering.xml)",
+      "Bash(cp \"C:/Users/luisr/.claude/skills/template-mba/TEMPLATE_MBA_OPTIMIZADO.docx\" mba_check.zip)",
+      "Bash(unzip -p mba_check.zip word/numbering.xml)"
+    ]
+  },
+  "enabledPlugins": {
+    "skill-creator@claude-plugins-official": true
+  }
+}

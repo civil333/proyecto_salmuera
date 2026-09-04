@@ -1,0 +1,119 @@
+# =====================================================================
+# HITOS DEL PROGRAMA — Proyecto L-12803 / Contrato C-4300
+# Esquema distinto al de compromisos: un hito es una VENTANA con un grado
+# de FIRMEZA, y no tiene obligado singular ni criterio de cierre.
+# =====================================================================
+#
+# Vocabularios controlados:
+#
+#   firmeza : CONTRACTUAL FIRME     — fijado por la BAE o el Contrato
+#             REFERENCIA FIJA ADASA — declarado inamovible por ADASA
+#             DECLARADO PROVEEDOR   — fecha del proveedor, no aceptada
+#             INDICATIVO            — planificacion sujeta a confirmacion
+#
+#   fuente  : de donde sale la ventana vigente
+#
+# Corte: 2026-08-05
+# =====================================================================
+
+hitos:
+
+  - id: H-01
+    hito: "Plazo de Entrega del modulo (Ready to Ship, EXW Penang)"
+    ventana_inicio: 2026-08-03
+    ventana_fin: 2026-08-03
+    firmeza: CONTRACTUAL FIRME
+    fuente: "BAE Clausula 27: maximo 300 dias corridos desde la Notificacion de Adjudicacion (07-Oct-2025)"
+    estado_real: "Vencido. Estimacion vigente del proveedor: 10-Sep (Milestone Tracker) o 21-Sep (cronograma del 04-Ago)"
+    consecuencia: "Multa de 0,2% diario del neto del Contrato (BAE Clausula 43.1 letra b), tope 15% (Clausula 43.4)"
+    ref_compromiso: PRG-01
+
+  - id: H-02
+    hito: "Inicio de fabricacion en el taller de Penang"
+    ventana_inicio: 2026-03-05
+    ventana_fin: 2026-03-05
+    firmeza: INDICATIVO
+    fuente: "Baseline schedule del 05-Mar-2026"
+    estado_real: "Real 01-Jun-2026, con estimacion intermedia del 04-May. Desviacion de 88 dias sobre el baseline"
+    consecuencia: "Origen del deslizamiento acumulado de toda la cadena"
+    ref_compromiso: ""
+
+  - id: H-03
+    hito: "Factory Acceptance Test (FAT)"
+    ventana_inicio: 2026-09-07
+    ventana_fin: 2026-09-18
+    firmeza: DECLARADO PROVEEDOR
+    fuente: "Cronograma del 04-Ago-2026, ID 414 (11 dias). Baseline del Milestone Tracker: 13 al 18-Ago-2026"
+    estado_real: "Dos fuentes del proveedor discrepan: su correo del 28-Jul dice 'commencing 15 September' y su cronograma del 04-Ago pone 07 al 18-Sep. Manda el cronograma, que es el documento de control y coincide con el Dry Test del Fabrication Schedule del 03-Ago"
+    consecuencia: "La ventana de 11 dias SI acomoda las 7 jornadas contratadas con Bureau Veritas, de modo que el reclamo por ventana insuficiente ya no se sostiene contra el cronograma. Lo que queda por exigir es que BW Water declare por escrito cual de sus dos fechas gobierna, porque el inspector se agenda por Bureau Veritas Chile con su oficina de Malasia y no se le puede comprometer la agenda sobre una ambiguedad de ocho dias"
+    ref_compromiso: BV-13
+
+  - id: H-04
+    hito: "Release for Dispatch"
+    ventana_inicio: 2026-09-18
+    ventana_fin: 2026-09-18
+    firmeza: DECLARADO PROVEEDOR
+    fuente: "Correo BW Water 28-Jul-2026; PIE item 8.4 (Hold)"
+    estado_real: "Encadenado al item 8.3 (dossier aprobado), que sigue sin entregarse"
+    consecuencia: "Sostiene el 40% del pago"
+    ref_compromiso: BV-14
+
+  - id: H-05
+    hito: "Embarque EXW Penang segun la referencia fija de ADASA"
+    ventana_inicio: 2026-09-09
+    ventana_fin: 2026-09-10
+    firmeza: REFERENCIA FIJA ADASA
+    fuente: "Recovery Schedule Rev A del 14-Jul-2026, declarado inamovible por ADASA"
+    estado_real: "Superada unilateralmente por el proveedor: el cronograma del 04-Ago (ID 416) la lleva al 19-21 de septiembre"
+    consecuencia: "Es la fecha contra la que se mide el incumplimiento del recovery, distinta del plazo contractual"
+    ref_compromiso: PRG-07
+
+  - id: H-06
+    hito: "Supervision de montaje y comisionamiento en sitio"
+    ventana_inicio: 2026-12-10
+    ventana_fin: 2026-12-19
+    firmeza: INDICATIVO
+    fuente: "Cronograma del 04-Ago-2026, ID 421"
+    estado_real: "Sin arrancar. Arrastra el deslizamiento del embarque. Las fechas anteriores de este hito (18-Sep al 08-Oct) venian del Milestone Tracker, que es una foto congelada del baseline y no registro ningun cambio en cuatro versiones"
+    consecuencia: ""
+    ref_compromiso: ""
+
+  - id: H-07
+    hito: "Entrenamiento de operadores"
+    ventana_inicio: 2026-12-26
+    ventana_fin: 2026-12-28
+    firmeza: INDICATIVO
+    fuente: "Cronograma del 04-Ago-2026, ID 423"
+    estado_real: "Sin arrancar. Cae entre Navidad y Ano Nuevo, lo que en si es un riesgo de disponibilidad de personal en sitio"
+    consecuencia: ""
+    ref_compromiso: ""
+
+  - id: H-08
+    hito: "Documentacion final y cierre"
+    ventana_inicio: 2026-12-29
+    ventana_fin: 2027-01-02
+    firmeza: INDICATIVO
+    fuente: "Cronograma del 04-Ago-2026, ID 424 (Performance Test)"
+    estado_real: "Sin arrancar. Cierra el 02-Ene-2027, a 58 dias de la Recepcion Provisional del 01-Mar-2027"
+    consecuencia: "Multa de 0,05% diario por atraso en la documentacion final (BAE Clausula 43.1 letra d)"
+    ref_compromiso: ""
+
+  - id: H-09
+    hito: "Recepcion Provisional del Pedido (fin del Plazo Contractual)"
+    ventana_inicio: 2027-03-01
+    ventana_fin: 2027-03-01
+    firmeza: CONTRACTUAL FIRME
+    fuente: "BAE Clausula 27: el Plazo Contractual no debera superar los 510 dias corridos desde la Notificacion de Adjudicacion"
+    estado_real: "En riesgo. Performance Test proyectado al 02-Ene-2027, con margen de 58 dias"
+    consecuencia: "Cierre del contrato y liberacion de garantias"
+    ref_compromiso: PRG-02
+
+  - id: H-10
+    hito: "Validez de la oferta de inspeccion Bureau Veritas 600049 Rev 3"
+    ventana_inicio: 2026-07-07
+    ventana_fin: 2026-08-06
+    firmeza: CONTRACTUAL FIRME
+    fuente: "Oferta BV 600049 Rev 3, Clausula 11: validez de 30 dias desde la fecha de emision"
+    estado_real: "CUMPLIDO. Adjudicada por OC-836492 del 14-Jul-2026, dentro de la ventana. La Clausula 11 no se gatilla porque la adjudicacion no fue posterior al vencimiento"
+    consecuencia: "Ninguna. El precio de USD 977 por jornada quedo firme por la orden de compra"
+    ref_compromiso: INT-07

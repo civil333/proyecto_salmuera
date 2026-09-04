@@ -1,0 +1,20 @@
+DOSSIER SUPERADO - PRE ENTREGA 10 (25-06-2026)
+================================================================================
+
+Estas son las 18 laminas de planos civiles + 2 ET que estaban en el paquete
+(BASES DE LICITACION MONTAJE MECANICO-OOCC\Bases REV 0\5. OBRAS CIVILES (A2)\)
+ANTES de incorporar la ENTREGA 10 de L&A (carta 067-032-032-COR-TT-011, 23-06-2026).
+
+Motivo del reemplazo - correccion de cajetin/estado de la Rev 0:
+ - PLANOS: la fila Rev 0 de la tabla REVISIONES decia "PARA USO E INFORMACION".
+   La ENTREGA 10 la corrige a "APTO PARA CONSTRUCCION" en las 18 laminas
+   (misma geometria y contenido; re-emision solo del cajetin, misma Rev 0).
+ - ET: la portada decia estado "Aprobado Cliente"; la ENTREGA 10 la corrige a
+   "Apto para Construccion" (ET-101 y ET-102, ambas siguen en Rev 1).
+
+Las versiones vigentes (ENTREGA 10, "APTO PARA CONSTRUCCION") quedaron en el
+paquete. Estos archivos se conservan solo por trazabilidad contractual.
+
+Verificacion: las 18 laminas E10 se revisaron por render (large-pdf-reader modo
+drawing) confirmando Rev 0 = "APTO PARA CONSTRUCCION"; los archivos del paquete
+quedaron byte-identicos a la fuente E10 (SHA256).

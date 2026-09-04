@@ -1,0 +1,300 @@
+L12: Datasheet of Flow Transmitter ADASA Code: P22-LI-09-008-007
+L13: Second Stage RO Module for Brine – PD Taltal Date: 04-Mar-26
+L16: Datasheet of Flow Transmitter
+L17: Second Stage RO Module for Brine – PD Taltal
+L27: | Component Name: | | Flow Transmitter | | Component Type: | Instrument | Reviewed by: | BT/NHH |
+L28: | Vendor's Name: | | Rosemount | | Component Tag No./s: | FIT-09-001/002/003/005 | Checked by: | GHY |
+L32: | 2 | Design Intent/Purpose | | - | Measures Flow | | | |
+L41: | 11 | Flow Sensor | | | | | | |
+L43: | 13 | Manufacturer | | - | Rosemount | | | |
+L44: | 14 | Model | | - | 8750W | | | |
+L47: | 17 | Measurement Range | | m3/h | 0 to 18<br>0 to 40<br>0 to 100 | | | |
+L48: | 18 | Max. Pressure | | psi | 285 (-28 to 38 °C)<br>260 (93°C)<br>230 (65°C)<br>215 (176°C) | | | |
+L52: | 22 | Material - Electrode (Wetted Part) | | - | SS316L | | | |
+L54: | 24 | Flange Rating | | - | Class 150 | | | |
+L57: | 27 | Manufacturer | | - | Rosemount | | | |
+L58: | 28 | Model | | - | 8750W | | | |
+L65: | 35 | Outputs Communication | | - | 4 to 20 mA current outputs with HART | | | |
+L76: | Component Name: | | Flow Transmitter | | Component Type: | Instrument | Reviewed by: | BT/NHH |
+L77: | Vendor's Name: | | Rosemount | | Component Tag No./s: | FIT-09-004 | Checked by: | GHY |
+L81: | 2 | Design Intent/Purpose | | - | Measures Flow | | | |
+L90: | 11 | Flow Sensor | | | | | | |
+L92: | 13 | Manufacturer | | - | Rosemount | | | |
+L93: | 14 | Model | | - | 8750W | | | |
+L96: | 17 | Measurement Range | | m3/h | 0 to 100 | | | |
+L97: | 18 | Max. Pressure | | psi | 285 (-28 to 38 °C)<br>260 (93°C)<br>230 (65°C)<br>215 (176°C) | | | |
+L103: | 24 | Flange Rating | | - | Class 150 | | | |
+L106: | 27 | Manufacturer | | - | Rosemount | | | |
+L107: | 28 | Model | | - | 8750W | | | |
+L114: | 35 | Outputs Communication | | - | 4 to 20 mA current outputs with HART | | | |
+L124: Rosemount™ 8750W Magnetic Flowmeter
+L126: ■ Best in class value with performance, reliability, and diagnostics suited for monitoring applications
+L128: ■ Reliable all welded coil housing and lightweight sensor design rated to IP68
+L129: ■ Available in 4–20 mA with HART®, FOUNDATION™ Fieldbus, Modbus® RS-485, EtherNet/IP™, Process Diagnostics, and
+L139: | Field mount | ■ Integral and remote configurations available<br>■ HART®/Analog and pulse outputs available<br>■ FOUNDATION™ Fieldbus and pulse output available<br>■ Modbus® RS-485 and pulse output available<br>■ EtherNet/IP™ and pulse output available (AC power only)<br>■ Advanced diagnostics available<br>■ LCD display, optional (with optional optical switch local operator interface)(1)<br>■ Three independent totalizers (A/B/C)<br>■ Two discrete channels (optional) |
+L140: | Wall mount | ■ Wall mount configuration<br>■ HART/Analog and pulse outputs available<br>■ Modbus RS-485 and pulse output available<br>■ FOUNDATION Fieldbus and pulse output available<br>■ Advanced diagnostics available<br>■ Local LCD display, optional (with optional 15-button tactile key pad(1))<br>■ Three independent totalizers (A/B/C)<br>■ Two discrete channels (optional) |
+L144: The Rosemount 8750W Magnetic Flow Meter is available in a flanged style and transmitter is available in remote
+L148: (1) HART or Modbus protocol only.
+L153: Ordering flow meter equipment...................................................................................................................................................... 7
+L165: | Flanged | ■ Flanged process connections Welded coil housing<br>■ ½-in. (15 mm) to 48-in. (1200 mm)<br>■ Standard, reference, and bullet-nose electrodes available |
+L171: | Grounding and Wiring Fault | Installation | Standard |
+L181: For guidance on selecting materials, refer to the Rosemount™ Magnetic Flowmeter Material Selection Guide
+L183: Access information when you need it with asset tags
+L184: Newly shipped devices include a unique QR code asset tag that enables you to access serialized information directly
+L192: Rosemount diagnostics reduce cost and improve output by enabling new practices
+L193: Rosemount Magnetic Flow Meters provide device diagnostics that detect and warn of abnormal situations throughout
+L194: the life of the meter—from installation to maintenance and meter verification. With Rosemount Magnetic Flow Meter
+L197: Table 2: Magnetic Flow Meter Diagnostics
+L204: | Table 2: Magnetic Flow Meter Diagnostics (continued) | | |
+L207: | Reverse Flow | Process | Standard |
+L215: | 4–20 mA Loop Verification(1) | Installation | Suite 2 (DA2) |
+L218: | Application | Velocity range (ft/s) | Velocity range (m/s) |
+L220: | Full range | 0 to 39 | 0 to 12 |
+L226: Table 2: Magnetic Flow Meter Diagnostics (continued)
+L227: (1) Available with HART® output only.
+L229: Rosemount Magmeter Diagnostics can be accessed through the Local Operator Interface (LOI), ProLink™ III v3.1, a
+L230: HART Field Communicator(1), and AMS Suite: Intelligent Device Manager(1). Contact your local Emerson representative
+L233: Rosemount Magnetic Flow Meter Diagnostics are available through the LOI to simplify maintenance.
+L234: Access diagnostics through ProLink III v. 3.0 (HART)/ProLink III v. 3.1 (HART, Modbus®)
+L242: sensor that is larger or smaller than the adjacent piping to ensure the fluid velocity is in the recommended flow range
+L247: (1) Available with HART output only.
+L286: Flow Rate
+L301: | | @ 0.04 ft/s<br>(low-flow<br>cutoff) | @ 1 ft/s<br>(minimum<br>range<br>setting) | @ 3 ft/s | @ 39.37 ft/s<br>(maximum<br>range<br>setting) | @ 0.012 m/s<br>(low-flow<br>cutoff) | @ 0.3 m/s<br>(minimum<br>range<br>setting) | @ 1 m/s | @ 12 m/s<br>(maximum<br>range<br>setting) |
+L329: from the electrode plane.
+L343: C. Flow dire
+L350: ocess reference grounding
+L354: nsor and the process fluid. Optional grounding rings or process reference electrodes are available with
+L356: sure proper grounding. See Table 5 and Table 6.
+L360: nt 8750W Magnetic Flowmeter Platform
+L361: The Rosemount 8750W Magnetic Flowmeter is available in a flanged sensor design. The sensors are
+L363: against moisture or other contaminants. Sizes range from ½ inch (15 mm) to 48 inch (1200 mm). The
+L374: | A | Base model—Magnetic Flowmeter System (utility, water, and wastewater) | | |
+L377: | C | Transmitter class | J | Electrode material |
+L380: | F | Transmitter outputs | M | Flange type and material |
+L387: | Transmitter class | | |
+L398: | Transmitter outputs | | |
+L399: | A | 4–20 mA output with digital HART® protocol & scalable pulse output | ★ |
+L400: | F | FOUNDATION™ Fieldbus & scalable pulse output | ★ |
+L401: | M | Modbus® RS-485 & scalable pulse output | ★ |
+L402: | E(1)(2) | EtherNet/IP™ scalable pulse output | ★ |
+L406: Model code structure
+L407: Figure 2: Guide to model code structure
+L408: 8750W D M T 1 A 1 F P S A 010 C A1 Z5 DA2 AX M4 BD G5 B6 R15 V1 Q4 HR7 WG YF
+L410: Example model code with one selection out of each required category:
+L411: 8750W D M T 1 A 1 F P S A 010 CA1 Z5 DA2 AX M4 BD G5 B6 R15 V1 Q4 HR7 WG YF
+L412: The starred ( ) offerings represent the best delivery options.
+L442: | S | | 316L stainless steel | | | ★ |
+L446: | A | | 2 Measurement electrodes – standard | | | ★ |
+L447: | B(9) | (9) | 2 Measurement electrodes – bulletnose | | | ★ |
+L448: | E | | 2 Measurement electrodes plus 1 reference electrode – standard | | | ★ |
+L449: | F(9) | | 2 Measurement electrodes plus 1 reference electrode – bulletnose | | | ★ |
+L507: | A1 | ASME B16.5, Class 150 | |
+L508: | A3 | ASME B16.5, Class 300 | |
+L509: | AD | AWWA C207Class D; line size 30-in. and above; flat face flange only | |
+L510: | AE | AWWA C207Class E; line size 30-in. and above; flat face flange only | |
+L536: (8) Available with flange option code A1 (ASME B16.5, Class 150) and A3 (ASME B16.5, Class 300).
+L538: (10) In the Line size section, the starred ( ) offerings represent available liner based on line size. Consult factory for additional Flange
+L543: These are not required, but they must be included in the model number if desired.
+L554: | Z5 | | US Approvals, Class I Div 2, Non-Incendive and Dust for Non-Flammable Fluids | ★ |
+L555: | Z6 | | Canadian Approvals, Class I Div 2, Non-Incendive and Dust for Non-Flammable Fluids | ★ |
+L556: | ND | | ATEX Dust | ★ |
+L557: | Z1(2)(3) | | ATEX Non-Sparking and Dust for Non-Flammable Fluids | ★ |
+L558: | NF | | IECEx Dust | ★ |
+L559: | Z7(2)(3) | | IECEx Non-Sparking and Dust for Non-Flammable Fluids | ★ |
+L566: | Discrete input/discrete output | | | |
+L571: | Pipe pressure standard | | | |
+L572: | PD | | European Pressure Equipment Directive Certification (PED) | ★ |
+L573: | CR | | Canadian Registration Number (CRN) Certification | |
+L575: | TS | | Special equipment supervision inspection certificate for pressure pipes (Destination to China) | |
+L577: | DW(6) | | NSF Drinking Water Certification | |
+L578: | Grounding rings | | | |
+L579: | G1 | | 316L stainless steel (Qty 2) | ★ |
+L581: | G5 | | 316L stainless steel (Qty 1) | ★ |
+L589: Table 7: Rosemount 8750W options
+L596: | Table 7: Rosemount 8750W options (continued) | | |
+L622: | HR7 | HART Revision 7 | |
+L635: Table 7: Rosemount 8750W options (continued)
+L640: (5) Not available with FOUNDATION Fieldbus (output code F).
+L650: | Size<br>code | ASME Class 150 | ASME Class 300 | AWWA Class D | AWWA Class E | EN PN10 | EN PN16 | EN PN25 | EN PN40 | GB/T PN 10 | GB/T PN 16 | GB/T PN 40 | JIS 10K | JIS 20K | AS4087 PN16 | AS4087 PN21 | AS4087 PN35 | AS2129 Table D | AS2129 Table E |
+L675: (6) NSF drinking water certification is available with the PTFE liner in line sizes 0.5 to 36-in (15 mm to 900 mm) and the polyurethane
+L676: liner in line sizes 4 to 36-in., 42-in., and 48-in. (80 mm to 900 mm, 1050 mm, and 1200 mm).
+L686: | Engineering units: | ft/s |
+L688: | 4 mA: | 0 |
+L689: | 20 mA: | 30 |
+L695: | Model string | 8712EM: character height 0.060 in. (1.5 mm)<br>8732EM: character height 0.085 in. (2.1 mm)<br>8705, 8711, 8721: character height 0.065 in. (1.6 mm) |
+L700: Ordering flow meter equipment
+L701: Ordering procedure
+L702: To order, select the desired sensor and/or transmitter by specifying model codes from the ordering table.
+L710: Standard tagging
+L711: Instrument tags for the transmitter and sensors are as follows:
+L714: ■ Additional 316 SST wire-on tag available: 5 lines, 17 characters per line (3.2 mm height)
+L716: Interconnecting cables are required to connect a remote-mount transmitter to the sensor. When ordering cable,
+L719: ■ Cables can be ordered as individual component cables or a combination coil drive/electrode cable.
+L720: ■ Cables can be ordered as part of the transmitter model number or as a spare parts kit. Integrally-mounted
+L722: ■ Individual component cables require equal lengths of coil drive cable and electrode cable and should be limited to
+L724: ■ Combination coil drive/electrode cable is only available for Ordinary Locations and should be limited to less than
+L735: | 08732-0065-0001<br>(feet) | Kit, component cables,<br>standard temperature<br>(includes coil and<br>electrode) | Coil | 518243 | 2442C |
+L737: | 08732-0065-0002<br>(meters) | Kit, component cables,<br>standard temperature<br>(includes coil and<br>electrode) | Coil | Not available | Not available |
+L739: | 08732-0065-0003<br>(feet) | Kit, component cables,<br>standard temperature<br>(includes coil and<br>Intrinsically Safe [I.S.]<br>electrode) | Coil | 518243 | Not available |
+L740: | | | I.S. electrode | 518244 | Not available |
+L741: | 08732-0065-0004<br>(meters) | Kit, component cables,<br>standard temperature<br>(includes coil and I.S.<br>electrode) | Coil | Not available | Not available |
+L742: | | | I.S. electrode | Not available | Not available |
+L748: | 08732-0065-1001<br>(feet) | Kit, component cables,<br>extended temperature<br>(includes coil and<br>electrode) | Coil | 840310 | Not available |
+L750: | 08732-0065-1002<br>(meters) | Kit, component cables,<br>extended temperature<br>(includes coil and<br>electrode) | Coil | Not available | Not available |
+L752: | 08732-0065-1003<br>(feet) | Kit, component cables,<br>extended temperature<br>(includes coil and I.S.<br>electrode) | Coil | 840310 | Not available |
+L753: | | | I.S. electrode | 840309 | Not available |
+L754: | 08732-0065-1004<br>(meters) | Kit, component cables,<br>extended temperature<br>(includes coil and I.S.<br>electrode) | Coil | Not available | Not available |
+L755: | | | I.S. electrode | Not available | Not available |
+L765: | Coil/electrode cable: –4 to +176 °F (–20 to +80 °C) | |
+L789: | | Communication protocol | HART<br>FOUNDATION™ fieldbus<br>EtherNet/IP™<br>Modbus RS-485 |
+L791: | | Sensor compatibility | All Rosemount plus other manufacturers |
+L793: | | Ordering information | Ordering flow meter equipment |
+L802: | | Communication protocol | HART® with 4–20 mA<br>FOUNDATION™ fieldbus<br>Modbus® RS-485 |
+L804: | | Sensor compatibility | All Rosemount plus other manufacturers |
+L806: | | Ordering information | Ordering flow meter equipment |
+L828: | | Ordering information | Ordering flow meter equipment |
+L847: | 316L Stainless Steel | Good corrosion resistance |
+L867: | Measurement +<br>Reference Electrode<br>(Also see Table 15<br>and Table 16 for<br>grounding options<br>and installation). | Low cost grounding option especially for large line sizes |
+L868: | | If using a reference electrode, process fluid must have a minimum conductivity of 100 microSiemens/cm. |
+L874: | Grounding options | General characteristics |
+L876: | No Grounding<br>Options (grounding<br>straps) | Acceptable for conductive unlined pipe |
+L877: | | Grounding straps provided at no cost |
+L878: | Reference Electrode | Same material as measurement electrodes |
+L879: | | Sufficient grounding option when process fluid conductivity is greater than 100 microSiemens/cm. |
+L880: | | Not recommended in electrolysis applications, galvanic corrosion applications, applications where the<br>electrodes may coat, or non-conductive pipe. |
+L881: | Grounding Rings | Low conductivity process fluids |
+L886: | Type of pipe | Grounding straps | Grounding rings | Reference electrode | Lining protectors |
+L899: 500 mA
+L900: Flow rate range
+L901: Capable of processing signals from fluids with velocities between 0.04 and 39 ft/s (0.01 to 12 m/s) for both forward and
+L927: ■ At 250 Vac: Maximum 35.7 A (< 5 ms) 4–20 mA, HART, FOUNDATION™ Fieldbus, Modbus; see Figure 3.
+L932: approximately 1 ms. Inrush for other supply voltages can be estimated with: Inrush (Amps) = Supply (Volts) / 7.0
+L946: approximately 1 ms. Inrush for other supply voltages can be estimated with: Inrush (Amps) = Supply (Volts) / 7.0
+L980: supply, lasting approximately 1 ms. Inrush for other supply voltages can be estimated with: Inrush (Amps) = Supply
+L1017: AC input voltage: Maximum 250 Vac – Up to 6,500 ft. (2,000 m)
+L1018: AC input voltage: Maximum 150 Vac – Up to 13,000 ft. (4,000 m)
+L1019: DC input voltage: No altitude limit
+L1031: Adjustable between 0.01 and 38.37 ft/s (0.003 and 11.7 m/s). Below selected value, output is driven to the zero flow rate
+L1032: signal level.
+L1033: Overrange capability
+L1034: Signal output will remain linear until 110% of upper range value or 44 ft/s (13 m/s). The signal output will remain
+L1035: constant above these values. Out of range message displayed on LOI/display and the Field Communicator.
+L1047: ■ Ground/wiring fault
+L1050: ■ Pulse output test
+L1060: ■ 4-20 mA loop verification(1)
+L1061: Output signals
+L1062: Analog output adjustment(3)(4)
+L1063: 4–20 mA, switch-selectable as internally or externally powered.
+L1067: ■ Loop resistance is determined by the voltage level of the external power supply at the transmitter terminals:
+L1068: (3) Available with HART® output only.
+L1069: (4) For transmitters with intrinsically safe outputs (option code B), power must be supplied externally.
+L1089: ■ Vps = power supply voltag
+L1093: The analog output is automa
+L1094: tically scaled to provide 4 mA at lower range value and 20 mA at upper range value. Full
+L1097: HART® Communications is a
+L1098: digital flow signal. The digital signal is superimposed on the 4–20 mA signal and
+L1100: stem interface. A minimum of 250 ohms loop resistance is required for HART
+L1103: High or low alarm signal is us
+L1108: e the analog signal to the following mA values.
+L1110: | Low | 3.75 mA | Requires CDS (C1) |
+L1112: | High | 22.60 mA | Factory default |
+L1113: | NAMUR Low | 3.5 mA | Requires CDS (C1) |
+L1114: | NAMUR High | 22.6 mA | Requires CDS (C1) |
+L1118: Manchester-encoded digital signal that conforms to IEC 1158-2 and ISA 50.02
+L1119: Output signal
+L1149: | Discrete Output (DO) | 15 |
+L1151: The transducer block calculates flow from the measured induced voltage. The calculation includes
+L1156: manufacturer identification, device type, software tag, and unique identification.
+L1157: The transmitter is classified as a device link master. A device link master can function as a Link
+L1166: line testing of the transmitter digital signal. Advanced simulation diagnostics are available. This
+L1167: enables remote verification of the electronics via a flow signal generator built into the electronics.
+L1168: The sensor strength value can be used to view the process flow signal and provide information
+L1172: The AI function block also allows filtering, alarming, and engineering unit changes.
+L1185: Reverse Flow Detects and reports reverse flow.
+L1190: Discrete Output
+L1192: an output signal. The block supports mode control, output tracking, and simulation.
+L1196: Modbus output provide an RS-485 signal to a Modbus host system; data rates can be configured
+L1207: output
+L1209: ith one port for EtherNet/IP and one port for Pulse output
+L1211: to Field Device Technology (FDT) frame application Ethernet connection for configuration and viewing of
+L1215: to embedded webserver via Ethernet connection for configuration Ethernet network settings and viewing
+L1239: e can be set to equal desired volume in selected engineering units
+L1243: powered: Outputs up to 12 Vdc(6)
+L1246: Output testi
+L1248: t test(6) Transmitter may be commanded to supply a specified current between 3.5 and 23 mA.
+L1251: Pulse output
+L1253: rete output function (AX option)
+L1255: wered at 5 to 28 Vdc, 240 mA maximum, solid state switch closure to indicate either:
+L1256: Activates switch closure output when reverse flow is detected.
+L1258: Activates switch closure output when flow goes to 0 ft/s or below low flow cutoff.
+L1260: Activates switch closure output when an empty pipe condition is detected.
+L1262: aults Activates switch closure output when a transmitter fault is detected.
+L1264: low limit 2 Activates switch closure output when the transmitter measures a flow rate that meets the
+L1265: Flow limit 1, f
+L1267: configured as discrete outputs.
+L1268: t Activates switch closure output when the transmitter measures a total flow that meets the
+L1271: atus Activates switch closure output when the transmitter detects a condition that meets the
+L1273: configured criteria of this output.
+L1275: itters with intrinsically safe outputs (option code B), frequency range is limited to 0 to 5,000 Hz and must be powered externally.
+L1277: itters with intrinsically safe outputs (option code B), power must be supplied externally.
+L1286: Externally powered at 5 to 28 Vdc, 1.4 to 20 mA to activate switch closure to indicate either:
+L1289: Positive Zero Return (PZR) Forces outputs of the transmitter to zero flow.
+L1291: Security lockout switch on the electronics board can be set to deactivate all LOI and HART-based communicator
+L1295: through a HART communication device, or by holding the UP arrow for 3 seconds and then following the on-screen
+L1303: Rosemount sensors are calibrated in a flow lab at the factory and are assigned a calibration number. The calibration
+L1306: Transmitters and other manufacturers’ sensors can be calibrated at known process conditions or at the Rosemount
+L1307: NIST-Traceable Flow Facility. Transmitters calibrated on site require a two-step procedure to match a known flow rate.
+L1310: System specifications are given using the frequency output and with the unit at reference conditions.
+L1327: | Response time (analog output) | 20 ms max response time to step change in input |
+L1329: | Ambient temperature effect | ±0.25% change over operating temperature range |
+L1341: | Safety grounding screws | External stainless assembly, M5; internal 8-32 (No. 8) |
+L1355: A. Percentage of rate
+L1357: Analog output effects
+L1358: Analog output has the same accuracy as frequency output plus an additional ±4 μA at room temperature.
+L1361: Electrical connections
+L1362: (1) M20–1.5 connections provided with an adapter.
+L1382: | Conduit entries | Available in ½ inch NPT or M20. See ordering table footnotes for details. |
+L1385: | Safety grounding screws | External stainless assembly, M5; internal 8-32 (No. 8) |
+L1395: (1) For applications where the transmitter may be submerged, even temporarily, contact Emerson Flow Technical Support for details.
+L1396: Electrical connections
+L1415: | PTFE lining | Full vacuum to 248 °F (120 °C) through 4 in. (100 mm) line sizes.<br>Consult an Emerson Flow representative for vacuum applications with line sizes of 6 in. (150 mm)<br>or larger. |
+L1430: Rosemount 8750W sensors are interchangeable with 8750W transmitters. System accuracy is maintained regardless
+L1432: transmitter during configuration.
+L1433: Upper range limit
+L1437: Pressure limits
+L1440: Submergence protection IP68
+L1441: The remote mount sensor is rated IP68 for continuous submergence. Tested to a depth of 33 ft. (10 m) for a period
+L1442: of 48 hours. IP68 rating requires that the transmitter must be remote mount. Installer must use IP68 approved cable
+L1443: glands, conduit connections, and/or conduit plugs.
+L1445: Process liquid must have a conductivity of 50 microSiemens/cm or greater. Consult an Emerson Flow representative for
+L1458: | Sensor temperature vs. pressure limits for ASME B16.5 class flanges ( ½ in. to 24 in. line sizes)(2) | | | | | |
+L1460: | Flange material | Flange rating | Pressure | | | |
+L1462: | Carbon Steel | Class 150 | 285 psi | 260 psi | 230 psi | 215 psi |
+L1463: | | Class 300 | 740 psi | 680 psi | 655 psi | 645 psi |
+L1464: | 304 Stainless Steel | Class 150 | 275 psi | 235 psi | 205 psi | 190 psi |
+L1465: | | Class 300 | 720 psi | 620 psi | 530 psi | 500 psi |
+L1468: | Sensor temperature vs. pressure limits for AS2129 Table D and E flanges (4 in. to 24 in. line sizes) | | | | | |
+L1470: | Flange material | Flange rating | Pressure | | | |
+L1476: | Sensor temperature vs. pressure limits for EN 1092-1 flanges (15 mm to 600 mm line sizes) | | | | | |
+L1478: | Flange material | Flange rating | Pressure | | | |
+L1488: | Temperature vs. pressure limits for GB/T 9119 flanges | | | | |
+L1490: | Flange material | Flange rating | Pressure (Mpa) | | |
+L1497: Table 18: Temperature vs. Pressure Limits for ASME B16.5 Class Flanges(1)
+L1499: (2) 30 in. and 36 in. AWWA C207 Class D rated to 150 psi at atmospheric temperature.
+L1500: Table 19: Temperature vs. Pressure Limits for AS2129 Table D and E Flanges (1)
+L1502: Table 20: Temperature vs. Pressure Limits for EN 1092-1 Flanges (1)
+L1504: Table 21: Temperature vs. Pressure Limits for GB/T 9119 Flanges (1)
+L1511: | Table 21: Temperature vs. Pressure Limits for GB/T 9119 Flanges (1) (continued) | | | | |
+L1513: | Temperature vs. pressure limits for GB/T 9119 flanges | | | | |
+L1514: | Flange material | Flange rating | Pressure (Mpa) | | |
+L1521: | Temperature vs. pressure limits for JIS B2220 flanges | | | |
+L1523: | Flange material | Flange rating | Pressure (Mpa) | |
+L1540: | Electrodes | 316L SST, Nickel Alloy 276 (UNS N10276) |
+L1543: | ASME B16.5 | ■ Class 150 and Class 300: ½ in. to 24 in. (15 mm to 600 mm) |
+L1545: | AWWA C207 | ■ Class D: 30 in. to 48 in. (750 mm to 1,200 mm)<br>■ Class E: 30 in. to 48 in. (750 mm to 1200 mm) |
+L1548: Table 21: Temperature vs. Pressure Limits for GB/T 9119 Flanges (1) (continued)
+L1550: Table 22: Temperature vs. Pressure Limits for JIS B2220 Flanges (1)
+L1553: Rosemount magnetic flow meters are designed to the standards defined in ASME B31.3. This standard is used as the
+L1554: basis for all of our other pressure vessel certifications, such as CRN and PED.
+L1560: Flat-faced flanges are manufactured with full-face liners. Available in Neoprene only.
+L1561: Process connections

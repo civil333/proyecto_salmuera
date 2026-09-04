@@ -1,0 +1,271 @@
+4	Cliente: Aguas Antofagasta
+5	Nro. Proyecto: 067-032-032
+6	Descripción: “MC Fundación Contenedor RO”
+11	Memoria de cálculo de fundación.
+Contenedor RO.
+12	P22-MC-00-002-004
+17	CONTENIDO
+18	1	Introducción	3
+19	1.1	Objetivos	4
+20	2	Bases de cálculo	5
+21	2.1	Normativa	5
+22	2.2	Códigos y manuales	5
+23	2.3	Documentos de referencia	6
+24	2.4	Materiales	7
+25	2.4.1	Hormigón armado	7
+26	2.4.2	Acero estructural – Acero de refuerzo	7
+27	2.4.3	Recubrimientos de hormigón	7
+28	2.4.4	Soldadura	8
+29	2.5	Parámetros de suelo	9
+30	2.6	Parámetros para el análisis sísmico	10
+31	3	Modelos computacionales	12
+32	4	Estados de carga	14
+33	4.1	Cargas permanente (D)	14
+34	4.1.1	Cargas por peso propio (DEAD)	14
+35	4.1.2	Carga por peso de equipo (DEquipo)	14
+36	4.2	Sobrecargas (SC)	15
+37	4.2.1	Sobrecarga (L)	15
+38	4.3	Cargas sísmicas (Ex, Ey y Ez)	16
+39	5	Combinaciones de carga	19
+40	6	Análisis estructural	21
+41	6.1	Tensiones admisibles y porcentaje de apoyo	21
+42	6.2	Verificación de inserto de hormigón – Contenedor	24
+43	6.3	Diseño de pedestales	25
+44	6.3.1	Pedestal 50 cm x 50 cm – Contenedor	26
+45	6.4	Diseño de viga 30 cm x 30 cm - Contenedor	28
+46	6.4.1	Flexión	29
+47	6.4.2	Corte	32
+48	6.5	Diseño de losas - Flexión	34
+49	6.6	Verificación de losas - Corte	40
+50	7	Conclusiones	44
+52	Introducción
+53	La empresa Aguas Antofagasta ha solicitado los servicios de L&A Ingeniería y Proyectos para el diseño del sistema de fundaciones de diversas estructuras las cuales serán emplazadas en las instalaciones de la Agencia Zonal de Taltal, propiedad de Aguas Antofagasta.
+55	El objetivo principal del presente documento es presentar la validación estructural de uno de los sistemas de fundaciones. A continuación, se presenta la estructura a la cual se le diseñara un sistema de fundaciones:
+57	Figura -: Representación esquemática de contenedor (Modelo Navis Referencial).
+59	Figura -: Ubicación del proyecto.
+61	Figura -: Ubicación Agencia Zonal de Taltal.
+63	Objetivos
+64	Los sistemas de fundación diseñados en la presente Memoria de Cálculo corresponden a soluciones independientes para cada una de las agrupaciones de estructuras previamente descritas. Cada agrupación contempla una losa de fundación individual, con el objetivo de asegurar un adecuado soporte de la superestructura.
+66	De esta manera, el estudio desarrollado en la presente Memoria de Cálculo considera el análisis y verificación de los siguientes aspectos:
+68	Diseño y verificación de los elementos estructurales asociados al sistema de fundaciones.
+70	Verificación de la estabilidad del sistema de fundaciones y de las presiones de contacto transmitidas al terreno.
+71	Bases de cálculo
+72	Normativa
+73	Se consideran las siguientes normativas para la elaboración de la presente memoria de cálculo:
+75	NCh430:2008:	Hormigón armado – Requisitos de diseño y cálculo.
+77	NCh427/1:2006:	Construcción – Estructuras de acero – Parte 1:
+78	Requisitos para el cálculo de estructuras de acero para
+79	edificios.
+81	NCh1537:2009:	Diseño estructural – Cargas permanentes y cargas de
+82	uso.
+84	NCh2369:2003:	Diseño sísmico de estructuras e instalaciones
+85	industriales.
+87	NCh2369:2025:	Diseño sísmico de estructuras e instalaciones
+88	industriales.
+90	NCh3171:2017:	Disposiciones generales y combinaciones de cargas.
+92	Códigos y manuales
+93	Se consideran los siguientes códigos y manuales para la elaboración de la presente memoria de cálculo:
+95	ACI318-19:		Requisitos de Reglamento para Concreto Estructural.
+97	AWS D1.1:		Structural welding code.
+105	Documentos de referencia
+106	Se consideran los siguientes documentos de referencia para la elaboración de la presente memoria de cálculo:
+108	INFORME ESTUDIO SISMICO INSTALACIONES AGENCIA ZONAL TALTAL, AGUAS ANTOFAGASTA – LNS-ADASA-INF-040-Rev0.
+110	TÉRMINOS DE REFERENCIA INGENIERÍA DE DETALLE OBRAS CIVILES Y ESTRUCTURAS METÁLICAS MÓDULO RO SEGUNDA ETAPA PARA SALMUERA – PD TALTAL.
+137	Materiales
+138	Hormigón armado
+139	La materialidad considerada para todos los elementos estructurales del hormigón armado corresponde a un hormigón G25, cuyas propiedades mecánicas se detallan a continuación:
+141	Tabla -: Propiedades mecánicas de hormigón armado G25.
+143	Acero estructural – Acero de refuerzo
+144	Respecto al acero de refuerzo del hormigón armado, se consideran barras corrugadas de calidad A630-420H, cuyas propiedades se resumen a continuación:
+146	Tabla -: Propiedades mecánicas de acero de refuerzo corrugadas A630-420H.
+147	Recubrimientos de hormigón
+148	Cabe señalar que el recubrimiento mino utilizado para los elementos de hormigón armado es de 50 mm para elementos expuestos. Por otro lado, para elementos en contacto con el terreno, el recubrimiento mínimo será de 70 mm debido al ambiente marino corrosivo.
+154	Soldadura
+155	La soldadura considerada para la unión de los elementos de acero corresponde a un electrodo del tipo E70XX, cuyas propiedades se resumen a continuación:
+157	Tabla -: Propiedades de la soldadura.
+190	Parámetros de suelo
+191	Los parámetros geotécnicos del suelo de fundación considerados en la presente memoria de cálculo se resumen en la siguiente tabla:
+193	Tabla -: Parámetros de la mecánica de suelos considerados.
+195	Los parámetros de suelo indicados en la tabla anterior se adoptan pese a lo señalado en el informe de estudio sísmico mencionado en la Sección 2.3. Esto se debe a que la clasificación de suelos presentada en dicho informe se basa en lo establecido por la NCh2369:2003, la cual define el tipo de suelo principalmente en función de la velocidad de propagación de ondas de corte (Vs30).
+197	Sin embargo, la normativa vigente NCh2369:2025, adoptada en la presente memoria, incorpora requisitos adicionales para la clasificación del suelo, tales como el período fundamental del sitio (Tg), el perfil estratigráfico del terreno, y establece como requisito la determinación tanto de Vs30 como de Tg mediante las metodologías señaladas en la NCh3793:2025.
+199	En particular, la NCh3793:2025 establece que la obtención de estos parámetros no debe realizarse mediante el método ReMi, el cual es utilizado en el informe previamente citado, si no que se recomienda el uso de métodos activos (MASW, f-k) y pasivos (SPAC, ESAC). Es por esta razón que se adoptan los valores descritos anteriormente.
+207	Parámetros para el análisis sísmico
+208	La solicitación sísmica en cada modelo estructural se determina mediante el método de coeficientes sísmicos, conforme a lo establecido en la norma chilena NCh2369:2025. Para ello, se consideran los criterios indicados en el Capítulo 5.5 para la evaluación de las solicitaciones sísmicas horizontales y en el Capítulo 5.7 para la determinación de la solicitación sísmica vertical.
+210	La acción sísmica horizontal se determina empleando el coeficiente sísmico máximo estipulado en la Sección 5.13 de la normativa, en función del tipo de suelo. Por su parte, la acción sísmica vertical se define también en función del tipo de suelo considerado para el proyecto, de acuerdo con lo establecido en la normativa vigente.
+212	Los valores del factor de modificación de la respuesta sísmica y de la razón de amortiguamiento se adoptan clasificando los equipos apoyados sobre las fundaciones como “otras estructuras no incluidas o asimilables a las de la lista”. En función de esta clasificación, se considera un factor de modificación de la respuesta sísmica R = 1,5 y una razón de amortiguamiento ξ = 0,02.
+214	De acuerdo con lo anteriormente expuesto, se definen a continuación los parámetros utilizados para el análisis sísmico de la estructura:
+216	Tabla -: Parámetros considerados para el análisis sísmico.
+222	Adicionalmente, como se realiza la verificación de los pedestales que soportaran los equipos, es necesario considerar el estado de carga sísmico horizontal amplificado según lo señalado en la Sección 9.5 de la NCh2369:2025. De esta manera, se tienen los siguientes coeficientes para estados sísmico horizontal amplificado:
+224	Tabla -: Parámetros considerados para el análisis sísmico amplificado.
+226	Modelos computacionales
+227	Con el fin de representar adecuadamente el comportamiento del sistema estructural, se desarrollan modelos computacionales mediante el método de elementos finitos, utilizando el software SAP2000. En dichos modelos, la losa de hormigón armado que conforma la estructura es representada mediante elementos tipo Shell-Thick, mientras que las vigas de hormigón y pedestales son modeladas mediante elementos Frame.
+229	A continuación, se presentan los diferentes modelos computacionales con sus características respectivas:
+232	Figura -: Modelo computacional de fundación de contenedor [m].
+235	Figura -: Modelo computacional de fundación de contenedor extruido.
+237	La interacción suelo-estructura es considerada mediante la incorporación de resortes de rigidez equivalentes a la del suelo, según lo señalado en la Sección 2.5. De esta manera, el módulo de balasto es incorporado en los modelos estructurales, como se muestra a continuación:
+240	Figura -: Asignación de módulo de balasto en modelo de contenedor [tonf/m3].
+249	Estados de carga
+250	Cargas permanente (D)
+251	Cargas por peso propio (DEAD)
+252	El peso propio de la estructura es determinado directamente a partir del modelo de elementos finitos, el cual calcula esta solicitación en función de las dimensiones de las secciones definidas y del peso específico de los materiales asignados. De esta manera, el peso propio queda automáticamente incorporado en el análisis estructural.
+254	Carga por peso de equipo (DEquipo)
+255	La carga de peso propio de contenedor es obtenida a partir de lo señalado en el documento “TÉRMINOS DE REFERENCIA INGENIERÍA DE DETALLE OBRAS CIVILES Y ESTRUCTURAS METÁLICAS MÓDULO RO SEGUNDA ETAPA PARA SALMUERA – PD TALTAL”, donde se menciona en el punto 2.1.2 que corresponde a 17.334 [tonf].
+257	De esta manera, el peso es incorporado en el modelo computacional en el centroide geométrico correspondiente. Posteriormente, dicha carga se compatibiliza en el tope de los pedestales que soportan estos equipos mediante restricciones de cuerpo de tipo Body, representándose de la siguiente manera:
+260	Figura -: Asignación de peso de contenedor [tonf].
+266	Sobrecargas (SC)
+267	Sobrecarga (L)
+268	Dado que dentro del contenedor puede existir circulación ocupacional producto de tránsito peatonal, cargas, descargas o mantención, se considera la aplicación de una sobrecarga de uso conforme a lo establecido en la NCh1537:2009, la cual para oficinas privadas sin equipos especifica una sobrecarga de 250 kgf/m2.
+270	Por otro lado, dado que en el modelo no existe una superficie sobre la cual aplicar directamente esta carga distribuida, la sobrecarga de uso es incorporada como una carga concentrada equivalente, ubicada en el centro de la masa correspondiente de cada contenedor. Para ello, se determina previamente la carga puntual y se ingresa en el modelo computacional como se detalla a continuación:
+273	De esta manera, aplicando la carga en cada modelo computacional respectivo, se tiene lo siguiente:
+276	Figura -: Aplicación de sobre carga en modelo computacional de contenedor [tonf].
+288	Cargas sísmicas (Ex, Ey y Ez)
+289	Tal como se indicó previamente, la solicitación sísmica se aplica al modelo estructural mediante el método de coeficientes sísmicos. En este enfoque, las cargas sísmicas se introducen en el modelo como aceleraciones equivalentes, las cuales se determinan multiplicando el coeficiente sísmico correspondiente por la aceleración de la gravedad (9,81 m/s2). De esta forma, se tiene lo siguiente:
+291	Figura -: Aplicación de carga sísmica en el eje X [m/s2].
+293	Figura -: Aplicación de carga sísmica en el eje Y [m/s2].
+295	Figura -: Aplicación de carga sísmica en el eje Z [m/s2].
+297	Figura -: Aplicación de carga sísmica en el eje X (Amplificada) [m/s2].
+299	Figura -: Aplicación de carga sísmica en el eje Y (Amplificada) [m/s2].
+300	Combinaciones de carga
+301	Para la verificación de presiones de contacto y la estabilidad de las fundaciones, se emplean las combinaciones de carga definidas según el método de tensiones admisibles (ASD). De esa manera, las combinaciones consideradas se basan en las disposiciones establecidas en las normas NCh2369:2025 y NCh3171:2017, con el objeto de incorporar las acciones existentes.
+303	Tabla -: Combinaciones de carga ASD.
+306	Por otra parte, para el diseño y verificación de la resistencia de los elementos de hormigón armado, se adoptan las mismas hipótesis de carga anteriormente definidas, pero formuladas conforme al método de diseño por resistencia (LRFD), de acuerdo con lo establecido en las normativas antes mencionadas. De esta manera resultan las siguientes combinaciones de carga:
+308	Tabla -: Combinaciones de carga LRFD.
+311	Donde el parámetro “a” utilizado corresponde a 0,5, valor establecido por la norma NCh2369:2025 para zonas de acopio con baja tasa de rotación.
+312	Cabe mencionar que la acción sísmica indicada en la tabla anterior se determina de acuerdo con lo establecido en la NCh2369:2025, donde el cálculo de la acción sísmica sobre la estructura considera el efecto bidireccional de la acción sísmica horizontal, tal como se muestra a continuación:
+314	Tabla -: Cálculo de la acción sísmica.
+319	Análisis estructural
+320	En las secciones siguientes se presenta el análisis y la verificación estructural de la solución propuesta. En primera instancia, se realiza la verificación de las presiones de contacto y porcentaje de apoyo, para posteriormente continuar con la verificación de los elementos estructurales.
+321	Tensiones admisibles y porcentaje de apoyo
+322	En el presente apartado se realizan las verificaciones de tensiones admisibles y porcentajes de áreas apoyadas. Donde, a partir del modelo estructural se determinan las tensiones transmitidas al terreno tanto en condición estática como dinámica. Estas solicitaciones se utilizan para verificar que las tensiones de contacto sean inferiores a las tensiones admisibles consideradas para cada caso de carga.
+324	Cabe señalar que la verificación de porcentaje de apoyo de la fundación es realizada mediante los siguientes criterios de aceptación:
+326	100% de apoyo en condición estática.
+327	80% de apoyo en condición dinámica.
+330	Figura -: Tensión máxima transmitida al suelo (Obtenida por envolvente caso estático) [kgf/cm2].
+332	Figura -: Tensión máxima transmitida al suelo (Obtenida por envolvente caso dinámico) [kgf/cm2].
+334	Como se puede observar en las figuras anteriores, las tensiones máximas transmitidas al terreno, tanto en condición estática como dinámica resultan inferiores a los límites admisibles. En consecuencia, se concluye que las presiones están dentro de los rangos portantes de suelo.
+336	Tabla -: Resumen de presiones de contacto máximas transmitidas.
+349	Respecto de los porcentajes de apoyo para condición de análisis, tanto en condición estática como dinámica, se obtienen los valores presentados a continuación, en donde, el área en compresión está representada por un color morado, mientras que área traccionada, es decir la que presenta pérdida de apoyo, se presenta de color azul:
+351	Figura -: Porcentaje de apoyo en condición estática.
+354	Figura -: Porcentaje de apoyo en condición dinámica.
+356	Como se puede ver en cada una de las imágenes mostradas anteriormente, se presenta 100% de apoyo tanto en condición dinámica como estática, frente a cada una de las combinaciones de cargas consideradas.
+360	Verificación de inserto de hormigón – Contenedor
+361	Debido a la necesidad de materializar la unión entre los pedestales y el contenedor, se propone el uso de una conexión soldada a un inserto embebido en el hormigón. Conforme a lo establecido en la norma NCh427/1, la verificación se realiza considerando una soldadura ejecutada con electrodo tipo E70 y un sistema de anclaje compuesto por 4 pernos tipo Stud.
+363	De esta manera, efectuando las verificaciones para la máxima fuerza de corte actuante, se obtiene lo siguiente:
+366	Diseño de pedestales
+367	En el presente apartado se desarrolla el diseño de los pedestales de hormigón armado considerados para la estructura, el cual se realiza de acuerdo con lo establecido en la norma ACI 318-19 para cada una de las combinaciones de cargas señaladas anteriormente.
+369	El diseño de los pedestales se verifica considerando las reacciones máximas obtenidas en los puntos de apoyo del modelo estructural considerando la amplificación de cargas horizontales según lo indicado en Capitulo 9.5.2 de la NCh2369:2025. A partir del análisis, se obtienen las siguientes verificaciones.
+399	Pedestal 50 cm x 50 cm – Contenedor
+400	Las características de armado del pedestal son las siguientes:
+402	Tabla -: Características de pedestal considerado.
+405	A continuación, se presenta la verificación frente a las solicitaciones que experimenta el pedestal:
+425	Diseño de viga 30 cm x 30 cm - Contenedor
+426	En el siguiente apartado, se presenta el diseño de las vigas del sistema de fundación del contenedor. Dicho diseño es realizado en función de los esfuerzos máximos de flexión y corte existentes en los elementos Frame, los cuales son los siguientes:
+428	Figura -: Esfuerzos máximos de corte y flexión existente en vigas 30/30.
+444	Flexión
+445	Realizando la verificación correspondiente a flexión, se adopta una armadura de 2Ø12 tanto en la cara superior como inferior en las vigas de hormigón. De esta manera, se cumple con los requisitos de resistencia como se puede ver a continuación:
+459	Corte
+460	Realizando la verificación frente a la fuerza cortante, se concluye que la viga debe de ser provista de estribos Ø10@100. De esta manera, las vigas se cumplen con los requisitos de resistencia como se puede ver a continuación:
+470	Diseño de losas - Flexión
+471	En el siguiente apartado se realizan las verificaciones a flexión de los elementos tipo Shell de hormigón armado. Esta verificación es realizada a partir de los esfuerzos máximos en términos absolutos obtenidos de modelo estructural en cada dirección, considerando las combinaciones de carga descritas anteriormente.
+473	En las tablas presentadas a continuación se presenta la armadura de refuerzo proyectada para la totalidad de las losas:
+475	Tabla -: Armadura dispuesta armadura superior.
+477	Tabla -: Armadura dispuesta armadura inferior.
+497	A continuación, se presentan los esfuerzos máximos obtenidos del modelo estructural:
+500	Figura -: Momento máximo sentido 11 (Obtenido por envolvente) [tonf·m/m].
+503	Figura - Momento mínimo sentido 11 (Obtenido por envolvente) [tonf·m/m].
+505	Figura -: Momento máximo sentido 22 (Obtenido por envolvente) [tonf·m/m].
+510	Figura -: Momento mínimo sentido 22 (Obtenido por envolvente) [tonf·m/m].
+514	De esta manera, verificando la armadura dispuesta, se tiene lo siguiente:
+542	Verificación de losas - Corte
+543	En el presente apartado se realiza la verificación de corte para los elementos de hormigón armado. Esta verificación es realizada a partir de los esfuerzos máximos en términos absolutos obtenidos de modelo estructural en cada dirección, considerando las combinaciones de carga estáticas y sísmicas. De esta manera, se busca que la sección de hormigón sea capaz de soportar los efectos cortantes sin necesidad de acero de refuerzo.
+545	A continuación, se presentan los esfuerzos máximos obtenidos del modelo estructural:
+548	Figura -: Corte máximo sentido 13 (Obtenido por envolvente) [tonf/m].
+551	Figura -: Corte mínimo sentido 13 (Obtenido por envolvente) [tonf/m].
+554	Figura -: Corte máximo sentido 23 (Obtenido por envolvente) [tonf/m].
+557	Figura -: Corte máximo sentido 23 (Obtenido por envolvente) [tonf/m].
+583	De esta manera, realizando la verificación correspondiente, se tiene lo siguiente:
+593	Conclusiones
+594	A partir de los análisis y verificaciones realizadas, se concluye que el sistema estructural propuesto, cumple con los criterios de resistencia, estabilidad y tensiones admisibles establecidos en las normativas y códigos utilizados.
+596	En consecuencia, se valida la factibilidad técnica y estructural de la solución propuesta, concluyéndose que el sistema diseñado es apto para su implementación y operación segura bajo las condiciones definidas para el proyecto.
+
+=== TABLAS ===
+--- TABLA 0 (8x8) ---
+ |  |  |  |  |  |  | 
+2 | 17-06-2026 | Para Uso e Información | P.Vargas | M.Vera | P.Castillo | Y.Rodriguez | L.Rivera
+1 | 03-06-2026 | Para Uso e Información | P.Vargas | M.Vera | P.Castillo | Y.Rodriguez | L.Rivera
+0 | 28-05-2026 | Para Uso e Información | P.Vargas | M.Vera | P.Castillo | Y.Rodriguez | L.Rivera
+B | 14-05-2026 | Revisión Cliente | P.Vargas | M.Vera | P.Castillo | Y.Rodriguez | L.Rivera
+A | 10-05-2026 | Coordinación Interna | P.Vargas | M.Vera | P.Castillo |  | 
+REV. | FECHA | EMISIÓN | POR | J.E. | J.P. | REV. | APR.
+REV. | FECHA | EMISIÓN | L&A Ingeniería y Proyectos | L&A Ingeniería y Proyectos | L&A Ingeniería y Proyectos | Aguas Antofagasta | Aguas Antofagasta
+--- TABLA 1 (4x3) ---
+Parámetro | Valor | Unidad
+Resistencia a la compresión | 25 | MPa
+Módulo de elasticidad | 238.752 | kgf/cm2
+Peso específico | 2.500 | kgf/m3
+--- TABLA 2 (4x3) ---
+Parámetro | Valor | Unidad
+Tensión de fluencia | 420 | MPa
+Módulo de elasticidad | 2.100.000 | kgf/cm2
+Peso específico | 7.850 | kgf/m3
+--- TABLA 3 (2x3) ---
+Parámetro | Valor | Unidad
+Tensión nominal del electrodo | 70 | ksi
+--- TABLA 4 (5x3) ---
+Parámetro | Valor | Unidad
+Módulo de balasto | 3.000,00 | tonf/cm3
+Tensión admisible caso estático | 1,00 | kgf/cm2
+Tensión admisible caso dinámico | 1,00 | kgf/cm2
+Tipo de suelo | E | -
+--- TABLA 5 (8x3) ---
+Parámetro | Valor | Unidad
+Zona sísmica | 3 | -
+Tipo de suelo | E | -
+Aceleración efectiva máxima, (Ag) | 0,40 | g
+Aceleración efectiva de referencia, (Ar) | 0,56 | g
+Factor de importancia, (I) | 0,80 | -
+Coeficiente sísmico horizontal en la dirección horizontal | 0,72 | -
+Coeficiente sísmico en la dirección vertical | 0,45 | -
+--- TABLA 6 (2x3) ---
+Parámetro | Valor | Unidad
+Coeficiente sísmico horizontal en la dirección horizontal amplificado | 0,75 | -
+--- TABLA 7 (7x2) ---
+Combinaciones de carga | Combinaciones de carga
+1) | 0,6D
+2) | D
+3) | D+L
+4) | D+0,75L
+5) | D+0,75aL+0,7E
+6) | D+0,7E
+--- TABLA 8 (8x2) ---
+Combinaciones de carga | Combinaciones de carga
+1) | 0,9D
+2) | 1,2D
+3) | 1,4D
+4) | 1,2D+L
+5) | 1,2D+1,6L
+6) | 1,2D+aL+E
+7) | 0,9D+E
+--- TABLA 9 (4x2) ---
+Combinaciones de la acción sísmica | Combinaciones de la acción sísmica
+1) | ± 1,0EX ± 0,3Ey ± 0,3EZ
+2) | ± 0,3EX ± 1,0Ey ± 0,3EZ
+3) | ± 0,3EX ± 0,3Ey ± 1,0EZ
+--- TABLA 10 (3x3) ---
+Condición | Presión de contacto [kgf/cm2] | Condición
+Estática | 0,47 | Cumple
+Dinámica | 0,66 | Cumple
+--- TABLA 11 (5x3) ---
+Parámetro | Valor | Unidad
+Largo | 50 | cm
+Ancho | 50 | cm
+Número de barras | 12 | unidades
+Diámetro de barras | 12 | mm
+--- TABLA 12 (3x3) ---
+Parámetro | Valor | Unidad
+Diámetro | 12 | mm
+Espaciamiento | 200 | mm
+--- TABLA 13 (3x3) ---
+Parámetro | Valor | Unidad
+Diámetro | 12 | mm
+Espaciamiento | 200 | mm

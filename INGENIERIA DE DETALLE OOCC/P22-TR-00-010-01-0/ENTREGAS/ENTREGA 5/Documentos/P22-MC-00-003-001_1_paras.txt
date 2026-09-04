@@ -1,0 +1,411 @@
+2	Cliente: Aguas Antofagasta
+3	Nro. Proyecto:
+4	Descripción: “”
+16	CONTENIDO
+17	1	Introducción	3
+18	1.1	Generalidades	3
+19	1.2	Objetivos	4
+20	2	Bases de cálculo	4
+21	2.1	Normativa	4
+22	2.2	Códigos y Manuales	5
+23	2.3	Materiales	5
+24	2.4	Parámetros Para Análisis Sísmico	6
+25	2.5	Deformaciones Admisibles	8
+26	2.5.1	Deformaciones Laterales Debido a Carga Sísmica	8
+27	2.5.2	Deformaciones Verticales de Vigas Enrejadas Principales	8
+28	2.5.3	Deformaciones Verticales de Vigas Principales	8
+29	2.5.4	Deformaciones Verticales de Costaneras	8
+30	3	Modelo Computacional	9
+31	3.1	Secciones de Estructura Metálica	10
+32	4	Estado de Cargas: Estructura Metálica Cobertizo	17
+33	4.1	Cargas Permanentes (D)	17
+34	4.1.1	Carga de Peso Propio: Secciones Estructura Metálica	17
+35	4.1.2	Carga de Peso Propio: Planchas PV-6 0,5 mm	17
+36	4.2	Cargas de Viento (W+ y W-)	18
+37	4.3	Sobrecarga de Techo Sobre Cobertizo (Lr)	19
+38	4.4	Carga Sísmica (Ex y Ey)	20
+39	4.5	Carga Sísmica (Ez)	21
+40	4.6	Combinación de Carga	22
+41	5	Análisis Estructural	24
+42	5.1	Factores de Utilización de la Estructura	24
+43	5.2	Deformaciones Admisibles	27
+44	5.2.1	Deformaciones Laterales Debido a Carga Sísmica	27
+45	5.2.2	Deformaciones Verticales Viga Principal de Techo	28
+46	5.2.3	Deformaciones Verticales Viga Enrejada de Techo	29
+47	5.2.4	Deformaciones Verticales Costaneras	30
+48	6	Diseño de Fundaciones	31
+49	6.1	Capacidad Admisible del Suelo	31
+50	6.2	Superficie de Contacto y Estabilidad de Fundaciones	33
+51	6.3	Diseño de Anclaje y Placa Base	34
+52	6.4	Diseño de Pedestal	36
+53	6.5	Diseño de Zapata	38
+54	7	Conclusiones	43
+57	Introducción
+58	Generalidades
+59	Aguas Antofagasta ha solicitado los servicios de L&A Ingeniería y Proyectos para el diseño de las estructuras metálicas del proyecto “ID Módulo RO 2da Etapa Para Salmuera”. El Proyecto se ubica en la ciudad de Antofagasta, Región de Antofagasta, Chile.
+60	En la Figura 1-1 se observa de forma esquemática la estructura de cobertizo de los equipos del módulo RO.
+62	Figura -: Maqueta Esquemática SAP2000 de Cobertizo
+63	Objetivos
+64	El estudio de la presente Memoria contempla el análisis de los siguientes parámetros:
+65	Diseño y verificación de los elementos de acero estructural.
+66	Diseño y verificación de los elementos estructurales de hormigón armado: fundaciones.
+67	Verificación de la estabilidad del suelo donde se apoyan las fundaciones de la estructura.
+68	Bases de cálculo
+69	Normativa
+70	Se considera la siguiente normativa para la elaboración de la presente Memoria de Cálculo.
+71	NCh203 2006		:	Acero para uso estructural - Requisitos
+72	NCh427/1 2016	:	Construcción – Estructuras de acero – Parte 1:					Requisitos para el cálculo de estructuras de acero				para edificios
+73	NCh1537 2009	:	Diseño estructural – Cargas permanentes y cargas				de uso
+74	NCh2369:2003:		Diseño sísmico de estructuras e instalaciones
+75	industriales
+76	NCh2369 2025	:	Diseño sísmico de estructuras e instalaciones					industriales
+77	NCh3171 2017	:	Disposiciones generales y combinaciones de carga
+78	NCh430 2008		: 	Hormigón armado – Requisitos de diseño y cálculo
+79	NCh432 2010		:	Cargas de Viento
+82	Códigos y Manuales
+83	Se consideran los siguientes códigos y manuales para la elaboración de la presente Memoria de Cálculo.
+84	• ACI318-19			:	Requisitos de Reglamento para Concreto Estructural
+85	Materiales
+86	Para el acero estructural se considera un acero ASTM A36, cuyas propiedades mecánicas de diseño se detallan en la Tabla 2-1.
+87	Tabla -: Propiedades mecánicas del acero estructural
+89	Sistema de protección superficial, clasificación de corrosividad según ISO 12944-2:      C5-M (costa marina) con durabilidad requerida Alta (>15 años) conforme ISO 12944-5. El revestimiento deberá cumplir con el siguiente sistema mínimo:
+90	Tabla 2-2: Propiedades mecánicas del acero estructural
+91	Color de acabado RAL 5012 (Azul Luminoso). La aplicación de cada capa deberá realizarse según las recomendaciones del fabricante, con inspecciones de calidad en cada etapa.
+92	Para el hormigón armado se considera un hormigón G25, cuyas propiedades mecánicas se detallan en la Tabla 2-2.
+93	Tabla -: Propiedades mecánicas del hormigón armado
+95	Para el acero de refuerzo del concreto armado se consideran barras corrugadas calidad A630-420H, cuyas propiedades mecánicas se resumen en la Tabla 2-3.
+96	Tabla -: Propiedades mecánicas del acero de refuerzo
+98	Parámetros Para Análisis Sísmico
+99	Para la estructura diseñada se considera un coeficiente máximo para el sismo horizontal según la tabla 5.7 de la NCh2369. Para el sismo vertical se considera lo señalado en el punto 5.5.1 b) de la NCh2369. La estructura se clasifica como un marco de acero apernado y dúctil con elementos no estructurales no dilatados, por ende, se usa una razón de amortiguamiento igual a 0,03 y un factor de modificación de respuesta igual a 3. En la Tabla 2-4 se resumen los parámetros mencionados. Finalmente, en la Tabla 2-5 se indican los parámetros de suelo para definir la aceleración sísmica.
+100	Tabla -: Parámetros Para Análisis Sísmico
+102	Tabla -: Parámetros de Suelo Para Análisis Sísmico
+104	Los parámetros de suelo indicados en la tabla anterior se adoptan pese a lo señalado en el informe de estudio sísmico “INFORME ESTUDIO SISMICO INSTALACIONES AGENCIA ZONAL TALTAL, AGUAS ANTOFAGASTA – LNS-ADASA-INF-040-Rev0”. Esto se debe a que la clasificación de suelos presentada en dicho informe se basa en lo establecido por la NCh2369:2003, la cual define el tipo de suelo principalmente en función de la velocidad de propagación de ondas de corte (Vs30).
+105	Sin embargo, la normativa vigente NCh2369:2025, adoptada en la presente memoria, incorpora requisitos adicionales para la clasificación del suelo, tales como el período fundamental del sitio (Tg), el perfil estratigráfico del terreno, y establece como requisito la determinación tanto de Vs30 como de Tg mediante las metodologías señaladas en la NCh3793:2025.
+106	En particular, la NCh3793:2025 establece que la obtención de estos parámetros no debe realizarse mediante el método ReMi, el cual es utilizado en el informe previamente citado, si no que se recomienda el uso de métodos activos (MASW, f-k) y pasivos (SPAC, ESAC). Es por esta razón que se adoptan los valores descritos anteriormente.
+113	Deformaciones Admisibles
+114	A continuación, se detallan las deformaciones y desplazamientos admisibles considerados para el diseño de la estructura proyectada.
+116	Deformaciones Laterales Debido a Carga Sísmica
+117	Se acepta una deformación lateral de entrepiso admisible calculada según la sección 6 de la NCh2369.
+119	Donde H es la altura del entrepiso a analizar.
+121	Deformaciones Verticales de Vigas Enrejadas Principales
+122	Se acepta una deformación límite para las vigas enrejadas para las cargas de servicio calculada como:
+124	Donde L es la luz de la viga a analizar.
+125	Deformaciones Verticales de Vigas Principales
+126	Se acepta una deformación límite para las vigas para las cargas de servicio calculada como:
+128	Donde L es la luz de la viga a analizar.
+130	Deformaciones Verticales de Costaneras
+131	Se acepta una deformación límite para las vigas para las cargas de servicio calculada como:
+133	Donde L es la luz de la viga a analizar.
+137	Modelo Computacional
+138	En el presente capítulo se detalla el análisis empleado en el diseño de las estructuras de acero.
+139	Para el análisis se emplea un modelo en elementos finitos utilizando el software SAP2000. En él, se modelan los miembros estructurales de acero como elementos tipo frame y con tipos de conexión que simulen las condiciones reales. Además, se usan secciones de área del tipo “none” para poder aplicar cargas de área y repartirlas sobre los elementos frame por área tributaria.
+140	En la Figura 3-1 se muestra una vista isométrica general del modelo, junto con sus medidas principales.
+143	Figura -: Modelo computacional vista isométrica. [mm]
+144	Secciones de Estructura Metálica
+145	Entre la Figura 3-2 y Figura 3-9 se muestran las secciones de los perfiles utilizados en la estructura de cobertizo de los equipos. En particular, con puntos verdes se representan las uniones apernadas que se consideran para la estructura.
+148	Figura -: Esquema de Ejes Estructura de Cobertizo.
+150	Figura -: Secciones Eje A.
+152	Figura -: Secciones Eje B.
+154	Figura -: Secciones Eje C.
+156	Figura -: Secciones Eje 1.
+158	Figura -: Secciones Eje 2.
+160	Figura -: Secciones Planta de Techo Cobertizo.
+170	Estado de Cargas: Estructura Metálica Cobertizo
+171	En el presente capítulo se detallan las cargas consideradas en el análisis y la aplicación de estas en el modelo.
+172	Cargas Permanentes (D)
+173	Carga de Peso Propio: Secciones Estructura Metálica
+174	El peso propio de los elementos estructurales es calculado automáticamente por el software, utilizando las densidades detalladas en la Tabla 2-1. En la Tabla 4-1 se muestra el peso total de la estructura metálica.
+175	Tabla -: Pesos total
+176	Carga de Peso Propio: Planchas PV-6 0,5 mm
+177	Para el peso propio de la cañería se considera un peso por superficie igual a 3,99 kgf/m2. En la Figura 4-1 se muestra la aplicación de dicha carga.
+179	Figura -: Aplicación de Carga Peso Propio Planchas PV-6 0,5 mm. [kgf/m2]
+180	Cargas de Viento (W+ y W-)
+181	Para la carga de viento se considera lo estipulado por el capítulo 7.13 de la norma NCh 432 of. 2010 para estructuras abiertas de una sola pendiente para definir los coeficientes de presión positiva y de succión en conjunto al capítulo 7 para definir la carga de distribución y el factor de ráfaga correspondiente por medio del método analítico. En la Figura 4-2 y en la Figura 4-3 se detalla la aplicación de dicha carga, destacando que el cálculo de esta se presenta en el anexo A2: “Cálculo de Cargas de Viento”
+183	Figura -: Carga de Viento Positiva Sobre Techo. [kgf/m2]
+185	Figura -: Carga de Viento Negativa Sobre Techo. [kgf/m2]
+186	Sobrecarga de Techo Sobre Cobertizo (Lr)
+187	Para la carga viva debido al mantenimiento de techo se considera lo indicado en la NCh1537 of 2009, la que se muestra en la Figura 4-4 aplicada en SAP2000 de la sobrecarga de uso en la zona del techo del cobertizo, equivaliendo a 102 kgf/m2 según los parámetros indicados en la norma para el cálculo de esta carga. El detalle de su obtención se muestra en el anexo A3: “Sobrecarga de Techo”
+189	Figura -: Sobrecarga de Techo en Cobertizo. [kgf/m2]
+190	Carga Sísmica (Ex y Ey)
+191	La solicitación sísmica de la estructura se obtiene mediante aplicar el método de análisis estático según lo indicado en la norma NCh 2369:2025 en la cual se menciona en el capítulo 5.5 donde se aplica el coeficiente sísmico correspondiente al periodo de la estructura tanto en la dirección X como Y. Para esto, se verifica el periodo en conjunto a que la participación de masa en el análisis modal realizado en SAP2000 para cada eje de la estructura supere al 90%. El resultado de esto se encuentra en la Tabla 4-2.
+192	A partir de dichos periodos se aplican las cargas sísmicas por medio de los coeficientes sísmicos multiplicando aquellos valores por 9.81 m/s2. La aplicación de las cargas en el modelo se ve en la Figura 4-5 y la Figura 4-6.
+194	Tabla -: Coeficientes Sísmicos Estructura de Cobertizo
+197	Figura -: Aplicación de la Aceleración Sísmica en la Dirección X, Similar Dirección Y. [m/s2]
+198	Carga Sísmica (Ez)
+199	La aceleración vertical se aplica al modelo incorporando el coeficiente sísmico indicado en la Tabla 2-4 como se muestra en la Figura 4-6.
+200	Coeficiente sísmico vertical (Z) = 0,74 x g = 7,26 m/s2
+203	Figura -: Aplicación de la Aceleración Sísmica en la Dirección Z. [m/s2]
+204	Combinación de Carga
+205	Para la verificación de los elementos estructurales de acero y verificación de estabilidad de fundaciones se utilizan las combinaciones de carga del método de diseño por tensiones admisibles (ASD en sus siglas en inglés), y que se detallan en la Tabla 4-3.
+206	Tabla -: Combinaciones Según Diseño ASD
+208	Para el diseño por resistencia de la armadura de los pedestales y zapata se utilizan las combinaciones de carga de método de diseño por resistencia (LRFD en sus siglas en inglés), y que se detallan en la Tabla 4-4.
+211	Tabla -: Combinaciones Según Diseño LRFD
+213	Además, cabe agregar que siguiendo los indicado por la NCh 2369:2025, el cálculo de las cargas sísmicas se considera de forma simultánea para los tres ejes cartesianos (X, Y y Z). Por lo tanto, la carga sísmica “E” indicada en la Tabla 4-3 y Tabla 4-4 se define según lo que se muestra en la Tabla 4-5 siguiendo lo establecido por la NCh 2369:2025 en el punto 4.5.2.
+214	Tabla -: Combinaciones de Carga Sísmica Según NCh2369
+227	Análisis Estructural
+228	La verificación de los perfiles de acero se realiza considerando las combinaciones de carga por tensiones admisibles (ASD).
+229	En los siguientes subcapítulos, se verifica la resistencia de los perfiles de acero, mediante los procedimientos de análisis dispuestos en el código AISC360-2016 (de la cual se basa la norma NCh427/1 2016).
+230	Factores de Utilización de la Estructura
+231	Para determinar si las secciones de los perfiles de acero que conforman la estructura son adecuadas y cumplen los criterios de diseño se verifica que sus factores de utilización sean menores a 1.
+232	En la Tabla 5-1 se observan los rangos utilizados para identificar los factores de utilización que presentan los elementos estructurales.
+233	Tabla -: Rangos utilizados para identificar los factores de utilización de los elementos estructurales
+235	En la Figura 5-1 se presentan los factores de utilización máximos de los perfiles que conforman la estructura.
+245	Figura -: Factores de Utilización Estructura Metálica
+247	Figura -: Factores de Utilización Costaneras
+254	Deformaciones Admisibles
+255	Se verifican las deformaciones admisibles de las columnas de acuerdo con los criterios indicados en el capítulo 2.5.
+256	Deformaciones Laterales Debido a Carga Sísmica
+257	En la Figura 5-3 se muestra la deformación sísmica máxima para la combinación de carga D+0,7(Ey-0,3Ex+0,3Ez). En la Tabla 5-2 se resume la verificación de la deformación sísmica.
+259	Figura -: Deformación Sísmica Lateral Máxima. [mm]
+260	Tabla -: Resumen Verificación Deformación Sísmica
+261	Deformaciones Verticales Viga Principal de Techo
+262	En la Figura 5-4 se muestra la deformación por carga de servicio máxima para la viga principal de techo debido a la combinación de carga D+0,75W+0,75Lr. En la Tabla 5-3 se resume la verificación de la deformación por cargas de servicio.
+264	Tabla -: Resumen Verificación Deformación Vertical Viga Principal de Techo
+267	Figura -: Deformación Vertical Viga de Techo. [mm]
+268	Deformaciones Verticales Viga Enrejada de Techo
+269	En la Figura 5-5 se muestra la deformación por carga de servicio máxima para la viga enrejada de techo debido a la combinación de carga D+0,75W+0,75Lr. En la Tabla 5-4 se resume la verificación de la deformación por cargas de servicio.
+270	Tabla -: Resumen Verificación Deformación Vertical Viga Enrejada
+273	Figura -: Deformación Vertical Viga Enrejada de Techo. [mm]
+275	Deformaciones Verticales Costaneras
+276	En la Figura 5-6 se muestra la deformación por carga de servicio máxima para la viga enrejada de techo debido a la combinación de carga D+0,75W+0,75Lr. En la Tabla 5-5 se resume la verificación de la deformación por cargas de servicio.
+277	Tabla -: Resumen Verificación Deformación Vertical Costaneras
+280	Figura -: Deformación Vertical Costanera. [mm]
+284	Diseño de Fundaciones
+286	Capacidad Admisible del Suelo
+287	Se verifican las tensiones admisibles según lo indicado en la Tabla 6-1, de acuerdo con lo siguiente:
+288	Tabla -: Resumen Verificación Deformación Sísmica
+290	Las tensiones resultantes del suelo para el caso estático son las siguientes:
+292	Figura -: Tensiones Resultantes Caso Estático [kgf/cm2]
+Combinación D+Lr
+294	Figura -: Tensiones Resultantes Caso Sísmico [kgf/cm2]
+Combinación D+0,7(Ex+0,3Ey-0,3Ez)
+295	Según las figuras anteriores se verifican las tensiones admisibles de acuerdo con la siguiente tabla:
+296	Tabla -: Resumen Verificación Tensiones de Contacto
+298	Superficie de Contacto y Estabilidad de Fundaciones
+299	La estabilidad al volcamiento se verifica según lo indicado a continuación:
+301	Caso estático: Fundaciones un 100% de la superficie en contacto con el suelo
+302	Caso sísmico: Fundaciones con al menos un 80% de la superficie en contacto con el suelo
+304	Debido a que las tensiones para el caso estático son todas negativas (Figura 6-1) se verifica el primer criterio. Las tensiones resultantes para el caso sísmico más desfavorables al volcamiento se muestran en la siguiente figura:
+306	Figura -: Tensiones Resultantes Caso Sísmico [kgf/cm2]
+Combinación D+0,7(Ey-0,3Ex-0,3Ez)
+307	Luego, se verifica la estabilidad al volcamiento según la siguiente tabla:
+308	Tabla -: Resumen Verificación Porcentaje de Contacto
+310	Diseño de Anclaje y Placa Base
+311	Para el diseño de la placa base y el anclaje se realiza un modelo en el programa Profis Engineering a partir del cual se calcula el estado de carga que tendrán los pernos ante los diversos casos de falla estudiados según la ACI318-19. El modelo contemplado para este proceso se muestra en la Figura 6-4 donde se muestran los anclajes para los pilares de la estructura.
+313	Figura -: Esquema de Sistema de Anclaje. [mm]
+314	A este se le aplica la carga máxima de momento, de compresión y corte sobre el pedestal. Se realiza la aplicación de las cargas en el punto medio o centro de masa de la sección tubular, tal y como se muestra en la Tabla 6-4 considerando el punto de unión entre el elemento y el pedestal.
+315	Tabla -: Cargas de Diseño de Anclajes
+317	El estado de carga se resume en la Tabla 6-5 en la cual se presenta el detalle del factor de utilización de cada una de las posibles fallas que se puedan dar por el desprendimiento de los pernos de anclaje. El detalle del cálculo de ambos se presenta en el anexo B5.
+318	Tabla -: Resumen Diseño Sistema de Anclajes
+328	Diseño de Pedestal
+329	Las propiedades del pedestal se muestran en la Tabla 6-6.
+330	Tabla -: Propiedades Geométricas Pedestal
+332	En la Tabla 6-7 se muestra el máximo momento y corte solicitante para el diseño de los pedestales.
+333	Tabla -: Cargas de Diseño de Pedestal
+335	En el anexo B1 se muestra el cálculo de la resistencia a flexo compresión y corte del pedestal. En la Figura 6-5 se muestra el resumen del diseño del pedestal a la carga combinada de compresión y momento, mientras que en la Tabla 6-8 se presenta el resumen del diseño ante la carga de cortante por parte del pedestal.
+337	Figura -: Resistencia a Flexo Compresión de Pedestal
+338	Tabla -: Resumen Diseño Pedestal
+346	Diseño de Zapata
+347	Las propiedades de la zapata se muestran en la Tabla 6-9.
+348	Tabla -: Resumen Diseño Pedestal
+350	En la Figura 6-6, Figura 6-7, Figura 6-8 y Figura 6-9 se pueden apreciar los resultados obtenidos por el modelo para las cargas de momento y corte a las que se encuentran sometida la zapata en cuestión. Por otro lado, en la Tabla 6-10 se muestra el máximo momento y corte solicitante para el diseño de la zapata.
+352	Figura -: Momento M11 en Zapata. [tonf m/m]
+354	Figura -: Momento M22 en Zapata. [tonf m/m].
+356	Figura -: Corte V13 en Zapata. [tonf/m]
+358	Figura -: Corte V23 en Zapata. [tonf/m].
+359	Tabla -: Cargas de Diseño de Zapata
+361	En el punto B2 y B3 del anexo B se muestra el cálculo de la resistencia al momento y corte de la zapata. En la Tabla 6-11 se muestra el resumen del diseño realizado.
+362	Tabla -: Resumen Diseño Zapata
+364	Además, se agregan las cargas de diseño para el caso de falla por punzonamiento en la zapata. El resumen presenta las cargas axiales de cada pedestal, carga de reacción del suelo, carga de diseño por punzonamiento y resistencia por este último caso.
+365	Tabla -: Resumen Diseño Punzonamiento de Zapata
+367	El detalle del cálculo de la resistencia se muestra en el Anexo en el punto B4.
+379	Conclusiones
+380	Los perfiles de acero que conforman las estructuras proyectadas cumplen con los requisitos de las combinaciones de carga definidas por la normativa vigente.
+381	Los perfiles de acero que conforman la estructura del cobertizo de los equipos cumplen con un F.U. máximo igual a 57,5%, según lo indicado en el punto 5.1.
+382	La deformación sísmica de la estructura cumple con la deformación máxima admisible establecida por la normativa vigente.
+383	La verificación de las fundaciones tanto por estabilidad como por capacidad resistente cumple con los parámetros de diseño mencionados anteriormente en el capítulo 6 por lo que se considera como óptimo el diseño proyectado para efectos de las solicitudes esperadas mencionadas a lo largo del informe.
+390	ANEXO A
+391	bases de cálculo
+404	A1. Cálculo coeficiente de balasto corregido
+417	A2. Cálculo de Cargas de Viento
+423	A3. Cálculo de Cargas de Techo
+435	ANEXO B
+436	ANÁLISIS Fundaciones
+446	B1. Resistencia Flexo-Compresión - Pedestal
+459	B2. Resistencia Flexión - Zapata
+464	B3. Resistencia Corte - Zapata
+468	B4. Resistencia Punzonamiento Zapata
+471	B5. DISEÑO PERNOS DE ANCLAJE Y PLACA BASE
+
+=== TABLAS ===
+--- TABLA 0 (8x8) ---
+ |  |  |  |  |  |  | 
+ |  |  |  |  |  |  | 
+1 | 04-06-2026 | Para Uso e Información | P.Vargas | M.Vera | P.Castillo | Y.Rodríguez | L.Rivera
+0 | 28-05-2026 | Para Uso e Información | P.Vargas | M.Vera | P.Castillo | Y.Rodríguez | L.Rivera
+B | 14-05-2026 | Revisión Cliente | F.Garrido | M.Vera | P.Castillo | Y.Rodríguez | L.Rivera
+A | 11-05-2026 | Revisión Interna | F.Garrido | M.Vera | P.Castillo |  | 
+REV. | FECHA | EMISIÓN | POR | J.E. | J.P. | REV. | APR.
+REV. | FECHA | EMISIÓN | L&A Ingeniería y Proyectos Spa. | L&A Ingeniería y Proyectos Spa. | L&A Ingeniería y Proyectos Spa. | Aguas Antofagasta | Aguas Antofagasta
+--- TABLA 1 (4x3) ---
+Parámetro | Valor | Unidad
+Tensión de fluencia | 248 | MPa
+Módulo de elasticidad | 210000 | MPa
+Densidad | 7850 | kgf/m3
+--- TABLA 2 (6x3) ---
+Capa | Producto (referencia) | Espesor DFT (µm)
+Preparación de superficie | SSPC-SP10 / Sa 2½ (ISO 8501-1). Perfil de anclaje 50 µm | —
+Imprimación (primer) | Zinc Clad II — Epóxico rico en zinc (SW o equivalente) | 80
+Capa intermedia | Macropoxy 646 — Epóxico de alto espesor (SW o equivalente) | 200
+Capa de acabado | Acrolon 218 HS — Poliuretano alifático acrílico (SW o equiv.) | 75
+Total sistema | ≥ 355 | 
+--- TABLA 3 (4x3) ---
+Parámetro | Valor | Unidad
+Resistencia a la compresión | 25 | MPa
+Módulo de elasticidad | 23500 | MPa
+Densidad | 2500 | Kgf/m3
+--- TABLA 4 (4x3) ---
+Parámetro | Valor | Unidad
+Tensión de fluencia | 420 | MPa
+Módulo de elasticidad | 210000 | MPa
+Densidad | 7850 | Kgf/m3
+--- TABLA 5 (6x3) ---
+Parámetro | Valor | Unidad
+Zona sísmica | III | --
+Aceleración Efectiva del Suelo, A0 | 0,40 | g
+Razón de Amortiguamiento | 0,03 | --
+Factor Modificación Respuesta | 3,00 | --
+Coeficiente Sísmico Vertical | 0,74 | --
+--- TABLA 6 (8x3) ---
+Parámetro | Valor | Unidad
+Tipo de Suelo | E | [--]
+S | 1,00 | --
+r | 3,00 | --
+To | 1,20 | [s]
+p | 1,00 | --
+q | 2,70 | --
+T1 | 0,79 | [s]
+--- TABLA 7 (2x3) ---
+Parámetro | Valor | Unidad
+Peso total | 1297 | kgf
+--- TABLA 8 (5x3) ---
+Parámetro | Valor | Unidad
+Periodo Eje X de Estructura | 0,63 | [s]
+Periodo Eje Y de Estructura | 0,62 | [s]
+Coeficiente Sísmico Eje X de Estructura | 0,57 | --
+Coeficiente Sísmico Eje Y de Estructura | 0,57 | --
+--- TABLA 9 (6x2) ---
+Combinación de Carga | Combinación de Carga
+1) | D
+2) | D+Lr
+3) | D±W
+4) | D±0,75W+0,75Lr
+5) | D±0,7E
+--- TABLA 10 (6x2) ---
+Combinación de Carga | Combinación de Carga
+1) | 1,4D
+2) | 1,2D+1,6Lr
+3) | 1,2D±1,6W+0,5Lr
+4) | 1,2D±0,8W+1,6Lr
+5) | 1,2D±E
+--- TABLA 11 (4x2) ---
+Combinación de Carga | Combinación de Carga
+1) | ±1,0Ex±0,3Ey±0,3Ez
+2) | ±0,3Ex±1,0Ey±0,3Ez
+3) | ±0,3Ex±0,3Ey±1,0Ez
+--- TABLA 12 (5x2) ---
+ | >1
+ | 0,9 a 1
+ | 0,7 a 0,9
+ | 0,5 a 0,7
+ | <0,5
+--- TABLA 13 (5x3) ---
+Parámetro | Valor | Unidad
+Deformación sísmica calculada | 19,72 | mm
+Altura estructura | 4500 | mm
+Deformación sísmica admisible (0,015 H) | 67,50 | mm
+Verificación | Ok | --
+--- TABLA 14 (5x3) ---
+Parámetro | Valor | Unidad
+Deformación calculada | 5,89 | mm
+Largo de la viga | 3800 | mm
+Deformación admisible (L/240) | 19,00 | mm
+Verificación | Ok | --
+--- TABLA 15 (5x3) ---
+Parámetro | Valor | Unidad
+Deformación calculada | 0,12 | mm
+Largo de la viga | 6000 | mm
+Deformación admisible (L/700) | 8,57 | mm
+Verificación | Ok | --
+--- TABLA 16 (5x3) ---
+Parámetro | Valor | Unidad
+Deformación calculada | 2,56 | mm
+Largo de la costanera | 3000 | mm
+Deformación admisible (L/200) | 20,0 | mm
+Verificación | Ok | --
+--- TABLA 17 (3x3) ---
+Parámetro | Valor | Unidad
+Tensiones Estáticas Admisibles, σest | 1,0 | kgf/cm2
+Tensiones Sísmicas Admisibles, σsis | 1,0 | kgf/cm2
+--- TABLA 18 (3x4) ---
+Parámetro | Tensión Admisible [kgf/cm2] | Tensión Resultante [kgf/cm2] | Verificación
+Caso Estático | 1,0 | 0,34 | Cumple
+Caso Sísmico | 1,0 | 0,69 | Cumple
+--- TABLA 19 (3x4) ---
+Parámetro | % mínimo zapata en contacto | % zapata en contacto | Verificación
+Caso Estático | 100 | 100 | Cumple
+Caso Sísmico | 80 | 87 | Cumple
+--- TABLA 20 (4x3) ---
+Parámetro | Valor | Unidad
+Carga Axial Solicitante | 0,64 | tonf
+Corte Solicitante | 0,11 | tonf
+Momento Solicitante | 0,22 | tonf-m
+--- TABLA 21 (9x3) ---
+Parámetro | Valor | Unidad
+Tracción del Acero | 11 | %
+Arrancamiento del Concreto | 39 | %
+Extracción del Perno | 12 | %
+Desprendimiento Lateral | 10 | %
+Corte del Acero | 6 | %
+Arrancamiento de Borde del Concreto | 6 | %
+Falla por Desprendimiento | 1 | %
+Interacción | 22 | %
+--- TABLA 22 (5x3) ---
+Parámetro | Valor | Unidad
+Largo | 450 | mm
+Ancho | 450 | mm
+Número de barras | 12 | --
+Diámetro de barras | 12 | mm
+--- TABLA 23 (4x4) ---
+Solicitación | Combinación de carga | Valor | Unidad
+Momento | 1,2D±E | 0,22 | tonf m
+Corte | 1,2D±E | 0,15 | tonf
+Axial | 1,2D±E | 1,05 | tonf
+--- TABLA 24 (4x3) ---
+Parámetro | Valor | Unidad
+Corte Solicitante | 0,15 | tonf
+Corte Resistente | 7,50 | tonf
+Verificación | Ok | --
+--- TABLA 25 (6x3) ---
+Parámetro | Valor | Unidad
+Largo | 850 | mm
+Ancho | 850 | mm
+Alto | 300 | mm
+Espaciamiento Armadura | 200 | mm
+Diámetro de Barras | 12 | mm
+--- TABLA 26 (3x4) ---
+Solicitación | Combinación de carga | Valor | Unidad
+Momento | 1,2D±E | 0,18 | tonf m
+Corte | 1,2D±E | 1,01 | tonf
+--- TABLA 27 (6x3) ---
+Parámetro | Valor | Unidad
+Momento solicitante | 0,18 | tonf m
+Momento resistente | 4,88 | tonf m
+Corte solicitante | 1,01 | tonf
+Corte resistente | 15,1 | tonf
+Verificación | Ok | --
+--- TABLA 28 (4x3) ---
+Parámetro | Valor | Unidad
+Carga Cortante de Punzonamiento | 0,64 | tonf
+Carga Resistente | 52,6 | tonf
+Verificación | Ok | --

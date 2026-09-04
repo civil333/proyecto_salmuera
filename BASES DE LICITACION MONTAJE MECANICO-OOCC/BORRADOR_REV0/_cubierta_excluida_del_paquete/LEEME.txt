@@ -1,0 +1,29 @@
+DOCUMENTOS DE LA CUBIERTA METALICA (COBERTIZO) CIP - EXCLUIDOS DEL PAQUETE
+Motivo: cambio de alcance Rev 0 (18-06-2026)
+Actualizado: 25-06-2026 (la ENTREGA 10 re-emitio los documentos de la cubierta:
+ET-103 a Rev 1 y MC-003-001 a Rev 2; se refrescaron las versiones aqui, pero
+SIGUEN EXCLUIDOS del paquete. Las revisiones superadas por E10 quedan en _pre-E10/;
+las Rev C previas a la E8, en _pre-E8/).
+================================================================================
+
+En esta oportunidad NO se licita la construccion de la cubierta metalica
+(cobertizo) del sistema CIP. Solo se construye su FUNDACION (con los 24 pernos
+de anclaje F-1554 3/4" colados y protegidos). La estructura metalica de la
+cubierta (perfiles ASTM A36, planchas y panel PV-6) la suministra e instala
+ADASA en una etapa posterior, igual que los equipos del sistema CIP.
+
+Por eso se retiraron del paquete de licitacion (Bases REV 0 / 5. OBRAS CIVILES)
+los siguientes documentos, que corresponden al "fierro" (superestructura) de la
+cubierta y NO a su fundacion:
+
+  - P22-DWG-00-003-001_1 LAM1.pdf  (estructura metalica cobertizo - elevaciones; Rev 1, E10)
+  - P22-DWG-00-003-001_0 LAM2.pdf  (estructura metalica cobertizo - planta/isometrico, panel PV-6; Rev 0, E10)
+  - P22-MC-00-003-001_2.pdf        (memoria de calculo estructural de la cubierta; Rev 2, E10)
+  - P22-ET-00-010-103-0_1.pdf      (ET estructura metalica; Rev 1, E10)
+
+La FUNDACION de la cubierta SE MANTIENE en el paquete: su detalle (formas,
+armaduras y disposicion de los pernos de anclaje, detalle perno PA-1) esta en
+P22-DWG-00-002-007_0 LAM3.pdf (Rev 0, ENTREGA 8), que permanece en 5. OBRAS CIVILES / PLANOS.
+
+Estos archivos se conservan aqui (fuera del paquete) por trazabilidad; se
+reincorporaran cuando ADASA licite/ejecute la cubierta en su etapa posterior.

@@ -1,0 +1,202 @@
+=== FIRST 120 LINES (BW WATER DATASHEETS) ===
+L1: 
+L2: ============================================================
+L3: --- PAGE 1 ---
+L4: ============================================================
+L5: 
+L6: | | | | | | | |
+L7: | --- | --- | --- | --- | --- | --- | --- |
+L8: | | | | | | | |
+L9: | A | 04-Mar-26 | VOON | BT/NHH | GHY | JFR/LPL | |
+L10: | Rev | Date | Prepared By | Reviewed<br>By | Checked<br>By | Approved By | Customer |
+L11: 
+L12: Datasheet of Flow Transmitter ADASA Code: P22-LI-09-008-007
+L13: Second Stage RO Module for Brine – PD Taltal Date: 04-Mar-26
+L14: Revision No.: A
+L15: Page: 1of 59
+L16: Datasheet of Flow Transmitter
+L17: Second Stage RO Module for Brine – PD Taltal
+L18: ADASA Code : P22-LI-09-008-007
+L19: 
+L20: ============================================================
+L21: --- PAGE 2 ---
+L22: ============================================================
+L23: 
+L24: | [BW LOGO] | | COMPONENT DATASHEET<br>BW WATER ENGINEERING | | | | | |
+L25: | --- | --- | --- | --- | --- | --- | --- | --- |
+L26: | Project Code/Name: | | 25007 | | Doc. No./Rev. No.: | P22-LI-09-008-007 | Prepared by: | Voon |
+L27: | Component Name: | | Flow Transmitter | | Component Type: | Instrument | Reviewed by: | BT/NHH |
+L28: | Vendor's Name: | | Rosemount | | Component Tag No./s: | FIT-09-001/002/003/005 | Checked by: | GHY |
+L29: | Issued for: | | ISSUED FOR APPROVAL | | P&ID Sheet No./s: | P22-DWG-09-02-P8/P9/P10 | Approved by: | JFR |
+L30: | No. | Parameters | | Unit | Requirements | | Remarks | |
+L31: | 1 | General Information | | | | | | |
+L32: | 2 | Design Intent/Purpose | | - | Measures Flow | | | |
+L33: | 3 | Quantity - Duty | | units | 1 | | | |
+L34: | 4 | Quantity - Standby | | units | 0 | | | |
+L35: | 5 | Design Operating Hours per day | | hrs/day | 24/7 | | | |
+L36: | 6 | Location of Installation | | - | Indoor | | | |
+L37: | 7 | Altitude | | masl | Ground Level | | | |
+L38: | 8 | Ambient Temperature of Installed Location | | °C | 23 - 33 | | | |
+L39: | 9 | Relative Humidity | | % | 5 - 95 | | | |
+L40: | 10 | Fluid / Medium | | - | Filtered/CIP Water | | | |
+L41: | 11 | Flow Sensor | | | | | | |
+L42: | 12 | Type | | - | In-Line | | | |
+L43: | 13 | Manufacturer | | - | Rosemount | | | |
+L44: | 14 | Model | | - | 8750W | | | |
+L45: | 15 | Parameters | | - | m3/h | | | |
+L46: | 16 | Measurement Method | | - | Magnetic | | | |
+L47: | 17 | Measurement Range | | m3/h | 0 to 18<br>0 to 40<br>0 to 100 | | | |
+L48: | 18 | Max. Pressure | | psi | 285 (-28 to 38 °C)<br>260 (93°C)<br>230 (65°C)<br>215 (176°C) | | | |
+L49: | 19 | Process Temperature Limit | | °C | 0 to 120 (PTFE Lining) | | | |
+L50: | 20 | Sensor Style | | - | Flanged | | | |
+L51: | 21 | Material - Lining (Wetted Part) | | - | PTFE | | | |
+L52: | 22 | Material - Electrode (Wetted Part) | | - | SS316L | | | |
+L53: | 23 | Flange Type and Material | | - | Slip-On, Raised Face, Carbon Steel | | | |
+L54: | 24 | Flange Rating | | - | Class 150 | | | |
+L55: | 25 | Approval | | - | Non-Hazardous Area | | | |
+L56: | 26 | Transmitter | | | | | | |
+L57: | 27 | Manufacturer | | - | Rosemount | | | |
+L58: | 28 | Model | | - | 8750W | | | |
+L59: | 29 | Transmitter Mounting | | - | Integral field mount | | | |
+L60: | 30 | Local Display | | - | LCD Display | | | |
+L61: | 31 | Material - Enclosure | | - | Low Copper Aluminum | | | |
+L62: | 32 | Enclosure Paint | | - | Polyurethane Coat | | | |
+L63: | 33 | Power Supply | | VDC | 90 to 250 | | | |
+L64: | 34 | Ingress Protection | | - | 4X and IP66 | | | |
+L65: | 35 | Outputs Communication | | - | 4 to 20 mA current outputs with HART | | | |
+L66: | 36 | Approval | | - | Non-Hazardous Area | | | |
+L67: 
+L68: 
+L69: ============================================================
+L70: --- PAGE 3 ---
+L71: ============================================================
+L72: 
+L73: | [BW LOGO] | | COMPONENT DATASHEET<br>BW WATER ENGINEERING | | | | | |
+L74: | --- | --- | --- | --- | --- | --- | --- | --- |
+L75: | Project Code/Name: | | 25007 | | Doc. No./Rev. No.: | P22-LI-09-008-007 | Prepared by: | Voon |
+L76: | Component Name: | | Flow Transmitter | | Component Type: | Instrument | Reviewed by: | BT/NHH |
+L77: | Vendor's Name: | | Rosemount | | Component Tag No./s: | FIT-09-004 | Checked by: | GHY |
+L78: | Issued for: | | ISSUED FOR APPROVAL | | P&ID Sheet No./s: | P22-DWG-09-02-P9 | Approved by: | JFR |
+L79: | No. | Parameters | | Unit | Requirements | | Remarks | |
+L80: | 1 | General Information | | | | | | |
+L81: | 2 | Design Intent/Purpose | | - | Measures Flow | | | |
+L82: | 3 | Quantity - Duty | | units | 1 | | | |
+L83: | 4 | Quantity - Standby | | units | 0 | | | |
+L84: | 5 | Design Operating Hours per day | | hrs/day | 24/7 | | | |
+L85: | 6 | Location of Installation | | - | Indoor | | | |
+L86: | 7 | Altitude | | masl | Ground Level | | | |
+L87: | 8 | Ambient Temperature of Installed Location | | °C | 23 - 33 | | | |
+L88: | 9 | Relative Humidity | | % | 5 - 95 | | | |
+L89: | 10 | Fluid / Medium | | - | Filtered/CIP Water | | | |
+L90: | 11 | Flow Sensor | | | | | | |
+L91: | 12 | Type | | - | In-Line | | | |
+L92: | 13 | Manufacturer | | - | Rosemount | | | |
+L93: | 14 | Model | | - | 8750W | | | |
+L94: | 15 | Parameters | | - | m3/h | | | |
+L95: | 16 | Measurement Method | | - | Magnetic | | | |
+L96: | 17 | Measurement Range | | m3/h | 0 to 100 | | | |
+L97: | 18 | Max. Pressure | | psi | 285 (-28 to 38 °C)<br>260 (93°C)<br>230 (65°C)<br>215 (176°C) | | | |
+L98: | 19 | Process Temperature Limit | | °C | 0 to 120 (PTFE Lining) | | | |
+L99: | 20 | Sensor Style | | - | Flanged | | | |
+L100: | 21 | Material - Lining (Wetted Part) | | - | PTFE | | | |
+L101: | 22 | Material - Electrode (Wetted Part) | | - | Nickel alloy 276 | | | |
+L102: | 23 | Flange Type and Material | | - | Slip-On, Raised Face, Carbon Steel | | | |
+L103: | 24 | Flange Rating | | - | Class 150 | | | |
+L104: | 25 | Approval | | - | Non-Hazardous Area | | | |
+L105: | 26 | Transmitter | | | | | | |
+L106: | 27 | Manufacturer | | - | Rosemount | | | |
+L107: | 28 | Model | | - | 8750W | | | |
+L108: | 29 | Transmitter Mounting | | - | Integral field mount | | | |
+L109: | 30 | Local Display | | - | LCD Display | | | |
+L110: | 31 | Material - Enclosure | | - | Low Copper Aluminum | | | |
+L111: | 32 | Enclosure Paint | | - | Polyurethane Coat | | | |
+L112: | 33 | Power Supply | | VDC | 90 to 250 | | | |
+L113: | 34 | Ingress Protection | | - | 4X and IP66 | | | |
+L114: | 35 | Outputs Communication | | - | 4 to 20 mA current outputs with HART | | | |
+L115: | 36 | Approval | | - | Non-Hazardous Area | | | |
+L116: 
+L117: 
+L118: ============================================================
+L119: --- PAGE 4 ---
+L120: ============================================================
+
+
+=== KEYWORD SEARCH (line size, pipe, connection) ===
+L28: | Vendor's Name: | | Rosemount | | Component Tag No./s: | FIT-09-001/002/003/005 | Checked by: | GHY |
+L77: | Vendor's Name: | | Rosemount | | Component Tag No./s: | FIT-09-004 | Checked by: | GHY |
+L165: | Flanged | ■ Flanged process connections Welded coil housing<br>■ ½-in. (15 mm) to 48-in. (1200 mm)<br>■ Standard, reference, and bullet-nose electrodes available |
+L172: | Tunable Empty Pipe | Process | Standard |
+L259: | Nominal line size in inches (millimeters) | Gallons per minute (gpm) factor | Liters per minute (L/min) factor |
+L289: Table 4: Line Size vs. Conversion Factor
+L296: Table 5: Line Size vs. Velocity/Rate
+L298: | Nominal<br>line size in<br>inches (mm) | Minimum/maximum flow rate | | | | | | | |
+L328: minimum of five straight pipe diameters upstream and two pipe diameters downstream
+L338: eam and Downstream Straight Pipe Diameters
+L339: A. Five pipe
+L341: B. Two pipe
+L363: against moisture or other contaminants. Sizes range from ½ inch (15 mm) to 48 inch (1200 mm). The
+L488: | Flange type - see Table 8 for line size vs. flange type and rating | | | | | |
+L506: | Flange rating — see Table 8 for line size vs. flange type and rating | | |
+L509: | AD | AWWA C207Class D; line size 30-in. and above; flat face flange only | |
+L510: | AE | AWWA C207Class E; line size 30-in. and above; flat face flange only | |
+L532: (4) Available in ½ to 36-in. (15 mm to 900 mm) line sizes.
+L533: (5) Available in 1 to 36-in., 42-in., and 48-in. (25 mm to 900 mm, 1050 mm, and 1200 mm) line sizes.
+L534: (6) Available in 1 to 48-in. (25 mm to 1200 mm) line sizes.
+L535: (7) Available in 1 in, 2 in., 3 in., 4 in., 6 in., 8in. (25 mm, 50 mm, 80 mm, 100 mm, 150 mm, and 200mm) line sizes.
+L538: (10) In the Line size section, the starred ( ) offerings represent available liner based on line size. Consult factory for additional Flange
+L571: | Pipe pressure standard | | | |
+L575: | TS | | Special equipment supervision inspection certificate for pressure pipes (Destination to China) | |
+L602: | B6 | 316 SST Mounting Bracket with U-bolt Kit for 2-in. Pipe Mount | |
+L650: | Size<br>code | ASME Class 150 | ASME Class 300 | AWWA Class D | AWWA Class E | EN PN10 | EN PN16 | EN PN25 | EN PN40 | GB/T PN 10 | GB/T PN 16 | GB/T PN 40 | JIS 10K | JIS 20K | AS4087 PN16 | AS4087 PN21 | AS4087 PN35 | AS2129 Table D | AS2129 Table E |
+L675: (6) NSF drinking water certification is available with the PTFE liner in line sizes 0.5 to 36-in (15 mm to 900 mm) and the polyurethane
+L676: liner in line sizes 4 to 36-in., 42-in., and 48-in. (80 mm to 900 mm, 1050 mm, and 1200 mm).
+L679: Table 8: Slip on flange options by line size
+L690: | Sensor size: | 3 inches |
+L691: | Empty pipe: | On |
+L697: | Tag name | 1 line, 21 characters, height 0.065 in. (1.6 mm) |
+L867: | Measurement +<br>Reference Electrode<br>(Also see Table 15<br>and Table 16 for<br>grounding options<br>and installation). | Low cost grounding option especially for large line sizes |
+L876: | No Grounding<br>Options (grounding<br>straps) | Acceptable for conductive unlined pipe |
+L880: | | Not recommended in electrolysis applications, galvanic corrosion applications, applications where the<br>electrodes may coat, or non-conductive pipe. |
+L886: | Type of pipe | Grounding straps | Grounding rings | Reference electrode | Lining protectors |
+L888: | Conductive unlined pipe | Acceptable | Not required | Not required | Not required |
+L889: | Conductive lined pipe | Not acceptable | Acceptable | Acceptable | Acceptable |
+L890: | Non-conductive pipe | Not acceptable | Acceptable | Not recommended | Acceptable |
+L1051: ■ Tunable empty pipe
+L1153: information related to the calibration number, line size, and diagnostics.
+L1260: Activates switch closure output when an empty pipe condition is detected.
+L1261: Empty pipe
+L1382: | Conduit entries | Available in ½ inch NPT or M20. See ordering table footnotes for details. |
+L1415: | PTFE lining | Full vacuum to 248 °F (120 °C) through 4 in. (100 mm) line sizes.<br>Consult an Emerson Flow representative for vacuum applications with line sizes of 6 in. (150 mm)<br>or larger. |
+L1417: | All other standard sensor lining<br>materials | Full vacuum to maximum material temperature limits for all available line sizes. |
+L1431: of line size or optional features. Each sensor nameplate has a 16-digit calibration number that can be entered into a
+L1458: | Sensor temperature vs. pressure limits for ASME B16.5 class flanges ( ½ in. to 24 in. line sizes)(2) | | | | | |
+L1468: | Sensor temperature vs. pressure limits for AS2129 Table D and E flanges (4 in. to 24 in. line sizes) | | | | | |
+L1476: | Sensor temperature vs. pressure limits for EN 1092-1 flanges (15 mm to 600 mm line sizes) | | | | | |
+L1530: | Sensor Pipe | Type 304/304L SST |
+L1577: | Conduit entries | Available with ½ inch NPT and M20 |
+L1642: C. 2-in. pipe bracket
+L1644: Dimensions are in inches (millimeters).
+L1648: Dimensions are in inches (millimeters).
+L1675: Dimensions are in inches (millimeters).
+L1687: | Size, description | Overall length | | | | Dim B | Dim C | Dim D | Dim J | Flow<br>tube<br>wgt<br>(lbs./<br>kg ) |
+L1709: Dimensions are in inches (millimeters).
+L1719: | Size, description | Overall length | | | | Dim B | Dim C | Dim D | Dim J | Flow<br>tube<br>wgt<br>(lbs./<br>kg ) |
+L1754: | Size, description | Overall length | | | | Dim B | Dim C | Dim D | Dim J | Flow<br>tube<br>wgt<br>(lbs./<br>kg ) |
+L1784: | Size, description | Overall length | | | | Dim B | Dim C | Dim D | Dim J | Dim K | Flow<br>tube<br>wgt<br>(lbs./<br>kg) |
+L1809: Dimensions are in inches (millimeters).
+L1819: | Size, description | Overall length | | | | Dim B | Dim C | Dim D | Dim J | Dim K | Flow<br>tube<br>wgt<br>(lbs./<br>kg) |
+L1854: | Size, description | Overall length | | | | Dim B | Dim C | Dim D | Dim J | Dim K | Flow<br>tube<br>wgt<br>(lbs./<br>kg) |
+L1872: | Size, description | Overall length | | | | Dim B | Dim C | Dim D | Dim J | Dim K | Flow<br>tube<br>wgt<br>(lbs./<br>kg) |
+L1892: | Size, description | Overall length | | | | Dim B | Dim C | Dim D | Dim J | Dim K | Flow<br>tube<br>wgt<br>(lbs./<br>kg) |
+L1927: | Size, description | Overall length | | | | Dim B | Dim C | Dim D | Dim J | Dim K | Flow<br>tube<br>wgt<br>(lbs./<br>kg) |
+L1957: | Size, description | Overall length | | | Dim B | Dim C | Dim D | Dim J | Dim K | Flow<br>tube<br>wgt<br>(lbs./ kg) |
+L1993: | Size, description | Overall length | | | Dim B | Dim C | Dim D | Dim J | Dim K | Flow<br>tube<br>wgt<br>(lbs./ kg) |
+L2028: | Size, description | Overall length | | | Dim B | Dim C | Dim D | Dim J | Dim K | Flow<br>tube<br>wgt<br>(lbs./ kg) |
+L2034: | Size, description | Overall length | | | Dim B | Dim C | Dim D | Dim J | Dim K | Flow<br>tube<br>wgt<br>(lbs./ kg) |
+L2067: | Size, description | Overall length | | | Dim B | Dim C | Dim D | Dim J | Dim K | Flow<br>tube<br>wgt<br>(lbs./ kg) |
+L2102: | Size, description | Overall length | | | Dim B | Dim C | Dim D | Dim J | Dim K | Flow<br>tube<br>wgt<br>(lbs./ kg) |
+L2113: | Size, description | Overall length | | | Dim B | Dim C | Dim D | Dim J | Dim K | Flow<br>tube<br>wgt<br>(lbs./ kg) |
+L2141: | Size, description | Overall length | | | Dim B | Dim C | Dim D | Dim J | Dim K | Flow<br>tube<br>wgt<br>(lbs./ kg) |
+L2147: | Size, description | Length | | | Dim B | Dim C | Dim D | Liner Ø on face | | | Dim K | Flow<br>tube<br>wgt<br>(lbs./k<br>g) |
+L2168: Dimensions are in inches (millimeters).
+L2178: | Size, description | Length | | | Dim B | Dim C | Dim D | Liner Ø on face | | | Dim K | Flow<br>tube<br>wgt<br>(lbs./k<br>g) |

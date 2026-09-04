@@ -1,0 +1,262 @@
+{
+ "schema_version": 1,
+ "set": "ENTREGA 78",
+ "generated": "2026-08-17 09:48",
+ "generator": "large-pdf-reader v8.7 --object-db",
+ "sheets": [
+  {
+   "sheet": "P22-DWG-09-005-003 p2",
+   "pdf": "P22-DWG-09-005-003_Equipment Layout_Rev.D.pdf",
+   "page": 2,
+   "role": "unknown"
+  },
+  {
+   "sheet": "DWG-09 p2",
+   "pdf": "P22-DWG-09-009-01_0 - Process Flow Diagram.pdf",
+   "page": 2,
+   "role": "unknown"
+  },
+  {
+   "sheet": "DWG-09 p3",
+   "pdf": "P22-DWG-09-009-01_0 - Process Flow Diagram.pdf",
+   "page": 3,
+   "role": "unknown"
+  }
+ ],
+ "envelope": null,
+ "objects": [],
+ "unmatched_codes": [
+  {
+   "tag": "MZE-09-009",
+   "type": null,
+   "counted_value": 0,
+   "breakdown": {},
+   "source_sheets": [],
+   "confidence": "counted"
+  },
+  {
+   "tag": "FIL-09-001",
+   "type": null,
+   "counted_value": 2,
+   "breakdown": {
+    "DWG-09 p2": 2
+   },
+   "source_sheets": [
+    {
+     "sheet": "DWG-09 p2",
+     "role": "unknown",
+     "count": 2
+    }
+   ],
+   "confidence": "counted"
+  },
+  {
+   "tag": "BH-09-001",
+   "type": null,
+   "counted_value": 2,
+   "breakdown": {
+    "DWG-09 p2": 2
+   },
+   "source_sheets": [
+    {
+     "sheet": "DWG-09 p2",
+     "role": "unknown",
+     "count": 2
+    }
+   ],
+   "confidence": "counted"
+  },
+  {
+   "tag": "SIP-09-001",
+   "type": null,
+   "counted_value": 2,
+   "breakdown": {
+    "DWG-09 p2": 2
+   },
+   "source_sheets": [
+    {
+     "sheet": "DWG-09 p2",
+     "role": "unknown",
+     "count": 2
+    }
+   ],
+   "confidence": "counted"
+  },
+  {
+   "tag": "SIP-09-002",
+   "type": null,
+   "counted_value": 2,
+   "breakdown": {
+    "DWG-09 p2": 2
+   },
+   "source_sheets": [
+    {
+     "sheet": "DWG-09 p2",
+     "role": "unknown",
+     "count": 2
+    }
+   ],
+   "confidence": "counted"
+  },
+  {
+   "tag": "BOI-09-001",
+   "type": null,
+   "counted_value": 2,
+   "breakdown": {
+    "DWG-09 p2": 2
+   },
+   "source_sheets": [
+    {
+     "sheet": "DWG-09 p2",
+     "role": "unknown",
+     "count": 2
+    }
+   ],
+   "confidence": "counted"
+  },
+  {
+   "tag": "BOI-09-002",
+   "type": null,
+   "counted_value": 2,
+   "breakdown": {
+    "DWG-09 p2": 2
+   },
+   "source_sheets": [
+    {
+     "sheet": "DWG-09 p2",
+     "role": "unknown",
+     "count": 2
+    }
+   ],
+   "confidence": "counted"
+  },
+  {
+   "tag": "TK-09-001",
+   "type": null,
+   "counted_value": 2,
+   "breakdown": {
+    "DWG-09 p2": 2
+   },
+   "source_sheets": [
+    {
+     "sheet": "DWG-09 p2",
+     "role": "unknown",
+     "count": 2
+    }
+   ],
+   "confidence": "counted"
+  },
+  {
+   "tag": "REL-09-001",
+   "type": null,
+   "counted_value": 1,
+   "breakdown": {
+    "DWG-09 p2": 1
+   },
+   "source_sheets": [
+    {
+     "sheet": "DWG-09 p2",
+     "role": "unknown",
+     "count": 1
+    }
+   ],
+   "confidence": "counted"
+  },
+  {
+   "tag": "BH-09-002",
+   "type": null,
+   "counted_value": 2,
+   "breakdown": {
+    "DWG-09 p2": 2
+   },
+   "source_sheets": [
+    {
+     "sheet": "DWG-09 p2",
+     "role": "unknown",
+     "count": 2
+    }
+   ],
+   "confidence": "counted"
+  },
+  {
+   "tag": "FIL-09-002",
+   "type": null,
+   "counted_value": 2,
+   "breakdown": {
+    "DWG-09 p2": 2
+   },
+   "source_sheets": [
+    {
+     "sheet": "DWG-09 p2",
+     "role": "unknown",
+     "count": 2
+    }
+   ],
+   "confidence": "counted"
+  },
+  {
+   "tag": "TK-09-002",
+   "type": null,
+   "counted_value": 2,
+   "breakdown": {
+    "DWG-09 p2": 2
+   },
+   "source_sheets": [
+    {
+     "sheet": "DWG-09 p2",
+     "role": "unknown",
+     "count": 2
+    }
+   ],
+   "confidence": "counted"
+  },
+  {
+   "tag": "BDS-09-001/002",
+   "type": null,
+   "counted_value": 2,
+   "breakdown": {
+    "DWG-09 p2": 2
+   },
+   "source_sheets": [
+    {
+     "sheet": "DWG-09 p2",
+     "role": "unknown",
+     "count": 2
+    }
+   ],
+   "confidence": "counted"
+  },
+  {
+   "tag": "MZE-09-001",
+   "type": null,
+   "counted_value": 2,
+   "breakdown": {
+    "DWG-09 p2": 2
+   },
+   "source_sheets": [
+    {
+     "sheet": "DWG-09 p2",
+     "role": "unknown",
+     "count": 2
+    }
+   ],
+   "confidence": "counted"
+  },
+  {
+   "tag": "M3",
+   "type": null,
+   "counted_value": 12,
+   "breakdown": {
+    "DWG-09 p2": 12
+   },
+   "source_sheets": [
+    {
+     "sheet": "DWG-09 p2",
+     "role": "unknown",
+     "count": 12
+    }
+   ],
+   "confidence": "counted"
+  }
+ ]
+}

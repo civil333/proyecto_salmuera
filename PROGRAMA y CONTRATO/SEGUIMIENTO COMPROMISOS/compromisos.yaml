@@ -1,0 +1,2124 @@
+# =====================================================================
+# REGISTRO DE COMPROMISOS — Proyecto L-12803 / Contrato C-4300
+# FUENTE UNICA. El .xlsx se REGENERA desde aqui y nunca se edita a mano.
+# =====================================================================
+#
+# Vocabularios controlados (el generador aborta si un valor no pertenece):
+#
+#   frente        : BUREAU VERITAS | PROGRAMA | COMERCIAL | INTERNO ADASA
+#   obligado      : BW WATER | ADASA | BUREAU VERITAS | FEDCO
+#   estado        : ABIERTO | CERRADO | CERRADO PARCIAL | EN DISPUTA
+#   criticidad    : CRITICA | ALTA | MEDIA | BAJA
+#   origen_fecha  : CONTRACTUAL | COMPROMISO ESCRITO BW |
+#                   COMPROMISO VERBAL-MINUTA | FIJADA ADASA
+#
+# Reglas duras de captura:
+#   - Ninguna fecha se infiere. Si la fuente dice "proxima semana" u "once
+#     ready", `fecha_comprometida` va en null y la fila sale SIN FECHA.
+#     Un compromiso sin vencimiento es un defecto de gestion, no un estado
+#     neutro.
+#   - `estado` cambia por EVENTO. El semaforo y los dias los calcula el Excel
+#     por formula, porque cambian por el PASO DEL TIEMPO.
+#   - `origen_fecha` dice de antemano con que municion se puede reclamar.
+#     CONTRACTUAL se cita; COMPROMISO VERBAL-MINUTA solo se recuerda.
+#   - `reprogramaciones` cuenta los desplazamientos de la fecha, no las
+#     menciones. Es la prueba objetiva de un patron.
+#
+# Corte de esta version: 2026-08-05
+# =====================================================================
+
+meta:
+  codigo: P22-IT-06-000-006-0
+  titulo: Registro de Compromisos
+  proyecto: L-12803 Suministro Modulo RO Segunda Etapa para Salmuera - PD Taltal
+  contrato: C-4300
+  preparado_por: Luis Rivera Gonzalez
+  corte: 2026-09-03
+  umbral_por_vencer_dias: 7
+
+compromisos:
+
+  # ===================================================================
+  # BUREAU VERITAS / INSPECCION DE TALLER
+  # ===================================================================
+
+  - id: BV-01
+    frente: BUREAU VERITAS
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Entregar el indice del dossier de calidad de fabricacion y pruebas"
+    fecha_comprometida: 2026-07-27
+    estado: CERRADO PARCIAL
+    criticidad: ALTA
+    criterio_cierre: "Indice estructurado, con codigo y revision por capitulo, aprobado por ADASA"
+    fuente_contractual: "ET P22-ET-09-000-001-0 Seccion 7; PIE P22-IT-09-000-001-0 item 7.6"
+    origen_fecha: FIJADA ADASA
+    fecha_origen: 2026-07-25
+    fecha_cierre: 2026-07-27
+    consecuencia: "Sin indice no hay lista de chequeo para la revision documental previa al FAT"
+    accion_adasa: "Emitir el TM N31 con Codigo 3 y las 10 anotaciones; exigir Rev B"
+    evidencia_origen: "Correo ADASA 25-Jul-2026 (reclamo del dossier), tramo 1"
+    evidencia_cierre: "E69 - P22-BA-09-000-013 Rev A, recibido 27-Jul-2026 08:17"
+    ref_cruzada: "BV-05, INT-06"
+    reprogramaciones: 0
+    historial_fechas: "24-Jul (compromiso original incumplido) -> 27-Jul (tramo 1 del reclamo)"
+    nota: "Cumplido en forma, deficiente en fondo: 27 capitulos sin codigo, sin revision y sin estado de inclusion"
+
+  - id: BV-02
+    frente: BUREAU VERITAS
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Entregar los MTR y la trazabilidad de los spools super duplex de la Semana 1"
+    fecha_comprometida: 2026-07-27
+    estado: ABIERTO
+    criticidad: ALTA
+    criterio_cierre: "MTR recibidos con PREN mayor a 40 sobre UNS S32750, trazables spool a spool"
+    fuente_contractual: "ET Seccion 7; ITP P22-BA-09-000-004 Rev 0 fila 2.1"
+    origen_fecha: FIJADA ADASA
+    fecha_origen: 2026-07-25
+    fecha_cierre: null
+    consecuencia: "El material verificado por el inspector no queda respaldado en el dossier"
+    accion_adasa: "Reiterar en la respuesta al Request 002"
+    evidencia_origen: "Correo ADASA 25-Jul-2026, tramo 1"
+    evidencia_cierre: null
+    ref_cruzada: "BV-01, BV-05"
+    reprogramaciones: 0
+    historial_fechas: "27-Jul"
+    nota: "La E69 no trae registros, solo el indice"
+
+  - id: BV-03
+    frente: BUREAU VERITAS
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Entregar el certificado de calibracion del equipo PMI y los certificados del tecnico"
+    fecha_comprometida: 2026-07-27
+    estado: ABIERTO
+    criticidad: MEDIA
+    criterio_cierre: "Certificado de calibracion vigente y certificacion del personal END"
+    fuente_contractual: "ITP P22-BA-09-000-004 Rev 0 fila 2.4; NDE Plan P22-BA-09-000-005 Seccion 3.0"
+    origen_fecha: FIJADA ADASA
+    fecha_origen: 2026-07-25
+    fecha_cierre: null
+    consecuencia: "Las 31 lecturas de PMI del informe de BV quedan sin respaldo de calibracion en el dossier"
+    accion_adasa: "Trackear en la Seccion 3 del TM N31"
+    evidencia_origen: "Correo ADASA 25-Jul-2026, tramo 1"
+    evidencia_cierre: null
+    ref_cruzada: "BV-18"
+    reprogramaciones: 0
+    historial_fechas: "27-Jul"
+    nota: "El informe de BV cita el analizador LIBS Z902-01702 con su certificado XR122512/50; falta el traspaso al dossier"
+
+  - id: BV-04
+    frente: BUREAU VERITAS
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Entregar los WPS/PQR y la calificacion de los soldadores de las juntas ya ejecutadas"
+    fecha_comprometida: 2026-07-27
+    estado: ABIERTO
+    criticidad: ALTA
+    criterio_cierre: "WPQ vigentes de los soldadores que ejecutaron las juntas"
+    fuente_contractual: "ITP P22-BA-09-000-004 Rev 0 fila 3.1 (ASME IX)"
+    origen_fecha: FIJADA ADASA
+    fecha_origen: 2026-07-25
+    fecha_cierre: null
+    consecuencia: "Soldadura ejecutada sin calificacion acreditada ante ADASA"
+    accion_adasa: "Verificar en la jornada del Request 002, que incluye revision de WPS y calificacion de soldadores"
+    evidencia_origen: "Correo ADASA 25-Jul-2026, tramo 1"
+    evidencia_cierre: null
+    ref_cruzada: "BV-17"
+    reprogramaciones: 0
+    historial_fechas: "27-Jul"
+    nota: "Contradiccion abierta: BW Water declara el 28-Jul que no ha habido soldadura ni ensamble a la fecha"
+
+  - id: BV-05
+    frente: BUREAU VERITAS
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Entregar el dossier preliminar completo, estructurado contra el indice"
+    fecha_comprometida: 2026-07-31
+    estado: ABIERTO
+    criticidad: CRITICA
+    criterio_cierre: "Dossier revisable por ADASA bajo el item 7.6 del PIE"
+    fuente_contractual: "ET Seccion 7 (maximo 90 dias desde la adjudicacion); PIE item 7.6"
+    origen_fecha: FIJADA ADASA
+    fecha_origen: 2026-07-25
+    fecha_cierre: null
+    consecuencia: "Prerrequisito de los items 8.3 y 8.4 del PIE, que sostienen el 40% del pago y la liberacion de despacho"
+    accion_adasa: "Verificar si llego; sin evidencia de recepcion, escalar antes del FAT"
+    evidencia_origen: "Correo ADASA 25-Jul-2026, tramo 2; correo BW Water 28-Jul: we will provide the dossier by the end of the week"
+    evidencia_cierre: null
+    ref_cruzada: "BV-01, BV-14"
+    reprogramaciones: 1
+    historial_fechas: "24-Jul (incumplido) -> 31-Jul"
+    nota: "Sin evidencia de recepcion al 05-Ago. Las entregas del proveedor terminan en la E69 del 27-Jul"
+
+  - id: BV-06
+    frente: BUREAU VERITAS
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Acordar por escrito que el alcance del dossier es el de la ET Seccion 7 y no technical submittals"
+    fecha_comprometida: null
+    estado: EN DISPUTA
+    criticidad: ALTA
+    criterio_cierre: "Confirmacion escrita del indice completo del dossier"
+    fuente_contractual: "ET Seccion 7; lamina de documentacion requerida de la Quality Kick-off Meeting"
+    origen_fecha: FIJADA ADASA
+    fecha_origen: 2026-07-28
+    fecha_cierre: null
+    consecuencia: "Si prospera el reencuadre del proveedor, el dossier se vacia de los registros de fabricacion"
+    accion_adasa: "Fijar posicion por escrito citando la ET Seccion 7"
+    evidencia_origen: "Correo BW Water 28-Jul-2026, reencuadre As clarified this morning"
+    evidencia_cierre: null
+    ref_cruzada: "BV-05"
+    reprogramaciones: 0
+    historial_fechas: "Sin fecha fijada"
+    nota: "El intercambio previo del 28-Jul por la manana no consta en ninguna fuente; conviene resolverlo antes de responder"
+
+  - id: BV-07
+    frente: BUREAU VERITAS
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Incorporar los reportes y certificados de las pruebas de fabrica FEDCO al dossier final"
+    fecha_comprometida: null
+    estado: ABIERTO
+    criticidad: MEDIA
+    criterio_cierre: "Los registros FEDCO aparecen en el indice del dossier entregado"
+    fuente_contractual: "ET Seccion 7; ITP P22-BA-09-000-004 Rev 0 fila 2.3"
+    origen_fecha: COMPROMISO ESCRITO BW
+    fecha_origen: 2026-07-28
+    fecha_cierre: null
+    consecuencia: "Los equipos principales quedarian sin respaldo de ensayo de fabrica en el dossier"
+    accion_adasa: "Exigir el capitulo en la Rev B del indice (OBS-05 del TM N31)"
+    evidencia_origen: "Correo BW Water 28-Jul-2026 (prior to shipment)"
+    evidencia_cierre: null
+    ref_cruzada: "BV-01, PRG-05"
+    reprogramaciones: 0
+    historial_fechas: "Sin fecha: prior to shipment"
+    nota: "El indice Rev A no tiene capitulo de certificados de equipos principales"
+
+  - id: BV-08
+    frente: BUREAU VERITAS
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Reemitir a Bureau Veritas las revisiones vigentes limpias del ITP y del NDE Plan"
+    fecha_comprometida: 2026-07-28
+    estado: CERRADO
+    criticidad: ALTA
+    criterio_cierre: "El inspector ejecuta contra la revision vigente y los adjuntos no llevan anotaciones de ADASA"
+    fuente_contractual: "ITP P22-BA-09-000-004 Rev 0, aprobado Codigo 1 en el TM N26"
+    origen_fecha: FIJADA ADASA
+    fecha_origen: 2026-07-25
+    fecha_cierre: 2026-07-29
+    consecuencia: "Inspeccion ejecutada contra una revision superada"
+    accion_adasa: "Ninguna. No presentar este punto como incumplimiento"
+    evidencia_origen: "Correo ADASA 25-Jul-2026, punto 2"
+    evidencia_cierre: "Adjuntos del Request to Witness 002 byte-identicos a los aprobados en las entregas E57 y E61 (verificacion por hash)"
+    ref_cruzada: "BV-17"
+    reprogramaciones: 0
+    historial_fechas: "28-Jul"
+    nota: "El proveedor si corrigio. Los hashes lo prueban"
+
+  - id: BV-09
+    frente: BUREAU VERITAS
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Aclarar si existe una Rev 0 del PMI Procedure P22-BA-09-000-006 y, de existir, reemitirla al inspector"
+    fecha_comprometida: null
+    estado: CERRADO
+    criticidad: BAJA
+    criterio_cierre: "Confirmacion de la revision vigente del procedimiento y de su entrega a Bureau Veritas"
+    fuente_contractual: "Correo ADASA 25-Jul-2026, punto 2"
+    origen_fecha: FIJADA ADASA
+    fecha_origen: 2026-07-25
+    fecha_cierre: 2026-08-12
+    consecuencia: "El inspector tiene la Rev A. La Rev 0 existe desde el 06-Ago y cambia el alcance declarado del ensayo: agrega el 10 por ciento sobre el circuito de alta y el derecho de testificacion de ADASA, que la Rev A no traia"
+    accion_adasa: "Ejecutada la reposicion el 12-Ago-2026: la Rev 0 del PMI y otras seis revisiones superadas se reemplazaron dentro de PAQUETE_INSPECCION_BV, con los superados en _superseded/. Queda enviar el correo conjunto que lo avisa, en borrador en CORREOS/Agosto 2026/2026-08-12/; el compromiso se cierra al enviarlo"
+    evidencia_origen: "Informe BVM-IR001-28072026 Rev 0, Seccion B"
+    evidencia_cierre: "Paquete repuesto el 12-Ago con las siete revisiones vigentes y los superados en _superseded/; correo conjunto ENVIADO el 12-Ago 15:20 (CORREOS/Agosto 2026/2026-08-12/CORREO INSPECCION 13 Y 14.pdf)"
+    ref_cruzada: "BV-08, PRG-24"
+    reprogramaciones: 0
+    historial_fechas: "Sin fecha fijada"
+    nota: "No se cierra con la llegada de la Rev 0: el criterio exige la entrega al inspector. El 12-Ago se repuso el paquete y falta solo el aviso. El caso del Painting Procedure resulto ser el critico: la Rev B que tenia el inspector declara 40-75 um en la celda de criterio y 50-80 en la fila de aceptacion del mismo formulario; la Rev 0 lee 50-80 en los dos lugares"
+    nota: "No verificado que la Rev A este superada. Regla anti-invencion: no imputar sin confirmar"
+
+  - id: BV-10
+    frente: BUREAU VERITAS
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Notificar las jornadas 2 y 3 de la Semana 1 con su alcance"
+    fecha_comprometida: 2026-07-28
+    estado: EN DISPUTA
+    criticidad: MEDIA
+    criterio_cierre: "Notificacion escrita de las jornadas, o acuerdo formal de ADASA sobre la nueva distribucion"
+    fuente_contractual: "Plan de inspeccion comunicado el 21-Jul (6 semanas x 3 jornadas); BAE Clausula 37"
+    origen_fecha: FIJADA ADASA
+    fecha_origen: 2026-07-25
+    fecha_cierre: null
+    consecuencia: "El plan de 25 jornadas cotizado a BV pierde base si el proveedor fija una jornada por semana"
+    accion_adasa: "Cerrar por escrito la distribucion de jornadas antes de revalidar la oferta de BV"
+    evidencia_origen: "Correo ADASA 25-Jul-2026, punto 3"
+    evidencia_cierre: null
+    ref_cruzada: "INT-01, INT-07"
+    reprogramaciones: 0
+    historial_fechas: "28-Jul"
+    nota: "BW Water contrapropone el 28-Jul: una jornada basta para la Semana 1; V2 a V6 de dos a tres dias"
+
+  - id: BV-11
+    frente: BUREAU VERITAS
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Responder por escrito los cuatro puntos de reconciliacion (V5 y V6, FAT y Dispatch Release con alcance minimo, Kick-off)"
+    fecha_comprometida: 2026-07-28
+    estado: EN DISPUTA
+    criticidad: ALTA
+    criterio_cierre: "Respuesta que cubra los cuatro sub-puntos, no solo las fechas"
+    fuente_contractual: "NT P22-NT-09-000-002-0; correo ADASA de reconciliacion"
+    origen_fecha: FIJADA ADASA
+    fecha_origen: 2026-07-25
+    fecha_cierre: null
+    consecuencia: "Sin alcance minimo acordado, el FAT puede ejecutarse reducido y el inspector movilizado en falso"
+    accion_adasa: "Reiterar los dos sub-puntos omitidos: alcance minimo del FAT y reunion de Kick-off"
+    evidencia_origen: "Correo ADASA 25-Jul-2026, punto 4"
+    evidencia_cierre: null
+    ref_cruzada: "BV-13, BV-14, INT-01"
+    reprogramaciones: 0
+    historial_fechas: "28-Jul"
+    nota: "Respuesta parcial el 28-Jul: cubre fechas, omite alcance minimo del FAT y Kick-off"
+
+  - id: BV-12
+    frente: BUREAU VERITAS
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Ejecutar las Visitas 5 y 6 de inspeccion"
+    fecha_comprometida: 2026-09-09
+    estado: EN DISPUTA
+    criticidad: MEDIA
+    criterio_cierre: "V5 y V6 separadas en fechas que cubran el posicionamiento de equipos y la llegada de bomba HP, turbos y panel"
+    fuente_contractual: "ITP P22-BA-09-000-004 Rev 0; NT P22-NT-09-000-002-0"
+    origen_fecha: COMPROMISO ESCRITO BW
+    fecha_origen: 2026-07-28
+    fecha_cierre: null
+    consecuencia: "Fusionar V5 y V6 en un dia deja sin testificar el posicionamiento"
+    accion_adasa: "Exigir la separacion de ambas visitas"
+    evidencia_origen: "Correo BW Water 28-Jul-2026"
+    evidencia_cierre: null
+    ref_cruzada: "BV-11, PRG-06"
+    reprogramaciones: 0
+    historial_fechas: "09-Sep propuesto por el proveedor"
+    nota: ""
+
+  - id: BV-13
+    frente: BUREAU VERITAS
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Declarar por escrito cual de sus dos fechas de FAT gobierna, y el alcance minimo"
+    fecha_comprometida: 2026-09-15
+    estado: EN DISPUTA
+    criticidad: CRITICA
+    criterio_cierre: "Confirmacion escrita de la fecha de inicio, la duracion y el alcance minimo del FAT antes de movilizar al inspector"
+    fuente_contractual: "PIE items 8.1 a 8.4; ITP P22-BA-09-000-004 Rev 0"
+    origen_fecha: COMPROMISO ESCRITO BW
+    fecha_origen: 2026-07-28
+    fecha_cierre: null
+    consecuencia: "El inspector es de Bureau Veritas Malasia y atiende en Penang, pero se contrata y se coordina por Bureau Veritas Chile: sobre una ambiguedad de ocho dias en la fecha de inicio no se le puede comprometer la agenda para la ventana completa"
+    accion_adasa: "Exigir la declaracion escrita de la fecha que gobierna. NO reclamar por ventana insuficiente: contra el cronograma vigente ese argumento no se sostiene"
+    evidencia_origen: "Correo BW Water 28-Jul-2026; cronograma del 04-Ago-2026 ID 414"
+    evidencia_cierre: null
+    ref_cruzada: "BV-14, INT-07, PRG-08"
+    reprogramaciones: 4
+    historial_fechas: "Baseline 13-18 Ago (Milestone Tracker) -> banda 07-12 Sep / 14-19 Sep (reconciliacion 14-Jul) -> 15-Sep (correo BW Water 28-Jul) -> 07 al 18-Sep (cronograma del 04-Ago, ID 414). Manda el cronograma -> 15 al 25-Sep (Progress Update del 28-Ago, ID 419, SIN declararse en el correo que lo acompana)"
+    nota: "El argumento de ADASA cambio y conviene no equivocarlo. La aritmetica que se venia usando -'del 15-Sep al 18-Sep hay 4 dias calendario para 7 jornadas contratadas'- salia del correo del 28-Jul y YA NO SE SOSTIENE: el cronograma del 04-Ago da 11 dias, que acomodan las 7 jornadas. Si ADASA reclama con la cifra de 4 dias, BW Water responde con su propio cronograma. Lo objetable no es la ventana sino que dos documentos del proveedor, del mismo paquete, digan cosas distintas"
+
+  - id: BV-14
+    frente: BUREAU VERITAS
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Obtener el Release for Dispatch"
+    fecha_comprometida: 2026-09-18
+    estado: EN DISPUTA
+    criticidad: CRITICA
+    criterio_cierre: "Dossier aprobado bajo el item 8.3 y FAT completo antes de liberar el despacho"
+    fuente_contractual: "PIE item 8.4 (Hold), encadenado al item 8.3 y al 40% del pago"
+    origen_fecha: COMPROMISO ESCRITO BW
+    fecha_origen: 2026-07-28
+    fecha_cierre: null
+    consecuencia: "Liberar sin dossier aprobado rompe el encadenamiento contractual del pago"
+    accion_adasa: "No liberar sin el item 8.3 cerrado"
+    evidencia_origen: "Correo BW Water 28-Jul-2026"
+    evidencia_cierre: null
+    ref_cruzada: "BV-05, BV-13"
+    reprogramaciones: 0
+    historial_fechas: "18-Sep propuesto por el proveedor"
+    nota: ""
+
+  - id: BV-15
+    frente: BUREAU VERITAS
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Emitir los NOI de las visitas restantes, incluido el FAT"
+    fecha_comprometida: null
+    estado: EN DISPUTA
+    criticidad: ALTA
+    criterio_cierre: "Acuerdo escrito sobre el plazo de aviso, o cumplimiento del plazo contractual de 30 dias"
+    fuente_contractual: "BAE Clausula 37, cuerpo: 30 dias de antelacion para suministros internacionales"
+    origen_fecha: COMPROMISO ESCRITO BW
+    fecha_origen: 2026-07-28
+    fecha_cierre: null
+    consecuencia: "Un aviso de 3 a 5 dias no alcanza para comprometer al inspector de Bureau Veritas Malasia por la via de Bureau Veritas Chile, que es la contraparte de la orden de compra"
+    accion_adasa: "Reiterar el plazo contractual y dejar constancia de que las aceptaciones puntuales no sientan precedente"
+    evidencia_origen: "Correo BW Water 28-Jul-2026, contrapropuesta de 3 a 5 dias de aviso"
+    evidencia_cierre: null
+    ref_cruzada: "PRG-03, INT-05"
+    reprogramaciones: 0
+    historial_fechas: "Sin fecha fijada"
+    nota: ""
+
+  - id: BV-16
+    frente: BUREAU VERITAS
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Notificar por escrito y con antelacion toda desviacion del programa fijo, con causa e impacto sobre los puntos Hold y Witness"
+    fecha_comprometida: null
+    estado: ABIERTO
+    criticidad: MEDIA
+    criterio_cierre: "Cada cambio de fecha llega por escrito antes de la actividad afectada"
+    fuente_contractual: "BAE Clausula 37.2, coordinacion de puntos H/W del PIE"
+    origen_fecha: COMPROMISO ESCRITO BW
+    fecha_origen: 2026-07-28
+    fecha_cierre: null
+    consecuencia: "Los cambios llegan por minuta de reunion, no por notificacion formal"
+    accion_adasa: "Exigir el canal escrito; el Change Log del tracker lleva cuatro semanas vacio"
+    evidencia_origen: "Correo BW Water 28-Jul-2026, punto 6"
+    evidencia_cierre: null
+    ref_cruzada: "PRG-14, PRG-19"
+    reprogramaciones: 0
+    historial_fechas: "Obligacion continua"
+    nota: "Obligacion de caracter continuo, sin fecha unica de vencimiento"
+
+  - id: BV-17
+    frente: BUREAU VERITAS
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Ejecutar la jornada de inspeccion del Request 002 (spools SDSS, PT de raiz y capping, marco del skid, revision de WPS y calificacion de soldadores)"
+    fecha_comprometida: 2026-08-07
+    estado: ABIERTO
+    criticidad: ALTA
+    criterio_cierre: "Jornada ejecutada con las cuatro actividades e informe IR002 emitido por Bureau Veritas"
+    fuente_contractual: "ITP P22-BA-09-000-004 Rev 0; NDE Plan P22-BA-09-000-005 Rev C"
+    origen_fecha: COMPROMISO ESCRITO BW
+    fecha_origen: 2026-07-29
+    fecha_cierre: null
+    consecuencia: "Es la primera jornada con las revisiones limpias y con la calificacion de soldadores en alcance"
+    accion_adasa: "Confirmar la movilizacion del inspector"
+    evidencia_origen: "Request to Witness 002, 29-Jul-2026"
+    evidencia_cierre: null
+    ref_cruzada: "BV-04, BV-08, BV-22"
+    reprogramaciones: 0
+    historial_fechas: "07-Ago"
+    nota: "Aviso de 9 dias desde el 29-Jul: cumple los 10 dias solo si se cuenta desde el anuncio del 28-Jul"
+
+  - id: BV-18
+    frente: BUREAU VERITAS
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Entregar el informe oficial de PMI del fabricante"
+    fecha_comprometida: null
+    estado: ABIERTO
+    criticidad: MEDIA
+    criterio_cierre: "Informe de PMI recibido y trazable a las 31 lecturas del informe de Bureau Veritas"
+    fuente_contractual: "ITP P22-BA-09-000-004 Rev 0 actividad 2.4; PIE item 7.6"
+    origen_fecha: CONTRACTUAL
+    fecha_origen: 2026-07-28
+    fecha_cierre: null
+    consecuencia: "El registro de PMI del dossier queda solo con el informe del tercero inspector"
+    accion_adasa: "Trackear en la Seccion 3 del TM N31"
+    evidencia_origen: "Informe BVM-IR001-28072026 Rev 0, detalle punto 6 (once ready)"
+    evidencia_cierre: null
+    ref_cruzada: "BV-03, BV-19"
+    reprogramaciones: 0
+    historial_fechas: "Sin fecha: once ready"
+    nota: ""
+
+  - id: BV-19
+    frente: BUREAU VERITAS
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Completar el PMI del 10% de weldment"
+    fecha_comprometida: null
+    estado: ABIERTO
+    criticidad: MEDIA
+    criterio_cierre: "Registro de PMI sobre weldments testificado por Bureau Veritas"
+    fuente_contractual: "ITP P22-BA-09-000-004 Rev 0 actividad 2.4 (Min. 10% of material and 10% of weldment)"
+    origen_fecha: CONTRACTUAL
+    fecha_origen: 2026-07-28
+    fecha_cierre: null
+    consecuencia: "La verificacion de material quedaria cubierta solo sobre material base"
+    accion_adasa: "Verificar en la jornada del Request 002"
+    evidencia_origen: "Informe BVM-IR001-28072026 Rev 0, tabla de actividades"
+    evidencia_cierre: null
+    ref_cruzada: "BV-17, BV-18"
+    reprogramaciones: 0
+    historial_fechas: "Ligada al avance de soldadura"
+    nota: ""
+
+  - id: BV-20
+    frente: BUREAU VERITAS
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Documentar el metodo alternativo de verificacion de material para sockolets y half couplings"
+    fecha_comprometida: null
+    estado: ABIERTO
+    criticidad: BAJA
+    criterio_cierre: "Metodo alternativo acordado, o aceptacion documentada del respaldo por certificado de molino y trazabilidad"
+    fuente_contractual: "ITP P22-BA-09-000-004 Rev 0 actividad 2.4; PMI Procedure P22-BA-09-000-006"
+    origen_fecha: FIJADA ADASA
+    fecha_origen: 2026-07-28
+    fecha_cierre: null
+    consecuencia: "Componentes menores sin verificacion directa de composicion"
+    accion_adasa: "Aceptar el respaldo documental o exigir metodo alternativo"
+    evidencia_origen: "Informe BVM-IR001-28072026 Rev 0, detalle punto 4"
+    evidencia_cierre: null
+    ref_cruzada: "BV-19"
+    reprogramaciones: 0
+    historial_fechas: "Sin fecha fijada"
+    nota: ""
+
+  - id: BV-21
+    frente: BUREAU VERITAS
+    obligado: BUREAU VERITAS
+    beneficiario: ADASA
+    compromiso: "Emitir el informe de la Visita 1"
+    fecha_comprometida: 2026-07-28
+    estado: CERRADO
+    criticidad: MEDIA
+    criterio_cierre: "Informe recibido"
+    fuente_contractual: "Oferta BV 600049 Rev 3; NT P22-NT-09-000-002-0"
+    origen_fecha: CONTRACTUAL
+    fecha_origen: 2026-07-21
+    fecha_cierre: 2026-07-28
+    consecuencia: "Ninguna"
+    accion_adasa: "Ninguna"
+    evidencia_origen: "Plan de inspeccion comunicado a Bureau Veritas el 21-Jul-2026"
+    evidencia_cierre: "Informe BVM-IR001-28072026 Rev 0, 12 paginas, emitido el 28-Jul-2026"
+    ref_cruzada: "BV-01"
+    reprogramaciones: 0
+    historial_fechas: "28-Jul"
+    nota: "Pendiente de verificacion visual: que casilla marco el inspector en A - Inspection Result y si emitio Release Note"
+
+  - id: BV-22
+    frente: BUREAU VERITAS
+    obligado: BUREAU VERITAS
+    beneficiario: ADASA
+    compromiso: "Atender la jornada de inspeccion del Request 002"
+    fecha_comprometida: 2026-08-07
+    estado: ABIERTO
+    criticidad: ALTA
+    criterio_cierre: "Asistencia del inspector e informe IR002 emitido"
+    fuente_contractual: "Oferta BV 600049 Rev 3"
+    origen_fecha: COMPROMISO ESCRITO BW
+    fecha_origen: 2026-07-29
+    fecha_cierre: null
+    consecuencia: "Jornada perdida si el inspector no se moviliza"
+    accion_adasa: "Confirmar a Bureau Veritas Chile la movilizacion; depende de INT-07"
+    evidencia_origen: "Request to Witness 002 del 29-Jul-2026, con Bureau Veritas como destinatario directo"
+    evidencia_cierre: null
+    ref_cruzada: "BV-17, INT-07"
+    reprogramaciones: 0
+    historial_fechas: "07-Ago"
+    nota: "La validez de la oferta que sostiene esta jornada vence el 06-Ago"
+
+  - id: BV-23
+    frente: BUREAU VERITAS
+    obligado: BUREAU VERITAS
+    beneficiario: ADASA
+    compromiso: "Confirmar si el inspector asistio las jornadas del 13 y del 14 de agosto, y emitir su informe de cada dia"
+    fecha_comprometida: null
+    estado: ABIERTO
+    criticidad: ALTA
+    criterio_cierre: "Declaracion escrita de asistencia por dia, e informe de cada jornada en el formato del BVM-IR001-28072026"
+    fuente_contractual: "Oferta BV 600049 Rev 3 (25 jornadas); correos ADASA del 14 y del 17-Ago-2026"
+    origen_fecha: FIJADA ADASA
+    fecha_origen: 2026-08-14
+    fecha_cierre: null
+    consecuencia: "Sin declaracion de asistencia no se sabe si las dos jornadas se descontaron del saldo contratado, mientras el punto que las justificaba no se ejecuto. Su informe por dia es ademas la prueba independiente con la que se contrasta lo que declare BW Water en PRG-29"
+    accion_adasa: "No suponer asistencia ni consumo de jornada: las dos cosas se piden por escrito"
+    evidencia_origen: "CORREOS/Agosto 2026/2026-08-14/2026-08-14_BV-Inspection-004-Rescheduling.docx; CORREOS/Agosto 2026/2026-08-17/2026-08-17_BV-Inspection-004-Follow-Up.docx, ultima vinieta"
+    evidencia_cierre: null
+    ref_cruzada: "BV-22, PRG-13, PRG-28, PRG-29"
+    reprogramaciones: 0
+    historial_fechas: "Sin fecha fijada"
+    nota: "El correo de BW Water del 14-Ago no dice si Bureau Veritas estuvo presente ninguno de los dos dias, y las carpetas INSPECTION 03 y 04 no traian registro alguno. Requerido por segunda vez el 17-Ago; Bureau Veritas tampoco respondio al primero"
+
+  - id: BV-24
+    frente: BUREAU VERITAS
+    obligado: BUREAU VERITAS
+    beneficiario: ADASA
+    compromiso: "Reemitir los informes BVM-IR005-20082026 y BVM-IR006-21082026 con la presion de diseno que la Line List aprobada asigna a cada linea, levantar una No Conformidad que cubra los tres ensayos, y adoptar dos cambios de metodo: contrastar cada ensayo contra el P&ID y la Line List antes de firmar, y fotografiar la marca de identificacion del carrete en cada registro"
+    fecha_comprometida: 2026-08-24
+    estado: CERRADO PARCIAL
+    criticidad: CRITICA
+    criterio_cierre: "BVM-IR005 Rev 1 y BVM-IR006 Rev 1 con la presion de diseno de la Line List para las tres lineas CIP (80, 90 y 80 barG) y la diferencia contra los 7,5 barG aplicados; No Conformidad levantada en la seccion G que cubra los tres ensayos; confirmacion escrita de que el P&ID P22-DWG-09-009-002 Rev D y la Line List P22-LI-09-009-003 Rev 0 entran a la documentacion de referencia de todo informe de ensayo de presion; y evidencia en el proximo informe de que el registro fotografico incluye la marca de identificacion del carrete"
+    fuente_contractual: "NT P22-NT-09-000-002-0, Seccion 2 Authority: el Tercero Inspector actua como REPRESENTANTE DE ADASA para los Puntos de Detencion y la emision de registros, con la hidrostatica dentro de su alcance. Oferta BV 600049 Rev.3 seccion 1 (velar por los intereses del cliente, con revision de planos y procedimientos) y seccion 3.2 (Flash Report en la misma visita ante No Conformidad o desviacion), contratada por la Orden de Compra 836492. Guia del Paquete ADASA-BV-PAQUETE-INSPECCION Rev 1 seccion 3.4, que le entrego el P&ID como trazado maestro para hidrostatica y la Line List para las visitas 2 y 3"
+    origen_fecha: FIJADA ADASA
+    fecha_origen: 2026-08-21
+    fecha_cierre: 2026-08-31
+    consecuencia: "Dos informes consecutivos declaran conforme un ensayo que no califica, y el del 20-Ago lo hace SIN COMENTARIO ALGUNO: marca Satisfactory (Without comments) con No Conformidades y punch list en No. Entre los dos consignan 5,0 barG de presion de diseno para TRES lineas que la Line List fija en 80, 90 y 80 barG. Si entran al dossier asi, el Punto de Detencion de la fila 5.2 queda respaldado por un atestiguamiento que nunca contrasto el parametro central contra el documento que lo gobierna. Y ADASA no tiene como detectarlo por su cuenta: el modulo se fabrica a mas de 17.000 km y sobre la identidad de lo ensayado el inspector presente es el unico control. El registro fotografico no lo suple, porque ninguna imagen de la seccion I de los dos informes muestra una marca de identificacion del carrete y la del IR006 rotula UNA sola foto con DOS numeros de linea distintos"
+    accion_adasa: "ADASA reserva su posicion sobre la validez del atestiguamiento de los dias 20 y 21 y tiene los TRES ensayos por no ejecutados. La retencion de la fila 5.2 se comunica tambien al inspector. El correo sube de tono y encuadra el reclamo en el ROL: que contrato ADASA al designar un tercero inspector, que es el contraste independiente contra la ingenieria aprobada. Cierra llamando al trabajo conjunto y sin objetar el desempeno en terreno, porque el inspector asistio, firmo, reviso los certificados y fotografio los escalones"
+    evidencia_origen: "PROGRAMA y CONTRATO/BV INSPECTION/INSPECTION 05/IR005-ADASA-BVM-20082026.pdf secciones A, B, D, E1 y G, mas su Annex 1 (cuatro certificados, dos de rango 0 a 160 bar); PROGRAMA y CONTRATO/BV INSPECTION/INSPECTION 06/IR006-ADASA-BVM-21082026.pdf mismas secciones; los dos analisis _ANALISIS_INSPECCION_05.md y _ANALISIS_INSPECCION_06.md; correo ENVIADO el 21-Ago a las 12:15:49 hora de Chile, respaldo en CORREOS/Agosto 2026/2026-08-21/Re: 25007 TALTAL -  Request to witness inspection 006.pdf (respaldo del enviado, 21-Ago 12:15:49 hora de Chile)"
+    evidencia_cierre: "Set completo IR001 a IR009 remitido por Carlo Montecinos el 31-Ago-2026 14:47 por la cadena del Request 006, archivado y ordenado en PROGRAMA y CONTRATO/BV INSPECTION/RESUMEN BV/ con analisis en _REGISTRO_INSPECCIONES_BV.md. CUATRO de las SEIS peticiones cerradas, verificadas por render del formulario: (1) los dos informes reemitidos declaran la presion de diseno de la Line List y marcan las tres lineas Unsatisfactory; (2) el IR005 pasa de Satisfactory (Without comments) a NOT SATISFACTORY y el IR006 de Satisfactory with comments a NOT SATISFACTORY; (3) el P&ID Rev D y la Line List Rev 0 entran a la seccion B de los dos reemitidos y de los informes IR008 e IR009; (4) desde el IR008 el registro fotografico incluye la fotografia rotulada View of spool identification for pressure test con la marca del carrete visible"
+    ref_cruzada: "BV-23, BV-25, PRG-34, PRG-36"
+    reprogramaciones: 0
+    historial_fechas: "Abierto el 21-Ago-2026 con el correo ENVIADO a las 12:15:49 hora de Chile a Carlo Montecinos, con Victor Gutierrez en copia. Respondido parcialmente el 27-Ago (Bureau Veritas Malasia declara por Carlo que todos los comentarios estaban atendidos) y cerrado parcialmente el 31-Ago-2026 con la entrega del set completo. El equipo de Bureau Veritas Malasia quedo fuera de la copia por decision del usuario: el reclamo va a la contraparte de la OC 836492. Plazo al lunes 24-Ago"
+    nota: "CORRECCION del 21-Ago: la primera version de este compromiso exigia el informe del 20-Ago por no haber llegado. ES FALSO. El BVM-IR005 lo remitio Emylia Rosli el 20-Ago 23:35 hora de Chile con Luis Rivera en copia, por la cadena del Request 004 — tercera cadena del frente, y de ahi salio el error. Llego DENTRO del plazo de la seccion 3, y el correo lo acusa expresamente para acotar el reclamo a su contenido. Calibracion: el IR005 SI marca Satisfactory (Without comments), sin salvedad; el IR006 marca Satisfactory with comments. El correo distingue los dos. Y no es falta de instrumentacion: el 20-Ago habia dos manometros de 0 a 160 bar en la mesa, usados esa misma manana para el ensayo a 90 barG. El punto que lo cierra todo sale del propio informe: el inspector CORRIGIO el prefijo del TAG (escribio CP-SSD-DN100-09-014 donde el formulario del fabricante decia DA-SSD-) y aun con el numero correcto delante consigno 5,0 barG sobre una linea que la Line List fija en 80"
+
+  - id: BV-25
+    frente: BUREAU VERITAS
+    obligado: BUREAU VERITAS
+    beneficiario: ADASA
+    compromiso: "Emitir la No Conformidad que cubre los tres ensayos y referenciarla en la seccion G de los dos informes reemitidos; reemitir el BVM-IR007 con la casilla de resultado que corresponde; y corregir la fila de la visita 4 del cuadro resumen del 31-Ago"
+    fecha_comprometida: 2026-09-04
+    estado: ABIERTO
+    criticidad: ALTA
+    criterio_cierre: "No Conformidad emitida con numero propio y citada en la seccion G del BVM-IR005 Rev 01 y del BVM-IR006 Rev 01, con la casilla de No Conformidades abiertas conciliada en Si; BVM-IR007 reemitido con la casilla de resultado coincidente con su propio resumen y con su No Conformidad por el espesor de pelicula seca; y cuadro resumen corregido en la fila de la visita del 14-Ago"
+    fuente_contractual: "Oferta BV 600049 Rev.3 seccion 3.2, que obliga a informar toda No Conformidad o desviacion en la misma visita mediante Flash Report, contratada por la Orden de Compra 836492. NT P22-NT-09-000-002-0 seccion 2, que designa al Tercero Inspector representante de ADASA"
+    origen_fecha: FIJADA ADASA
+    fecha_origen: 2026-08-31
+    fecha_cierre: null
+    consecuencia: "Los dos informes reemitidos quedaron internamente contradictorios: marcan la casilla Not Satisfactory, que el propio formulario define como NCR raised during the inspection, y tres lineas mas abajo marcan No en Open Non Conformities, con la seccion G en N/A. Mientras las dos casillas digan cosas distintas, el dossier de fabricacion no llevara el registro de la desviacion de los tres ensayos del circuito CIP. El BVM-IR007 del 24-Ago repite el mismo defecto tres dias despues del reclamo: marca Satisfactory (Without comments) mientras su resumen declara el resultado no satisfactorio por espesor de pelicula seca insuficiente en la parte inferior del marco del skid. Y el cuadro resumen del 31-Ago declara la visita del 14-Ago como ensayo de alta presion satisfactorio cuando el BVM-IR004 dice que ese ensayo no pudo ejecutarse"
+    accion_adasa: "Correo ENVIADO el 31-Ago-2026 a las 16:15 hora de Chile desde CORREOS/Agosto 2026/2026-08-31/ (respaldo: respaldo correo BV.pdf), en espanol, con el anexo de 148 KB adjunto, por la cadena del Request 006, a Carlo Montecinos con Jaime Martinez y Victor Gutierrez en copia, con el registro consolidado como adjunto. El argumento sale del propio formulario reemitido y no de una interpretacion, de modo que no admite refutacion. Si no llega al viernes 4, escalar al gerente de operaciones con copia a Abastecimiento, que administra la Orden de Compra"
+    evidencia_origen: "PROGRAMA y CONTRATO/BV INSPECTION/RESUMEN BV/_REGISTRO_INSPECCIONES_BV.md secciones 3 y 4; renders de verificacion en RESUMEN BV/_render/ (GRUPO_A_reemisiones.png y GRUPO_B_sin_analisis.png); Anexo ADASA-BV-REGISTRO-INSPECCIONES-Rev0"
+    evidencia_cierre: null
+    ref_cruzada: "BV-24, PRG-34"
+    reprogramaciones: 0
+    historial_fechas: "Abierto el 31-Ago-2026 al verificar el set completo. Plazo al viernes 4 de septiembre"
+    nota: "Deriva de BV-24, que cerro parcialmente. Lo que quedaba de aquel eran dos puntos; este los recoge y suma dos hallazgos nuevos del propio set. NO se objeta el desempeno en terreno: el inspector asistio a las nueve jornadas, firmo los registros, reviso los certificados de calibracion y fotografio los escalones de presion con su hora. Traza documental menor que va en el anexo y no en el cuerpo del correo: el certificado de calibracion adjunto al BVM-IR008 es byte a byte el del BVM-IR009 y su nombre declara PSPP-26605366 cuando el contenido es el PSPP-26605336; los dos informes declaran los mismos dos manometros en su seccion D, de modo que el numero erroneo esta en el nombre del archivo y no en el ensayo"
+
+  # ===================================================================
+  # PROGRAMA, FABRICACION Y PROCUREMENT
+  # ===================================================================
+
+  - id: PRG-01
+    frente: PROGRAMA
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Cumplir el Plazo de Entrega del modulo (Ready to Ship, EXW Penang)"
+    fecha_comprometida: 2026-08-03
+    estado: ABIERTO
+    criticidad: CRITICA
+    criterio_cierre: "Hito Ready to Ship ejecutado y Release for Dispatch liberado"
+    fuente_contractual: "BAE Clausula 27 - Plazos de Ejecucion del Pedido: maximo 300 dias corridos desde la Notificacion de Adjudicacion"
+    origen_fecha: CONTRACTUAL
+    fecha_origen: 2025-10-07
+    fecha_cierre: null
+    consecuencia: "Multa diaria de 0,2% del valor neto total del Contrato por dia calendario de exceso (BAE Clausula 43.1 letra b), con tope acumulado de 15% (Clausula 43.4)"
+    accion_adasa: "Verificar la fecha de la Notificacion de Adjudicacion en el documento de adjudicacion antes de cursar multa (ver INT-08)"
+    evidencia_origen: "BAE Clausula 27; Milestone Tracker del proveedor, baseline Ready to Ship 3 Aug 2026"
+    evidencia_cierre: null
+    ref_cruzada: "PRG-02, PRG-07, PRG-08, INT-08"
+    reprogramaciones: 3
+    historial_fechas: "03-Ago (contractual) -> 09-10 Sep (Recovery Schedule 14-Jul, referencia fija ADASA) -> 21-Sep (cronograma del proveedor 04-Ago) -> 28-Sep (aviso de Eduardo Yamauchi del 31-Ago-2026, alegando clima). ADASA no acepta ninguna de las dos ultimas y lo declaro por escrito en la NT P22-NT-09-000-003-0"
+    nota: "07-Oct-2025 mas 300 dias corridos da 03-Ago-2026, que coincide exactamente con el baseline del propio Milestone Tracker del proveedor"
+
+  - id: PRG-02
+    frente: PROGRAMA
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Obtener la Recepcion Provisional dentro del Plazo Contractual"
+    fecha_comprometida: 2027-03-01
+    estado: ABIERTO
+    criticidad: ALTA
+    criterio_cierre: "Acta de Recepcion Provisional del Pedido"
+    fuente_contractual: "BAE Clausula 27: el Plazo Contractual no debera superar los 510 dias corridos desde la Notificacion de Adjudicacion"
+    origen_fecha: CONTRACTUAL
+    fecha_origen: 2025-10-07
+    fecha_cierre: null
+    consecuencia: "Margen de 58 dias sobre el Performance Test proyectado al 02-Ene-2027"
+    accion_adasa: "Monitorear; el margen se consume con cada deslizamiento del embarque"
+    evidencia_origen: "BAE Clausula 27"
+    evidencia_cierre: null
+    ref_cruzada: "PRG-01"
+    reprogramaciones: 0
+    historial_fechas: "01-Mar-2027"
+    nota: ""
+
+  - id: PRG-03
+    frente: PROGRAMA
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Avisar por escrito las pruebas con inspeccion de terceros con 30 dias de antelacion"
+    fecha_comprometida: null
+    estado: ABIERTO
+    criticidad: ALTA
+    criterio_cierre: "Notificacion formal de cada punto Hold y Witness con 30 dias de antelacion"
+    fuente_contractual: "BAE Clausula 37, cuerpo: minimo de treinta (30) dias de antelacion para suministros internacionales"
+    origen_fecha: CONTRACTUAL
+    fecha_origen: 2025-10-07
+    fecha_cierre: null
+    consecuencia: "Sin aviso suficiente no se alcanza a comprometer al inspector, que se agenda por Bureau Veritas Chile con su oficina de Malasia"
+    accion_adasa: "Dejar constancia de cada incumplimiento; no aceptar tacitamente el aviso corto"
+    evidencia_origen: "BAE Clausula 37"
+    evidencia_cierre: null
+    ref_cruzada: "BV-15, PRG-13"
+    reprogramaciones: 0
+    historial_fechas: "Obligacion continua"
+    nota: "Incumplido de forma reiterada. La jornada se aviso el 04-Ago para el 12-13 y se reprogramo por escrito al 13-14 (Request 003): 8 dias de antelacion"
+
+  - id: PRG-04
+    frente: PROGRAMA
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Emitir el reporte formal de causa raiz del atraso FEDCO, con secuencia de eventos y acciones de recuperacion"
+    fecha_comprometida: 2026-07-03
+    estado: ABIERTO
+    criticidad: ALTA
+    criterio_cierre: "Reporte en formato informe con los cuatro contenidos exigidos"
+    fuente_contractual: "Correo ADASA del 29-Jun-2026"
+    origen_fecha: FIJADA ADASA
+    fecha_origen: 2026-06-29
+    fecha_cierre: null
+    consecuencia: "Sin causa raiz sustanciada no se puede asignar responsabilidad por el atraso de la bomba HP y los turbochargers"
+    accion_adasa: "Reiterar; el Manufacturing Schedule R5 es un cronograma, no un reporte de causa raiz"
+    evidencia_origen: "Correo ADASA 29-Jun-2026"
+    evidencia_cierre: null
+    ref_cruzada: "PRG-05, PRG-06"
+    reprogramaciones: 0
+    historial_fechas: "03-Jul"
+    nota: "Ningun documento del paquete del 03-Ago lo contiene"
+
+  - id: PRG-05
+    frente: PROGRAMA
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Embarcar la bomba HP y los dos turbochargers desde fabrica FEDCO"
+    fecha_comprometida: 2026-08-21
+    estado: ABIERTO
+    criticidad: CRITICA
+    criterio_cierre: "AWB emitido y packing list entregado"
+    fuente_contractual: "Manufacturing Schedule R5, tarea 28 Shipment Ready"
+    origen_fecha: COMPROMISO ESCRITO BW
+    fecha_origen: 2026-08-04
+    fecha_cierre: null
+    consecuencia: "Es el camino critico del ensamble y del FAT"
+    accion_adasa: "Exigir confirmacion del AWB en la weekly"
+    evidencia_origen: "Correo Yamauchi 04-Ago-2026 08:24; Manufacturing Schedule R5"
+    evidencia_cierre: null
+    ref_cruzada: "PRG-04, PRG-06, BV-12"
+    reprogramaciones: 0
+    historial_fechas: "21-Ago"
+    nota: "R5 al 89% en Production; motor recibido el 03-Ago. La revision R5 no figura en la tabla de revisiones del propio documento, que llega hasta la 04 del 10-Jul"
+
+  - id: PRG-06
+    frente: PROGRAMA
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Recibir en el taller de Penang los tres equipos FEDCO"
+    fecha_comprometida: 2026-09-02
+    estado: ABIERTO
+    criticidad: CRITICA
+    criterio_cierre: "Recepcion en taller de Penang registrada en el tracker"
+    fuente_contractual: "Weekly Dashboard items 1, 12 y 16; cronograma IDs 224, 228 y 232"
+    origen_fecha: COMPROMISO ESCRITO BW
+    fecha_origen: 2026-08-04
+    fecha_cierre: null
+    consecuencia: "Fija el arranque del posicionamiento de equipos y, con el, la ventana del FAT"
+    accion_adasa: "Resolver la contradiccion interna antes de fijar V6"
+    evidencia_origen: "Procurement tracking del 03-Ago-2026"
+    evidencia_cierre: null
+    ref_cruzada: "PRG-05, BV-12, BV-13"
+    reprogramaciones: 0
+    historial_fechas: "02-Sep"
+    nota: "Contradiccion interna: el comentario del propio tracker declara fin de fabricacion el 31-Ago"
+
+  - id: PRG-07
+    frente: PROGRAMA
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Cumplir la fecha de embarque EXW Penang del 09 al 10 de septiembre"
+    fecha_comprometida: 2026-09-10
+    estado: EN DISPUTA
+    criticidad: CRITICA
+    criterio_cierre: "Reprogramacion aceptada por escrito por ADASA, o cumplimiento de la fecha"
+    fuente_contractual: "Recovery Schedule del 14-Jul-2026, declarado referencia fija e inamovible por ADASA"
+    origen_fecha: FIJADA ADASA
+    fecha_origen: 2026-07-14
+    fecha_cierre: null
+    consecuencia: "El proveedor la superó unilateralmente sin acuerdo"
+    accion_adasa: "No convalidar por silencio ninguna fecha posterior. La RESERVA DE POSICION se materializo el 31-Ago-2026 en la Nota Tecnica P22-NT-09-000-003-0, en una frase neutra: tomar nota de la fecha revisada no constituye aceptacion de una nueva fecha contractual ni renuncia a los derechos del Contrato. Es version suave por decision del usuario, que no quiere comprometer la entrega del 28: NO se declaro el rechazo expreso ni se citaron numeros de clausula, pero la fecha no queda convalidada"
+    evidencia_origen: "Recovery Schedule Rev A del 14-Jul-2026"
+    evidencia_cierre: null
+    ref_cruzada: "PRG-01, PRG-08"
+    reprogramaciones: 0
+    historial_fechas: "09-10 Sep"
+    nota: "El cronograma del 04-Ago, ID 416, pone el embarque entre el 19 y el 21 de septiembre"
+
+  - id: PRG-08
+    frente: PROGRAMA
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Alcanzar el shipment readiness declarado por el proveedor"
+    fecha_comprometida: 2026-09-28
+    estado: EN DISPUTA
+    criticidad: CRITICA
+    criterio_cierre: "Aceptacion formal de ADASA, o recuperacion al 09-10 de septiembre"
+    fuente_contractual: "Meeting notes 28-Jul-2026, bloque Schedule Update; cronograma ID 416"
+    origen_fecha: COMPROMISO ESCRITO BW
+    fecha_origen: 2026-07-28
+    fecha_cierre: null
+    consecuencia: "56 dias sobre el Plazo de Entrega contractual del 03-Ago. Contra la linea base del propio adjunto del proveedor son 44 dias en el ex-works, 43 en el FAT y 51 en la entrega en sitio y en el fin de programa"
+    accion_adasa: "CUBIERTO el 31-Ago-2026 con la reserva de posicion de la Nota Tecnica P22-NT-09-000-003-0, que deja constancia de que tomar nota de la fecha no es aceptarla. No es el rechazo expreso que este compromiso pedia, y es deliberado: version suave para no comprometer la entrega del 28. Si la fecha vuelve a moverse, el rechazo expreso se emite con el material ya escrito en la nota de PRG-41"
+    evidencia_origen: "Meeting notes 28-Jul-2026; cronograma del 04-Ago"
+    evidencia_cierre: null
+    ref_cruzada: "PRG-01, PRG-07, PRG-41, PRG-42"
+    reprogramaciones: 1
+    historial_fechas: "21-Sep (meeting notes del 28-Jul y cronograma del 04-Ago) -> 28-Sep (aviso del 31-Ago-2026 alegando clima, con el Progress Update del 28-Ago como respaldo)"
+    nota: "Ausente de la minuta del 04-Ago: el proveedor dejo de mencionarlo. El aviso del 31-Ago llego tres dias despues de producido su propio cronograma, contra la Clausula 26 que obliga a informar por escrito y sin dilacion alguna"
+
+  - id: PRG-09
+    frente: PROGRAMA
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Entregar las valvulas (All Valve Set, Metal Valve y PVC Valve) en el taller de Penang"
+    fecha_comprometida: 2026-08-06
+    estado: ABIERTO
+    criticidad: MEDIA
+    criterio_cierre: "Recepcion en taller registrada"
+    fuente_contractual: "Minuta 04-Ago-2026; Procurement tracking items 3, 4 y 5"
+    origen_fecha: COMPROMISO VERBAL-MINUTA
+    fecha_origen: 2026-08-04
+    fecha_cierre: null
+    consecuencia: "Condiciona el ensamble de spools"
+    accion_adasa: "Verificar en el tracker de la proxima semana"
+    evidencia_origen: "Minuta 04-Ago-2026: Valve delivery moved to 6 August"
+    evidencia_cierre: null
+    ref_cruzada: "PRG-14"
+    reprogramaciones: 1
+    historial_fechas: "23-Jul -> 06-Ago (slip silencioso de +14 dias, sin entrada en el Change Log)"
+    nota: "Contradiccion interna: el cronograma pone la llegada el 15-Ago. El tracker condiciona el retiro al pago del 05-Ago"
+
+  - id: PRG-10
+    frente: PROGRAMA
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Entregar el CIP / Flushing Tank en el taller de Penang"
+    fecha_comprometida: 2026-08-26
+    estado: ABIERTO
+    criticidad: MEDIA
+    criterio_cierre: "Recepcion en taller registrada"
+    fuente_contractual: "Minuta 04-Ago-2026; Procurement tracking item 10"
+    origen_fecha: COMPROMISO VERBAL-MINUTA
+    fecha_origen: 2026-08-04
+    fecha_cierre: null
+    consecuencia: "Slip de 30 dias no declarado en el Change Log"
+    accion_adasa: "Levantar el slip silencioso en la revision de procurement"
+    evidencia_origen: "Minuta 04-Ago-2026: Flushing tank delayed to 26 August"
+    evidencia_cierre: null
+    ref_cruzada: "PRG-14"
+    reprogramaciones: 1
+    historial_fechas: "27-Jul -> 26-Ago (slip silencioso de +30 dias, el mayor de la serie)"
+    nota: "Contradiccion interna: las meeting notes del 28-Jul decian 03-Sep y el cronograma del 04-Ago aun dice 05-Sep"
+
+  - id: PRG-11
+    frente: PROGRAMA
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Entregar el panel PLC en el taller de Penang"
+    fecha_comprometida: 2026-08-23
+    estado: ABIERTO
+    criticidad: ALTA
+    criterio_cierre: "Recepcion en taller registrada"
+    fuente_contractual: "Procurement tracking item 21; cronograma ID 358"
+    origen_fecha: COMPROMISO ESCRITO BW
+    fecha_origen: 2026-07-20
+    fecha_cierre: null
+    consecuencia: "Prerrequisito de la Visita 6 y del FAT de software"
+    accion_adasa: "Verificar contra el recovery plan del 20-Jul"
+    evidencia_origen: "Recovery plan del panel PLC-LCP, 20-Jul-2026"
+    evidencia_cierre: null
+    ref_cruzada: "PRG-18, BV-12"
+    reprogramaciones: 0
+    historial_fechas: "23-Ago"
+    nota: "Contradiccion interna sobre el fin de fabricacion: 14-Ago segun el tracker, 09-Ago segun el cronograma"
+
+  - id: PRG-12
+    frente: PROGRAMA
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Emitir el correo formal que confirma la inspeccion del viernes"
+    fecha_comprometida: 2026-08-07
+    estado: ABIERTO
+    criticidad: MEDIA
+    criterio_cierre: "Correo formal de confirmacion emitido"
+    fuente_contractual: "Meeting notes 28-Jul-2026; minuta 04-Ago-2026"
+    origen_fecha: COMPROMISO VERBAL-MINUTA
+    fecha_origen: 2026-08-04
+    fecha_cierre: null
+    consecuencia: "Sin confirmacion escrita el inspector no se moviliza"
+    accion_adasa: "Exigirlo antes del 06-Ago"
+    evidencia_origen: "Minuta 04-Ago-2026: Send email confirming Friday's inspection"
+    evidencia_cierre: null
+    ref_cruzada: "BV-17, BV-22"
+    reprogramaciones: 0
+    historial_fechas: "07-Ago"
+    nota: ""
+
+  - id: PRG-13
+    frente: PROGRAMA
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Ejecutar la inspeccion de prueba hidrostatica de alta presion y la preparacion de pintura"
+    fecha_comprometida: 2026-09-02
+    estado: ABIERTO
+    criticidad: CRITICA
+    criterio_cierre: "Notificacion formal de los puntos Hold y Witness, y jornada testificada"
+    fuente_contractual: "Inspection Request Form AQ-QAM-F027 (004); ITP P22-BA-09-000-004 Rev 0 fila 5.2; NT-002 Seccion 3.2"
+    origen_fecha: COMPROMISO ESCRITO BW
+    fecha_origen: 2026-08-04
+    fecha_cierre: null
+    consecuencia: "El ensayo de alta es Punto de Detencion de la fila 5.2 del ITP y no se ejecuto en ninguna de las dos jornadas de la semana. Dos jornadas del saldo contratado quedaron sin el punto que las justificaba, y el aviso llego con la ventana cerrada"
+    accion_adasa: "Exigido por escrito el 14 y de nuevo el 17-Ago. El 20-Ago del Request 004 no se acepta como reemplazo mientras el 13 y el 14 sigan sin registro: por PRG-29 esas actividades se tienen por no ejecutadas y vuelven al Inspection Request, de modo que la jornada del 20 no puede absorberlas junto con lo suyo"
+    evidencia_origen: "PROGRAMA y CONTRATO/BV INSPECTION/INSPECTION 04/AQ-QAM-F027 Inspection Request_TALTAL project (004).pdf, extraido en md/"
+    evidencia_cierre: null
+    ref_cruzada: "PRG-03, PRG-22, PRG-38, BV-15"
+    reprogramaciones: 3
+    historial_fechas: "12 y 13-Ago (minuta verbal del 04-Ago) -> 13 y 14-Ago (Inspection Request 003, escrito, en el repositorio el 05-Ago) -> 20 y 21-Ago (Inspection Request 004, escrito, 13-Ago) -> 2, 3 y 4-Sep (reunion de coordinacion del 26-Ago). Manda el Request. CIERRE PARCIAL el 27 y el 28-Ago: la hidrostatica de BAJA presion se atestiguo en dos jornadas sobre DA-PVC-DN100-09-002 y DA-PVC-DN100-09-001, informes BVM-IR008 y BVM-IR009, las dos conformes. Sigue abierta la de ALTA y la del RO Vessel"
+    nota: "El 14-Ago BW Water declara por escrito que no pudo ejecutar el ensayo de alta por un desperfecto tecnico y que reemplazo la inspeccion de ese dia por un examen visual y dimensional de spools. El aviso entro a las 05:15 hora de Chile, que en Penang son las 17:15: la ventana de 09:00 a 17:00 ya estaba cerrada. Queda sin declarar que se ejecuto el jueves 13, y no consta si el inspector asistio; ADASA lo pide por escrito y no lo asume. El Request 004 traslada al 20 y 21 las MISMAS dos actividades y vuelve a cubrir dos dias en una sola casilla de fecha y un solo bloque de resultado, que es lo que ADASA pidio corregir el 12-Ago. Antes de esto ya arrastraba dos cambios: la fecha corrio un dia y el alcance se recorto, de modo que siguen sin testigo la hidrostatica de BAJA presion y la del RO Vessel, que la NT-002 Seccion 3.2 exige como LP a 7,5 bar (Witness) y RO Vessel (Hold)"
+
+  - id: PRG-14
+    frente: PROGRAMA
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Emitir el calendario semanal de inspecciones para que ADASA coordine a los inspectores"
+    fecha_comprometida: null
+    estado: ABIERTO
+    criticidad: MEDIA
+    criterio_cierre: "Calendario emitido cada semana con el borrador de la semana siguiente"
+    fuente_contractual: "Meeting notes 28-Jul-2026; minuta 04-Ago-2026"
+    origen_fecha: COMPROMISO VERBAL-MINUTA
+    fecha_origen: 2026-07-28
+    fecha_cierre: null
+    consecuencia: "Sin calendario, cada jornada se avisa con dias de antelacion en una reunion"
+    accion_adasa: "Exigir el canal escrito semanal"
+    evidencia_origen: "Minuta 04-Ago-2026: Send draft next week's inspection"
+    evidencia_cierre: null
+    ref_cruzada: "BV-16, PRG-03"
+    reprogramaciones: 0
+    historial_fechas: "Obligacion semanal recurrente"
+    nota: "Parcialmente cumplido: la jornada del 13 y 14-Ago se comunico en la reunion como 12-13 y se corrigio por Inspection Request, nunca por calendario"
+
+  - id: PRG-15
+    frente: PROGRAMA
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Emitir toda la documentacion de ingenieria pendiente hasta alcanzar Codigo 1"
+    fecha_comprometida: 2026-07-30
+    estado: ABIERTO
+    criticidad: ALTA
+    criterio_cierre: "Cero documentos pendientes de Codigo 1"
+    fuente_contractual: "Meeting notes 28-Jul-2026: Target to complete remaining Code 1 documentation - Thursday"
+    origen_fecha: COMPROMISO VERBAL-MINUTA
+    fecha_origen: 2026-07-28
+    fecha_cierre: null
+    consecuencia: "Los documentos en Codigo 2 y 3 bloquean las inspecciones que dependen de ellos"
+    accion_adasa: "Cruzar contra el Master Register: 7 items en Codigo 3 al 05-Ago"
+    evidencia_origen: "Meeting notes 28-Jul-2026"
+    evidencia_cierre: null
+    ref_cruzada: "PRG-19, INT-06"
+    reprogramaciones: 0
+    historial_fechas: "30-Jul"
+    nota: "La minuta del 04-Ago aun lista documentos pendientes de aprobacion en Codigo 1 como soporte de las inspecciones"
+
+  - id: PRG-16
+    frente: PROGRAMA
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Entregar los repuestos de sensores y flowmeters"
+    fecha_comprometida: 2026-09-15
+    estado: ABIERTO
+    criticidad: BAJA
+    criterio_cierre: "Recepcion registrada"
+    fuente_contractual: "Meeting notes 28-Jul-2026; cronograma IDs 377, 385 y 389"
+    origen_fecha: COMPROMISO ESCRITO BW
+    fecha_origen: 2026-07-28
+    fecha_cierre: null
+    consecuencia: "El proveedor declara que no impacta el ensamble ni la entrega"
+    accion_adasa: "Monitorear"
+    evidencia_origen: "Meeting notes 28-Jul-2026"
+    evidencia_cierre: null
+    ref_cruzada: "COM-06"
+    reprogramaciones: 0
+    historial_fechas: "15-Sep"
+    nota: ""
+
+  - id: PRG-17
+    frente: PROGRAMA
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Entregar el packing list de las membranas"
+    fecha_comprometida: null
+    estado: ABIERTO
+    criticidad: MEDIA
+    criterio_cierre: "Documento emitido"
+    fuente_contractual: "Minuta 04-Ago-2026, bloque Pending items"
+    origen_fecha: COMPROMISO VERBAL-MINUTA
+    fecha_origen: 2026-08-04
+    fecha_cierre: null
+    consecuencia: "Las membranas se entregan directo a Taltal; sin packing list no hay control de recepcion en sitio"
+    accion_adasa: "Fijar fecha; hoy es un compromiso sin vencimiento"
+    evidencia_origen: "Minuta 04-Ago-2026"
+    evidencia_cierre: null
+    ref_cruzada: ""
+    reprogramaciones: 0
+    historial_fechas: "Sin fecha fijada"
+    nota: "Entrega directa a Taltal registrada el 03-Ago"
+
+  - id: PRG-18
+    frente: PROGRAMA
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Entregar el reporte de actualizacion del panel PLC tras las pruebas"
+    fecha_comprometida: 2026-08-05
+    estado: ABIERTO
+    criticidad: MEDIA
+    criterio_cierre: "Reporte de pruebas recibido"
+    fuente_contractual: "Minuta 04-Ago-2026: PLC tests ongoing. Updates expected by tomorrow"
+    origen_fecha: COMPROMISO VERBAL-MINUTA
+    fecha_origen: 2026-08-04
+    fecha_cierre: null
+    consecuencia: "Condiciona la fecha de despacho del panel al taller"
+    accion_adasa: "Reclamarlo si no llega hoy"
+    evidencia_origen: "Minuta 04-Ago-2026"
+    evidencia_cierre: null
+    ref_cruzada: "PRG-11"
+    reprogramaciones: 0
+    historial_fechas: "05-Ago"
+    nota: ""
+
+  - id: PRG-19
+    frente: PROGRAMA
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Emitir el reporte semanal de estado documental (DDSR)"
+    fecha_comprometida: null
+    estado: ABIERTO
+    criticidad: MEDIA
+    criterio_cierre: "DDSR incluido en el paquete semanal"
+    fuente_contractual: "Minuta 07-Jul-2026, bloque Reporting"
+    origen_fecha: COMPROMISO VERBAL-MINUTA
+    fecha_origen: 2026-07-07
+    fecha_cierre: null
+    consecuencia: "Sin DDSR, el 92% de avance de aprobacion es un dato del 20-Jul"
+    accion_adasa: "Exigir su reposicion en el paquete semanal"
+    evidencia_origen: "Minuta 07-Jul-2026"
+    evidencia_cierre: null
+    ref_cruzada: "PRG-15, BV-16"
+    reprogramaciones: 0
+    historial_fechas: "Obligacion semanal recurrente. Ultima emision: 20-Jul"
+    nota: "Incumplido dos semanas seguidas: falta en los paquetes del 27-Jul y del 03-Ago"
+
+  # ===================================================================
+  # COMERCIAL
+  # ===================================================================
+
+  - id: COM-01
+    frente: COMERCIAL
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Reemitir la cotizacion de repuestos como documento comercial controlado con los cuatro requisitos exigidos"
+    fecha_comprometida: 2026-07-31
+    estado: CERRADO PARCIAL
+    criticidad: MEDIA
+    criterio_cierre: "Los cuatro requisitos (a) a (d) en cumplimiento"
+    fuente_contractual: "Correo ADASA 20-Jul-2026, rechazo por forma"
+    origen_fecha: FIJADA ADASA
+    fecha_origen: 2026-07-20
+    fecha_cierre: 2026-07-28
+    consecuencia: "Sin documento controlado no hay base para emitir orden de compra"
+    accion_adasa: "Litigar el fondo: once lineas mal reconciliadas y cuatro alzas (ver COM-07)"
+    evidencia_origen: "Correo ADASA 20-Jul-2026"
+    evidencia_cierre: "Proposal 25007-PL-0002 rev.0, recibida el 28-Jul-2026 18:49"
+    ref_cruzada: "COM-02, COM-05, COM-07"
+    reprogramaciones: 3
+    historial_fechas: "22-Jun -> 03-Jul -> 10-Jul -> 31-Jul"
+    nota: "Cumplido en plazo, parcial en contenido. Tres reprogramaciones previas: el patron es la prueba"
+
+  - id: COM-02
+    frente: COMERCIAL
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Mantener la validez de la propuesta de repuestos por USD 51.224,50"
+    fecha_comprometida: 2026-08-28
+    estado: ABIERTO
+    criticidad: MEDIA
+    criterio_cierre: "Orden de compra emitida o revalidacion escrita"
+    fuente_contractual: "Proposal 25007-PL-0002 rev.0: shall remain valid until August 28th, 2026"
+    origen_fecha: COMPROMISO ESCRITO BW
+    fecha_origen: 2026-07-28
+    fecha_cierre: null
+    consecuencia: "Vencida la validez, el precio se puede reajustar"
+    accion_adasa: "Resolver el fondo antes del 28-Ago o pedir revalidacion"
+    evidencia_origen: "Proposal 25007-PL-0002 rev.0, pagina 1"
+    evidencia_cierre: null
+    ref_cruzada: "COM-01, COM-07, COM-09"
+    reprogramaciones: 0
+    historial_fechas: "28-Ago"
+    nota: ""
+
+  - id: COM-03
+    frente: COMERCIAL
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Mantener la validez del precio del adicional del area CIP por USD 5.766,00"
+    fecha_comprometida: 2026-09-18
+    estado: ABIERTO
+    criticidad: BAJA
+    criterio_cierre: "Aprobacion formal de ADASA"
+    fuente_contractual: "Proposal 25007-PL-0001 rev.3: Price validity sept 18, 2026"
+    origen_fecha: COMPROMISO ESCRITO BW
+    fecha_origen: 2026-08-04
+    fecha_cierre: null
+    consecuencia: "Vencida la validez, el precio se puede reajustar"
+    accion_adasa: "Decidir sobre el adicional"
+    evidencia_origen: "Proposal 25007-PL-0001 rev.3, pagina 3"
+    evidencia_cierre: null
+    ref_cruzada: "COM-04, COM-09"
+    reprogramaciones: 0
+    historial_fechas: "18-Sep"
+    nota: "La rev.3 es la rev.2 redatada: mismo timestamp de creacion del PDF y ocho imagenes con MD5 identico"
+
+  - id: COM-04
+    frente: COMERCIAL
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Emitir los documentos del adicional del area CIP dentro de dos semanas desde la aceptacion"
+    fecha_comprometida: null
+    estado: ABIERTO
+    criticidad: BAJA
+    criterio_cierre: "Documentos emitidos, contrastados contra los Instrument y Grounding Layout ya revisados"
+    fuente_contractual: "Proposal 25007-PL-0001 rev.2 y rev.3: will be submitted within two weeks"
+    origen_fecha: COMPROMISO ESCRITO BW
+    fecha_origen: 2026-03-18
+    fecha_cierre: null
+    consecuencia: "El texto no se actualizo en cuatro meses y medio; el plazo es indeterminado"
+    accion_adasa: "Fijar la fecha al aprobar el adicional"
+    evidencia_origen: "Diff rev.2 contra rev.3: la frase es identica"
+    evidencia_cierre: null
+    ref_cruzada: "COM-03"
+    reprogramaciones: 0
+    historial_fechas: "Sin fecha: dos semanas desde la aceptacion, que no ha ocurrido"
+    nota: ""
+
+  - id: COM-05
+    frente: COMERCIAL
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Declarar por escrito que el alcance de repuestos no cambio desde septiembre de 2025"
+    fecha_comprometida: 2026-03-07
+    estado: ABIERTO
+    criticidad: MEDIA
+    criterio_cierre: "Declaracion expresa en la propuesta de repuestos"
+    fuente_contractual: "Correo ADASA 26-Feb-2026"
+    origen_fecha: FIJADA ADASA
+    fecha_origen: 2026-02-26
+    fecha_cierre: null
+    consecuencia: "Sin la declaracion no se puede verificar si las once lineas divergentes son cambio de alcance o error"
+    accion_adasa: "Incorporarlo al correo de fondo sobre la reemision"
+    evidencia_origen: "Correo ADASA 26-Feb-2026"
+    evidencia_cierre: null
+    ref_cruzada: "COM-01, COM-07"
+    reprogramaciones: 0
+    historial_fechas: "07-Mar"
+    nota: "Ausente tambien en la PL-0002 rev.0. Vencido hace unos cinco meses"
+
+  - id: COM-06
+    frente: COMERCIAL
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Entregar la lista mandatoria de repuestos por USD 17.310 junto con el modulo"
+    fecha_comprometida: null
+    estado: ABIERTO
+    criticidad: MEDIA
+    criterio_cierre: "Part numbers reales y embarque con el modulo"
+    fuente_contractual: "Contrato C-4300, precio base a suma alzada; E.E.P.P. N 24786, linea 2 en 0,00%"
+    origen_fecha: CONTRACTUAL
+    fecha_origen: 2025-10-07
+    fecha_cierre: null
+    consecuencia: "Los part numbers siguen declarados como tba"
+    accion_adasa: "Exigir los part numbers antes del embarque"
+    evidencia_origen: "E.E.P.P. N 24786, linea 2"
+    evidencia_cierre: null
+    ref_cruzada: "PRG-16, PRG-01"
+    reprogramaciones: 0
+    historial_fechas: "Ligada al embarque ex-works"
+    nota: "Distinta de la cotizacion opcional de repuestos de 2 anos"
+
+  - id: COM-07
+    frente: COMERCIAL
+    obligado: ADASA
+    beneficiario: BW WATER
+    compromiso: "Responder el fondo de la reemision de repuestos: once lineas mal reconciliadas, cuatro alzas y la reduccion de alcance"
+    fecha_comprometida: null
+    estado: ABIERTO
+    criticidad: MEDIA
+    criterio_cierre: "Correo de respuesta que litigue las once lineas antes de emitir la orden de compra"
+    fuente_contractual: "Metodo de dos tiempos anunciado en el correo ADASA 20-Jul-2026"
+    origen_fecha: FIJADA ADASA
+    fecha_origen: 2026-07-20
+    fecha_cierre: null
+    consecuencia: "La validez de la propuesta vence el 28-Ago; despues, reajuste"
+    accion_adasa: "Fijar fecha propia de respuesta"
+    evidencia_origen: "_ANALISIS_REPUESTOS_15JUL.md"
+    evidencia_cierre: null
+    ref_cruzada: "COM-01, COM-02, COM-05"
+    reprogramaciones: 0
+    historial_fechas: "Sin fecha fijada por ADASA"
+    nota: "Compromiso propio abierto y sin plazo. El reloj lo pone la validez de la propuesta"
+
+  - id: COM-08
+    frente: COMERCIAL
+    obligado: ADASA
+    beneficiario: BW WATER
+    compromiso: "Pagar la factura 25007-02 asociada al E.E.P.P. N 24786"
+    fecha_comprometida: 2026-08-15
+    estado: ABIERTO
+    criticidad: ALTA
+    criterio_cierre: "Transferencia efectuada"
+    fuente_contractual: "Invoice 25007-02: Payment Terms net 15 days"
+    origen_fecha: COMPROMISO ESCRITO BW
+    fecha_origen: 2026-07-31
+    fecha_cierre: null
+    consecuencia: "Incumplimiento propio de ADASA que debilita la posicion sobre el atraso del proveedor"
+    accion_adasa: "Cursar el pago dentro del plazo"
+    evidencia_origen: "Invoice 25007-02 (rescatada del .msg del 03-Ago) y E.E.P.P. N 24786 del 31-Jul"
+    evidencia_cierre: null
+    ref_cruzada: "COM-09"
+    reprogramaciones: 0
+    historial_fechas: "15-Ago (net 15 desde el 31-Jul)"
+    nota: ""
+
+  - id: COM-09
+    frente: COMERCIAL
+    obligado: ADASA
+    beneficiario: BW WATER
+    compromiso: "Tramitar la aprobacion del Aumento de Monto por USD 56.990,50"
+    fecha_comprometida: null
+    estado: ABIERTO
+    criticidad: MEDIA
+    criterio_cierre: "Carta suscrita por las tres firmas previstas"
+    fuente_contractual: "Carta Solicitud Formal de Aumento de Monto, 04-Ago-2026"
+    origen_fecha: FIJADA ADASA
+    fecha_origen: 2026-08-04
+    fecha_cierre: null
+    consecuencia: "Sin firma no se pueden ordenar los repuestos ni el adicional CIP"
+    accion_adasa: "Seguir la firma interna; la carta pide aprobacion a la brevedad, sin fecha"
+    evidencia_origen: "Carta Solicitud Formal de Aumento de Monto, 04-Ago-2026"
+    evidencia_cierre: null
+    ref_cruzada: "COM-02, COM-03"
+    reprogramaciones: 0
+    historial_fechas: "Sin fecha: a la brevedad"
+    nota: "USD 51.224,50 de repuestos mas USD 5.766,00 del adicional CIP suman exactamente los USD 56.990,50 de la carta, que no declara su composicion"
+
+  # ===================================================================
+  # INTERNO ADASA
+  # ===================================================================
+
+  - id: INT-01
+    frente: INTERNO ADASA
+    obligado: ADASA
+    beneficiario: BUREAU VERITAS
+    compromiso: "Confirmar a Bureau Veritas las fechas de las visitas V2 a V6"
+    fecha_comprometida: 2026-07-24
+    estado: ABIERTO
+    criticidad: CRITICA
+    criterio_cierre: "Correo a Bureau Veritas Chile con las fechas confirmadas de V2 a V6"
+    fuente_contractual: "Correo ADASA a Bureau Veritas Chile del 14-Jul-2026; oferta BV 600049 Rev 3 (25 jornadas)"
+    origen_fecha: FIJADA ADASA
+    fecha_origen: 2026-07-14
+    fecha_cierre: null
+    consecuencia: "Sin confirmacion, Bureau Veritas no reserva inspector y la oferta pierde vigencia"
+    accion_adasa: "Enviar aunque sea con fechas condicionadas; lleva 12 dias vencido"
+    evidencia_origen: "Correo ADASA a Bureau Veritas Chile, 14-Jul-2026"
+    evidencia_cierre: null
+    ref_cruzada: "BV-10, BV-11, INT-07"
+    reprogramaciones: 0
+    historial_fechas: "24-Jul"
+    nota: "Bloqueado por la respuesta de reconciliacion del proveedor (BV-11), que sigue parcial"
+
+  - id: INT-02
+    frente: INTERNO ADASA
+    obligado: ADASA
+    beneficiario: BUREAU VERITAS
+    compromiso: "Reemplazar en el paquete de inspeccion el Datasheet PLC/HMI Rev C por la Rev 0 vigente"
+    fecha_comprometida: null
+    estado: CERRADO
+    criticidad: MEDIA
+    criterio_cierre: "Archivo reemplazado en PAQUETE_INSPECCION_BV y la Rev C movida a _superseded"
+    fuente_contractual: "Rev 0 aprobada Codigo 1 en el TM N30"
+    origen_fecha: FIJADA ADASA
+    fecha_origen: 2026-07-23
+    fecha_cierre: 2026-08-04
+    consecuencia: "Bureau Veritas tuvo la Rev C desde el 21-Jul"
+    accion_adasa: "Ninguna en disco. Queda pendiente el aviso al inspector (INT-03)"
+    evidencia_origen: "TM N30, veredicto Codigo 1 sobre la Rev 0"
+    evidencia_cierre: "Higiene H7 ejecutada el 04-Ago-2026: Rev 0 copiada al paquete, Rev C a _superseded"
+    ref_cruzada: "INT-03"
+    reprogramaciones: 0
+    historial_fechas: "Sin fecha comprometida; ejecutado el 04-Ago"
+    nota: "Deuda propia detectada en la auditoria del backlog"
+
+  - id: INT-03
+    frente: INTERNO ADASA
+    obligado: ADASA
+    beneficiario: BUREAU VERITAS
+    compromiso: "Avisar a Bureau Veritas que el Datasheet PLC/HMI del paquete cambio de Rev C a Rev 0"
+    fecha_comprometida: null
+    estado: ABIERTO
+    criticidad: MEDIA
+    criterio_cierre: "Correo al inspector con el archivo vigente y re-sincronizacion del enlace Synology"
+    fuente_contractual: "Coherencia del paquete publicado el 21-Jul-2026"
+    origen_fecha: FIJADA ADASA
+    fecha_origen: 2026-08-04
+    fecha_cierre: null
+    consecuencia: "El inspector podria ejecutar la Visita 6 contra una revision superada"
+    accion_adasa: "Incluirlo en el proximo correo a Bureau Veritas"
+    evidencia_origen: "Higiene del paquete de inspeccion, 04-Ago-2026"
+    evidencia_cierre: null
+    ref_cruzada: "INT-02, INT-01"
+    reprogramaciones: 0
+    historial_fechas: "Sin fecha fijada"
+    nota: ""
+
+  - id: INT-04
+    frente: INTERNO ADASA
+    obligado: ADASA
+    beneficiario: ADASA
+    compromiso: "Reenviar el reclamo del dossier del 25-Jul al equipo interno de ADASA"
+    fecha_comprometida: null
+    estado: ABIERTO
+    criticidad: BAJA
+    criterio_cierre: "Correo reenviado con respaldo en la carpeta del 25-Jul"
+    fuente_contractual: "Practica interna de trazabilidad"
+    origen_fecha: FIJADA ADASA
+    fecha_origen: 2026-07-25
+    fecha_cierre: null
+    consecuencia: "Trazabilidad interna incompleta"
+    accion_adasa: "Reenviar"
+    evidencia_origen: "Descripcion del correo del 25-Jul-2026, divergencia 2"
+    evidencia_cierre: null
+    ref_cruzada: "BV-05"
+    reprogramaciones: 0
+    historial_fechas: "Sin fecha fijada"
+    nota: ""
+
+  - id: INT-05
+    frente: INTERNO ADASA
+    obligado: ADASA
+    beneficiario: BW WATER
+    compromiso: "Fijar posicion escrita sobre la contrapropuesta de aviso de inspeccion de 3 a 5 dias"
+    fecha_comprometida: null
+    estado: ABIERTO
+    criticidad: ALTA
+    criterio_cierre: "Correo que reitera el plazo contractual y el caracter no precedente de las aceptaciones puntuales"
+    fuente_contractual: "BAE Clausula 37, cuerpo"
+    origen_fecha: FIJADA ADASA
+    fecha_origen: 2026-07-28
+    fecha_cierre: null
+    consecuencia: "El silencio convalida un plazo de aviso incompatible con agendar al inspector por la via de Bureau Veritas Chile"
+    accion_adasa: "Emitir posicion antes de aceptar la jornada del 13 y 14-Ago"
+    evidencia_origen: "Correo BW Water 28-Jul-2026"
+    evidencia_cierre: null
+    ref_cruzada: "BV-15, PRG-03, PRG-13"
+    reprogramaciones: 0
+    historial_fechas: "Sin fecha fijada"
+    nota: ""
+
+  - id: INT-06
+    frente: INTERNO ADASA
+    obligado: ADASA
+    beneficiario: BW WATER
+    compromiso: "Devolver revisado el submittal 25007-0069 (indice del dossier) mediante el TM N31"
+    fecha_comprometida: 2026-07-30
+    estado: ABIERTO
+    criticidad: ALTA
+    criterio_cierre: "Transmittal N31 emitido con el veredicto y el PDF anotado"
+    fuente_contractual: "Req. Return Date del propio Submittal Form 25007-0069; BAE Clausula 37.2 (7 dias habiles de revision)"
+    origen_fecha: FIJADA ADASA
+    fecha_origen: 2026-07-27
+    fecha_cierre: null
+    consecuencia: "El plazo de revision de ADASA es contractual; excederlo debilita el reclamo por los plazos del proveedor"
+    accion_adasa: "Emitir el TM N31 con Codigo 3 y las 10 anotaciones ya redactadas"
+    evidencia_origen: "Submittal Form 25007-0069"
+    evidencia_cierre: null
+    ref_cruzada: "BV-01, INT-09"
+    reprogramaciones: 0
+    historial_fechas: "30-Jul"
+    nota: "Analisis y veredicto listos; falta generar el transmittal"
+
+  - id: INT-07
+    frente: INTERNO ADASA
+    obligado: ADASA
+    beneficiario: BUREAU VERITAS
+    compromiso: "Formalizar la aceptacion de la oferta BV 600049 Rev 3"
+    fecha_comprometida: 2026-08-06
+    estado: CERRADO
+    criticidad: BAJA
+    criterio_cierre: "Anexo 1 firmado y sellado remitido por correo a Bureau Veritas"
+    fuente_contractual: "Oferta BV 600049 Rev 3, Clausula 12 y Anexo I (validacion de la oferta): aceptacion mediante el Anexo 1 firmado EN CONJUNTO CON la orden de compra"
+    origen_fecha: CONTRACTUAL
+    fecha_origen: 2026-07-07
+    fecha_cierre: 2026-07-14
+    consecuencia: "Ninguna. La oferta se adjudico dentro de su ventana de validez y el servicio esta operativo"
+    accion_adasa: "Ninguna"
+    evidencia_origen: "Oferta 600049 Rev 3, emitida el 07-Jul-2026"
+    evidencia_cierre: "OC-836492 del 14-Jul-2026 (PROGRAMA y CONTRATO/HITO BUREAU VERITAS/OC-836492.pdf, extraida en md/), mas confirmacion del usuario el 05-Ago-2026: la oferta esta aceptada y Bureau Veritas ya esta trabajando. Visita 1 ejecutada el 28-Jul con informe emitido"
+    ref_cruzada: "INT-01, BV-22"
+    reprogramaciones: 0
+    historial_fechas: "Rev 2 emitida el 06-Jul (validez al 05-Ago) -> Rev 3 emitida el 07-Jul (validez al 06-Ago) -> adjudicada por OC-836492 el 14-Jul, dentro de la ventana"
+    nota: "CORREGIDO el 05-Ago-2026. Este compromiso venia declarando que no habia evidencia de la aceptacion formal y que la validez vencia sin adjudicar. Es falso: la OC-836492, folio 836492 del 14-Jul-2026, adjudica la linea 600049 Rev 3 a Bureau Veritas Chile S.A. por USD 24.425 netos, esta en PROGRAMA y CONTRATO/HITO BUREAU VERITAS/OC-836492.pdf desde el 15-Jul y quedo extraida en md/. La adjudicacion ocurrio DENTRO de la ventana de validez, de modo que la Clausula 11 no se gatilla. Lo unico pendiente es el Anexo 1 firmado, que la Clausula 12 pide junto con la OC"
+
+  - id: INT-08
+    frente: INTERNO ADASA
+    obligado: ADASA
+    beneficiario: ADASA
+    compromiso: "Verificar la fecha de la Notificacion de Adjudicacion en el documento original antes de cursar multa por atraso"
+    fecha_comprometida: null
+    estado: ABIERTO
+    criticidad: CRITICA
+    criterio_cierre: "Fecha leida en el documento de adjudicacion de ADASA, no en el cronograma del proveedor"
+    fuente_contractual: "BAE Clausula 27 (plazo) y Clausula 43.1 letra b (multa)"
+    origen_fecha: FIJADA ADASA
+    fecha_origen: 2026-08-05
+    fecha_cierre: null
+    consecuencia: "Cursar una multa sobre una fecha tomada del cronograma del proveedor es refutable"
+    accion_adasa: "VERIFICADO EL 31-Ago-2026 QUE EL DOCUMENTO NO ESTA EN EL REPOSITORIO: hay que pedirlo a Abastecimiento. Mientras no aparezca, ninguna comunicacion cursa cifra de multa. La NT P22-NT-09-000-003-0 pide ademas a BW Water que confirme la fecha por escrito, de modo que las dos partes computen desde el mismo origen"
+    evidencia_origen: "El calculo de los 300 dias usa el Contract Award / NTP del cronograma de BW Water"
+    evidencia_cierre: null
+    ref_cruzada: "PRG-01"
+    reprogramaciones: 0
+    historial_fechas: "Sin fecha fijada"
+    nota: "La coincidencia exacta con el baseline del Milestone Tracker es indicio fuerte, no prueba"
+
+  - id: INT-09
+    frente: INTERNO ADASA
+    obligado: ADASA
+    beneficiario: BW WATER
+    compromiso: "Emitir el Transmittal N30, re-escopeado a los submittals 25007-0068 (E68), 25007-0069 (E69) y 25007-0070 (E70)"
+    fecha_comprometida: 2026-08-14
+    estado: CERRADO
+    criticidad: ALTA
+    criterio_cierre: "Transmittal y correo de cobertura enviados con el enlace de descarga"
+    fuente_contractual: "BAE Clausula 37.2: 7 dias habiles de revision documental, que para el submittal 25007-0070 vencen el viernes 14-Ago-2026"
+    origen_fecha: CONTRACTUAL
+    fecha_origen: 2026-07-23
+    fecha_cierre: 2026-08-05
+    consecuencia: "Vencido el plazo de la Clausula 37.2 sin transmittal, el submittal 25007-0070 quedaria sin respuesta formal y los dos hallazgos de contencion de presion de los planos de taller sin comunicar"
+    accion_adasa: "Enviar el seguimiento de una linea con el enlace de descarga: el parrafo del enlace no salio en el correo"
+    evidencia_origen: "REVISIONES/TRANSMITTALES/P22-TM-09-000-030-0, estado BORRADOR"
+    evidencia_cierre: "CORREOS/Agosto 2026/2026-08-05/Elementos enviados_ Luis Rivera Gonzalez - Outlook.pdf, enviado 05-Ago-2026 14:20 con el PDF del transmittal adjunto"
+    ref_cruzada: "INT-02, INT-06, PRG-20, PRG-21, PRG-22"
+    reprogramaciones: 0
+    historial_fechas: "Sin fecha hasta el 05-Ago; la Clausula 37.2 la fija en el 14-Ago al absorberse el submittal 25007-0070. Enviado el 05-Ago, nueve dias antes del vencimiento"
+    nota: "Cerrado con el envio. Cierre parcial en un punto: el parrafo del enlace de descarga no salio en el correo, de modo que BW Water recibio el transmittal pero no la oferta de los dos CC_ADASA. El enlace viaja impreso y clicable en la Seccion 4 del PDF adjunto"
+
+  - id: PRG-20
+    frente: PROGRAMA
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Reemitir el Fabrication and Testing Dossier Index como Rev C, con numero de documento, revision y estado de inclusion por linea, y los cinco capitulos faltantes"
+    fecha_comprometida: null
+    estado: ABIERTO
+    criticidad: ALTA
+    criterio_cierre: "Rev C recibida y evaluada en Codigo 1 o 2"
+    fuente_contractual: "Transmittal N30, Codigo 3 sobre P22-BA-09-000-013 Rev A; ITP P22-BA-09-000-004 filas 2.3, 2.4, 7.6, 7.9, 8.1 y 8.2; ET P22-ET-09-000-001-0 Seccion 8"
+    origen_fecha: FIJADA ADASA
+    fecha_origen: 2026-08-05
+    fecha_cierre: null
+    consecuencia: "Sin indice utilizable no hay lista de verificacion para la revision documental preliminar que el PIE Base asigna a ADASA en el item 7.6, que antecede al 8.3 (Hold) y al 8.4"
+    accion_adasa: "Fecha fijada al 03-Sep-2026 en la entrega consolidada del TM N37. Del dossier propiamente tal no se exige el contenido a esa fecha sino su plan de entrega con fechas por capitulo, porque depende de registros que se generan durante la fabricacion"
+    evidencia_origen: "REVISIONES/TRANSMITTALES/P22-TM-09-000-030-0"
+    evidencia_cierre: null
+    ref_cruzada: "BV-16, PRG-19"
+    reprogramaciones: 1
+    historial_fechas: "Sin fecha hasta el 01-Sep-2026, cuando el Transmittal N37 (P22-TM-09-000-037-0), emitido el 01-Sep-2026, que exige la entrega consolidada de toda la documentacion pendiente al jueves 3 de septiembre de 2026 la fija por primera vez. La Rev B llego y volvio en Codigo 3 en el TM N34, de modo que lo exigible pasa a ser la Rev C"
+    nota: "El indice no es el dossier. El item 65 del Master Register sigue NOT DELIVERED y el segundo tramo del reclamo del 25-Jul vencio el 31-Jul sin entrega. INCUMPLIDO el 3 de septiembre de 2026: la entrega consolidada que exigio el TM N37 no incluyo la Rev C del indice del dossier. BW Water no comprometio fecha nueva, de modo que queda SIN FECHA y se cuenta la reprogramacion."
+
+  - id: PRG-21
+    frente: PROGRAMA
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Someter el conjunto de planos de taller 25007-ME-PI-0901-0006 a -0016 como entregable propio, con codigo ADASA e indice de revision, o extender la portada y el Submittal Form del Piping Layout para declararlo"
+    fecha_comprometida: null
+    estado: ABIERTO
+    criticidad: ALTA
+    criterio_cierre: "Conjunto sometido con codigo e indice de revision, o portada y Submittal Form extendidos"
+    fuente_contractual: "Transmittal N30, subseccion del conjunto de taller: devuelto como no recibido"
+    origen_fecha: FIJADA ADASA
+    fecha_origen: 2026-08-05
+    fecha_cierre: null
+    consecuencia: "Diecisiete laminas timbradas FOR CONSTRUCTION y firmadas el 23-Jul gobiernan la fabricacion sin haber sido sometidas a revision; ADASA no puede aprobar ni rechazar lo que no fue sometido"
+    accion_adasa: "Fecha fijada al 03-Sep-2026 en la entrega consolidada del TM N37"
+    evidencia_origen: "REVISIONES/TRANSMITTALES/P22-TM-09-000-030-0; ENTREGAS_BWWATER/ENTREGA 70/_HALLAZGOS_DETERMINISTAS.md"
+    evidencia_cierre: null
+    ref_cruzada: "PRG-22, BV-15"
+    reprogramaciones: 1
+    historial_fechas: "Sin fecha hasta el 01-Sep-2026, cuando el Transmittal N37 (P22-TM-09-000-037-0), emitido el 01-Sep-2026, que exige la entrega consolidada de toda la documentacion pendiente al jueves 3 de septiembre de 2026 la fija por primera vez. Antes de la fecha del TM N37 hubo dos compromisos propios en minuta y ninguno se cumplio: la minuta del 26-Ago-2026 fija los planos de fabricacion actualizados para el viernes 28-Ago, y la del 01-Sep-2026 los vuelve a comprometer dentro del paquete documental completo para el 2-Sep. Tres fechas incumplidas sobre el mismo entregable."
+    nota: "No entran al Master Register hasta que se sometan: registrarlos alli contradiria la devolucion por no recibidos. INCUMPLIDO el 3 de septiembre de 2026: la entrega consolidada que exigio el TM N37 no incluyo los once planos de taller. BW Water no comprometio fecha nueva, de modo que queda SIN FECHA y se cuenta la reprogramacion."
+
+  - id: PRG-22
+    frente: PROGRAMA
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Confirmar por escrito si alguna de las derivaciones de instrumento roscadas austeniticas o de los tramos PVC sin quiebre de especificacion ya fue fabricada"
+    fecha_comprometida: 2026-08-24
+    estado: ABIERTO
+    criticidad: CRITICA
+    criterio_cierre: "Respuesta escrita de BW Water declarando el estado de fabricacion de esas derivaciones"
+    fuente_contractual: "Transmittal N30, dos hallazgos de contencion de presion sobre los planos de taller; Line List P22-LI-09-009-003 Rev 0 aprobada en Codigo 1"
+    origen_fecha: FIJADA ADASA
+    fecha_origen: 2026-08-05
+    fecha_cierre: null
+    consecuencia: "Acoples roscados ANSI 150 en F304 y F316L sobre lineas de 60 a 90 barG de diseno y hasta 135 barG de prueba, en salmuera de 45.000 a 55.000 ppm de cloruro; y PVC de 5 barG dentro de lineas rotuladas a 80 y 90 barG. Si ya se fabricaron, la reparacion es material, no documental"
+    accion_adasa: "Exigir la respuesta antes de la jornada de prueba hidrostatica del 13 y 14 de agosto: la hidrostatica es punto Hold del ITP"
+    evidencia_origen: "REVISIONES/TRANSMITTALES/P22-TM-09-000-030-0; ENTREGAS_BWWATER/ENTREGA 70/_HALLAZGOS_DETERMINISTAS.md"
+    evidencia_cierre: null
+    ref_cruzada: "PRG-13, PRG-21, BV-15"
+    reprogramaciones: 0
+    historial_fechas: "Abierto el 05-Ago-2026 sin fecha, porque el transmittal pedia la confirmacion sin plazo. FECHA FIJADA el 21-Ago-2026 al lunes 24-Ago, en el correo de las presiones ENVIADO a las 12:15:38 hora de Chile: la consecuencia fisica del hallazgo se materializo TRES veces en dos jornadas"
+    nota: "Las laminas ya usan el sockolet super duplex correcto en otras derivaciones del mismo plano, de modo que la especificacion correcta esta disponible en el taller. EL 21-AGO EL HALLAZGO DEJO DE SER DOCUMENTAL: las tres lineas CIP ensayadas a 7,5 barG los dias 20 y 21 son el quiebre PVC/super duplex operando, y el propio proveedor lo invoco como justificacion (This spool that has two flange class, 900# and 150#). Se pide dividir el numero de linea en la junta, emitir la adicion a la Line List con clase, presion de diseno e hidrostatica del tramo PVC, y declarar como se protege ese tramo del lado de alta con la valvula motorizada cerrada"
+
+  - id: PRG-23
+    frente: PROGRAMA
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Reponer en el paquete semanal el Document and Drawing Status Report y la impresion completa del cronograma"
+    fecha_comprometida: 2026-08-10
+    estado: ABIERTO
+    criticidad: MEDIA
+    criterio_cierre: "Paquete semanal con DDSR y con el cronograma al mismo nivel de detalle que las impresiones del 14-Jul y del 27-Jul"
+    fuente_contractual: "Minuta 07-Jul-2026, bloque Reporting; obligacion de reporte semanal"
+    origen_fecha: FIJADA ADASA
+    fecha_origen: 2026-08-05
+    fecha_cierre: null
+    consecuencia: "Sin DDSR, la cifra de avance documental que maneja ADASA es del 20-Jul. Con el cronograma colapsado a 4 paginas no se puede auditar el camino critico tarea por tarea"
+    accion_adasa: "Verificar el paquete del lunes 10-Ago y escalar si falta cualquiera de los dos por tercera semana"
+    evidencia_origen: "CORREOS/Agosto 2026/2026-08-05/2026-08-05_Weekly-Reporting-Gap.docx"
+    evidencia_cierre: null
+    ref_cruzada: "PRG-19, PRG-15"
+    reprogramaciones: 0
+    historial_fechas: "Fijada por ADASA el 05-Ago para el paquete del lunes 10-Ago"
+    nota: "Dos faltas distintas en un solo compromiso porque comparten vehiculo, el paquete semanal. El DDSR falta desde el 27-Jul, dos semanas seguidas. El cronograma del 04-Ago trae 4 paginas y 13.195 caracteres contra 12 paginas y 51.135 del 27-Jul, y llego fuera del paquete"
+
+  - id: PRG-24
+    frente: PROGRAMA
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Aclarar o revisar los cuatro puntos abiertos del submittal 25007-0071 y confirmar los dos previos a la inspeccion del 13 y 14 de agosto"
+    fecha_comprometida: null
+    estado: CERRADO PARCIAL
+    criticidad: MEDIA
+    criterio_cierre: "Respuesta escrita a los seis puntos: base de aceptacion del PMI, acotacion del anexo del subcontratista, formulario de registro de la inspeccion visual, ediciones y addenda en las clausulas 5.5.2 y 5.6.3, formulario del ensayo hidrostatico y revision vigente del procedimiento de pintura"
+    fuente_contractual: "Comentarios con que ADASA aprobo cada documento; ITP P22-BA-09-000-004 Rev 0 filas 2.4 y 3.2"
+    origen_fecha: FIJADA ADASA
+    fecha_origen: 2026-08-06
+    fecha_cierre: 2026-08-12
+    consecuencia: "Las dos confirmaciones tienen fecha: la jornada de inspeccion es el 13 y 14 de agosto y el ensayo hidrostatico de alta presion es punto Hold. Sin formulario declarado no hay contra que registrar el resultado"
+    accion_adasa: "Seguir la respuesta antes del 12-Ago. Si no llega, resolver por la via operativa con el inspector"
+    evidencia_origen: "CORREOS/Agosto 2026/2026-08-06/2026-08-06_Submittal-25007-0071-Outstanding-Items.docx"
+    evidencia_cierre: "Submittal 25007-0075 del 12-Ago: cierran la base de aceptacion del PMI, la acotacion del anexo, el formulario del examen visual y las ediciones de 5.5.2 y 5.6.3. Siguen abiertos el formulario del ensayo de presion y el color del formulario de pintura, ahora en el TM N32"
+    ref_cruzada: "BV-09, PRG-13, PRG-22"
+    reprogramaciones: 0
+    historial_fechas: "Sin fecha comprometida: el correo pide revisar y aclarar, sin fijar plazo"
+    nota: "El correo no asigna codigos de respuesta. Los cinco documentos venian de un Codigo 2 y solo se pide lo que era condicion de esa aprobacion; los hallazgos fuera de esa condicion quedan como registro interno en ENTREGAS_BWWATER/ENTREGA 71/_HALLAZGOS_DETERMINISTAS.md"
+
+  - id: PRG-25
+    frente: PROGRAMA
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Reemitir como Rev C el procedimiento de espesor por ultrasonido P22-BA-09-000-016 con el criterio de aceptacion de ASME B31.3"
+    fecha_comprometida: 2026-09-03
+    estado: CERRADO PARCIAL
+    criticidad: ALTA
+    criterio_cierre: "Rev C de P22-BA-09-000-016 con ASME B31.3 para. 341.3.2 como criterio de aceptacion y la clausula de espesor corregida. Penetrantes y radiografia ya cerraron su determinante y subieron a Codigo 2 en el TM N37"
+    fuente_contractual: "ET P22-ET-09-000-001-0 Seccion 8; NDE Plan P22-BA-09-000-005 Rev C, Codigo 1 en el TM N26"
+    origen_fecha: FIJADA ADASA
+    fecha_origen: 2026-08-12
+    fecha_cierre: 2026-09-03
+    consecuencia: "Los registros producidos bajo un procedimiento no aprobado no son admisibles en el dossier de fabricacion. La radiografia y el ultrasonido de la caniera de alta estan en ventana"
+    accion_adasa: "Seguir la Rev B. Los items marcados como bloqueantes no admiten espera; los de aseo no retienen la reemision"
+    evidencia_origen: "TM N32 P22-TM-09-000-032-0, subsecciones 2.5, 2.6 y 2.7"
+    evidencia_cierre: "E90 - P22-BA-09-000-016 Rev C, clausula 9.0: la aceptacion remite al NDE Plan P22-BA-09-000-005 Rev C y el material se declara UNS S32750. Cierre parcial: la clausula 4.0 sigue citando el Articulo 9 de ASME Section V"
+    ref_cruzada: "PRG-26, PRG-34, BV-13"
+    reprogramaciones: 1
+    historial_fechas: "Sin fecha fijada. Reprogramado el 20-Ago-2026: la Rev B llego en la ENTREGA 81 y NO cerro el criterio en ninguno de los tres, de modo que el compromiso pasa a esperar la Rev C"
+    nota: "Primera emision de los tres. El pedido de someterlos es del TM N30, sobre el Dossier Index. ESTADO AL 20-AGO, TM N35: los tres siguen en Codigo 3 y los tres se re-emitieron SIN hoja de comentarios consolidada, de modo que el cierre hubo que verificarlo comparando el texto de la Rev A contra la Rev B. Penetrantes: once lineas cambiadas, agrego ASME B31.3 a la clausula 13.0 sin retirar el Apendice 6, y el formulario sigue intacto declarando el Apendice 8. Radiografia: dos cambios, incorporo la Tabla 341.3.2-1 completa, verificada por render, pero la clausula 23.0 conserva la lista de cinco codigos y la clausula 12.1 sigue en 1,8 mm de borrosidad. Ultrasonido: nueve cambios, es el que mas trabajo y CERRO su hoja de tecnica para UNS S32750, pero la clausula 9.0 paso a SA-790, que es especificacion de material y no criterio de espesor. CERRADO PARCIAL en el TM N38: la Rev C llego y el determinante cerro, porque la clausula 9.0 ya remite al NDE Plan Rev C en vez de citar la especificacion de material, y el documento subio a Codigo 2. Quedan cuatro correcciones de referencia para el Rev 0, entre ellas la cita del Articulo 9 de ASME Section V donde corresponde el Articulo 5, que es la segunda vez que se declara alineada sin estarlo."
+
+  - id: PRG-26
+    frente: PROGRAMA
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Declarar que registros de liquidos penetrantes existen y bajo que criterio de aceptacion se evaluaron"
+    fecha_comprometida: null
+    estado: ABIERTO
+    criticidad: ALTA
+    criterio_cierre: "Listado de los registros de penetrantes emitidos hasta la fecha, con el procedimiento y el criterio bajo el que se evaluo cada uno"
+    fuente_contractual: "TM N30: los registros producidos bajo procedimientos no aprobados no son admisibles en el dossier"
+    origen_fecha: FIJADA ADASA
+    fecha_origen: 2026-08-12
+    fecha_cierre: null
+    consecuencia: "El ensayo de penetrantes de raiz y peineta se ejecuto el 07-Ago, cinco dias antes de que el procedimiento se sometiera. Si esos registros no son admisibles, hay que repetir el examen o justificar su validez"
+    accion_adasa: "Cruzar la respuesta contra el Inspection Request 002 y contra el informe de Bureau Veritas de esa jornada"
+    evidencia_origen: "TM N32, resumen ejecutivo; Inspection Request 002, item 2"
+    evidencia_cierre: null
+    ref_cruzada: "PRG-25"
+    reprogramaciones: 0
+    historial_fechas: "Sin fecha fijada"
+    nota: "Es el punto que el correo de cobertura destaca por sobre el resto"
+
+  - id: PRG-27
+    frente: PROGRAMA
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Identificar el formulario del ensayo de presion y corregir el color del formulario de pintura"
+    fecha_comprometida: 2026-08-13
+    estado: CERRADO
+    criticidad: ALTA
+    criterio_cierre: "Formulario del ensayo declarado por numero y revision, con grafico presion-tiempo, y celda de color del formulario de inspeccion de pintura en RAL 5012 Luminous Blue"
+    fuente_contractual: "ITP P22-BA-09-000-004 Rev 0 fila 5.2; Painting Specification P22-ET-09-006-002 Rev C"
+    origen_fecha: FIJADA ADASA
+    fecha_origen: 2026-08-12
+    fecha_cierre: 2026-08-20
+    consecuencia: "El ensayo de alta presion del 13-Ago es punto Hold y sin formulario no hay certificado. El color gobierna la capa de terminacion"
+    accion_adasa: "Los dos se pidieron ademas por la via operativa en el correo conjunto a Bureau Veritas del 12-Ago"
+    evidencia_origen: "TM N32, subsecciones 2.3 y 2.4"
+    evidencia_cierre: "ENTREGA 81, submittal 25007-0081 del 20-Ago-2026, ambos puntos cerrados y verificados en el TM N35. El HP and LP Pressure Test Procedure Rev 1 incorpora el formulario AQ-QAM-F018 Rev 4 como pagina 11, que estaba en la Rev C y desaparecio en la Rev D, y el informe del ensayo del 20-Ago lo confirma en uso: los dos registros de esa jornada se levantaron en ese formulario. El Painting Procedure Rev 1 lee RAL 5012 Luminous Blue en la fila Colour del formulario de inspeccion. Los dos documentos quedaron en Codigo 1"
+    ref_cruzada: "PRG-24, BV-09"
+    reprogramaciones: 0
+    historial_fechas: "Pedido por primera vez el 06-Ago por correo, sin respuesta"
+    nota: "Los dos documentos vuelven SIN CODIGO de respuesta: venian de Codigo 2 y ya estaban emitidos a Rev 0 para construccion"
+
+  - id: PRG-28
+    frente: PROGRAMA
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Emitir un Inspection Request revisado, con un formulario y un resultado por inspeccion, recuperando el ensayo de alta a inicio de semana"
+    fecha_comprometida: 2026-08-17
+    estado: ABIERTO
+    criticidad: CRITICA
+    criterio_cierre: "Inspection Request nuevo con un formulario por jornada, que reemplace al 004, con el ensayo hidrostatico de alta el 17-Ago y a mas tardar el 19, y tres jornadas en la semana"
+    fuente_contractual: "ITP P22-BA-09-000-004 Rev 0 fila 5.2 (Punto de Detencion); BAE Clausula 37"
+    origen_fecha: FIJADA ADASA
+    fecha_origen: 2026-08-14
+    fecha_cierre: null
+    consecuencia: "El Request 004 traslada al 20 y 21-Ago las mismas dos actividades que no se ejecutaron, y con eso el Punto de Detencion corre una semana entera sobre un plazo de entrega ya vencido"
+    accion_adasa: "Escalada ya ejecutada el 17-Ago a Yamauchi y Gehant. Si el formulario tampoco llega esta semana, el frente deja de ser operativo y pasa al eje contractual, en cadena separada del inspector"
+    evidencia_origen: "CORREOS/Agosto 2026/2026-08-14/2026-08-14_BV-Inspection-004-Rescheduling.docx; CORREOS/Agosto 2026/2026-08-17/2026-08-17_BV-Inspection-004-Follow-Up.docx"
+    evidencia_cierre: null
+    ref_cruzada: "PRG-13, PRG-29, PRG-31, BV-23"
+    reprogramaciones: 1
+    historial_fechas: "24 horas desde el correo del 14-Ago (vencia el sabado 15) -> vencido sin respuesta -> 17-Ago, fijado por la replica del lunes 17"
+    nota: "El de un formulario por inspeccion no es pedido nuevo: ADASA ya lo pidio el 12-Ago y el Request 004, emitido el 13, volvio a cubrir dos dias en una sola casilla de fecha y un solo bloque de resultado. Al lunes 17 el formulario no ha llegado y ninguna de las cinco peticiones del 14-Ago fue respondida: tres dias de silencio sobre un compromiso CRITICO. La replica del 17-Ago escala a Yamauchi y Gehant, exige el ensayo el mismo lunes dentro de la ventana abierta en Penang y, si no corre, declaracion escrita antes del cierre con la prueba al 19-Ago a mas tardar"
+
+  - id: PRG-29
+    frente: PROGRAMA
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Declarar por escrito que se ejecuto el jueves 13 y que el viernes 14 de agosto, con el registro firmado de cada dia"
+    fecha_comprometida: 2026-08-17
+    estado: ABIERTO
+    criticidad: ALTA
+    criterio_cierre: "Declaracion por dia y registro firmado de cada jornada, incluidos los del examen visual y dimensional de spools que sustituyo al ensayo. Toda actividad de esos dos dias sin registro firmado y sin informe de Bureau Veritas se tiene por NO EJECUTADA y vuelve al Inspection Request"
+    fuente_contractual: "ITP P22-BA-09-000-004 Rev 0 filas 3.2 y 3.4; Inspection Request Form AQ-QAM-F027"
+    origen_fecha: FIJADA ADASA
+    fecha_origen: 2026-08-14
+    fecha_cierre: null
+    consecuencia: "Sin declaracion no hay forma de saber que se testifico en dos jornadas del saldo contratado, ni de imputar el examen sustituto a alguna fila del plan. Sin registro, las tres actividades de esos dos dias vuelven a notificarse para testificacion"
+    accion_adasa: "Cruzar la respuesta contra el informe que emita Bureau Veritas por cada dia"
+    evidencia_origen: "CORREOS/Agosto 2026/2026-08-14/2026-08-14_BV-Inspection-004-Rescheduling.docx; CORREOS/Agosto 2026/2026-08-17/2026-08-17_BV-Inspection-004-Follow-Up.docx"
+    evidencia_cierre: null
+    ref_cruzada: "PRG-13, PRG-26, PRG-31, BV-23"
+    reprogramaciones: 0
+    historial_fechas: "Sin fecha en el correo del 14-Ago -> 17-Ago, fijado por la replica de ese dia"
+    nota: "El correo del 14-Ago no puso fecha y por eso salio SIN FECHA: ninguna se infiere. La replica del 17-Ago si la pone, y agrega la inversion de la carga que decidio el usuario: lo que no tenga registro firmado ni informe de Bureau Veritas se tiene por no ejecutado. Alcanza al ensayo de alta, al examen visual y dimensional de spools que lo sustituyo y a la preparacion de pintura. La sustitucion del Punto de Detencion por otra actividad se decidio sin consulta y no lo libera"
+
+  - id: PRG-30
+    frente: PROGRAMA
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Notificar por escrito a ADASA y a Bureau Veritas toda cancelacion, postergacion o cambio de alcance ANTES de que abra la ventana de inspeccion"
+    fecha_comprometida: null
+    estado: ABIERTO
+    criticidad: ALTA
+    criterio_cierre: "Sin nuevos avisos posteriores al cierre de la ventana. Se cierra por ausencia sostenida de incumplimiento, no por un acto puntual"
+    fuente_contractual: "BAE Clausula 37, cuerpo: confirmacion escrita con 30 dias de antelacion para suministro internacional"
+    origen_fecha: CONTRACTUAL
+    fecha_origen: 2026-08-14
+    fecha_cierre: null
+    consecuencia: "El aviso del 14-Ago entro a las 17:15 de Penang, con la ventana de 09:00 a 17:00 ya cerrada. Un aviso posterior al hecho no permite reasignar al inspector ni recuperar la jornada"
+    accion_adasa: "Constancia ya dejada por escrito el 17-Ago: ADASA registra el aviso del 14-Ago como incumplimiento de la Clausula 37 y lo conserva como precedente para los puntos Hold y Witness que restan. ADASA acepto avisos de 4 y de 8 dias para no frenar la fabricacion y esa flexibilidad no se extiende a enterarse despues"
+    evidencia_origen: "CORREOS/Agosto 2026/2026-08-14/2026-08-14_BV-Inspection-004-Rescheduling.docx; CORREOS/Agosto 2026/2026-08-17/2026-08-17_BV-Inspection-004-Follow-Up.docx, segundo parrafo"
+    evidencia_cierre: null
+    ref_cruzada: "PRG-13, PRG-14, PRG-31, BV-13"
+    reprogramaciones: 0
+    historial_fechas: "Sin fecha: es una obligacion permanente, no un entregable"
+    nota: "No se reclaman los 30 dias de la Clausula 37 junto con una reprogramacion inmediata, porque seria contradictorio y refutable. Lo exigible aqui es el orden temporal del aviso, que ningun desperfecto justifica, y sobre eso se acota la constancia del 17-Ago. Si el lunes 17 cierra sin prueba y sin declaracion escrita antes del cierre de la ventana, es el segundo aviso posterior al hecho en una semana"
+
+  - id: PRG-31
+    frente: PROGRAMA
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "No ejecutar ninguna prueba de punto Hold sin aviso escrito previo y sin el inspector presente"
+    fecha_comprometida: null
+    estado: ABIERTO
+    criticidad: ALTA
+    criterio_cierre: "Se cierra por ausencia sostenida de incumplimiento, no por un acto puntual: ninguna prueba de punto Hold ejecutada fuera de testificacion hasta el despacho"
+    fuente_contractual: "ITP P22-BA-09-000-004 Rev 0 fila 5.2 (Punto de Detencion); BAE Clausula 37.1 (Intervencion de Tercero Inspector, acceso irrestricto sin cargo)"
+    origen_fecha: CONTRACTUAL
+    fecha_origen: 2026-08-17
+    fecha_cierre: null
+    consecuencia: "Una prueba ejecutada sin aviso y sin inspector NO se acepta como evidencia del punto Hold y hay que repetirla. El registro que produzca no entra al dossier de calidad, del que dependen los items 8.3 y 8.4 del PIE"
+    accion_adasa: "Reserva declarada por escrito el 17-Ago. Al recibir cualquier registro de prueba de presion, verificar contra el Inspection Request y contra el informe de Bureau Veritas de esa jornada antes de admitirlo"
+    evidencia_origen: "CORREOS/Agosto 2026/2026-08-17/2026-08-17_BV-Inspection-004-Follow-Up.docx, tercer parrafo"
+    evidencia_cierre: null
+    ref_cruzada: "PRG-13, PRG-28, PRG-29, PRG-30"
+    reprogramaciones: 0
+    historial_fechas: "Sin fecha: es una reserva permanente, no un entregable"
+    nota: "Es la consecuencia que el correo del 14-Ago no habia declarado, y la unica que cambia el incentivo si el silencio se sostiene. Generaliza el precedente del TM N30 sobre registros producidos bajo procedimientos no aprobados: un registro sin el testigo que el plan exige no es admisible, por correcta que sea la prueba en si"
+
+  - id: INT-10
+    frente: INTERNO ADASA
+    obligado: ADASA
+    beneficiario: ADASA
+    compromiso: "Corregir la tabla de pesos y de plintos de la Seccion 6.4 de la BL Montaje antes de la proxima emision del paquete"
+    fecha_comprometida: null
+    estado: CERRADO PARCIAL
+    criticidad: ALTA
+    criterio_cierre: "Seccion 6.4 con los pesos de la Rev B del plano civil y con los plintos que L&A construyo, no los de la Rev A"
+    fuente_contractual: "BL Montaje P22-BL-06-000-001-0 Rev 0, Seccion 6.4; Civil and Loading Layout P22-DWG-09-005-001 Rev B"
+    origen_fecha: FIJADA ADASA
+    fecha_origen: 2026-08-17
+    fecha_cierre: 2026-09-04
+    consecuencia: "Mientras la licitacion siga abierta con esas cifras, el oferente cotiza sobre una base que el proveedor ya cambio: cinco de las nueve filas de pesos se movieron y ninguno de los cinco datos de plintos sobrevive a la Rev B"
+    accion_adasa: "CERRADO PARCIAL. La correccion se hizo: la Seccion 6.4 quedo con los pesos de la Rev B (filtro de cartucho 270,0; estanque de dispersante 517,5; bombas de dosificacion 100,0; panel de control local 800,0) y con la geometria de los planos de obras civiles Rev 1, que es la que el contratista construye. Pero vive en un BL que NO se emite: al comparar contra el paquete realmente licitado se descubrio que el documento contractual es una rama que Jorge Valdes edito sobre el Word el 25-06-2026 y que nunca volvio al .md fuente, de modo que reemitir habria borrado su Seccion 3.2 de capacidad de personal y su plazo de 3 meses. El contrato ademas ya esta adjudicado. Queda cerrado en cuanto a la correccion del dato y abierto en cuanto a su vehiculo: los pesos corregidos no llegaron a ningun documento en circulacion. El reparto de las seis filas nuevas de canerias, valvulas, instrumentos y soportes entre el contenedor y la zona CIP sigue sin pedirse a BW Water; ese punto vive en INT-11"
+    evidencia_origen: "ENTREGAS_BWWATER/ENTREGA 76/_IMPACTO_OOCC_BL.md"
+    evidencia_cierre: "BASES DE LICITACION MONTAJE MECANICO-OOCC/BORRADOR_REV0/_bl_rev1_no_emitido/BL_MONTAJE_TALTAL_REV1.pdf, Seccion 6.4, documento generado y no emitido; ver el LEEME de esa carpeta"
+    ref_cruzada: "INT-11"
+    reprogramaciones: 0
+    historial_fechas: "Sin fecha: se ata a la proxima emision del paquete"
+    nota: "La BL declara que sus cifras salen del plano Rev A. Tambien transcribe cuatro plintos longitudinales de 2,6 x 0,3 x 0,4 m y tres plintos CIP que no corresponden ni a la Rev B ni a lo que L&A construyo"
+
+  - id: INT-11
+    frente: INTERNO ADASA
+    obligado: ADASA
+    beneficiario: ADASA
+    compromiso: "Resolver con L&A las divergencias entre los planos vendor de BW Water y la ingenieria civil ya construida"
+    fecha_comprometida: null
+    estado: ABIERTO
+    criticidad: CRITICA
+    criterio_cierre: "Los seis puntos de _IMPACTO_OOCC_BL.md cerrados con L&A, empezando por el diametro de los pernos de anclaje, que es el que la obra necesita antes de ejecutar los post-instalados. Al 04-09-2026 quedan tres: verificar el diametro que la Rev 1 adopto contra las dos contradicciones del proveedor, reconciliar la fundacion del estanque CIP, y pedir a BW Water el reparto de las seis filas nuevas de peso"
+    fuente_contractual: "Nota Particular 2 del plano P22-DWG-00-002-007 Rev 0 de L&A, apto para construccion: la disposicion y el diametro de los pernos quedaron pendientes de los planos vendor"
+    origen_fecha: FIJADA ADASA
+    fecha_origen: 2026-08-17
+    fecha_cierre: null
+    consecuencia: "La obra civil esta construida y los pernos post-instalados no se pueden ejecutar sin el diametro. La fundacion del estanque CIP mide 2,20 m contra los 2,50 m que dibuja el plano vendor, y sobre lo construido la circunferencia de pernos deja 130 mm al borde contra los 150 mm minimos que BW Water fija"
+    accion_adasa: "Es la via que reemplaza a las observaciones retiradas del TM N33: la ingenieria de obras civiles la ejecuta L&A y estas divergencias se ven con ellos, no con el proveedor. Seis puntos: diametro de anclaje M12 y M10, empotramiento de los plintos 5 y 7, escalon de 22 mm de los plintos centrales, fundacion del estanque CIP de 2,20 contra 2,50 m, pedestales de los equipos CIP sobre un bloque plano, y la tabla de pesos de la BL Montaje (INT-10)"
+    evidencia_origen: "ENTREGAS_BWWATER/ENTREGA 76/_IMPACTO_OOCC_BL.md; ENTREGAS_BWWATER/ENTREGA 76/_LEDGER_COMENTARIOS.md"
+    evidencia_cierre: null
+    ref_cruzada: "INT-10"
+    reprogramaciones: 0
+    historial_fechas: "Sin fecha de calendario: el punto mas urgente vence con un evento de obra, la ejecucion de los pernos post-instalados"
+    avance: "La ENTREGA 12 de L&A del 03-09-2026 cierra dos de los seis puntos y avanza un tercero. La Nota Particular 2 del P22-DWG-00-002-007, que dejaba pendientes la disposicion y las dimensiones de los pernos de anclaje hasta la entrega de los planos vendor, desaparece en la Rev 1, de modo que L&A ya incorporo la Rev B. La fundacion de los equipos CIP se rediseña con junta de dilatacion, lo que responde al punto de los pedestales sobre bloque plano. Y la fundacion del contenedor sube 250 mm hasta la cota +6,300, que es la altura de plinto de la Rev B. Falta verificar contra el plano que diametro adopto L&A, porque el proveedor se contradice dos veces"
+    nota: "El diametro se contradice dos veces entre planos del propio proveedor: M12 contra M14 en la bomba CIP, donde el agujero de placa base de 14 mm delata que el correcto es M12; y M18 contra M10 en el skid de dosificacion, contra un plano que ADASA aprobo en Codigo 2. Nada de esto se le comento a BW Water en el TM N33"
+
+  - id: INT-12
+    frente: INTERNO ADASA
+    obligado: ADASA
+    beneficiario: ADASA
+    compromiso: "Declarar el mapeo de sensores de temperatura de la bomba de alta al cerrar la reconciliacion de tags del HMI"
+    fecha_comprometida: null
+    estado: ABIERTO
+    criticidad: ALTA
+    criterio_cierre: "Mapeo declarado por escrito en el ciclo del HMI Display Screenshot: TE-09-001 devanado y TE-09-002 rodamiento en la bomba de alta, TE-09-003 y TE-09-004 exclusivamente en la bomba CIP"
+    fuente_contractual: "Instrument List P22-LI-09-008-003 Rev E; hoja de comentarios de la Alarm and Interlock List P22-LI-09-008-015 Rev C, donde BW Water transcribe las cuatro asignaciones"
+    origen_fecha: FIJADA ADASA
+    fecha_origen: 2026-08-17
+    fecha_cierre: null
+    consecuencia: "Es asignacion de sensor de proteccion sobre un motor de 93 kW, con disparos distintos por elemento: 140 C en devanado contra 95 C en rodamiento. Mientras no se declare, la tabla de la bomba de alta de la Control Philosophy sigue atribuyendole los dos RTD de la bomba CIP"
+    accion_adasa: "NO se comento en el TM N33: el punto 1 del TM N31 declaro correcta esa pagina, de modo que objetarla sobre una Rev 1 seria comentario nuevo. El vehiculo, sin abrir instrumento nuevo, es el pedido de reconciliar seis tags que el TM N31 dejo abierto al HMI Display Screenshot Rev B: al cerrarlo hay que declarar el mapeo de todas formas"
+    evidencia_origen: "ENTREGAS_BWWATER/ENTREGA 79/_LEDGER_COMENTARIOS.md"
+    evidencia_cierre: null
+    ref_cruzada: "PRG-25"
+    reprogramaciones: 0
+    historial_fechas: "Sin fecha: se ata al cierre del ciclo del HMI"
+    nota: "La Instrument List asigna dos sensores por maquina y declara proveedores distintos, Fedco en la bomba de alta y Grundfos en la CIP, de modo que son RTD embebidos en motores distintos y no cuatro sensores de una sola maquina. El error de lectura es de ADASA, no del proveedor"
+
+  - id: PRG-32
+    frente: PROGRAMA
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Designar al profesional chileno que endosa el informe de calculo estructural y emitir el informe endosado"
+    fecha_comprometida: 2026-08-22
+    estado: ABIERTO
+    criticidad: CRITICA
+    criterio_cierre: "Profesional confirmado por escrito y el informe P22-CD-09-005-001 reemitido con el endoso del profesional habilitado en Chile. Cierra ademas la nota 'BOLTING DETAILS TO BE FINALIZED AND ENDORSED' de los planos generales P22-DWG-09-005-010 y P22-DWG-09-005-011"
+    fuente_contractual: "Compromiso propio de BW Water: hoja de comentarios del plano P22-DWG-09-005-015 Rev B del 20-May-2026 ('Seismic data will be furnished once all the calculations are verified by a Professional Engineer'), minuta del 16-Jun-2026 ('Report to be certified by a PE in Chile') y minuta del 30-Jun-2026, accion tabulada 'Frame Structure | Submit package to Chilean PE | BW Water | 01-Jul-2026'. Soporte: BAE Clausula 45, que pone todo certificado necesario para el cumplimiento del Pedido a cargo y expensas del Proveedor. La ET NO exige endoso por profesional chileno"
+    origen_fecha: COMPROMISO ESCRITO BW
+    fecha_origen: 2026-06-30
+    fecha_cierre: null
+    consecuencia: "El informe salio en Rev 0 apto para construccion el 23-Jul-2026 firmado solo por Aulem y personal de BW Water. Las reacciones de anclaje que alimentan la fundacion de Taltal, ya construida por L&A, provienen de un calculo sin endoso, y el diametro de los pernos post-instalados sigue pendiente. Todo retrabajo que derive del endoso es por cuenta y plazo de BW Water per la Clausula 45"
+    accion_adasa: "Correo ENVIADO el 18-Ago-2026 en la cadena propia del hilo del endoso. Si la fecha del 22-Ago no es alcanzable, BW Water debe declararlo por escrito antes del cierre del miercoles 19 con fecha alternativa respaldada por el propio profesional. ADASA recomendo a Thomas Engineers como referencia y sin designacion, sin relacion contractual ni responsabilidad por desempeno, honorarios ni plazo"
+    evidencia_origen: "ENTREGAS_BWWATER/ENTREGA 60/md/P22-DWG-09-005-015_B GA of Antiscalant Dosing Tank_drawing/page_3/drawing.md; MINUTAS DE REUNION/md/MINUTA DE REUNION 30-06-26_extracted.md; CORREOS/FW: 25007 Taltal: seismic calculation endorsement by local PE .pdf"
+    evidencia_cierre: null
+    ref_cruzada: "INT-11"
+    reprogramaciones: 1
+    historial_fechas: "Comprometido el 30-Jun-2026 para enviar el paquete al profesional el 01-Jul-2026; no ocurrio. ADASA pidio la fecha de emision del informe certificado el 17-Jun-2026 y no la recibio. El 17-Ago-2026 BW Water informo que no tiene profesional. Nueva fecha fijada por ADASA: 22-Ago-2026"
+    nota: "El endoso NO es exigencia de la ET, la BAE ni el PIE: la ET solo pide la Memoria de Calculo Sismico y su aprobacion por ADASA en su Seccion 7. Es compromiso unilateral de BW Water y ahi se ancla el reclamo; fundarlo en la ET seria refutable. El pendiente figura en la Seccion 3 de los transmittals N26, N27, N28 y N33 como 'the endorsed structural calculation report' El TM N37 lo vuelve a exigir dentro de la entrega consolidada del jueves 3 de septiembre de 2026, SIN mover su fecha comprometida: la fecha vencida es la prueba del incumplimiento y no se reprograma."
+
+  - id: PRG-33
+    frente: PROGRAMA
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Reemitir la Instrument List P22-LI-09-008-003 con VT-09-001 en el rango vinculante de 0 a 12 mm/s rms"
+    fecha_comprometida: 2026-09-03
+    estado: CERRADO
+    criticidad: ALTA
+    criterio_cierre: "Instrument List reemitida con el rango de VT-09-001 en 0 a 12 mm/s rms, de modo que el disparo de alta-alta por vibracion en 10,0 mm/s de la Alarm and Interlock List Rev 0 quede dentro del rango del instrumento aprobado"
+    fuente_contractual: "OBS-01 del TM N28 sobre la Alarm and Interlock List Rev C, que ofrecio dos rutas: bajar el disparo dentro del rango, o re-rangear el transmisor EN LA INSTRUMENT LIST y confirmar el valor. BW Water tomo la segunda y no reemitio la Instrument List. ADASA declara el valor vinculante en el TM N34"
+    origen_fecha: FIJADA ADASA
+    fecha_origen: 2026-08-18
+    fecha_cierre: 2026-09-03
+    consecuencia: "Mientras la Instrument List Rev E siga declarando 0 a 8,9 mm/s rms para VT-09-001, la definicion aprobada del instrumento satura por debajo del disparo y el enclavamiento Stop HP Pump por vibracion no puede actuar sobre un motor de 93 kW. El sensor Wilcoxon PCH420V-M12 admite el re-rangeo: la hoja de comentarios de BW Water declara que el maximo a 20 mA es configurable de 12,7 a 127 mm/s pico, o sea 8,9 a 89 mm/s RMS"
+    accion_adasa: "ADASA declaro el valor vinculante en vez de preguntar cual documento gobierna, per la regla del proyecto para un dato que dos documentos declaran distinto. SIN FECHA COMPROMETIDA: el TM N34 no fijo plazo. Fijar uno en el proximo intercambio, porque el panel PLC entra a fabricacion y el disparo se configura desde estos documentos"
+    evidencia_origen: "ENTREGAS_BWWATER/ENTREGA 73/P22-LI-09-008-015_Alarm & Interlock List_0.pdf items 6.0 y 6.1; ENTREGAS_BWWATER/ENTREGA 46/P22-LI-09-008-003_E Instrument List.pdf fila 7; REVISIONES/TRANSMITTALES/P22-TM-09-000-034-0/"
+    evidencia_cierre: "E90 - P22-LI-09-008-003 Rev F, fila de VT-09-001: rango 0,0 a 12,0 mm/s rms, contra 0,0 a 8,9 de la Rev E de la E46. Verificado sobre el cuerpo de la lista, no sobre la hoja de comentarios"
+    ref_cruzada: "PRG-33"
+    reprogramaciones: 0
+    historial_fechas: "Abierto el 18-Ago-2026 con el TM N34. Origen: OBS-01 del TM N28 del 20-Jul-2026, cuya ruta elegida por BW Water exigia esta reemision y no se hizo"
+    nota: "La Alarm and Interlock List Rev 0 NO se degrado por esto: el defecto vive en otro documento y per la regla de Rev 0 eso se sigue en la Seccion 3 sin bajar el codigo. Housekeeping asociado, sin compromiso propio: dos TAG de la misma lista se escribieron VE09-014 y VE09-016 sin guion y se corrigen en la proxima emision natural. CERRADO en el TM N38: la Instrument List Rev F declara VT-09-001 en 0,0 a 12,0 mm/s rms, verificado contra la fila de la Rev E que leia 0,0 a 8,9, de modo que el disparo de 10,0 mm/s de la Alarm and Interlock List Rev 0 queda dentro del rango del instrumento aprobado."
+
+  - id: PRG-34
+    frente: PROGRAMA
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Confirmar por escrito la presion de ensayo de cada linea del circuito de super duplex, contra la Line List aprobada, antes de ejecutar el proximo ensayo"
+    fecha_comprometida: 2026-09-01
+    estado: ABIERTO
+    criticidad: CRITICA
+    criterio_cierre: "Declaracion escrita de BW Water con la presion que aplicara a cada una de las once lineas de super duplex, coincidente con la columna HYDROTEST de P22-LI-09-009-003 Rev 0: 75, 90, 120 o 135 barG segun el diseno de cada linea. Mientras no llegue, ningun ensayo del circuito de alta se ejecuta"
+    fuente_contractual: "PIE Base P22-IT-09-000-001-0 fila 5.2, Presion Prueba = 1.5 x P.diseno; ITP P22-BA-09-000-004 Rev 0 fila 5.2, Punto de Detencion; Line List P22-LI-09-009-003 Rev 0, aprobada en Codigo 1 en el TM N29; ASME B31.3 para. 345.4.2"
+    origen_fecha: FIJADA ADASA
+    fecha_origen: 2026-08-20
+    fecha_cierre: null
+    consecuencia: "El riesgo corre en las dos direcciones y una de ellas ya se materializo. El 20-Ago un spool de super duplex se ensayo a 7,5 barG, que es la presion de las lineas de PVC, con manometros de rango 0 a 16 bar: ese ensayo no califica y se repite. En la direccion contraria, aplicar los 135 barG del ITP a toda linea de super duplex sometaria SIETE de las ONCE a sobrepresion, hasta 2,7 veces el diseno en DA-SSD-DN65-09-008 y DA-SSD-DN65-09-009, que son las salidas de salmuera de los dos Fedco HPB-60 SIP-09-001 y SIP-09-002, y 2,25 veces en la descarga de la bomba de alta. Es el modo de falla del hallazgo critico del TM N27, cuando el proveedor ordenaba 75 barG sobre una linea de PVC de 5 barG"
+    accion_adasa: "ADASA declaro la regla en el TM N35 con tabla por TAG de las once lineas, y la repitio por la cadena de inspecciones el mismo dia. La fila 5.2 es Punto de Detencion, de modo que ADASA controla la ejecucion: la retencion se apoya en esa facultad y no en una instruccion nueva"
+    evidencia_origen: "REVISIONES/TRANSMITTALES/P22-TM-09-000-035-0/ subseccion del HP and LP Pressure Test Procedure y Seccion 3; CORREOS/Agosto 2026/2026-08-20/2026-08-20_Hydrotest-Report-20-Aug.docx; PROGRAMA y CONTRATO/BV INSPECTION/INSPECTION 04/_ANALISIS_HYDROTEST_20AGO.md"
+    evidencia_cierre: null
+    ref_cruzada: "PRG-25, PRG-35, PRG-36, PRG-38, PRG-39, BV-13, BV-24"
+    reprogramaciones: 2
+    historial_fechas: "Abierto el 20-Ago-2026 con el TM N35 y el correo de la hidrostatica, con respuesta pedida al viernes 21-Ago. VENCIO INCUMPLIDO: no llego respuesta y, bajo la retencion, el 21-Ago se ensayaron DOS spools mas de super duplex a 7,5 barG (CP-SSD-DN80-09-015, hidrostatica 135 barG, y CP-SSD-DN80-09-044, hidrostatica 120 barG). Reprogramado al lunes 24-Ago-2026 con el correo ENVIADO el 21-Ago a las 12:15:38 hora de Chile. VENCIO INCUMPLIDO POR SEGUNDA VEZ: la confirmacion escrita no llego, y la reunion de coordinacion del 26-Ago traslado la definicion de la presion por linea a la entrega del viernes 28, que tampoco llego. Reprogramado al martes 1-Sep-2026 con el correo del 31-Ago, en hora de Penang, que es el ultimo dia habil antes del ensayo del miercoles 2"
+    nota: "La causa raiz esta en la clausula 5.5.12 del procedimiento P22-BA-09-000-010, que en una sola frase enuncia el binomio 135/7,5 bar y remite a la Line List, que prescribe SEIS valores; el factor 1,5 no esta escrito en ninguna parte del procedimiento, porque estaba en la Rev C y se perdio en la Rev D. El TM N32 lo detecto y decidio no reclamarlo, ya que el TM N29 habia aprobado esa revision. El procedimiento NO se degrado por esto en el TM N35, por decision del usuario: remite a la Line List aprobada, de modo que la regla existe y lo que faltaba era que ADASA declarara cual gobierna"
+
+  - id: PRG-35
+    frente: PROGRAMA
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Emitir el Pressure Test Record Chart como formulario controlado, con numero de documento y revision, e incorporarlo al procedimiento de ensayo de presion"
+    fecha_comprometida: null
+    estado: ABIERTO
+    criticidad: ALTA
+    criterio_cierre: "Formulario del grafico presion contra tiempo con numero de documento y revision propios, incorporado al P22-BA-09-000-010 al emitir su proxima revision, de modo que el certificado que exigen las filas 5.1 y 5.2 del ITP lo produzca un formulario bajo control de revisiones"
+    fuente_contractual: "ITP P22-BA-09-000-004 Rev 0, filas 5.1 y 5.2, columna de certificado: Pressure Test report (Graphic P vs T). La 5.2 es Punto de Detencion"
+    origen_fecha: FIJADA ADASA
+    fecha_origen: 2026-08-20
+    fecha_cierre: null
+    consecuencia: "El grafico SI se produce en la practica: el informe del 20-Ago lo trae con escalones, horas de inicio y termino y las firmas de las dos partes. Lo que no tiene es identificacion documental, de modo que el certificado de un Punto de Detencion se levanta hoy en un formulario que ningun documento aprobado nombra. El formulario AQ-QAM-F018 Rev 4, que si esta incorporado, registra valores puntuales y no la curva"
+    accion_adasa: "Trackeado en la Seccion 3 del TM N35 y pedido por la via operativa en el correo del 20-Ago. NO degrada el procedimiento: el defecto vive en otro formulario, per la regla de que un pendiente no intrinseco al documento revisado no baja su codigo"
+    evidencia_origen: "REVISIONES/TRANSMITTALES/P22-TM-09-000-035-0/ Seccion 3; PROGRAMA y CONTRATO/BV INSPECTION/INSPECTION 04/Taltal Hydrotest Report BV W 20Aug.pdf, hojas de adjuntos de los dos spools"
+    evidencia_cierre: null
+    ref_cruzada: "PRG-34"
+    reprogramaciones: 1
+    historial_fechas: "Abierto el 20-Ago-2026 con el TM N35. Sin fecha comprometida: se cierra al emitir la proxima revision del procedimiento"
+    nota: "Deriva de la OBS-01 del TM N32, que pedia identificar el formulario del ensayo y adjuntarlo de modo que produjera el registro grafico. La primera mitad cerro con el AQ-QAM-F018 en la Rev 1; esta es la segunda. INCUMPLIDO el 3 de septiembre de 2026: la entrega consolidada que exigio el TM N37 no incluyo el Pressure Test Record Chart como formulario controlado. BW Water no comprometio fecha nueva, de modo que queda SIN FECHA y se cuenta la reprogramacion."
+
+  - id: PRG-36
+    frente: PROGRAMA
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Declarar por escrito que presion de diseno esta aplicando el taller al circuito CIP y de que documento la toma, y entregar el listado de todo spool de super duplex ensayado hasta la fecha con el TAG de la Line List, la presion aplicada, la fecha del ensayo, el manometro usado y su rango"
+    fecha_comprometida: 2026-09-01
+    estado: ABIERTO
+    criticidad: CRITICA
+    criterio_cierre: "Declaracion escrita de la presion de diseno que el taller aplica al circuito CIP, con el documento del que la toma, y listado spool por spool con las cinco columnas. Permite determinar cuantos ensayos deben repetirse contra la columna HYDROTEST de P22-LI-09-009-003 Rev 0 y cerrar la causa raiz, no solo los tres casos"
+    fuente_contractual: "ITP P22-BA-09-000-004 Rev 0 fila 5.2, Punto de Detencion; Line List P22-LI-09-009-003 Rev 0 aprobada en Codigo 1 en el TM N29"
+    origen_fecha: FIJADA ADASA
+    fecha_origen: 2026-08-21
+    fecha_cierre: null
+    consecuencia: "Al 21-Ago hay TRES spools de super duplex ensayados a la presion equivocada en dos jornadas consecutivas, y las TRES son del circuito CIP: CP-SSD-DN100-09-014 el 20-Ago, y CP-SSD-DN80-09-015 y CP-SSD-DN80-09-044 el 21-Ago, todas con 5,0 barG de diseno declarado. Son tres de las CUATRO lineas CIP de super duplex de la Line List; la cuarta, CP-SSD-DN65-09-045, hidrostatica 135 barG, sigue pendiente y por eso la retencion sobre ella encabeza el correo. El taller esta tratando el circuito CIP completo como sistema de baja presion, y ADASA no sabe cuantos mas se ensayaron fuera de las jornadas atestiguadas. El Piping Layout Rev C trajo diecisiete planos de taller nunca sometidos y estampados FOR CONSTRUCTION, de modo que tampoco hay certeza de cuanto se fabrico fuera del ciclo de revision. Sin el listado no se puede dimensionar la repeticion ni programar la asistencia del inspector"
+    accion_adasa: "Pedido en el correo del 21-Ago por la cadena de inspecciones. La fila 5.2 es Punto de Detencion, de modo que ADASA controla la ejecucion y la retencion se apoya en esa facultad"
+    evidencia_origen: "PROGRAMA y CONTRATO/BV INSPECTION/INSPECTION 05/_ANALISIS_INSPECCION_05.md e INSPECTION 06/_ANALISIS_INSPECCION_06.md; correo ENVIADO el 21-Ago a las 12:15:38 hora de Chile, respaldo en CORREOS/Agosto 2026/2026-08-21/Re: 25007 TALTAL -  Request to witness inspection 003:004.pdf (respaldo del enviado, 21-Ago 12:15:38 hora de Chile)"
+    evidencia_cierre: null
+    ref_cruzada: "PRG-21, PRG-22, PRG-34, PRG-38, BV-24"
+    reprogramaciones: 1
+    historial_fechas: "Abierto el 21-Ago-2026 con el correo enviado a las 12:15:38 hora de Chile, dirigido a Magdier Arias, Eduardo Yamauchi y Stephane Gehant, con Adnin y Fadhil en copia. Plazo al lunes 24-Ago. VENCIO INCUMPLIDO: el listado no llego. Reprogramado al martes 1-Sep-2026 con el correo del 31-Ago, que lo reitera como sexta peticion"
+    nota: "La justificacion del proveedor para los 7,5 barG, que el spool mezcla brida clase 900 y clase 150, es el quiebre de especificacion no declarado que el TM N30 levanto sobre CP-SSD-DN80-09-044 y CP-SSD-DN65-09-045, y que sigue abierto en PRG-22. Mientras la linea sea una sola en la Line List aprobada, se ensaya a la presion que esa lista le asigna"
+
+  - id: PRG-37
+    frente: PROGRAMA
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: >-
+      Emitir en Rev 0 apto para construccion las tres hojas de datos de los equipos
+      Fedco: bomba de alta P22-ET-09-009-002, turbocargador de alimentacion
+      P22-ET-09-009-007 y turbocargador interetapa P22-ET-09-009-008, incorporando
+      en esa misma emision el borrado de STYLE 77 de las cuatro llamadas de conexion
+      de los dos turbocargadores.
+    criterio_cierre: >-
+      Las tres hojas recibidas en Rev 0 con estado IFC. No se acepta una revision de
+      aprobacion intermedia.
+    estado: CERRADO
+    criticidad: CRITICA
+    origen_fecha: FIJADA ADASA
+    fecha_origen: 2026-08-26
+    fecha_comprometida: 2026-09-07
+    reprogramaciones: 0
+    historial_fechas: "07-Sep"
+    fecha_cierre: 2026-09-03
+    evidencia_origen: >-
+      Transmittal N36 (P22-TM-09-000-036-0), Resumen Ejecutivo y subsecciones de los
+      tres datasheets; submittal 25007-0085 del 26-Ago-2026, que los somete en Rev E
+      para aprobacion. Transmittal emitido y notificado por correo el 26-Ago-2026 a
+      las 18:08 de Chile, con respaldo del enviado archivado.
+    evidencia_cierre: "E90 - P22-ET-09-009-002 Rev 0, P22-ET-09-009-007 Rev 0 y P22-ET-09-009-008 Rev 0, las tres con estado IFC en el formulario del submittal 25007-0090. Lamina de contorno de los dos turbocargadores con las cuatro llamadas de conexion en PIEDMONT STYLE S y CUT GROOVE, sin STYLE 77"
+    fuente_contractual: >-
+      Los tres quedaron en Codigo 2 en Rev D en el TM N11, con una sola nota menor
+      cada uno, y el equipo se compro y fabrico sobre esa base.
+    accion_adasa: >-
+      Verificar la emision antes de la apertura del FAT y, si no llega, escalarlo en
+      la reunion semanal de coordinacion.
+    consecuencia: >-
+      Son equipos comprados, fabricados y a dias de montarse: el cronograma del
+      proveedor programa la instalacion de la bomba dentro del contenedor para el 3
+      al 5 de septiembre y la apertura del FAT para el 7. Un equipo que se monta con
+      su hoja de datos abierta deja el registro documental por detras del estado
+      fisico, y esas hojas alimentan el dossier de fabricacion.
+    ref_cruzada: PRG-05, PRG-20
+    nota: >-
+      El propio cronograma de BW Water declara el ciclo de revision y aprobacion de
+      estas hojas cerrado al 100 por ciento desde el 16-Abr-2026 (tareas 177 a 183).
+      Ese dato NO se emitio en el transmittal, porque el cronograma se retiro de el;
+      queda como municion para la reunion semanal.
+      CERRADO en el TM N38: las tres hojas llegaron en Rev 0 con estado IFC en la ENTREGA 90, sin revision de aprobacion intermedia, y el borrado de STYLE 77 se verifico sobre la lamina de contorno de los dos turbocargadores, cuyas cuatro llamadas de conexion leen ahora solo PIEDMONT STYLE S y la designacion de ranura.
+
+  - id: PRG-38
+    frente: PROGRAMA
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Confirmar por escrito el programa de ensayos del 2, 3 y 4 de septiembre, dia por dia, con el TAG de cada spool y la presion que se le aplicara, y emitir la solicitud de atestiguamiento al tercero inspector con ADASA en copia"
+    fecha_comprometida: 2026-09-01
+    estado: ABIERTO
+    criticidad: CRITICA
+    criterio_cierre: "Programa escrito por jornada con el TAG de la Line List y la presion de ensayo de cada spool, que cubra las tres repeticiones (CP-SSD-DN100-09-014 a 120 barG, CP-SSD-DN80-09-015 a 135 y CP-SSD-DN80-09-044 a 120), la cuarta linea CIP CP-SSD-DN65-09-045 a 135 barG y la hidrostatica del RO Vessel; mas la solicitud de atestiguamiento emitida al inspector con ADASA en copia"
+    fuente_contractual: "ITP P22-BA-09-000-004 Rev 0 fila 5.2, Punto de Detencion bajo control de ADASA; NT P22-NT-09-000-002-0 Seccion 3.2, que exige la hidrostatica del RO Vessel como punto Hold; BAE Clausula 37, aviso previo de la inspeccion con tercero"
+    origen_fecha: FIJADA ADASA
+    fecha_origen: 2026-08-31
+    fecha_cierre: null
+    consecuencia: "Las tres jornadas se acordaron en la reunion de coordinacion del 26-Ago y son las que empiezan a descargar el Punto de Detencion de la fila 5.2. Al 31-Ago el repositorio no tiene ninguna solicitud de atestiguamiento posterior al Request 006 del 21-Ago, y sin ella el inspector no se moviliza y la jornada se pierde como se perdieron las del 13 y el 14 de agosto. De las once lineas de super duplex, una tiene ensayo conforme, tres deben repetirse y siete no se han ensayado: quedan diez por delante y el FAT del modulo abre el 7 de septiembre"
+    accion_adasa: "Correo ENVIADO el 31-Ago-2026 a las 15:59 hora de Chile desde CORREOS/Agosto 2026/2026-08-31/ (respaldo: respaldo correo BW.pdf), emitido SUELTO y no como respuesta porque el hilo del Request 003/004 ya no aparece en la bandeja, con plazo al martes 1 de septiembre en hora de Penang. NO se afirma que la solicitud no se emitio: la captura del correo entrante esta en hold y una ausencia no se afirma sin barrer las tres cadenas del frente, de modo que se pide confirmarla y que ADASA quede en copia. Si el programa no llega el martes, la jornada del miercoles se ejecuta sin presion confirmada y por PRG-34 se tiene por no ejecutada"
+    evidencia_origen: "MINUTAS DE REUNION/MINUTA DE REUNION 26-08-26.pdf, acciones 9 y 10; PROGRAMA y CONTRATO/BV INSPECTION/RESUMEN BV/_REGISTRO_INSPECCIONES_BV.md"
+    evidencia_cierre: null
+    ref_cruzada: "PRG-13, PRG-34, PRG-36, PRG-39, BV-25"
+    reprogramaciones: 0
+    historial_fechas: "Abierto el 31-Ago-2026. Las tres jornadas se fijaron en la reunion del 26-Ago para el 2, 3 y 4 de septiembre"
+    nota: "La hidrostatica del RO Vessel entra aqui porque quedo fuera del alcance desde el Inspection Request 003 del 5 de agosto y se arrastra sin reclamar en PRG-13. El programa del 2 al 4 es la primera oportunidad de reponerla junto con lo de alta"
+
+  - id: PRG-39
+    frente: PROGRAMA
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Emitir el P&ID, la Line List y los planos de fabricacion con la numeracion de linea unificada contra la lista aprobada, y la presion de ensayo exacta de cada spool observado"
+    fecha_comprometida: null
+    estado: ABIERTO
+    criticidad: CRITICA
+    criterio_cierre: "P&ID, Line List y planos de fabricacion reemitidos con un solo numero de linea por linea, coincidente con la Line List P22-LI-09-009-003 Rev 0 aprobada en Codigo 1, sin crear TAG nuevos; y la presion de ensayo declarada por spool"
+    fuente_contractual: "Compromiso propio de BW Water en la reunion de coordinacion del 26-Ago-2026, acciones 5 y 9, con fecha de entrega el viernes 28-Ago. Line List P22-LI-09-009-003 Rev 0, aprobada en Codigo 1 en el TM N29"
+    origen_fecha: COMPROMISO VERBAL-MINUTA
+    fecha_origen: 2026-08-26
+    fecha_cierre: null
+    consecuencia: "La causa raiz de los tres ensayos a la presion equivocada es el desajuste entre los numeros de linea de los registros del taller, los de los informes del tercero inspector y los de la lista aprobada. Mientras no se unifiquen no hay contra que verificar el ensayo del miercoles 2 de septiembre, y el riesgo se repite. Los submittals 25007-0086, 25007-0087 y 25007-0088, recibidos el 28-Ago, no traen ninguno de los tres documentos"
+    accion_adasa: "Reclamado en el correo ENVIADO el 31-Ago-2026 a las 15:59 hora de Chile como segundo bloque, con plazo al martes 1 de septiembre en hora de Penang. El origen de la fecha es una minuta y el registro de esa reunion es un resumen automatico interno, de modo que NO se cita al proveedor como acuerdo escrito: el correo se ancla en la reunion como hecho. Si vuelve a vencer, exigirlo por transmittal, que si deja constancia contractual"
+    evidencia_origen: "MINUTAS DE REUNION/MINUTA DE REUNION 26-08-26.pdf, acciones 5 y 9, ambas con fecha 28-Ago-2026 y responsable Lokman; contenido de ENTREGAS_BWWATER/ENTREGA 86 y ENTREGA 88"
+    evidencia_cierre: null
+    ref_cruzada: "PRG-21, PRG-34, PRG-38"
+    reprogramaciones: 2
+    historial_fechas: "Comprometido en la reunion del 26-Ago-2026 para el viernes 28-Ago. VENCIO INCUMPLIDO: no llego ninguno de los tres documentos. Reprogramado al martes 1-Sep-2026 con el correo del 31-Ago. La minuta del 26-Ago-2026 lo comprometio para el viernes 28-Ago con las palabras del proveedor: corregir los items mal mencionados de la Line List y enviar los planos de fabricacion actualizados. La del 01-Sep-2026 lo repitio para el 2-Sep como paquete completo y alineado de P&ID, Line List e ISO."
+    nota: "El registro de la reunion del 26-Ago que existe en el repositorio es un resumen automatico (metadatos tmp.summary generados por HeadlessChrome), no una minuta oficial del proveedor circulada y firmada. Sirve como constancia interna del compromiso y por eso el origen se marca COMPROMISO VERBAL-MINUTA, pero NO se cita como documento al proveedor El TM N37 lo enumera dentro de la entrega consolidada del jueves 3 de septiembre de 2026, y esa fecha NO lo extiende: su propia fecha del martes 1-Sep, ya reprogramada una vez, sigue rigiendo. Si llegara con el paquete del jueves seria una segunda reprogramacion y hay que contarla como tal. Segunda reprogramacion. En el TM N38 llegaron el P&ID Rev 0 el 1 de septiembre y la Line List Rev 1 el 3, en dias distintos, y los planos de fabricacion no llegaron, de modo que el criterio de cierre no se cumple. Ademas los dos documentos se contradicen: el P&ID rotula 09-048 como DN65 y 09-049 como DN80, y la Line List al reves, sobre spools a fabricar. ADASA determino cual de los dos esta mal y lo declara en el TM N38, en vez de pedir que lo reconcilien: la columna de caudal de la propia Line List da 54 m3/h al rechazo CIP de primera etapa y 36 al de segunda, y el par de alta presion aprobado en Rev 0 los dimensiona DN80 y DN65. El par nuevo de baja presion los invierte, de modo que el P&ID esta correcto y la Line List Rev 1 esta mal. Medidas vinculantes declaradas: CP-SSD-DN80-09-049 en primera etapa y CP-SSD-DN65-09-048 en segunda, a corregir antes de fabricar esos spools."
+
+  - id: PRG-40
+    frente: PROGRAMA
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Corregir el espesor de pelicula seca de la parte inferior del marco del skid y presentarlo a re-inspeccion"
+    fecha_comprometida: null
+    estado: ABIERTO
+    criticidad: ALTA
+    criterio_cierre: "Espesor de pelicula seca de la parte inferior del marco medido sobre el minimo de 355 micrones, verificado en jornada atestiguada, con el registro de la galga de espesor y su certificado de calibracion"
+    fuente_contractual: "Painting Procedure P22-BA-09-000-011 Rev 0 y Painting Specification P22-ET-09-006-002 Rev C, aprobados; fila de pintura del ITP P22-BA-09-000-004 Rev 0"
+    origen_fecha: FIJADA ADASA
+    fecha_origen: 2026-08-31
+    fecha_cierre: null
+    consecuencia: "El informe BVM-IR007 del 24-Ago registra que la parte inferior del marco no alcanza el minimo exigido, sobre el plano P22-DWG-09-005-017 Rev 1 hoja 3 de 3. El marco es la estructura que recibe los equipos y su cara inferior es la de acceso mas dificil una vez montado el skid dentro del contenedor. El cronograma del proveedor programa la instalacion de la bomba de alta dentro del contenedor del 3 al 5 de septiembre"
+    accion_adasa: "SIN FECHA COMPROMETIDA: el hallazgo sale del informe del tercero inspector y ADASA aun no lo ha reclamado por escrito al proveedor. NO se incluyo en el correo del 31-Ago, que va acotado a los ensayos de presion, para no diluir el asunto. Fijar fecha en el proximo contacto o levantarlo en la reunion semanal de coordinacion, antes de que el marco entre al contenedor"
+    evidencia_origen: "PROGRAMA y CONTRATO/BV INSPECTION/RESUMEN BV/IR007/IR007-ADASA-BVM-24082026.pdf seccion E1; _REGISTRO_INSPECCIONES_BV.md"
+    evidencia_cierre: null
+    ref_cruzada: "BV-25"
+    reprogramaciones: 0
+    historial_fechas: "Abierto el 31-Ago-2026 al analizar el informe del 24-Ago, que nunca se habia revisado. Sin fecha comprometida"
+    nota: "El registro de la reunion del 26-Ago menciona que el taller emitio un punch list del proveedor de pintura y programo el retrabajo para esa semana, pero no consta ningun registro de re-inspeccion: el BVM-IR008 y el BVM-IR009 son de ensayos de presion. La No Conformidad del tercero inspector sobre este mismo hallazgo se reclama en BV-25"
+
+  - id: PRG-41
+    frente: PROGRAMA
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Cerrar los cinco puntos de la Nota Tecnica P22-NT-09-000-003-0 que aseguran el embarque del 28 de septiembre"
+    fecha_comprometida: 2026-09-04
+    estado: ABIERTO
+    criticidad: ALTA
+    criterio_cierre: "Respuesta escrita a los cinco puntos: cual ventana de FAT gobierna entre la del Rev B (7 al 18 de septiembre) y la del Progress Update (15 al 25); el alcance del FAT y como cierran los tres dias hasta el ready-to-ship; la reconciliacion entre la llegada del flete de la bomba de alta y los dos turbocargadores el 11 de septiembre y su instalacion programada el 9 y 10; el loading schedule con el vessel closing date; y la ventana de posicionamiento de los tres bultos"
+    fuente_contractual: "Nota Tecnica P22-NT-09-000-003-0 del 31-Ago-2026. El respaldo contractual existe y NO se emitio en el documento: Clausula 27 (recuperar a su costa), Clausula 36 (corregir desviaciones inmediatamente y a su cargo) y Clausula 44 primer parrafo (no se admiten retrasos por condiciones desfavorables salvo Fuerza Mayor). Queda disponible si hay que endurecer"
+    origen_fecha: FIJADA ADASA
+    fecha_origen: 2026-08-31
+    fecha_cierre: null
+    consecuencia: "Los cinco puntos son los que AMENAZAN el 28 de septiembre, no los que lo disputan. El cronograma del propio proveedor cierra el FAT el 25 y pone el ready-to-ship del 26 al 28, tres dias; y programa la instalacion de la bomba de alta el 9 y 10 mientras su flete aterriza el 11. Si esas dos cosas no se reconcilian, la fecha se cae sola. Dato interno que NO se emitio: contra la linea base del propio adjunto la desviacion es de 44 dias en el ex-works, 43 en el FAT y 51 en la entrega en sitio y en el fin de programa"
+    accion_adasa: "Nota Tecnica P22-NT-09-000-003-0 emitida el 31-Ago-2026 con su correo de remision por la cadena del Progress Update, en VERSION SUAVE por decision del usuario: el objetivo es asegurar el 28 de septiembre y no disputarlo. La fecha del 04-Sep NO es un plazo impuesto: es el proximo reporte semanal esperado, y el ancla dura es la apertura del FAT. Si la respuesta no llega antes de esa apertura, o si la fecha vuelve a moverse, se repone el material retirado y se evalua la notificacion formal bajo la Clausula 49; el precedente esta en CORREOS/Febrero 2026/2026-02-14_Escalation-Plan/"
+    evidencia_origen: "Correo de Eduardo Yamauchi del 31-Ago-2026 15:29 hora de Chile, respondido a las 17:12 con la Nota Tecnica adjunta (respaldo en CORREOS/Agosto 2026/2026-08-31/Elementos enviados_ Luis Rivera Gonzalez - Outlook.pdf) y su adjunto, en PROGRAMA y CONTRATO/PROGRAMA DE SEGUIMIENTO RETRASOS/ con extraccion en md/; REVISIONES/NOTAS_TECNICAS/P22-NT-09-000-003-0_Ex-Works-Date-Non-Acceptance.md"
+    evidencia_cierre: null
+    ref_cruzada: "PRG-01, PRG-07, PRG-08, PRG-42, BV-13"
+    reprogramaciones: 0
+    historial_fechas: "Abierto el 31-Ago-2026. Plazo al viernes 4 de septiembre, hora de Penang"
+    nota: "MUNICION RETIRADA DEL DOCUMENTO EMITIDO, guardada aqui y en la Bitacora del README, disponible si la fecha vuelve a moverse. (1) El pintado del contenedor: el Project Schedule Rev B sometido el 24-Ago lo proyectaba del 13 al 21 de agosto y lo reportaba al 0 por ciento, en un documento con fecha de corte del 18; no tiene linea base en ninguna de las dos revisiones, paso de 8 a 20 dias de duracion y se ejecuta en el taller de un proveedor de pintura, segun el rotulo de la propia tarea. Una actividad sin linea base no puede oponerse como desviacion contra una referencia acordada. (2) La Clausula 44 excluye por defecto los retrasos por condiciones especiales desfavorables de cualquier naturaleza salvo Fuerza Mayor del articulo 45 del Codigo Civil, que exige imprevisibilidad e irresistibilidad y aviso al Comprador dentro de 48 horas; el correo del 31-Ago no la invoca ni cumple ninguno de esos requisitos. (3) El aviso llego tres dias despues de producido su propio cronograma, contra la Clausula 26. Todo esto SE RETIRO por instruccion del usuario para no comprometer la entrega del 28"
+
+  - id: PRG-42
+    frente: PROGRAMA
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Entregar el loading schedule y el vessel closing date del embarque ex-works de Penang"
+    fecha_comprometida: 2026-09-04
+    estado: ABIERTO
+    criticidad: ALTA
+    criterio_cierre: "Loading schedule y vessel closing date entregados por escrito, con la ventana de posicionamiento de los tres bultos: el 40 pies HC del modulo containerizado, el 20 pies GP del equipo suelto y el 20 pies flat rack del estanque CIP"
+    fuente_contractual: "Incoterm EX Works Penang del Contrato C-4300: ADASA asume el freight forwarding, el transporte interno, la aduana y el flete maritimo desde el patio del Proveedor, y no puede posicionar contenedores ni reservar nave sin esos dos datos"
+    origen_fecha: FIJADA ADASA
+    fecha_origen: 2026-07-21
+    fecha_cierre: null
+    consecuencia: "ADASA pidio los dos datos el 21-Jul-2026 y no los ha recibido. Es el reclamo defendible del corrimiento: no que se haya perdido una nave, que no consta, sino que ADASA lleva cuarenta dias sin el dato con que se reserva una nave mientras la fecha de embarque se mueve por segunda vez. Alcanza tambien al segundo despacho, el de los repuestos consolidados en Penang, que ADASA asume bajo el mismo Incoterm"
+    accion_adasa: "Reiterado como punto 4.B de la Nota Tecnica P22-NT-09-000-003-0. La respuesta que reserva el packing cost sigue en BORRADOR desde el 21-Jul en CORREOS/Julio 2026/2026-07-21/ y conviene decidir si sale con esta misma cadena"
+    evidencia_origen: "CORREOS/Julio 2026/2026-07-21/2026-07-21_Packing-EXW-Response_Descripcion.md, que declara el alcance logistico EXW de ADASA y pide el loading schedule y el vessel closing date"
+    evidencia_cierre: null
+    ref_cruzada: "PRG-08, PRG-41"
+    reprogramaciones: 0
+    historial_fechas: "Pedido el 21-Jul-2026 sin fecha de respuesta fijada. Fecha fijada por primera vez el 31-Ago-2026, al viernes 4 de septiembre, con la Nota Tecnica"
+    nota: "Bajo EX Works el embalaje de exportacion es alcance y costo del vendedor, y esa reserva sigue sin emitirse. El barrido del repositorio no encuentra ninguna reserva de bodega, naviera, booking ni forwarder contratado por ADASA, de modo que NO se afirma perdida de flete en ninguna comunicacion"
+
+  - id: PRG-43
+    frente: PROGRAMA
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Reemitir el Operating and Maintenance Manual P22-BA-09-000-012 como Rev B"
+    fecha_comprometida: null
+    estado: ABIERTO
+    criticidad: ALTA
+    criterio_cierre: "Rev B recibida y evaluada en Codigo 1 o 2, con las secciones 4.4 y 4.5 alineadas a la Alarm and Interlock List y al Control and Sequence Chart emitidos en Rev 0"
+    fuente_contractual: "Transmittal N27, Codigo 3 sobre P22-BA-09-000-012 Rev A; ET P22-ET-09-000-001-0 Seccion 8; BAE 12803 clausula 43.1 letra d), que lista los manuales entre la documentacion final"
+    origen_fecha: FIJADA ADASA
+    fecha_origen: 2026-08-31
+    fecha_cierre: null
+    consecuencia: "El manual es documentacion final y su atraso cae bajo la letra d) de la clausula 43.1. Sin manual aprobado no hay material de operacion para la puesta en marcha en Taltal"
+    accion_adasa: "Ya no queda dependencia que lo detenga y hay que decirlo por escrito: el Codigo 3 del TM N27 se fundo en que las secciones 4.4 y 4.5 reproducian logica asignada a documentos de control entonces abiertos, y esos dos documentos cerraron en Rev 0 y Codigo 1 en el TM N34"
+    evidencia_origen: "REVISIONES/TRANSMITTALES/P22-TM-09-000-027-0; el levantamiento de la dependencia consta en REVISIONES/TRANSMITTALES/P22-TM-09-000-034-0"
+    evidencia_cierre: null
+    ref_cruzada: "PRG-20, PRG-25"
+    reprogramaciones: 1
+    historial_fechas: "Sin fecha desde el Codigo 3 del TM N27. Fecha fijada por primera vez el 01-Sep-2026, al jueves 3 de septiembre, en la entrega consolidada del TM N37"
+    nota: "No tenia entrada propia en el registro pese a llevar en Codigo 3 desde julio. Es el argumento mas concreto de la exigencia de cierre consolidado, porque la excusa de la dependencia ya no existe. INCUMPLIDO el 3 de septiembre de 2026: la entrega consolidada que exigio el TM N37 no incluyo la Rev B del O&M Manual. BW Water no comprometio fecha nueva, de modo que queda SIN FECHA y se cuenta la reprogramacion."
+
+  - id: PRG-44
+    frente: PROGRAMA
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Reconciliar las cuatro entradas digitales y el mapa de reles de salida entre el registro del FAT del tablero, la I/O List Rev 6 y el esquematico Rev B"
+    fecha_comprometida: 2026-09-03
+    estado: CERRADO PARCIAL
+    criticidad: ALTA
+    criterio_cierre: "Declaracion escrita de que asignacion gobierna, con los tres documentos diciendo lo mismo sobre los canales 1 a 4 del modulo -A2 y sobre el canal 7 del modulo -A4"
+    fuente_contractual: "Transmittal N37, subseccion del PLC/LCP FAT Procedure; I/O List P22-LI-09-008-001 Rev 6, emitida para construccion; esquematico P22-CD-09-008-002 Rev B"
+    origen_fecha: FIJADA ADASA
+    fecha_origen: 2026-08-31
+    fecha_cierre: 2026-09-03
+    consecuencia: "El tablero ya esta armado. Si la asignacion que gobierna no es la de la lista aprobada, el cableado se corrige en Penang o en Taltal, no en Ningbo"
+    accion_adasa: "Verificado por render sobre los tres documentos, no tomado de una declaracion: el registro del FAT visa los canales 1 a 4 del modulo -A2 con los TAG XT001, XA002, XT002 y XT003; la I/O List Rev 6 muestra XA002, XT002 y XT003 tachados en rojo como eliminados en la revision 6 y no tiene fila XT001 para el tablero; y el esquematico Rev B conserva esos cuatro TAG en las entradas 1 a 4 del mismo modulo rotulados SPARE. En salidas, el canal 7 del modulo -A4 con el rele KA8 se visa como reserva en el registro y el esquematico cablea ahi el comando del calentador de CIP, que es el item 108 de la lista"
+    evidencia_origen: "REVISIONES/TRANSMITTALES/P22-TM-09-000-037-0/COMENTARIOS/, OBS-04 del CC_ADASA del FAT; renders en la subcarpeta _render"
+    evidencia_cierre: "E90 - P22-PP-09-000-001 Rev C, tabla de entradas digitales: los canales 1 a 4 del modulo -A2 se declaran de reserva y el documento cita la I/O List P22-LI-09-008-001 Rev 6 como la que gobierna. Cierre parcial: la fila del canal 7 del modulo -A4 sigue describiendo el rele KA8 como comando del calentador CIP y rotulandolo de reserva a la vez"
+    ref_cruzada: "PRG-43"
+    reprogramaciones: 0
+    historial_fechas: "Abierto el 01-Sep-2026 con el TM N37, con fecha al jueves 3 de septiembre"
+    nota: "El cuerpo ejecutado del FAT no cita la I/O List por codigo ni por revision, de modo que la afirmacion defendible NO es que el tablero se construyo distinto de los planos, sino que los tres documentos se contradicen y ninguno declara cual gobierna. CERRADO PARCIAL en el TM N38: el lado de las entradas cerro, porque el procedimiento Rev C declara los canales 1 a 4 del modulo -A2 como de reserva, coincide con la I/O List Rev 6 y con el esquematico Rev B, y declara la revision de la lista que gobierna. El lado de las salidas sigue abierto: la fila del canal 7 describe el rele KA8 como comando del calentador CIP y lo rotula de reserva en la misma fila, y el mismo TAG se repite en cinco salidas. El TM N38 declara el valor vinculante del lado de salidas en vez de preguntar cual gobierna: la I/O List Rev 6, aprobada en Codigo 1, lleva el calentador CIP como item 108, REL-09-001-HS001, salida digital de contacto seco, de modo que el rele KA8 no es de reserva y la columna de observaciones del procedimiento es la que esta mal. El TAG HS001 repetido en cinco salidas es solo el sufijo; la lista los lleva completos con el prefijo del equipo."
+  - id: PRG-45
+    frente: PROGRAMA
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Ejecutar un segundo Factory Acceptance Test del tablero en Penang, con testigo de ADASA y de un tercero inspector, contra el procedimiento aprobado"
+    fecha_comprometida: null
+    estado: ABIERTO
+    criticidad: ALTA
+    criterio_cierre: "Aviso previo por escrito de la fecha, ensayo ejecutado con ADASA y el tercero presentes, y registro firmado por las tres partes contra el procedimiento P22-PP-09-000-001 aprobado en Rev 0"
+    fuente_contractual: "Hoja de comentarios consolidada del P22-PP-09-000-001 Rev C, respuesta de BW Water a la OBS-01 del TM N37; fila 6.2 del Inspection and Test Plan P22-BA-09-000-004 Rev 0, aprobado en Codigo 1; Clausula 37 de las Condiciones Administrativas Especiales"
+    origen_fecha: COMPROMISO ESCRITO BW
+    fecha_origen: 2026-09-03
+    fecha_cierre: null
+    consecuencia: "Es la reparacion del ensayo del 3 al 5 de agosto, corrido en el fabricante de tableros con la casilla del testigo firmada por BW Water y sin aviso a ADASA. Sin este segundo ensayo no hay visado independiente del hardware del tablero antes del despacho"
+    accion_adasa: "Exigir la fecha por escrito y con la antelacion de la Clausula 37 en cuanto se fije. El compromiso llego sin fecha y por eso queda SIN FECHA"
+    evidencia_origen: "E90 - P22-PP-09-000-001 Rev C, hoja de comentarios consolidada, respuesta a la OBS-01: BW Water hara otro FAT en Penang con testigo de ADASA y de un tercero contra el documento de FAT aprobado"
+    ref_cruzada: "PRG-44, PRG-47, BV-15"
+    reprogramaciones: 0
+    historial_fechas: "Comprometido por escrito el 3-Sep-2026, sin fecha"
+    nota: "Es una concesion sustantiva del proveedor y conviene registrarla como tal: reencuadra el ensayo de la Rev B como informe interno del fabricante de tableros y no como el FAT contractual. La fecha es lo unico que falta"
+
+  - id: PRG-46
+    frente: PROGRAMA
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Reemitir la Valve List P22-LI-09-005-002, comprometida por escrito junto con la Equipment List, incorporando el cambio de placa de orificio a valvula reductora en CIT-09-004 y el cambio de material de la succion CIP a SS316"
+    fecha_comprometida: null
+    estado: ABIERTO
+    criticidad: ALTA
+    criterio_cierre: "Valve List reemitida con las valvulas VM-09-131, VM-09-132, VM-09-133 y VRP-09-001 incorporadas, la valvula reductora de CIT-09-004 y la succion CIP en SS316 reflejadas, y sin TAG del modelo 3D que falten"
+    fuente_contractual: "Hoja de comentarios del modelo 3D Rev B (E83), compromiso escrito de BW Water; hoja de comentarios del P&ID P22-DWG-09-009-002 Rev 0, donde el propio proveedor declara que la Valve List debe actualizarse y reemitirse"
+    origen_fecha: FIJADA ADASA
+    fecha_origen: 2026-09-03
+    fecha_cierre: null
+    consecuencia: "La Equipment List llego en Rev 0 apto para construccion y la Valve List no, de modo que el par comprometido quedo a medias y las valvulas del modelo siguen sin respaldo en una lista aprobada"
+    accion_adasa: "Reclamado en la Seccion 3 del TM N38. El argumento mas fuerte es del propio proveedor: su hoja de comentarios del P&ID Rev 0 declara que el cambio de CIT-09-004 obliga a reemitir la lista"
+    evidencia_origen: "E90 - P22-LI-09-005-001 Rev 0 recibida sin su par; hoja de comentarios del P&ID Rev 0 en la E89"
+    ref_cruzada: "PRG-39"
+    reprogramaciones: 0
+    historial_fechas: "Exigida en la entrega consolidada del 3-Sep-2026 y no entregada"
+    nota: "Va junto al cambio de succion CIP a SS316, que ADASA acepto como sustitucion menor por disponibilidad y que tiene que quedar reflejado tanto aqui como en los planos de fabricacion"
+
+  - id: PRG-47
+    frente: PROGRAMA
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Cerrar y firmar los ocho items de categoria A del punchlist del registro del ensayo de hardware del tablero, con fecha objetivo, fecha real, estado y testigo"
+    fecha_comprometida: null
+    estado: ABIERTO
+    criticidad: ALTA
+    criterio_cierre: "Registro del ensayo con los ocho items cerrados uno por uno y las tres casillas de cierre firmadas: rectificado por el fabricante del tablero, testificado y aceptado"
+    fuente_contractual: "OBS-02 del TM N37 sobre el P22-PP-09-000-001 Rev B; el propio punchlist define la categoria A como resolver ANTES del despacho del tablero"
+    origen_fecha: FIJADA ADASA
+    fecha_origen: 2026-09-03
+    fecha_cierre: null
+    consecuencia: "Seis de los ocho son senales que la I/O List aprobada arrastra desde sus revisiones 3 y 4: estado del interruptor de entrada, estado de las fuentes y las senales de marcha, falla y velocidad del variador de la bomba de alta. Sin cierre firmado, el tablero se despacha con no conformidades de categoria A abiertas"
+    accion_adasa: "El pedido se separa del procedimiento a proposito. Al emitir la Rev C como procedimiento en blanco, que es lo que ADASA exigio, esos ocho items dejaron de pertenecer al procedimiento y pasaron al registro de la Rev B, que es donde deben cerrarse"
+    evidencia_origen: "E88 - P22-PP-09-000-001 Rev B, punchlist con diez items marcados A, de los cuales las lineas 1 a 8 tienen fecha objetivo, fecha real y estado en blanco"
+    ref_cruzada: "PRG-44, PRG-45"
+    reprogramaciones: 0
+    historial_fechas: "Exigido en el TM N37 y reiterado en el N38"
+    nota: "No es un pendiente del procedimiento Rev C, que cerro su determinante: es un pendiente del registro del ensayo ya corrido, y por eso viaja en la Seccion 3 y no como observacion sobre la Rev C"

@@ -1,0 +1,47 @@
+{
+    "documento": "P22-DWG-09-009-002-A - P&ID",
+    "fecha_revision": "2026-01-26",
+    "revisor": "ADASA",
+    "nota_estructura": {
+        "paginas_0-7": "Caratula y Simbologia (no anotar)",
+        "pagina_8": "P&ID Alimentacion RO y 1ra Etapa (BH-09-001)",
+        "pagina_9": "P&ID Osmosis Inversa Etapas 1 y 2",
+        "pagina_10": "P&ID Sistema CIP",
+        "pagina_11": "P&ID Dosificacion Antiincrustante"
+    },
+    "nota_coordenadas": "Paginas horizontales 1224x792 pts. Origen (0,0) esquina superior izquierda. Script v2.0 maneja rotacion automaticamente.",
+    "comentarios": [
+        {
+            "page": 8,
+            "x": 400,
+            "y": 500,
+            "texto": "Incluir caracteristicas de bomba BH-09-001 segun hoja de datos P22-ITEM-09-009-002",
+            "codigo": "OBS-07",
+            "estilo": "revision_rojo"
+        },
+        {
+            "page": 8,
+            "x": 900,
+            "y": 400,
+            "texto": "Verificar presion de diseno con margen 10% (83.9 bar requerido)",
+            "codigo": "OBS-08",
+            "estilo": "advertencia_naranja"
+        },
+        {
+            "page": 9,
+            "x": 600,
+            "y": 450,
+            "texto": "Material canerias debe indicar SDSS para zona alta presion",
+            "codigo": "VD-02",
+            "estilo": "revision_rojo"
+        },
+        {
+            "page": 10,
+            "x": 500,
+            "y": 380,
+            "texto": "Agregar TAG de linea segun codificacion P22",
+            "codigo": "OBS-09",
+            "estilo": "revision_rojo"
+        }
+    ]
+}

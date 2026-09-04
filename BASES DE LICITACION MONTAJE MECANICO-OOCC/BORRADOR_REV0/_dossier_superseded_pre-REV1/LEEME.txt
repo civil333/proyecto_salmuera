@@ -1,0 +1,26 @@
+DOCUMENTOS SUPERADOS AL EMITIR LA REVISION 1 DEL PAQUETE
+Fecha: 04-09-2026
+================================================================================
+
+Aqui viven las cinco laminas civiles en revision 0 que la ENTREGA 12 de L&A
+(carta 067-032-032-COR-TT-013 del 03-09-2026) reemplazo por su revision 1 en el
+dossier "5. OBRAS CIVILES (A2)" del paquete:
+
+  P22-DWG-00-002-002_0 LAM1.pdf
+  P22-DWG-00-002-002_0 LAM4.pdf
+  P22-DWG-00-002-003_0 LAM1.pdf
+  P22-DWG-00-002-007_0 LAM1.pdf
+  P22-DWG-00-002-007_0 LAM2.pdf
+
+CUIDADO CON EL NOMBRE. La carpeta hermana "_dossier_superseded_pre-E10" guarda
+laminas con el MISMO nombre y la MISMA revision 0 que las vigentes, porque la
+ENTREGA 10 fue una re-emision de solo cajetin. Entre esas versiones no se puede
+distinguir por nombre de archivo: hay que comparar por hash o abrir el cajetin.
+
+Las versiones vigentes estan en:
+  ../../Bases REV 1/5. OBRAS CIVILES (A2)/PLANOS/
+
+Las versiones que efectivamente se distribuyeron a los oferentes siguen intactas en:
+  ../../Bases REV 0/
+
+No se borra nada: la revision 0 es la base contractual sobre la que se oferto.

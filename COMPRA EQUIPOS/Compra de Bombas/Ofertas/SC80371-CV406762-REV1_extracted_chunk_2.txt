@@ -1,0 +1,302 @@
+Analysing relay, motor temperature x x x
+Analysing relay, temperature 1 x x x
+Analysing relay, temperature 2 - x x
+Analysing relay, conductive   
+(leakage monitoring in the motor space)xx x
+Analysing relay, resistance  
+(leakage monitoring of mechanical seal)-x x
+Analysing relay 4 - 20 mA  
+(vibration monitoring)-x x
+Reset button x - -
+Modbus output - - x
+Current monitoring - - x
+
+============================================================
+--- PAGE 36 ---
+============================================================
+MaterialsKNCPP
+0Temperature  :  - 100 to 180 CKNCPP -process pump is a horizontal, single stage, end 
+suction, radially split volute casing pump of back-pull out 
+type design. 
+Heads  :  H up to 105 m.
+Consistency  :  up to 8%DesignKNCPP Pumps are used for continuous operation in process 
+industries for pumping of clean abrasive / corrosive liquids 
+& various stocks upto 8% consistency.Fields of Application
+Operating Data
+Capacities  :  Q up to 700 l/sPump sizes : DN 50 to 300High Efficiency End Suction Process Pump
+Design to ISO 2858Product Introduction
+6440.021/01-EN
+        
+20
+16
+0C.I.
+-30 120 200
+0Temperature  in CMax. Discharge
+Pressure in barPressure And Temperature LimitsDesignation
+bearing bracketGC = C.I.
+C    = S.SWetted parts
+Discharge nozzle size in mm                                     KNCPP  C  4 2    -  150
+Bearing bracket
+Sr. No. of casingMaterial of
+cover in theType of Series
+S. S. 2324
+01620
+-100 200 180Max. Discharge
+Pressure in bar
+0Temperature  in CKNCPP
+ Technical matter subject to change without notice.
+Mktg. Services / 02-21 / 2000ComponentsMaterial Variants
+C GC
+Volute casing 
+SS 2324 / 
+A 743 Gr. CF8/ 
+A 743 Gr. CF8MIS 210 FG260
+Wear plateSS 2324 / A 743 Gr. CF8 / 
+A 743 Gr. CF8M
+Casing cover IS 210 FG260
+ImpellerSS 2324 / A 743 Gr. CF8 / 
+A 743 Gr. CF8M
+Shaft A 276 TYPE 410
+Bearing bracket
+IS 210 FG260 Brg. Bracket lantern
+Bearing cover
+Shaft Prot. Sleeve 1.4462
+KSB Limited
+Mumbai-Pune Road, Pimpri, Pune - 411 018. India.
+Tel.: 020 2710 1000  Fax : 020 2742 6000  www.ksbindia.co.in740 rpm
+50
+40
+30
+20
+H
+(m)
+10
+8
+6
+5
+4
+3
+Q (l/s) 200 10 20 30 405060 80100 300 40043-250
+43-30051-300980 rpm
+20
+H
+(m)
+10
+8
+6
+5
+4
+3
+232-65 32-80
+32-100
+22-5032-125
+31-15042-150
+3 Q (l/s) 200 456 810 20 30 405060 8010022-65 22-80 31-100
+300 40030
+41-30042-20043-250
+43-300
+50051-300
+1480 rpm
+50
+40
+30
+20
+H
+(m)
+10
+8
+6
+5
+4
+311-50 21-6532-65
+22-50 22-6532-80
+22-80 31-100
+31-15042-150
+2 3 Q (l/s) 200 456 810 20 30 405060 80100 300 40032-100
+32-125
+50041-30042-20043-250
+43-300
+70060
+51-3002950 rpm
+150
+100
+3080
+60
+50
+40
+11-50
+30
+20
+H
+(m)
+1022-50 22-65
+21-6522-80 31-100
+2 3 Q (l/s) 200 456 810 20 30 405060 80100
+Equivalent grade SS2324 : 1.4460
+Other material variants possible upon request, please check with HO, Pune.
+
+============================================================
+--- PAGE 37 ---
+============================================================
+The self- venting casing prevents air-lock
+The wear plate is externally
+adjustable to provide
+constant clearance between
+the impeller & the wear plate
+as well as high efficiency.
+Open impeller specially
+designed for pulp application
+provides smooth transfer of
+stock upto 8% consistency.
+Simplified sturdy bearing unit
+design. Non floating rotor
+eliminates seal & bearing
+problems.
+Both oil & grease lubrication
+are available.The strong & rigid bearing
+support leg improves
+mounting stability &
+eliminates distortion caused
+by piping loads.Volute casing with low radial
+forcesStandard execution is 
+offered with gland packings.
+A split gland & lantern ring
+enable easy replacement of
+gland packing.Heavy duty shaft to 
+ISO 5199. Deflection at stuffing
+box less than 0.05mm.ROTOKEY spiral key
+- Fixed spiral key
+- More power transmission capability
+- Self locking
+- Back-run safe
+- Easy installation and dismantling
+- Non-sensitive to axial thrust
+- Never a missing key again
+- Carries all advantages from normal 
+  Key and Screw locking-but no disadvantages.KNCPP
+Stock Behaviour
+50
+30
+10Head loss m/100 m pipe length5
+4
+3
+2
+1
+0.2 1 10 50 6% STOCK
+5%
+4%
+3%
+2%
+Water
+Velocity v ( m/s)Process Stability
+H(m)
+30
+20
+10
+0
+0 1000 2000 3000 Q (l/ min)CB
+A
+KSB PUMP  A - B
+CONVENT. STOCK PUMP  A - C
+MOVEMENT OF DUTY POINT CAUSED BY CHANGE
+IN CONSISTENCY FOR KSB PUMP AND
+A CONVENTIONAL STOCK PUMP.      4% PROCESS
+   5.5 SYSTEM
+           CHARACT.CONVENT.STOCK PUMP 5.5%KSB  0- 5.5 %
+     CONVENT. STOCK PUMP 4%
+                               (OVERRIZED)Q    -HCURVE
+Effect of stock consistency on stock flow characteristics2.5%
+45%
+30% 45%30%
+15%3% 4%
+6% 5.5% 5.%
+
+============================================================
+--- PAGE 38 ---
+============================================================
+   
+KSB Chile S.A.  
+Casa Matriz ■  Av. Las Esteras Sur 2851, Quilicura, Santiago ■ Tel. +56 2 2677 8300 ■   www.ksb.cl  
+Sucursal Antofagasta ■  Camino a la Minería N° 265 – Barrio Industrial La Negra - Antofagasta ■ Tel. +56 55 263 8900,  
+Sucursal Coquimbo ■  Calle  Nueva 2,  N°1251, Galpón N°3 Barrio Industrial – Coquimbo Tel. +56 51 22 39714  
+Sucursal Concepción ■  Vasco Núñez de Balboa 9060, Parque Industrial San Andrés Hualpén, Concepción ■ Tel. +56 41 240 8000,  
+Sucursal Temuco ■ Work Center Maquehue, Ruta 194, N° 3081 – Módulo 4 – Padre Las Casas, Temuco ■ Tel.+ 56 45 22 54545  
+Sucursal Puerto Montt ■  Ruta 5 Sur KM 1025 – Módulo 12 Sector Alto Bonito, Puerto Montt ■ Tel. +56 65 231 3000.  F.V.010.CL.REV.01  
+ 
+ 
+CURVA  DE CANCELACION  DE ORDEN  
+ 
+En caso de cualquier cancelación, la siguiente formula se aplicará: Los gastos de 
+cancelación serán facturados como gastos administrativos y serán pagados de 
+inmediata a la recepción de la factura.  
+ 
+ 
+  
+
+
+============================================================
+--- PAGE 39 ---
+============================================================
+   
+KSB Chile S.A.  
+Casa Matriz ■  Av. Las Esteras Sur 2851, Quilicura, Santiago ■ Tel. +56 2 2677 8300 ■   www.ksb.cl  
+Sucursal Antofagasta ■  Camino a la Minería N° 265 – Barrio Industrial La Negra - Antofagasta ■ Tel. +56 55 263 8900,  
+Sucursal Coquimbo ■  Calle  Nueva 2,  N°1251, Galpón N°3 Barrio Industrial – Coquimbo Tel. +56 51 22 39714  
+Sucursal Concepción ■  Vasco Núñez de Balboa 9060, Parque Industrial San Andrés Hualpén, Concepción ■ Tel. +56 41 240 8000,  
+Sucursal Temuco ■ Work Center Maquehue, Ruta 194, N° 3081 – Módulo 4 – Padre Las Casas, Temuco ■ Tel.+ 56 45 22 54545  
+Sucursal Puerto Montt ■  Ruta 5 Sur KM 1025 – Módulo 12 Sector Alto Bonito, Puerto Montt ■ Tel. +56 65 231 3000.  F.V.010.CL.REV.01  
+ 
+ 
+CONDICIONES GENERALES DE SERVICIO  
+ 
+ 
+1. Para horas ordinarias de trabajo en jornadas de 9.6 hrs. por día de lunes a viernes . 
+ 
+Ayudante  
+ por hora normal de trabajo........................................................................................................  USD 30.00 
+ 
+ Supervisor de montaje  
+ por hora normal de trabajo................................................................................................... ...... USD 55.00 
+ 
+ Ingeniero de Servicio  
+ por hora normal de trabajo................................................................................................... ...... USD 75.00 
+ 
+ Horas de viaje  
+ Por hora normal de viaje…………………………………………………………………….  USD 45.00  
+ 
+ La jornada laboral de la semana es de 48 hrs., de lunes a viernes, 9.6 hrs. diarias. Si el cliente estipula una jornada 
+laboral distinta a ésta, se deberá llegar a un acuerdo especial. Las horas ordinarias de trabajo serán facturadas también 
+en los casos en que nuestro personal de servicio se vea impedido a trabajar por razones ajenas a su voluntad.  
+ 
+ En caso de que el lugar en donde se lleven a cabo los trabajos se encuentre a más de 2 km. de distancia del 
+establecimiento previsto para el alojamiento del personal, el tiempo que demanden los viajes entre faena y 
+alojamiento será contabilizado como tiem po normal de trabajo.  
+ 
+2.1 Para las horas que excedan las 9.6 hrs . diarias de lunes a viernes hasta las 24 hrs.............  25% recargo  
+ 
+2.2 Por cada hora de trabajo día sábado......................................................................................  50% recargo  
+ 
+2.3 Por cada hora de trabajo día domingos y festivos.................................................................  70% recargo  
+ 
+2.4 Horas nocturnas extraordinarias entre las 0 hrs. y las 6 a.m. ................................................  50% recargo  
+ 
+2.5 El tiempo que demande el viaje entre las oficinas de Santiago y la faena, serán contabilizados como horas de trabajo y 
+su costo será el 50% del valor de la hora respectiva.  
+ 
+2.6 El trabajo en si  
+ 
+- en ambientes muy sucios o trabajos particularmente sucios....................................  5 – 10% recargo  
+- en ambientes molestos (ruidoso, polvoriento, mal oliente, etc.), dependiendo del  
+grado de molestia................................................................. ....................................  5 – 25% recargo  
+- en barcos...................................................................................................................  15%  recargo  
+- trabajos subterráneos................................................................................................  25% recargo  
+- en plataformas de perforación...................................................................................  25% recargo  
+- dentro del área de supervisión de plantas nucleares.................................................  25% recargo  
+ 
+3. Viáticos y gastos de estadía  
+Los costos de alojamiento, viajes, desayuno, almuerzo y comida, serán de cargo del mandante, exigiéndose un nivel 
+aceptable de acuerdo a los estándares KSB.  En caso de que estos gastos deban ser incluidos en la factura final, se 
+facturará el costo del alo jamiento y viaje según comprobante, más un viático de US$ 25, 00 por  cada día de calendario 
+o parte de éste.  
+4. Forma de pago : La forma de pago será acordada oportunamente, dependiendo del tiempo y tipo de trabajo a realizar.  
+ 

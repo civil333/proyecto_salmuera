@@ -1,0 +1,64 @@
+1. ING. DETALLE MECANICA — ingenieria vigente para construccion
+Fecha: 04-09-2026
+================================================================================
+
+CONTENIDO
+  58 archivos. Es el dossier mecanico completo, con las revisiones vigentes al
+  04-09-2026 incorporadas sobre el Compilado Rev 0.
+
+QUE CAMBIA RESPECTO DE LA REVISION QUE SE COTIZO
+  P22-DWG-06-005-103   revision 1   Plano de montaje del modulo
+  P22-DWG-06-006-101   revision 1   Cañerias de interconexiones, planta
+  P22-DWG-06-006-102   revision 1   Cañerias de interconexiones, cortes y detalles
+  P22-DWG-06-006-103   revision 1   Cañerias TK y bomba, planta
+  P22-DWG-06-006-104   revision 1   Cañerias TK y bomba, cortes y detalles
+  P22-DWG-06-006-005   revision 2   Isometria SA-HDPE-DN110-PN10-005, cinco hojas
+  P22-DWG-06-006-011   revision 2   Isometria SA-HDPE-DN110-PN10-007, ocho hojas
+  P22-DWG-06-006-008   revision 1   Isometria PE-HDPE-DN90-PN10-001, cinco hojas
+  P22-DWG-06-006-009   revision 1   Isometria PE-HDPE-DN90-PN10-003, dos hojas
+  P22-LI-06-006-102    revision 1   Listado de materiales de cañerias
+  P22-LI-06-008-101    revision 1   Listado de instrumentos
+
+  El resto se mantiene en revision 0.
+
+LOS PUNTOS A MIRAR
+  1. El Corte A del plano P22-DWG-06-006-102 se redibujo con las cotas de conexion
+     nuevas, porque el modulo subio 250 mm. En el Corte D desaparece la valvula
+     VM-06-010, que la revision anterior rotulaba como proyectada.
+
+  2. El Listado de Materiales no mueve los metros de cañeria, que siguen en 335 m, y
+     tampoco mueve codos, cuplas, tee, reducciones, esparragos ni stub end. Salen los dos
+     accesorios de PVC-U, con lo que la instalacion queda 100 % HDPE como declara la
+     especificacion. El buje de reduccion Super Duplex UNS S32750 sube de 2 a 5 unidades,
+     el spigot saddle with cutter de 4 por 1 pulgada de 2 a 5, y entra la union adaptador
+     PE100 por Super Duplex de 1 pulgada, 3 unidades. Las empaquetaduras bajan de 45 a 42.
+
+     La brida NO cambia de tipo. En las dos revisiones es la misma pieza, un flange suelto
+     de junta solapada sobre stub end (FLANGE LJ, de Lap Joint), con perforaciones ASME
+     B16.5 clase 150. Lo que la revision 1 incorpora es su material, acero galvanizado por
+     inmersion, que las isometrias no declaran: para el material rige el Listado.
+
+  3. Siete de las once isometrias son identicas a las de la revision cotizada. Solo
+     cambian -005, -008, -009 y -011, con tres hojas nuevas. En -011 seis de siete hojas
+     cambian de numero y en -008 la antigua H.4 pasa a H.5, de modo que el cotejo contra
+     el juego anterior se hace por contenido y no por numero de hoja.
+
+  El detalle esta en la hoja Mecanica de la planilla de la carpeta 0.
+
+CUADERNILLO DE ISOMETRIAS
+  Once isometrias en 31 hojas, con codigos P22-DWG-06-006-001 a -012. No existe el codigo
+  -007. En revision 0 las isometrias -001, -002, -003, -004, -006, -010 y -012; en
+  revision 2 las -005 y -011; en revision 1 las -008 y -009.
+
+P&ID DE ALIMENTACION
+  El P22-DWG-06-009-102 tiene una revision 1 emitida solo en formato editable. El paquete
+  lleva su revision 0 y la revision 1 se entrega en cuanto se reciba el ploteo.
+
+ESTADO DE EMISION EN EL CAJETIN
+  Los planos en revision 0 declaran "PARA CONSTRUCCION" y el diagrama de flujo y los
+  cuatro P&ID declaran "REVISION FINAL". Entre las revisiones nuevas, la isometria
+  P22-DWG-06-006-008 declara "PARA CONSTRUCCION" y el plano P22-DWG-06-006-103 corrige a
+  "PARA CONSTRUCCION" un documento que en revision 0 estaba emitido "PARA REVISION DEL
+  CLIENTE". Las demas describen el cambio en su cajetin ("ACTUALIZADO", "ACTUALIZADO
+  DONDE SE INDICA") en vez de declarar el estado de emision. El punto esta observado al
+  proyectista.

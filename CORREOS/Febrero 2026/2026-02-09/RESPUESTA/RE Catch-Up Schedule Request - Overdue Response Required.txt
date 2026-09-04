@@ -1,0 +1,587 @@
+De:	Eduardo Yamauchi <Eduardo.Yamauchi@bw-water.com>
+Enviado el:	lunes, 9 de febrero de 2026 11:38 pm.
+Para:	Luis Rivera Gonzalez
+CC:	Cesar Malhue Muñoz; Jorge Guevara Lizana; Ronald Pellejero Salazar; Victor Gutierrez 
+Aqueveque; Mauricio Vallejos Briones; Jorge Valdes Palominos; Tanya Figueroa; Allan Valentos; 
+Jeryl F. Regulacion; Sadeep Irugalbandara; Andrew Sia; Ghazi Ozair; Nick  Huta; Marjan Arsovic; 
+Gerald Ross; Andrew Zaske; Adzlan Bin Abd Rahim
+Asunto:	RE: Catch-Up Schedule Request - Overdue Response Required
+Datos adjuntos:	Taltal water treatment plant base schedule 090226.pdf
+
+Dear Luiz,
+
+My apologies for the delay. Please see attached the overall project schedule. Our 
+team is still working on the schedule of documents.
+
+
+
+Best Regards,
+
+Eduardo Yamauchi, PMP
+Operations Director - Americas
+4520 Oak Fair Blvd. Suite 200, Tampa, FL USA, 33610
+Office No.: +1 813 701 0016
+BW Water l www.bw-water.com 
+
+This e-mail and any attachments are strictly confidential and are intended for use only by the addressee unless 
+otherwise indicated.
+
+From: Luis Rivera Gonzalez <lrivera@aguasantofagasta.cl>  
+Sent: Monday, February 9, 2026 3:48 PM 
+To: Eduardo Yamauchi <Eduardo.Yamauchi@bw-water.com> 
+Cc: Cesar Malhue Muñoz <cmalhue@aguasantofagasta.cl>; Jorge Guevara Lizana 
+<jguevara@aguasantofagasta.cl>; Ronald Pellejero Salazar <rpellejero@aguasantofagasta.cl>; 
+Victor Gutierrez Aqueveque <vgutierrez@aguasantofagasta.cl>; Mauricio Vallejos Briones 
+<mvallejos@aguasantofagasta.cl>; Jorge Valdes Palominos <jvaldes@aguasantofagasta.cl>; Tanya 
+Figueroa <Tanya.Figueroa@bw-water.com>; Allan Valentos <Allan.Valentos@bw-water.com>; 
+Jeryl F. Regulacion <Jeryl.Regulacion@bw-water.com>; Sadeep Irugalbandara 
+<Sadeep.Irugalbandara@bw-water.com>; Andrew Sia <Andrew.Sia@bw-water.com>; Ghazi Ozair 
+<Ghazi.Ozair@bw-water.com>; Nick Huta <Nick.Huta@bw-water.com>; Marjan Arsovic 
+<Marjan.Arsovic@bw-water.com>; Gerald Ross <Gerald.Ross-Sisniega@bw-water.com> 
+Subject: Catch-Up Schedule Request - Overdue Response Required
+
+Dear Eduardo
+
+On January 28, 2026, we submitted Technical Review Transmittal N3 (P22-TM-09-000-003-0) 
+requesting a catch-up schedule to coordinate project recovery efforts, with a delivery 
+deadline of February 6, 2026. This deadline has now passed without response. Additionally, 
+Transmittal N4 (P22-TM-09-000-004-0) was submitted on February 3, 2026, also awaiting your 
+response. The engineering phase currently shows a 35-day delay from the January 5, 2026 
+baseline, with 14 critical documents still pending and 15 documents requiring revision. 
+Without this schedule, we cannot coordinate internal resources, plan procurement activities, 
+or align site preparation with delivery timelines.
+
+We need the catch-up schedule immediately. The document must include: (1) proposed 
+delivery dates for the 14 outstanding engineering documents, including the PIE Detallado (39 
+days delayed), Equipment Layout (65 days), and DS MCC (81 days); (2) re-submission dates 
+for the 15 documents marked 'To be revised', particularly the PLC frequency specification, 
+A/C n+1 configuration, and Modbus TCP Memory Map; (3) updated milestone dates if the 
+current 35-day delay impacts Engineering Complete, Fabrication Start, FAT, or Ready to Ship; 
+and (4) specific mitigation actions to recover the delay.
+
+Please confirm receipt of this request and provide the catch-up schedule immediately. If you 
+cannot deliver the complete document now, communicate an estimated delivery date or 
+submit a preliminary partial schedule covering the most critical items. Additionally, please 
+confirm whether the current delays will impact the contracted module delivery date of August 
+3, 2026, or if you are implementing measures to ensure this milestone remains unchanged. 
+
+We remain available for coordination and stand ready to support the project recovery efforts.
+
+Best regards,
+
+
+ 
+   
+ 
+
+LUIS
+ RIV
+ERA 
+GON
+ZALE
+Z
+
+LID
+ER  
+ING
+ENI
+ERI
+A 
+DE 
+INF
+RAE
+STR
+UCT
+URA
+
+Dept
+o. Pr
+oyec
+tos 
+Des
+alaci
+on
+
+       
+
+lriv
+era
+@ag
+uas
+ant
+ofa
+gas
+ta.c
+l
+
+ 
+
+
+
+
+
+
+
+   
+
+ 
+
+ 
+
+ 
+
+ 
+
+  Agu
+as.A
+ntof
+agas
+ta    
+ 
+
+@Ag
+uas_
+Anto
+f
+
+
+
+
+ 
+         
+ 
+
+ 
+ 
+
+La in
+form
+ació
+n co
+nteni
+da e
+n est
+e cor
+reo y
+ arch
+ivos 
+adju
+ntos 
+es pr
+opie
+dad 
+de A
+guas
+ de A
+ntof
+agas
+ta S.
+A. y 
+pued
+e co
+nten
+er  
+
+infor
+maci
+on pr
+ivileg
+iada,
+ conf
+iden
+cial o
+ rese
+rvad
+a, y s
+u div
+ulgac
+ion n
+o aut
+oriza
+da es
+ta pr
+ohibi
+da p
+or le
+y. Si 
+uste
+d rec
+ibe e
+ste  
+
+corre
+o por
+ erro
+r, le r
+oga
+mos 
+avisa
+rnos 
+de in
+medi
+ato y
+ elim
+inarl
+o.
+
+De: Luis Rivera Gonzalez  
+Enviado el: miércoles, 28 de enero de 2026 05:46 pm. 
+Para: 'Tanya Figueroa' <Tanya.Figueroa@bw-water.com>; 'Allan Valentos' <Allan.Valentos@bw-
+water.com>; 'Jeryl F. Regulacion' <Jeryl.Regulacion@bw-water.com>; 'Sadeep Irugalbandara' 
+<Sadeep.Irugalbandara@bw-water.com>; 'Andrew Sia' <Andrew.Sia@bw-water.com>; 'Ghazi 
+Ozair' <Ghazi.Ozair@bw-water.com>; 'Nick Huta' <Nick.Huta@bw-water.com>; 'Marjan Arsovic' 
+<Marjan.Arsovic@bw-water.com> 
+CC: Cesar Malhue Muñoz <cmalhue@aguasantofagasta.cl>; Jorge Guevara Lizana 
+<jguevara@aguasantofagasta.cl>; Ronald Pellejero Salazar <rpellejero@aguasantofagasta.cl>; 
+Victor Gutierrez Aqueveque <vgutierrez@aguasantofagasta.cl>; Mauricio Vallejos Briones 
+<mvallejos@aguasantofagasta.cl>; Jorge Valdes Palominos <jvaldes@aguasantofagasta.cl> 
+Asunto: Technical Review Transmittal N3 (P22-TM-09-000-003-0) + Catch-Up Schedule Request
+
+Dear Marco,
+
+We submit Technical Review Transmittal N3 (P22-TM-09-000-003-0) along with an updated 
+Engineering Deliverables Status for the Second Stage RO Brine Module project. We also 
+request a catch-up schedule to support project recovery planning.
+
+1. TRANSMITTAL N3 - TECHNICAL REVIEW
+
+Attached: Technical Review Transmittal N3 covering the latest submittals received.
+
+Review Statistics
+Verdict
+Quantity
+%
+1 - Approved
+13
+57%
+2 - Approved as noted
+5
+22%
+3 - To be revised
+5
+22%
+TOTAL
+23
+100%
+
+1.2 Key Observations Requiring Immediate Attention
+#
+Observation
+Document
+1
+Duplicate TAG FIT-09-001 - Same TAG for Cartridge Filter DN100 and 2nd Stage 
+Permeate DN50
+Instrument List
+2
+Missing Pt-100 in HP Pump motor windings - ET Sec. 5.3 requires Pt-100 for 
+windings AND bearings
+HP Pump DS
+3
+VM-09-015 DN100 ANSI 900# manual actuation - ET Sec. 5.2.3 requires electric 
+actuation
+Valve List
+4
+Missing vibration transmitters for HP Pump and Turbochargers - ET Sec. 5.5.7
+Instrument List
+5
+Missing VFD electrical variables for SEC verification - ET Sec. 5.6
+IO List
+6
+Missing external coordination signals (DO module status, DI external enable)
+IO List
+
+1.3 Validated Items (Positive Findings)
+*	Process Calculation - Design Basis: All parameters per ET
+*	BiTurbo modeling (43k & 53k TDS) - 10 scenarios included
+*	HP Pump operating point - 49 m³/h @ 49.4 bar DP
+*	Permeate TDS < 500 mg/L guarantee - < 248 mg/L worst case
+*	Permeate chlorides < 400 mg/L - < 146 mg/L worst case
+*	Super Duplex material (PREN > 40) - PREN 42.5 confirmed
+*	HART protocol on all transmitters - 4-20mA + HART
+*	Conductivity instrumentation (5 locations) - ET 5.5.5 fully covered
+
+Download Link: https://www.dropbox.com/t/tDInLROUqCSiQlYM 
+
+2. ENGINEERING DELIVERABLES STATUS
+
+Per the Baseline Schedule, Engineering was scheduled to complete on January 5, 2026 (65 
+days from NTP). Current status as of January 28, 2026:
+
+2.1 Overall Status Summary
+Status
+Quantity
+% of Eng. Phase
+1 - Approved
+21
+33%
+2 - Approved as noted
+13
+20%
+3 - To be revised
+9
+14%
+4 - Rejected
+3
+5%
+Not delivered
+14
+22%
+TOTAL ENGINEERING PHASE
+64
+100%
+
+2.2 Key Performance Indicators
+Indicator
+Value
+Target
+Status
+Documents delivered
+38 of 52
+52
+73%
+Ready for fabrication 
+(1+2)
+29 of 52
+52
+56%
+Requiring correction 
+(3+4)
+9 of 38
+0
+24% of delivered
+Days since Eng. 
+Complete deadline
+23 days
+0
+DELAYED
+
+2.3 Critical Pending Documents (14 documents)
+#
+Document
+Baseline Date
+Days Delayed
+1
+PIE Detallado (ITP)
+Dec-31-2025
+28
+2
+Equipment Layout
+Dec-05-2025
+54
+3
+DS MCC
+Nov-19-2025
+70
+4
+CIP Pump Datasheet (complete)
+Nov-13-2025
+76
+5
+Plant Control Philosophy
+Dec-23-2025
+36
+6
+3D Model
+Dec-29-2025
+30
+7
+Piping Layout
+Dec-30-2025
+29
+8
+Stress & Flexibility Analysis
+Dec-29-2025
+30
+9
+Utility Consumption List
+Nov-04-2025
+85
+10
+Seismic Calculation
+Dec-29-2025
+30
+
+3. CATCH-UP SCHEDULE REQUEST
+
+We understand that project execution may encounter challenges that require schedule 
+adjustments. In order to support project recovery and maintain alignment with the contracted 
+milestones, we request a Catch-Up Schedule that addresses the current status.
+
+3.1 Requested Information
+Please provide a recovery plan that includes:
+1.	Pending Documents Plan: Proposed delivery dates for the 14 outstanding engineering 
+documents
+2.	Revision Plan: Re-submission dates for the 9 documents marked "To be revised"
+3.	Milestone Impact Assessment: Updated dates for key milestones (Engineering 
+Complete, FAT, Ready to Ship)
+4.	Mitigation Actions: Specific measures to recover the current 23-day delay
+
+3.2 Timeline
+Please provide the catch-up schedule within 7 business days (by February 6, 2026) to allow 
+proper coordination and support from ADASA.
+
+4. NEXT STEPS
+
+1.	Please confirm receipt of this transmittal
+2.	Provide the requested catch-up schedule by February 6, 2026
+3.	Address the critical observations identified in Transmittal N3
+4.	Schedule a coordination meeting to review recovery plan if needed
+
+Available for coordination as needed.
+
+Best regards,
+
+
+ 
+   
+ 
+
+LUIS
+ RIV
+ERA 
+GON
+ZALE
+Z
+
+LID
+ER I
+NGE
+NIE
+RIA 
+DE 
+INF
+RAE
+STR
+UCT
+URA
+
+Dept
+o. Pr
+oyec
+tos 
+Des
+alaci
+on
+
+       
+
+lriv
+era
+@ag
+uas
+ant
+ofa
+gas
+ta.c
+l
+
+ 
+
+
+
+
+
+
+
+   
+
+ 
+
+ 
+
+ 
+
+ 
+
+  Agu
+as.A
+ntof
+agas
+ta    
+ 
+
+@Ag
+uas_
+Anto
+f
+
+
+
+
+ 
+         
+ 
+
+ 
+ 
+
+La in
+form
+ació
+n co
+nteni
+da e
+n est
+e cor
+reo y
+ arch
+ivos 
+adju
+ntos 
+es pr
+opie
+dad 
+de A
+guas
+ de A
+ntof
+agas
+ta S.
+A. y 
+pued
+e co
+nten
+er  
+
+infor
+maci
+on pr
+ivileg
+iada,
+ conf
+iden
+cial o
+ rese
+rvad
+a, y s
+u div
+ulgac
+ion n
+o aut
+oriza
+da es
+ta pr
+ohibi
+da p
+or le
+y. Si 
+uste
+d rec
+ibe e
+ste  
+
+corre
+o por
+ erro
+r, le r
+oga
+mos 
+avisa
+rnos 
+de in
+medi
+ato y
+ elim
+inarl
+o.
+

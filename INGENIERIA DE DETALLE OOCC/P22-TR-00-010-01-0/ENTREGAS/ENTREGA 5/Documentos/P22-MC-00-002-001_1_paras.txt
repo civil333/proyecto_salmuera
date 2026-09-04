@@ -1,0 +1,249 @@
+3	Cliente: Aguas Antofagasta
+4	Nro. Proyecto: 067-032-032
+5	Descripción: “MC Fundación Estanque TK-06-001”
+10	Memoria de cálculo de fundación.
+Fundación Estanque.
+11	P22-MC-00-002-001
+16	CONTENIDO
+17	1	Introducción	2
+18	1.1	Objetivos	4
+19	2	Bases de cálculo	5
+20	2.1	Normativa	5
+21	2.2	Códigos y manuales	5
+22	2.3	Documentos de referencia	6
+23	2.4	Materiales	7
+24	2.4.1	Hormigón armado	7
+25	2.4.2	Acero estructural – Acero de refuerzo	7
+26	2.5	Parámetros de suelo	8
+27	3	Modelos computacionales	9
+28	4	Estados de carga	11
+29	4.1	Cargas permanentes (D)	11
+30	4.1.1	Cargas por peso propio (DEAD)	11
+31	4.1.2	Carga por peso de equipo (DEquipo)	12
+32	4.2	Peso propio de líquido contenido (D)	13
+33	4.3	Cargas sísmicas (Ex, Ey y Ez)	14
+34	4.3.1	Sismo horizontal (Ex y Ey)	14
+35	4.3.2	Sismo vertical (Ez)	16
+36	5	Combinaciones de carga	17
+37	6	AnÁlisis estructural	19
+38	6.1	Tensiones admisibles y porcentaje de apoyo	19
+39	6.2	Estabilidad al deslizamiento	22
+40	6.3	Verificación de anclajes	23
+41	6.4	Diseño de losas - Flexión	32
+42	6.5	Verificación de losas - Corte	38
+43	7	Conclusiones	43
+44	Introducción
+45	La empresa Aguas Antofagasta ha solicitado los servicios de L&A Ingeniería y Proyectos para el diseño del sistema de fundaciones de diversas estructuras las cuales serán emplazadas en las instalaciones de la Agencia Zonal de Taltal, propiedad de Aguas Antofagasta.
+47	El objetivo principal del presente documento es presentar la validación estructural de uno de los sistemas de fundaciones. A continuación, se presenta la estructura a la cual se le diseñará un sistema de fundaciones:
+49	Figura -: Representación esquemática de estanque (Modelo Navis Referencial).
+51	Figura -: Ubicación del proyecto.
+54	Figura -: Ubicación Agencia Zonal de Taltal.
+56	Objetivos
+57	El sistema de fundación diseñado en la presente Memoria de Cálculo corresponde a una losa de fundación individual, con el objetivo de asegurar un adecuado soporte de la superestructura.
+59	De esta manera, el estudio desarrollado en la presente Memoria de Cálculo considera el análisis y verificación de los siguientes aspectos:
+61	Diseño y verificación de los elementos estructurales asociados al sistema de fundaciones y sistema estructural.
+63	Verificación de la estabilidad del sistema de fundaciones y de las presiones de contacto transmitidas al terreno.
+64	Bases de cálculo
+65	Normativa
+66	Se consideran las siguientes normativas para la elaboración de la presente memoria de cálculo:
+68	NCh430:2008:	Hormigón armado – Requisitos de diseño y cálculo.
+70	NCh1537:2009:	Diseño estructural – Cargas permanentes y cargas de
+71	uso.
+73	NCh2369:2003:	Diseño sísmico de estructuras e instalaciones
+74	industriales.
+76	NCh2369:2025:	Diseño sísmico de estructuras e instalaciones
+77	industriales.
+79	NCh3171:2017:	Disposiciones generales y combinaciones de cargas.
+81	Códigos y manuales
+82	Se consideran los siguientes códigos y manuales para la elaboración de la presente memoria de cálculo:
+84	ACI318-19:		Requisitos de Reglamento para Concreto Estructural.
+86	ACI350-01:		Code Requirements for Environmental Engineering
+87	Concrete Structures.
+89	MC. Vol3	:		Manual de carreteras volumen número 3.
+91	API 650:			Welded Tanks for Oil Storage.
+101	Documentos de referencia
+102	Se consideran los siguientes documentos de referencia para la elaboración de la presente memoria de cálculo:
+104	IFNORME ESTUDIO SÍSMICO INSTALACIONES AGENCIA ZONAL TALTAL, AGUAS ANTOFAGASTA – LNS-ADASA-INF-040-Rev0.
+106	TÉRMINOS DE REFERENCIA INGENIERÍA DE DETALLE OBRAS CIVILES Y ESTRUCTURAS METÁLICAS MÓDULO RO SEGUNDA ETAPA PARA SALMUERA – PD TALTAL.
+108	Estanque Vertical Ø2600 x H2600 – Vistas y detalles – Plano de fabricación.
+110	Memoria Estanque AFTA Taltal – Estanque Salmuera 10m3.
+132	Materiales
+133	Hormigón armado
+134	La materialidad considerada para todos los elementos estructurales de hormigón armado corresponde a un hormigón G25, cuyas propiedades mecánicas se detallan a continuación:
+136	Tabla -: Propiedades mecánicas de hormigón armado G25.
+138	Acero estructural – Acero de refuerzo
+139	Respecto al acero de refuerzo del hormigón armado, se consideran barras corrugadas de calidad A630-420H, cuyas propiedades se resumen a continuación:
+141	Tabla -: Propiedades mecánicas de acero de refuerzo corrugadas A630-420H.
+152	Parámetros de suelo
+153	Los parámetros geotécnicos del suelo de fundación considerados en la presente memoria de cálculo se resumen en la siguiente tabla:
+155	Tabla -: Parámetros de la mecánica de suelos considerados.
+157	Los parámetros de suelo indicados en la tabla anterior se adoptan pese a lo señalado en el informe de estudio sísmico mencionado en la Sección 2.3. Esto se debe a que la clasificación de suelos presentada en dicho informe se basa en lo establecido por la NCh2369:2003, la cual define el tipo de suelo principalmente en función de la velocidad de propagación de ondas de corte (Vs30).
+159	Sin embargo, la normativa vigente NCh2369:2025, adoptada en la presente memoria, incorpora requisitos adicionales para la clasificación del suelo, tales como el período fundamental del sitio (Tg), el perfil estratigráfico del terreno, y establece como requisito la determinación tanto de Vs30 como de Tg mediante las metodologías señaladas en la NCh3793:2025.
+161	En particular, la NCh3793:2025 establece que la obtención de estos parámetros no debe realizarse mediante el método ReMi, el cual es utilizado en el informe previamente citado, si no que se recomienda el uso de métodos activos (MASW, f-k) y pasivos (SPAC, ESAC). Es por esta razón que se adoptan los valores previamente descritos.
+170	Modelos computacionales
+171	Con el fin de representar adecuadamente el comportamiento del sistema estructural, se desarrollan modelos computacionales mediante el método de elementos finitos, utilizando el software SAP2000. En dichos modelos, la losa de hormigón armado que conforma la estructura es representada mediante elementos tipo Shell-Thick.
+173	A continuación, se presentan los diferentes modelos computacionales con sus características respectivas:
+176	Figura -: Modelo computacional de fundación de TK [m].
+179	Figura -: Modelo computacional de fundación de TK.
+180	La interacción suelo-estructura es considerada mediante la incorporación de resortes de rigidez equivalentes a la del suelo, según lo señalado en la Sección 2.5. De esta manera, el módulo de balasto es incorporado en los modelos estructurales, como se muestra a continuación:
+183	Figura -: Asignación de módulo de balasto en modelo de contenedor [tonf/m3].
+189	Estados de carga
+190	Cargas permanentes (D)
+191	Cargas por peso propio (DEAD)
+192	El peso propio de la estructura es determinado directamente a partir del modelo de elementos finitos, el cual calcula esta solicitación en función de las dimensiones de las secciones definidas y del peso específico de los materiales asignados. De esta manera, el peso propio queda automáticamente incorporado en el análisis estructural.
+194	Obteniendo el peso propio a través de los cortes basales, se tiene lo siguiente:
+197	Figura -: Peso propio de fundación.
+202	Carga por peso de equipo (DEquipo)
+203	La carga de peso propio del estanque es obtenida a partir de lo señalado en el documento “Memoria Estanque AFTA Taltal – Estanque Salmuera 10m3” y es repartida en cada uno de los nodos circundantes del estanque, de esta manera, se tiene lo siguiente:
+205	Tabla -: Carga por peso propio de estanque.
+208	Esta carga es aplicada en el modelo computacional, quedando representada de la siguiente manera:
+211	Figura -:  Aplicación de carga de peso propio de estanque [kgf].
+223	Peso propio de líquido contenido (D)
+224	La carga generada por el peso propio del líquido contenido es obtenida del documento “Memoria Estanque AFTA Taltal – Estanque Salmuera 10m3” y es aplicada directamente en los elementos tipo Shell ubicados al interior del estanque, en la tabla presentada a continuación, se encuentran los parámetros considerados:
+226	Tabla -: Carga por peso propio de líquido.
+229	Esta carga es aplicada en el modelo computacional, quedando representada de la siguiente manera:
+232	Figura -: Aplicación de carga de peso propio de líquido [tonf/m2]
+234	Cargas sísmicas (Ex, Ey y Ez)
+235	Sismo horizontal (Ex y Ey)
+236	Las solicitaciones sísmicas horizontales son consideradas en el modelo computacional a partir de las solicitaciones de momento volcante en la fundación señaladas en el documento “Memoria Estanque AFTA Taltal – Estanque Salmuera 10m3”.
+238	Este momento es modelado a través de una carga de área que aumenta (o disminuye en sentido contrario) linealmente a medida que se aleja del centro de la losa. Según el documento mencionado anteriormente, corresponde a 431.846 [kgf⋅cm] resultando en lo siguiente:
+241	Figura -: Aplicación de momento volcante de fundación en dirección X [tonf/m2].
+243	Figura -: Aplicación de momento volcante de fundación en dirección Y [tonf/m2].
+245	Como se observa en la imagen presentada a continuación, la representación del momento volcante en el modelo SAP2000 para ambas direcciones de análisis genera valores equivalentes al valor teórico descrito anteriormente. Por tanto, se considera válida su aplicación.
+248	Figura -: Cortes basales producto del momento volcante en fundación.
+249	Sismo vertical (Ez)
+250	La componente sísmica vertical, es considerada según la actualización del valor mencionado en el documento “Memoria Estanque AFTA Taltal – Estanque Salmuera 10m3”. Esta solicitación es de 3.357 [kgf], por tanto, aplicando dicha carga sobre la zona interior del estanque se tiene lo siguiente:
+252	Tabla -: Carga sísmica vertical.
+255	Esta carga es aplicada en el modelo computación, quedando representada de la siguiente manera:
+258	Figura -: Aplicación de carga sísmica vertical [kgf/m2].
+259	Combinaciones de carga
+260	Para la verificación de presiones de contacto y la estabilidad de las fundaciones, se emplean las combinaciones de carga definidas según el método de tensiones admisibles (ASD). De esa manera, las combinaciones consideradas se basan en las disposiciones establecidas en las normas NCh2369:2025 y NCh3171:2017, con el objeto de incorporar las acciones existentes.
+262	Tabla -: Combinaciones de carga ASD.
+265	Por otra parte, para el diseño y verificación de la resistencia de los elementos de hormigón armado, se adoptan las mismas hipótesis de carga anteriormente definidas, pero formuladas conforme al método de diseño por resistencia (LRFD), de acuerdo con lo establecido en las normativas antes mencionadas. De esta manera resultan las siguientes combinaciones de carga:
+267	Tabla -: Combinaciones de carga LRFD.
+273	Cabe mencionar que la acción sísmica indicada en la tabla anterior se determina de acuerdo con lo establecido en la NCh2369:2025, donde el cálculo de la acción sísmica sobre la estructura considera el efecto bidireccional de la acción sísmica horizontal, tal como se muestra a continuación:
+275	Tabla -: Cálculo de la acción sísmica.
+277	AnÁlisis estructural
+278	En las secciones siguientes se presenta el análisis y la verificación estructural de la solución propuesta. En primera instancia, se realiza la verificación de las presiones de contacto y porcentaje de apoyo, para posteriormente continuar con la verificación de los elementos estructurales.
+279	Tensiones admisibles y porcentaje de apoyo
+280	En el presente apartado se realizan las verificaciones de tensiones admisibles y porcentajes de áreas apoyadas. Donde, a partir del modelo estructural se determinan las tensiones transmitidas al terreno tanto en condición estática como dinámica. Estas solicitaciones se utilizan para verificar que las tensiones de contacto sean inferiores a las tensiones admisibles consideradas para cada caso de carga.
+282	Cabe señalar que la verificación de porcentaje de apoyo de la fundación es realizada mediante los siguientes criterios de aceptación:
+284	100% de apoyo en condición estática.
+285	80% de apoyo en condición dinámica.
+288	Figura -: Tensión máxima transmitida al suelo (Obtenida por envolvente caso estático) [kgf/cm2].
+290	Figura -: Tensión máxima transmitida al suelo (Obtenida por envolvente caso dinámico) [kgf/cm2].
+292	Como se puede observar en las figuras anteriores, las tensiones máximas transmitidas al terreno, tanto en condición estática como dinámica resultan inferiores a los límites admisibles. En consecuencia, se concluye que las presiones están dentro de los rangos portantes de suelo.
+294	Tabla -: Resumen de presiones de contacto máximas transmitidas.
+305	Respecto de los porcentajes de apoyo para condición de análisis, tanto en condición estática como dinámica, se obtienen los valores presentados a continuación, en donde, el área en compresión está representada por un color morado, mientras que área traccionada, es decir la que presenta pérdida de apoyo, se presenta de color azul:
+307	Figura -: Porcentaje de apoyo en condición estática.
+310	Figura -: Porcentaje de apoyo en condición dinámica.
+312	Como se puede ver en cada una de las imágenes mostradas anteriormente, se presenta 100% de apoyo para ambas condiciones de carga.
+314	Estabilidad al deslizamiento
+315	En el presente apartado se desarrolla la verificación de deslizamiento para la combinación de carga más desfavorable, de esta manera, se emplea la expresión establecida en el Manual de carreteras volumen 3, donde en las secciones 3.1003.402(3) y 2.1003.403(2), se definen tanto las formulaciones como los límites admisibles. La expresión considerada es la siguiente:
+317	Deslizamiento en condición sísmica:
+321	De esta manera, realizando la verificación correspondiente frente a deslizamiento para la combinación de carga más desfavorable, empleando la siguiente ecuación, se tiene lo siguiente:
+325	Donde:
+326	:	Factor de seguridad al deslizamiento.
+327	:	Fuerza vertical en la dirección perpendicular al suelo soportante.
+328	:	Fuerza deslizante en la dirección paralela al suelo soportante.
+329	:	Ángulo de fricción interna del suelo soportante.
+332	Verificación de anclajes
+333	En el presente apartado se desarrolla la verificación de los pernos de anclaje, para este propósito se consideran, las reacciones basales señaladas en el documento “Memoria Estanque AFTA Taltal – Estanque Salmuera 10m3”, verificando los casos de carga para la combinación más desfavorables a los que puede verse sometido el sistema de anclaje.
+335	La verificación del sistema de anclajes se realiza mediante el software PROFIS Engineering, el cual efectúa las comprobaciones de resistencia de acuerdo con el código ACI 318-19.
+337	Para este análisis se consideran pernos de anclaje preinstalado de 1" varilla HAS-V-36 (ASTM F1554 Gr.36), y una longitud de empotramiento de 40 cm en el hormigón.
+339	Como resultado de las verificaciones realizadas, el sistema de anclaje presenta un factor de utilización (FU) del 34%.
+341	Las verificaciones detalladas del sistema de anclaje, incluyendo los resultados de capacidad, se presentan a continuación:
+376	Diseño de losas - Flexión
+377	En el siguiente apartado se realizan las verificaciones a flexión de los elementos tipo Shell de hormigón armado. Esta verificación es realizada a partir de los esfuerzos máximos en términos absolutos obtenidos de modelo estructural en cada dirección, considerando las combinaciones de carga descritas anteriormente.
+379	En las tablas presentadas a continuación se presenta la armadura de refuerzo proyectada para la totalidad de las losas:
+381	Tabla -: Armadura dispuesta armadura superior.
+383	Tabla -: Armadura dispuesta armadura inferior.
+402	A continuación, se presentan los esfuerzos máximos obtenidos del modelo estructural:
+404	Figura -: Momento máximo sentido 11 (Obtenido por envolvente) [tonf·m/m].
+407	Figura - Momento mínimo sentido 11 (Obtenido por envolvente) [tonf·m/m].
+409	Figura -: Momento máximo sentido 22 (Obtenido por envolvente) [tonf·m/m].
+412	Figura -: Momento mínimo sentido 22 (Obtenido por envolvente) [tonf·m/m].
+417	De esta manera, verificando la armadura dispuesta, se tiene lo siguiente:
+438	Verificación de losas - Corte
+439	En el presente apartado se realiza la verificación de corte para los elementos de hormigón armado. Esta verificación es realizada a partir de los esfuerzos máximos en términos absolutos obtenidos de modelo estructural en cada dirección, considerando las combinaciones de carga estáticas y sísmicas. De esta manera, se busca que la sección de hormigón sea capaz de soportar los efectos cortantes sin necesidad de acero de refuerzo.
+441	A continuación, se presentan los esfuerzos máximos obtenidos del modelo estructural:
+443	Figura -: Corte máximo sentido 13 (Obtenido por envolvente) [tonf/m].
+446	Figura -: Corte mínimo sentido 13 (Obtenido por envolvente) [tonf/m].
+449	Figura -: Corte máximo sentido 23 (Obtenido por envolvente) [tonf/m].
+451	Figura -: Corte máximo sentido 23 (Obtenido por envolvente) [tonf/m].
+477	De esta manera, realizando la verificación correspondiente, se tiene lo siguiente:
+482	Conclusiones
+483	A partir de los análisis y verificaciones realizadas, se concluye que el sistema estructural propuesto, cumple con los criterios de resistencia, estabilidad y tensiones admisibles establecidos en las normativas y códigos utilizados.
+485	En consecuencia, se valida la factibilidad técnica y estructural de la solución propuesta, concluyéndose que el sistema diseñado es apto para su implementación y operación segura bajo las condiciones definidas para el proyecto.
+
+=== TABLAS ===
+--- TABLA 0 (8x8) ---
+ |  |  |  |  |  |  | 
+ |  |  |  |  |  |  | 
+1 | 04-06-2026 | Para Uso e Información | P.Vargas | M.Vera | P.Castillo | Y.Rodriguez | L.Rivera
+0 | 28-05-2026 | Para Uso e Información | P.Vargas | M.Vera | P.Castillo | Y.Rodriguez | L.Rivera
+B | 14-05-2026 | Revisión Cliente | P.Vargas | M.Vera | P.Castillo | Y.Rodriguez | L.Rivera
+A | 14-05-2026 | Coordinación Interna | P.Vargas | M.Vera | P.Castillo |  | 
+REV. | FECHA | EMISIÓN | POR | J.E. | J.P. | REV. | APR.
+REV. | FECHA | EMISIÓN | L&A Ingeniería y Proyectos | L&A Ingeniería y Proyectos | L&A Ingeniería y Proyectos | Aguas Antofagasta | Aguas Antofagasta
+--- TABLA 1 (4x3) ---
+Parámetro | Valor | Unidad
+Resistencia a la compresión | 25 | MPa
+Módulo de elasticidad | 238.752 | kgf/cm2
+Peso específico | 2.500 | kgf/m3
+--- TABLA 2 (4x3) ---
+Parámetro | Valor | Unidad
+Tensión de fluencia | 420 | MPa
+Módulo de elasticidad | 2.100.000 | kgf/cm2
+Peso específico | 7.850 | kgf/m3
+--- TABLA 3 (6x3) ---
+Parámetro | Valor | Unidad
+Módulo de balasto | 3.000,00 | tonf/cm3
+Tensión admisible caso estático | 1,00 | kgf/cm2
+Tensión admisible caso dinámico | 1,00 | kgf/cm2
+Tipo de suelo | E | -
+Ángulo de fricción interna | 35 | °
+--- TABLA 4 (4x3) ---
+Parámetro | Valor | Unidad
+Número de nodos | 24 | cant.
+Reacción basal por peso propio | 585,00 | kgf
+Carga por nodo | 24,42 | kgf
+--- TABLA 5 (4x3) ---
+Parámetro | Valor | Unidad
+Peso del líquido contenido | 11.986 | kgf
+Área al interior del estanque | 5,31 | m2
+Carga por superficie | 2.257,56 | kgf/m2
+--- TABLA 6 (4x3) ---
+Parámetro | Valor | Unidad
+reacción basal | 3.357 | kgf
+Área al interior del estanque | 5,31 | m2
+Carga por superficie | 632,29 | kgf/m2
+--- TABLA 7 (4x2) ---
+Combinaciones de carga | Combinaciones de carga
+1) | 0,6D+0,6F
+2) | D+F
+3) | D+0,7E+F
+--- TABLA 8 (6x2) ---
+Combinaciones de carga | Combinaciones de carga
+1) | 0,9D+0,9F
+2) | 1,2D+1,2F
+3) | 1,4D+1,4F
+4) | 1,2D+E+1,2F
+5) | 0,9D+E+0,9F
+--- TABLA 9 (4x2) ---
+Combinaciones de la acción sísmica | Combinaciones de la acción sísmica
+1) | ± 1,0EX ± 0,3Ey ± 0,3EZ
+2) | ± 0,3EX ± 1,0Ey ± 0,3EZ
+3) | ± 0,3EX ± 0,3Ey ± 1,0EZ
+--- TABLA 10 (3x3) ---
+Condición | Presión de contacto [kgf/cm2] | Condición
+Estática | 0,40 | Cumple
+Dinámica | 0,47 | Cumple
+--- TABLA 11 (3x3) ---
+Parámetro | Valor | Unidad
+Diámetro | 12 | mm
+Espaciamiento | 200 | mm
+--- TABLA 12 (3x3) ---
+Parámetro | Valor | Unidad
+Diámetro | 12 | mm
+Espaciamiento | 200 | mm

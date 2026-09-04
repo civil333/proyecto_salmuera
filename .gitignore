@@ -1,19 +1,43 @@
-# Basura del sistema
-.DS_Store
-._*
-Thumbs.db
+# ============================================================================
+# Politica: se versiona la FUENTE y la DOCUMENTACION, no el DERIVADO.
+#
+# Este archivo usa LISTA BLANCA: ignora todo y habilita solo las extensiones
+# de fuente. Una lista negra siempre se queda corta en un arbol de ~10 GB con
+# PDF, planos, modelos 3D, audio y video; la lista blanca no deja pasar nada
+# que no se haya declarado.
+#
+# Los documentos generados se regeneran de su .md o .py fuente. Los recibidos
+# de terceros viven en el NAS con respaldo Synology, no en git.
+# ============================================================================
 
-# Locks de Microsoft Office
-~$*
+# 1. Ignorar todo
+*
 
-# Respaldos manuales: el historial vive en git, no en copias .bak
+# 2. Permitir descender en las carpetas (sin esto git no ve nada adentro)
+!*/
+
+# 3. Habilitar solo la fuente
+!.gitignore
+!*.py
+!*.sh
+!*.ps1
+!*.md
+!*.txt
+!*.yaml
+!*.yml
+!*.json
+
+# 4. Re-excluir lo que usa esas extensiones pero es derivado o basura
+md/
+*_extracted.md
+*_extracted.txt
+*_drawing/
+.multi-audit-*/
+__pycache__/
 *.bak
 *.bak_*
 *.bak-*
-
-# Corridas de auditoria y de anti-ia (se regeneran)
-.multi-audit-*/
-
-# Temporales de render y extraccion
-*_extracted.md
-render_*/
+.DS_Store
+._*
+~$*
+plot.log

@@ -1,0 +1,72 @@
+2. OBRAS CIVILES — ingenieria vigente para construccion
+Fecha: 04-09-2026
+================================================================================
+
+CONTENIDO
+  PLANOS   18 laminas: trece en revision 0 apta para construccion y cinco en revision 1.
+  ET        2 especificaciones tecnicas, ambas en revision 1:
+              P22-ET-00-010-101  Movimiento de Tierra
+              P22-ET-00-010-102  Obras Civiles
+
+  Las memorias de calculo no forman parte del paquete.
+
+LAS CINCO LAMINAS EN REVISION 1
+  Carta del proyectista 067-032-032-COR-TT-013 del 03-09-2026.
+
+    P22-DWG-00-002-002 LAM1   Fundacion del estanque TK-06-001
+    P22-DWG-00-002-002 LAM4   Fundacion de la bomba BH-06-001
+    P22-DWG-00-002-003 LAM1   Fundacion del contenedor del modulo, formas
+    P22-DWG-00-002-007 LAM1   Fundacion del sistema CIP, formas
+    P22-DWG-00-002-007 LAM2   Fundacion del sistema CIP, armaduras
+
+QUE CAMBIA
+  La fundacion del contenedor sube 250 mm: cara superior de la cota +6,050 a la +6,300 y
+  sello de fundacion de la +5,150 a la +5,400. Geometria y armadura sin cambio, y su
+  cubicacion declarada tampoco cambia. Nota: el cuadro de excavacion de esa lamina no se
+  modifico pese al cambio de cota, de modo que el movimiento de tierra de esa zona queda
+  sujeto a verificacion en terreno.
+
+  La fundacion de los equipos del sistema CIP baja de 4,13 a 2,63 m3 de hormigon G25 y el
+  total de la zona de 7,36 a 5,80 m3; la excavacion baja de 5,01 a 1,60 m3. Entra una
+  junta de dilatacion entre elementos de fundacion: poliestireno expandido de 2,5 cm,
+  sello Sikaflex 1A y primer VP-215 en ambas paredes. La armadura de la zona se renumera
+  completa, de las marcas 1201 a 1204 a las 1211 a 1216.
+
+  Las laminas del estanque y de la bomba solo cambian la fecha del cajetin; su cubicacion
+  es identica.
+
+ESTADO DE EMISION EN EL CAJETIN
+  Las trece laminas en revision 0 declaran "APTO PARA CONSTRUCCION". En las cinco en
+  revision 1 la fila de la revision 1 dice "MODIFICACIONES INDICADAS", que describe el
+  cambio y no declara el estado de emision; la fila de la revision 0 conserva "APTO PARA
+  CONSTRUCCION". La carta de remision del proyectista declara las cinco "Para
+  Construccion". El punto esta observado al proyectista.
+
+LA CUBIERTA DEL SISTEMA CIP NO SE CONSTRUYE
+  Fuera de alcance desde el 18-06-2026. Se ejecuta solo su fundacion, con los 24 pernos
+  F-1554 de 3/4 de pulgada colados y su proteccion anticorrosiva interina. Esa fundacion
+  vive en P22-DWG-00-002-007 LAM3, que se mantiene en revision 0 y si esta en el paquete.
+  El plano de la estructura P22-DWG-00-003-001 y la ET P22-ET-00-010-103 quedan fuera.
+
+OBSERVACIONES DE ARRASTRE
+  La nota de mejoramiento de suelo de la ET de Movimiento de Tierra aparece en las laminas
+  de formas y no se repite en las de armadura, que remiten a la matriz de notas generales
+  del plano P22-DWG-00-002-001.
+
+  El plano P22-DWG-00-002-005 de detalles de anclaje no se emite. Esos detalles viven en
+  los planos de fundaciones 00-002-002, 00-002-003 y 00-002-007.
+
+  EL MOVIMIENTO DE TIERRA ESTA PEDIDO Y NO INCORPORADO. El plano P22-DWG-00-001-001, en
+  revision 0, quedo dimensionado sobre el sello anterior: su cuadro de cubicaciones acota la
+  excavacion del contenedor en 38,02 m3 y la de la zona CIP en 5,01 m3, y las Secciones E y F
+  de la lamina 2 ponen el fondo de excavacion del contenedor en EL. 5,15. El sello vigente es
+  +5,400 y la excavacion de la zona CIP bajo a 1,60 m3. Ambas laminas estan pedidas al
+  proyectista en revision 1. Hasta que lleguen, las cantidades de movimiento de tierra del
+  contenedor y de la zona CIP deben verificarse en terreno.
+
+  El cuadro de excavacion del P22-DWG-00-002-003 LAM1 revision 1 mantiene los valores de la
+  revision 0 (38,02 de excavacion, 45,62 de retiro y 30,03 de relleno) pese a que en esa misma
+  lamina el sello subio 250 mm. Esta consultado al proyectista.
+
+  El plano de Implantacion General P22-DWG-00-002-001 se reviso y NO requiere cambio: acota el
+  nivel de terreno natural por zona, que no se movio.

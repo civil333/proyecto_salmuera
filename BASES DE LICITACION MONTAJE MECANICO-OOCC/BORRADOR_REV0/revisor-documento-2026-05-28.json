@@ -1,0 +1,588 @@
+{
+  "meta": {
+    "documento": "documento",
+    "revision": "documento",
+    "skillTemplate": "",
+    "exportado": "2026-05-28T19:51:28.754Z",
+    "total": 36,
+    "schemaVersion": 2
+  },
+  "comments": [
+    {
+      "id": 1,
+      "secId": "h_0",
+      "tipo": "fondo",
+      "label": "Resumen Ejecutivo",
+      "text": "Falta incluir el estanque de acumulacion de salmuera",
+      "quote": "Aguas Antofagasta S.A. licita el montaje mecanico (mecanica de proceso, piping de interconexiones, drenajes exteriores, montaje de la bomba de alimentacion BH-06-001) y las obras civiles completas asociadas al nuevo Modulo de Segunda Etapa de Salmuera de la Planta Desaladora Taltal. El contrato adjudicado deja la totalidad de la obra civil terminada, todo el piping de interconexiones instalado hasta tie-ins definidos por el mandante, y la bomba de alimentacion BH-06-001 montada y alineada sobre su fundacion, en condicion lista para que en una fase posterior se instale el modulo de osmosis inversa (suministro BW Water) con su sistema CIP, su conexionado final y la puesta en march",
+      "quoteAnchor": {
+        "paraIndex": 62,
+        "startOffset": 0,
+        "endOffset": 687,
+        "textHash": "43a641"
+      },
+      "ts": "2026-05-28T18:17:16.164Z",
+      "page": 2
+    },
+    {
+      "id": 2,
+      "secId": "h_0",
+      "tipo": "fondo",
+      "label": "Resumen Ejecutivo",
+      "text": "Esto esta de mas, es poco serio que la BT diga,\" esto debe quedar grabado en el oferente\", ademas no nombres a los subcontratos. ni que nos deben cosas, esto es debido a que estamos en una etapa intermedia de entrega con L&A, pero cuando salga la BT a licitacion estara todo completo",
+      "quote": "ADASA entrega cubicaciones completas a partir del Compilado Rev 0 de Ingenieria de Detalle Mecanica y del paquete civil L&A (en emision). Las cinco ideas que deben quedar grabadas por el oferente",
+      "quoteAnchor": {
+        "paraIndex": 63,
+        "startOffset": 245,
+        "endOffset": 440,
+        "textHash": "85f183"
+      },
+      "ts": "2026-05-28T18:20:15.710Z",
+      "page": 2
+    },
+    {
+      "id": 3,
+      "secId": "h_0",
+      "tipo": "fondo",
+      "label": "Resumen Ejecutivo",
+      "text": "NO esta el montaje del estanque de salmuera",
+      "quote": "Coordinacion brownfield: las paradas del Modulo 3 existente las agenda ADASA con Aguas Antofagasta. El contratista ejecuta el tie-in dentro de la ventana acordada.",
+      "quoteAnchor": {
+        "paraIndex": 68,
+        "startOffset": 0,
+        "endOffset": 163,
+        "textHash": "b9d454"
+      },
+      "ts": "2026-05-28T18:20:50.346Z",
+      "page": 2
+    },
+    {
+      "id": 4,
+      "secId": "h_0",
+      "tipo": "fondo",
+      "label": "Resumen Ejecutivo",
+      "text": "No genera valor nombrar a los colaboradores de ingenieria",
+      "quote": "La ingenieria de detalle mecanica fue desarrollada por Vandoorn Ingenieria en Aguas y se encuentra emitida en revision 0 (Compilado Rev 0 del paquete P22). La ingenieria civil y de estructuras metalicas esta siendo desarrollada por L&A Ingenieria y Proyectos sobre el terreno y se incorporara a esta licitacion una vez recibida en revision 0.",
+      "quoteAnchor": {
+        "paraIndex": 71,
+        "startOffset": 324,
+        "endOffset": 666,
+        "textHash": "59137b"
+      },
+      "ts": "2026-05-28T18:21:25.914Z",
+      "page": 2
+    },
+    {
+      "id": 5,
+      "secId": "h_0",
+      "tipo": "fondo",
+      "label": "Resumen Ejecutivo",
+      "text": "La bomba BH-06-001 es la de alimentacion de salmuera",
+      "quote": "El alcance excluido (modulo OI, sistema CIP completo, bomba BH-06-001) y los limites de bateria se detallan en el capitulo de Alcance Excluido y Limite de Bateria.",
+      "quoteAnchor": {
+        "paraIndex": 87,
+        "startOffset": 0,
+        "endOffset": 163,
+        "textHash": "d5cca8"
+      },
+      "ts": "2026-05-28T18:22:49.657Z",
+      "page": 2
+    },
+    {
+      "id": 6,
+      "secId": "h_0",
+      "tipo": "fondo",
+      "label": "Resumen Ejecutivo",
+      "text": "El anexo A9 debe corresponder al formato de licitacion \"Formato de Presupuesto.xslx\", que esta en la carpeta del proyecto, lo debemos revisar en conjunto hazme las preguntas que estimes conveniente",
+      "quote": "Suma Alzada segun Formato de Licitacion (Anexo A9) con cubicaciones entregadas por el mandante. El oferente completa la planilla del Anexo A9 con precios unitarios por partida y entrega un precio total cerrado.",
+      "quoteAnchor": {
+        "paraIndex": 92,
+        "startOffset": 0,
+        "endOffset": 210,
+        "textHash": "fb0df3"
+      },
+      "ts": "2026-05-28T18:24:16.886Z",
+      "page": 2
+    },
+    {
+      "id": 7,
+      "secId": "h_0",
+      "tipo": "fondo",
+      "label": "Resumen Ejecutivo",
+      "text": "No es necesario nombrar estos hitos, eliminalos",
+      "quote": "Hitos criticos referenciales:",
+      "quoteAnchor": {
+        "paraIndex": 104,
+        "startOffset": 0,
+        "endOffset": 29,
+        "textHash": "964a8a"
+      },
+      "ts": "2026-05-28T18:24:50.439Z",
+      "page": 2
+    },
+    {
+      "id": 8,
+      "secId": "h_0",
+      "tipo": "fondo",
+      "label": "Resumen Ejecutivo",
+      "text": "Elimina este punto",
+      "quote": "Condiciones de participacion",
+      "quoteAnchor": {
+        "paraIndex": 117,
+        "startOffset": 0,
+        "endOffset": 28,
+        "textHash": "82a4c7"
+      },
+      "ts": "2026-05-28T18:25:14.438Z",
+      "page": 2
+    },
+    {
+      "id": 9,
+      "secId": "h_0",
+      "tipo": "fondo",
+      "label": "Resumen Ejecutivo",
+      "text": "Para este punto hacer mension con un parrafo a las Bases Administrativas del proceso de licitacion",
+      "quote": "Garantias y seguros",
+      "quoteAnchor": {
+        "paraIndex": 124,
+        "startOffset": 0,
+        "endOffset": 19,
+        "textHash": "808171"
+      },
+      "ts": "2026-05-28T18:25:46.534Z",
+      "page": 2
+    },
+    {
+      "id": 10,
+      "secId": "h_0",
+      "tipo": "fondo",
+      "label": "Resumen Ejecutivo",
+      "text": "Elimina",
+      "quote": "Forma de pago",
+      "quoteAnchor": {
+        "paraIndex": 142,
+        "startOffset": 0,
+        "endOffset": 13,
+        "textHash": "f4ab28"
+      },
+      "ts": "2026-05-28T18:26:05.430Z",
+      "page": 2
+    },
+    {
+      "id": 11,
+      "secId": "h_0",
+      "tipo": "fondo",
+      "label": "Resumen Ejecutivo",
+      "text": "Haz mension tambien a las bases administraticas del procesos de licitacion",
+      "quote": "Multas",
+      "quoteAnchor": {
+        "paraIndex": 152,
+        "startOffset": 0,
+        "endOffset": 6,
+        "textHash": "db68b4"
+      },
+      "ts": "2026-05-28T18:26:29.047Z",
+      "page": 2
+    },
+    {
+      "id": 12,
+      "secId": "h_0",
+      "tipo": "fondo",
+      "label": "Resumen Ejecutivo",
+      "text": "Elimina",
+      "quote": "Clausulas generales",
+      "quoteAnchor": {
+        "paraIndex": 156,
+        "startOffset": 0,
+        "endOffset": 19,
+        "textHash": "6d5eab"
+      },
+      "ts": "2026-05-28T18:26:43.396Z",
+      "page": 2
+    },
+    {
+      "id": 13,
+      "secId": "h_0",
+      "tipo": "fondo",
+      "label": "Resumen Ejecutivo",
+      "text": "Elimina el punto completo",
+      "quote": "Criterios de evaluacion de ofertas",
+      "quoteAnchor": {
+        "paraIndex": 158,
+        "startOffset": 0,
+        "endOffset": 34,
+        "textHash": "5a7dbc"
+      },
+      "ts": "2026-05-28T18:27:00.826Z",
+      "page": 2
+    },
+    {
+      "id": 14,
+      "secId": "h_16",
+      "tipo": "fondo",
+      "label": "Alcance mecanico",
+      "text": "Haz el nombre de la figura mas ejecutivo",
+      "quote": "Figura 3-2. Bomba de alimentacion de salmuera BH-06-001 - plano general del fabricante KSB (plano KSB-AAF-KNCPP11-050+160M Rev A). Vistas: elevacion, perfil, inferior con detalle de pernos de anclaje M16; renderizado 3D isometrico; tabla de componentes con pesos individuales (bomba 66 kg + motor WEG 122 kg + base BD-0502-B 32 kg + acoplamiento NORMEX E-97 3,5 kg = 223,5 kg peso seco total). Bridas succion NPS 3 DN80 y descarga NPS 2 DN50.",
+      "quoteAnchor": {
+        "paraIndex": 227,
+        "startOffset": 0,
+        "endOffset": 442,
+        "textHash": "b5d717"
+      },
+      "ts": "2026-05-28T18:27:46.857Z",
+      "page": 2
+    },
+    {
+      "id": 15,
+      "secId": "h_16",
+      "tipo": "fondo",
+      "label": "Alcance mecanico",
+      "text": "Borra todas las referencias que digan \"a emitir por L&A\"",
+      "quote": "Excavaciones y movimiento de tierras conforme al plano P22-DWG-00-001-001 (a emitir L&A).",
+      "quoteAnchor": {
+        "paraIndex": 236,
+        "startOffset": 0,
+        "endOffset": 89,
+        "textHash": "fdb69a"
+      },
+      "ts": "2026-05-28T18:28:32.127Z",
+      "page": 2
+    },
+    {
+      "id": 16,
+      "secId": "h_16",
+      "tipo": "fondo",
+      "label": "Alcance mecanico",
+      "text": "No digas que son 7 tags",
+      "quote": "Instrumentacion in-line - siete tags",
+      "quoteAnchor": {
+        "paraIndex": 296,
+        "startOffset": 0,
+        "endOffset": 36,
+        "textHash": "5f08e8"
+      },
+      "ts": "2026-05-28T18:29:17.448Z",
+      "page": 2
+    },
+    {
+      "id": 17,
+      "secId": "h_16",
+      "tipo": "fondo",
+      "label": "Alcance mecanico",
+      "text": "Es poco serio que digas que es el capitulo mas importante de las bases. haz una introduccion neutra",
+      "quote": "Este capitulo es el mas importante de las Bases. Define con precision que no debe montar el contratista y donde termina su responsabilidad mecanica.",
+      "quoteAnchor": {
+        "paraIndex": 342,
+        "startOffset": 0,
+        "endOffset": 148,
+        "textHash": "a4de3d"
+      },
+      "ts": "2026-05-28T18:30:12.449Z",
+      "page": 2
+    },
+    {
+      "id": 18,
+      "secId": "h_16",
+      "tipo": "fondo",
+      "label": "Alcance mecanico",
+      "text": "Es Suministrado por ADASA, en etapa posterior",
+      "quote": "instalado por BW Water",
+      "quoteAnchor": {
+        "paraIndex": 344,
+        "startOffset": 52,
+        "endOffset": 75,
+        "textHash": "14d6c8"
+      },
+      "ts": "2026-05-28T18:30:36.632Z",
+      "page": 2
+    },
+    {
+      "id": 19,
+      "secId": "h_16",
+      "tipo": "fondo",
+      "label": "Alcance mecanico",
+      "text": "Suministrado por ADASA en etapa posterior",
+      "quote": "Sistema CIP (Clean-In-Place) - suministro BW Water",
+      "quoteAnchor": {
+        "paraIndex": 349,
+        "startOffset": 0,
+        "endOffset": 50,
+        "textHash": "734dab"
+      },
+      "ts": "2026-05-28T18:31:04.107Z",
+      "page": 2
+    },
+    {
+      "id": 20,
+      "secId": "h_16",
+      "tipo": "fondo",
+      "label": "Alcance mecanico",
+      "text": "No debes indicar en ninguna parte del documento que algo es segun los terminos de referencia para las Obras civiles que se adjudico la ingenieria L&A",
+      "quote": "Todo el sistema CIP (estanque TK-09-001 HDPE 6.800 L, filtro cartucho FIL-09-002, bomba CIP BH-09-002, calentador electrico REL-09-001 - potencia 16 kW segun TR L&A",
+      "quoteAnchor": {
+        "paraIndex": 350,
+        "startOffset": 0,
+        "endOffset": 164,
+        "textHash": "abd8d5"
+      },
+      "ts": "2026-05-28T18:31:58.094Z",
+      "page": 2
+    },
+    {
+      "id": 21,
+      "secId": "h_16",
+      "tipo": "fondo",
+      "label": "Alcance mecanico",
+      "text": "Esto esta redactado corrigiendo una situacion anterior donde la bomba de alimentacion de salmuera no era parte del alcance. No debe quedar escrito como que eso se corrigio ya que eso no genera valor para la licitacion. Solo decir que es  parte y lo que se debe hacer y con que se debe conectar.  recordar que para el montaje de la bomba y del estanque esta la Epecificacion de montaje que realizamos",
+      "quote": "Las conexiones de succion y descarga de la bomba BH-06-001 dejan de ser tie-ins de limite de bateria: la bomba esta dentro del scope del contratista (ver Seccion 3.1 y Figura 3-2). El montaje incluye la conexion hidraulica completa a las lineas SA-HDPE-DN110-PN10-004 (succion) y SA-HDPE-DN110-PN10-005 (descarga) via las reducciones DN100x80 y DN100x50 del LI Materiales",
+      "quoteAnchor": {
+        "paraIndex": 403,
+        "startOffset": 0,
+        "endOffset": 371,
+        "textHash": "524916"
+      },
+      "ts": "2026-05-28T18:34:11.736Z",
+      "page": 2
+    },
+    {
+      "id": 22,
+      "secId": "h_16",
+      "tipo": "fondo",
+      "label": "Alcance mecanico",
+      "text": "Nombra tambein la ete de montaje de tuberias, no solo la de fabricacion",
+      "quote": "Toda la caneria de proceso del nuevo modulo es HDPE PE100 PN10, conforme a la Especificacion Tecnica de Canerias P22-ET-06-006-001-0 (referenciada como Anexo A1) que define materiales, dimensionamiento, accesorios, normas de union y ensayos. El listado completo de lineas y materiales esta en los anexos:",
+      "quoteAnchor": {
+        "paraIndex": 417,
+        "startOffset": 0,
+        "endOffset": 304,
+        "textHash": "f5ce10"
+      },
+      "ts": "2026-05-28T18:34:47.313Z",
+      "page": 2
+    },
+    {
+      "id": 23,
+      "secId": "h_31",
+      "tipo": "fondo",
+      "label": "Especificaciones Tecnicas Civiles",
+      "text": "En todo el apartado civil hacemos referencia a los terminos de referencia con los que se contrato la ingenieria a L&A, lo que aplica es hacer referenica a los documentos que entregara L&A Y que estan descritos en ese documento.",
+      "quote": "Las obras civiles del proyecto se ejecutan conforme a los criterios de diseno consolidados en el TR P22-TR-00-010-01-1 de L&A Ingenieria y Proyectos (referenciado como Anexo A6). El detalle constructivo de cada elemento (excavaciones, fundaciones, fosa, anclajes, canalizaciones, cubierta metalica) se entregara en los planos L&A Rev 0 que se incorporaran como Adenda Tecnica a estas Bases. Las especificaciones siguientes son vinculantes para la cotizacion suma alzada y prevalecen sobre cualquier informacion referencial del Compilado Mecanico Vandoorn cuando exista divergencia.",
+      "quoteAnchor": {
+        "paraIndex": 520,
+        "startOffset": 0,
+        "endOffset": 581,
+        "textHash": "3c203b"
+      },
+      "ts": "2026-05-28T18:37:19.324Z",
+      "page": 2
+    },
+    {
+      "id": 24,
+      "secId": "f_tbl_14",
+      "tipo": "forma",
+      "label": "Tabla 14",
+      "text": "No es necesario nombrar a L&A",
+      "quote": "Planos civiles L&A - Adenda Tecnica",
+      "quoteAnchor": {
+        "paraIndex": 543,
+        "startOffset": 0,
+        "endOffset": 35,
+        "textHash": "60deab"
+      },
+      "ts": "2026-05-28T18:37:43.649Z",
+      "page": 2
+    },
+    {
+      "id": 25,
+      "secId": "f_tbl_14",
+      "tipo": "forma",
+      "label": "Tabla 14",
+      "text": "Debes replantear todo este parrado del punto 7.3 ya que la  funcacion del modulo es independiente de la fundacion del sistema CIP, revisa la ultima programacion de L&A donde ajustamos esto",
+      "quote": "Fundacion compartida contenedor + sistema CIP",
+      "quoteAnchor": {
+        "paraIndex": 579,
+        "startOffset": 0,
+        "endOffset": 45,
+        "textHash": "c0319a"
+      },
+      "ts": "2026-05-28T18:39:48.162Z",
+      "page": 2
+    },
+    {
+      "id": 26,
+      "secId": "f_tbl_14",
+      "tipo": "forma",
+      "label": "Tabla 14",
+      "text": "Todo el anclaje de los elementos CIP quedan fuera, se debe hacer solo la fundacion, lo que si se debe indicar es que son pernos post instalados",
+      "quote": "ernos quimicos post-instalados para los equipos CIP (suministro contratista, anclaje quimico con homologacion ETA tipo HILTI HIT-RE 500 o equivalente aprobado por ITO ADASA), conformes a ACI 355.4 Calificacion de Anclajes Adhesivos Post-Instalados, detallados en P22-DWG-00-002-005. Conexiones entre placas base y hormigon conforme al detalle de cada plano. La fundacion debe disenarse con armaduras y recubrimientos que permitan la instalacion posterior de los pernos quimicos. Los pernos quimicos para soportes de tuberias y bandejas portacables del sistema CIP estan dentro del alcance del contratista (la soportacion CIP queda fuera del alcance del consultor L&A segun TR §2.2).",
+      "quoteAnchor": {
+        "paraIndex": 620,
+        "startOffset": 1,
+        "endOffset": 683,
+        "textHash": "a3ddad"
+      },
+      "ts": "2026-05-28T18:40:51.774Z",
+      "page": 2
+    },
+    {
+      "id": 27,
+      "secId": "f_tbl_14",
+      "tipo": "forma",
+      "label": "Tabla 14",
+      "text": "Debe indicar los planos de obras civiles, no nombrar a L&A",
+      "quote": "Listado de planos esperados de L&A (8 planos civiles del TR P22-TR-00-010-01-1)",
+      "quoteAnchor": {
+        "paraIndex": 673,
+        "startOffset": 0,
+        "endOffset": 79,
+        "textHash": "e92f00"
+      },
+      "ts": "2026-05-28T18:41:54.659Z",
+      "page": 2
+    },
+    {
+      "id": 28,
+      "secId": "f_tbl_14",
+      "tipo": "forma",
+      "label": "Tabla 14",
+      "text": "Los terminos de referencia con los que se contrato la ingenieria de obras civiles no es parte de estas bases de licitacion",
+      "quote": "TR Ingenieria Civil L&A Rev 1 (P22-TR-00-010-01-1) - referencia + tabla de contenido",
+      "quoteAnchor": {
+        "paraIndex": 677,
+        "startOffset": 0,
+        "endOffset": 84,
+        "textHash": "84c0f5"
+      },
+      "ts": "2026-05-28T18:42:26.912Z",
+      "page": 2
+    },
+    {
+      "id": 29,
+      "secId": "f_tbl_14",
+      "tipo": "forma",
+      "label": "Tabla 14",
+      "text": "Debemos ajustar esto segun \"Formato de Presupuesto.xslx\"",
+      "quote": "Formato de Licitacion (planilla de oferta economica): A9.1 piping por isometria, A9.2 cubicacion referencial por familia (335 m HDPE + accesorios), A9.3 valvulas por TAG, A9.4 instrumentos por TAG, A9.5 montaje BH-06-001, A9.6 obras civiles, A9.7 coordinacion e ITO, A9.8 resumen con IVA",
+      "quoteAnchor": {
+        "paraIndex": 681,
+        "startOffset": 0,
+        "endOffset": 287,
+        "textHash": "e32744"
+      },
+      "ts": "2026-05-28T18:42:56.164Z",
+      "page": 2
+    },
+    {
+      "id": 30,
+      "secId": "f_tbl_19",
+      "tipo": "forma",
+      "label": "Tabla 19",
+      "text": "Este no lo entregamos",
+      "quote": "00_GENERAL",
+      "quoteAnchor": {
+        "paraIndex": 692,
+        "startOffset": 0,
+        "endOffset": 10,
+        "textHash": "8517fc"
+      },
+      "ts": "2026-05-28T18:43:18.744Z",
+      "page": 2
+    },
+    {
+      "id": 31,
+      "secId": "h_47",
+      "tipo": "fondo",
+      "label": "Anexo A1 - Listado de planos del Compilado Rev 0",
+      "text": "Son los planos civiles, no hay esperados por L&AE",
+      "quote": "Listado de planos civiles esperados de L&A",
+      "quoteAnchor": {
+        "paraIndex": 777,
+        "startOffset": 10,
+        "endOffset": 53,
+        "textHash": "f36470"
+      },
+      "ts": "2026-05-28T18:44:15.172Z",
+      "page": 2
+    },
+    {
+      "id": 32,
+      "secId": "h_47",
+      "tipo": "fondo",
+      "label": "Anexo A1 - Listado de planos del Compilado Rev 0",
+      "text": "Este anexo se elimina",
+      "quote": "Anexo A6 - TR Ingenieria Civil L&",
+      "quoteAnchor": {
+        "paraIndex": 859,
+        "startOffset": 0,
+        "endOffset": 33,
+        "textHash": "235db8"
+      },
+      "ts": "2026-05-28T18:44:32.382Z",
+      "page": 2
+    },
+    {
+      "id": 33,
+      "secId": "h_47",
+      "tipo": "fondo",
+      "label": "Anexo A1 - Listado de planos del Compilado Rev 0",
+      "text": "Esto hay que trabajarlo completo con el \"Formato de Presupuesto.xslx\"",
+      "quote": "Anexo A9 - Formato de Licitacion (Planilla de Oferta Economica)",
+      "quoteAnchor": {
+        "paraIndex": 951,
+        "startOffset": 0,
+        "endOffset": 63,
+        "textHash": "2cb0f9"
+      },
+      "ts": "2026-05-28T18:45:07.736Z",
+      "page": 2
+    },
+    {
+      "id": 34,
+      "secId": "h_47",
+      "tipo": "fondo",
+      "label": "Anexo A1 - Listado de planos del Compilado Rev 0",
+      "text": "Esto tambien se elimina, debemos trabajar todo con base en \"Formato de Presupuesto.xslx\"",
+      "quote": "A9.5 - Partida Montaje BH-06-001",
+      "quoteAnchor": {
+        "paraIndex": 1499,
+        "startOffset": 0,
+        "endOffset": 32,
+        "textHash": "f91898"
+      },
+      "ts": "2026-05-28T18:46:00.116Z",
+      "page": 2
+    },
+    {
+      "id": 35,
+      "secId": "h_47",
+      "tipo": "fondo",
+      "label": "Anexo A1 - Listado de planos del Compilado Rev 0",
+      "text": "Esto no es necesario cuando hagamos el cambio con \"Formato de Presupuesto.xslx\"",
+      "quote": "A9.8 - Resumen general de la oferta economica",
+      "quoteAnchor": {
+        "paraIndex": 1548,
+        "startOffset": 0,
+        "endOffset": 45,
+        "textHash": "52b31b"
+      },
+      "ts": "2026-05-28T18:46:24.778Z",
+      "page": 2
+    },
+    {
+      "id": 36,
+      "secId": "h_47",
+      "tipo": "fondo",
+      "label": "Anexo A1 - Listado de planos del Compilado Rev 0",
+      "text": "Para las bases administratias, basate en el indice de las BAE del modulo de salmuera que es el documento con el que compramos el modulo a BW WATERS",
+      "quote": "Anexo A10 - Bases administrativas",
+      "quoteAnchor": {
+        "paraIndex": 1571,
+        "startOffset": 0,
+        "endOffset": 33,
+        "textHash": "4b5cfd"
+      },
+      "ts": "2026-05-28T18:47:16.213Z",
+      "page": 2
+    }
+  ]
+}
