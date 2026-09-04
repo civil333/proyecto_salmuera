@@ -2,7 +2,7 @@
 
 Instrucciones operativas para Claude Code en el proyecto Modulo de Salmuera Taltal.
 
-**Version:** 6.31 | **Fecha:** 18-Ago-2026
+**Version:** 6.32 | **Fecha:** 04-Sep-2026
 
 > **Estado del proyecto, historial, baseline schedule y trazabilidad de documentos: ver [README.md](README.md)**
 
@@ -686,10 +686,14 @@ Ver `project_registro_compromisos`.
 - **CLAUDE.md** se actualiza cuando cambia metodologia estable: generacion de documentos, skills, criterios tecnicos, codificacion, anti-IA. **Regla estable = instruccion atemporal**; su procedencia (por que/cuando se aprendio) va como `(ver \`memoria_slug\`)` o a la Bitacora del README, **NUNCA incrustada en la regla**. **Prohibido en CLAUDE.md:** `TM N<n>`, fechas `DD-Mmm(-AAAA)`, `Regla del usuario <fecha>`, `Aplicado: …`, `corregido/caso/calibrado en TM N/RFI <fecha>` — son citas de eventos que envejecen la regla. La trazabilidad datada vive en README.md, en `git log CLAUDE.md` y en las memorias. El footer solo lleva la version vigente, sin historial datado.
 - **Memorias del proyecto** guardan los aprendizajes no obvios y la trazabilidad de decisiones con contexto.
 
+- **El historial de README.md y CLAUDE.md vive en git, no en copias `.bak`.** Los dos estan versionados y **no se crean respaldos manuales antes de editarlos**: para eso esta el repositorio. Un documento vivo sin versionar acumula copias hasta que la raiz deja de leerse, de modo que **una pila de `.bak` es el sintoma de que falta control de versiones, y la correccion es versionar el archivo, no borrar las copias**. El `.gitignore` de la raiz excluye `.DS_Store`, `*.bak*`, los locks `~$*` de Office y las corridas `.multi-audit-*`.
+- **Antes de borrar un respaldo, correr el gate de perdida.** Extraer del respaldo sus claves de contenido (en el README, los encabezados `### AAAA-MM-DD` de la Bitacora), comprobar que **cada una** tenga equivalente en el archivo vivo, e investigar toda diferencia antes de borrar y no despues. Un respaldo en un formato anterior que el gate no sepa leer se verifica a mano por piezas clave. Ver `feedback_readme_en_git_evita_los_bak`.
+- **Se versiona la fuente y la documentacion, no el derivado.** El arbol del proyecto pesa del orden de 10 GB en PDF, planos y modelos: al repositorio van los `.md`, `.py`, `.sh`, `.yaml` y `.json`; los `.docx`, `.pdf` y `.xlsx` generados se regeneran de su fuente y no se agregan. Es la misma regla que ya rige entre el `.md` fuente y el Word que sale de el (Seccion 3).
+
 > **Regla de oro:** Si la informacion tiene fecha especifica o puede quedar obsoleta en semanas, va al README. Si es una instruccion que Claude debe seguir siempre, va al CLAUDE.md.
 
 ---
 
-*Version 6.31 — 18 de agosto de 2026. Historial de cambios de metodologia: ver `git log CLAUDE.md` (este footer NO acumula changelog datado, per Seccion 12).*
+*Version 6.32 — 4 de septiembre de 2026. Historial de cambios de metodologia: ver `git log CLAUDE.md` (este footer NO acumula changelog datado, per Seccion 12).*
 
 > **Historial de cambios de metodologia:** ver `git log CLAUDE.md`. Trazabilidad operativa del proyecto (eventos, fechas, correos, schedule): [README.md](README.md). Aprendizajes no obvios: memorias del proyecto.
