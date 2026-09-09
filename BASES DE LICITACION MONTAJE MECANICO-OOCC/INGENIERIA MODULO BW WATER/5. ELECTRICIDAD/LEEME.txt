@@ -1,0 +1,28 @@
+5. ELECTRICIDAD - ingenieria del modulo, electricidad
+Fecha: 09-09-2026
+================================================================================
+
+CONTENIDO
+  11 documentos, cada uno en la ultima revision que ADASA aprobo.
+
+  P22-CD-09-007-001   rev 0   Single Line Diagram
+  P22-DWG-09-007-003  rev F   Grounding Layout
+  P22-DWG-09-007-004  rev C   Cable Tray Layout
+  P22-DWG-09-007-005  rev 0   Power Works Drawing
+  P22-ET-09-007-001   rev A   DS Electrical Auxiliaries
+  P22-ET-09-007-002   rev 0   DS Power & Control Cable
+  P22-ET-09-007-003   rev A   DS Cable Tray
+  P22-ET-09-007-004   rev A   DS Conduit & Flexible
+  P22-ET-09-007-005   rev 1   Datasheet Local Control Panel (LCP)
+  P22-LI-09-007-001   rev 0   Electrical Load List
+  P22-LI-09-007-002   rev 0   Power Cable Schedule
+
+QUE MIRAR
+  El diagrama unifilar, el listado de cargas y el programa de cables de poder estan
+  en revision 0, emitidos para construccion.
+
+  La hoja de datos del tablero local fija su envolvente en acero inoxidable 316L sin
+  pintar, NEMA 4X. Es el documento que gobierna la materialidad del exterior.
+
+ESTADO DE EMISION
+  Los 11 documentos estan en codigo 1, aprobados sin observaciones.

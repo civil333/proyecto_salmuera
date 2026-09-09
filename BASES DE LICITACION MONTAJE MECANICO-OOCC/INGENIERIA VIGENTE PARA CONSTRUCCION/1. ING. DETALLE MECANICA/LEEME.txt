@@ -1,10 +1,10 @@
 1. ING. DETALLE MECANICA — ingenieria vigente para construccion
-Fecha: 04-09-2026
+Fecha: 09-09-2026
 ================================================================================
 
 CONTENIDO
-  58 archivos. Es el dossier mecanico completo, con las revisiones vigentes al
-  04-09-2026 incorporadas sobre el Compilado Rev 0.
+  59 archivos. Es el dossier mecanico completo, con las revisiones vigentes al
+  09-09-2026 incorporadas sobre el Compilado Rev 0.
 
 QUE CAMBIA RESPECTO DE LA REVISION QUE SE COTIZO
   P22-DWG-06-005-103   revision 1   Plano de montaje del modulo
@@ -43,7 +43,7 @@ LOS PUNTOS A MIRAR
      cambian de numero y en -008 la antigua H.4 pasa a H.5, de modo que el cotejo contra
      el juego anterior se hace por contenido y no por numero de hoja.
 
-  El detalle esta en la hoja Mecanica de la planilla de la carpeta 0.
+  El detalle esta en la nota tecnica de la carpeta 0.
 
 CUADERNILLO DE ISOMETRIAS
   Once isometrias en 31 hojas, con codigos P22-DWG-06-006-001 a -012. No existe el codigo
@@ -54,11 +54,29 @@ P&ID DE ALIMENTACION
   El P22-DWG-06-009-102 tiene una revision 1 emitida solo en formato editable. El paquete
   lleva su revision 0 y la revision 1 se entrega en cuanto se reciba el ploteo.
 
-ESTADO DE EMISION EN EL CAJETIN
-  Los planos en revision 0 declaran "PARA CONSTRUCCION" y el diagrama de flujo y los
-  cuatro P&ID declaran "REVISION FINAL". Entre las revisiones nuevas, la isometria
-  P22-DWG-06-006-008 declara "PARA CONSTRUCCION" y el plano P22-DWG-06-006-103 corrige a
-  "PARA CONSTRUCCION" un documento que en revision 0 estaba emitido "PARA REVISION DEL
-  CLIENTE". Las demas describen el cambio en su cajetin ("ACTUALIZADO", "ACTUALIZADO
-  DONDE SE INDICA") en vez de declarar el estado de emision. El punto esta observado al
-  proyectista.
+MODELO TRIDIMENSIONAL
+  La carpeta 04_ MODELO lleva dos archivos de Navisworks, ambos publicados el 08-09-2026:
+
+    MODULO COMPLETO.nwd                    21 MB
+    MODULO COMPLETO (nube puntos).nwd     6,0 GB
+
+  El primero federa la maqueta mecanica y el modelo civil P22-3D-00-001-001 en su revision
+  1, que es el que acompana a la implantacion general vigente. El segundo es el mismo
+  conjunto con la nube de puntos del levantamiento de terreno.
+
+  POR SU TAMANO, EL ARCHIVO CON NUBE DE PUNTOS SE ENTREGA POR ENLACE y no dentro del
+  comprimido del paquete. Para el trabajo corriente de coordinacion basta el de 21 MB.
+
+  Reemplazan a la maqueta general de abril de 2026 que acompanaba a las Bases, anterior al
+  cambio de nivel del modulo y a las revisiones de agosto y septiembre.
+
+  El modelo es una herramienta de coordinacion espacial. Para la identificacion de los
+  elementos rigen los documentos de la especialidad: el cuadernillo P22-DWG-06-006-107
+  para el tipo y el correlativo de cada soporte, y los planos de cañerias junto al Listado
+  de Materiales P22-LI-06-006-102 para el servicio, el diametro y el correlativo de cada
+  linea.
+
+ESTADO DE EMISION
+  Las notas de envio del proyectista declaran para construccion los documentos de este
+  dossier, y los planos en revision 0 lo declaran ademas en su cajetin. Todos rigen para
+  construccion.

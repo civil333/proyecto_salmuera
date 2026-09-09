@@ -31,6 +31,15 @@ from docx.oxml.ns import qn  # noqa: E402
 from docx.shared import Inches, Pt  # noqa: E402
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# La tabla de vigencia y la de cubicaciones se IMPORTAN de generar_ingenieria_vigente.py,
+# que es donde ya viven. La nota absorbio a la planilla P22-LI-06-000-002-1 y es el unico
+# documento de control del paquete, pero la lista sigue teniendo una sola fuente: ese script
+# la usa ademas para el gate que contrasta lo declarado contra el arbol real del paquete.
+sys.path.insert(0, os.path.abspath(os.path.join(
+    SCRIPT_DIR, "..", "..", "BORRADOR_REV0", "script")))
+from generar_ingenieria_vigente import VIGENCIA, CUBICACIONES  # noqa: E402
+
 OUTPUT = os.path.join(
     SCRIPT_DIR,
     "P22-NT-06-000-001-0_Ingenieria-Vigente-para-Construccion_ADASA.docx",
@@ -132,6 +141,13 @@ def limpiar_placeholder(doc):
 
 
 # ----------------------------------------------------------------- documento
+def _num(v):
+    """Formato chileno: coma decimal, y sin decimales cuando la cantidad es entera."""
+    if isinstance(v, int) or float(v).is_integer():
+        return str(int(v))
+    return f"{v:.2f}".replace(".", ",")
+
+
 def crear_documento():
     crear_documento_adasa(
         titulo="INGENIERÍA VIGENTE PARA CONSTRUCCIÓN",
@@ -157,19 +173,19 @@ def crear_documento():
         "de la ingeniería que sirvió de base para cotizar, de modo que el contratista "
         "disponga por escrito del alcance de esos cambios antes de iniciar las obras.")
     add_para(doc,
-        "El paquete contiene 54 documentos de ingeniería de detalle mecánica, de obras "
-        "civiles y de especificaciones de montaje, distribuidos en 88 archivos. Lo acompaña "
-        "la planilla de control de cambios P22-LI-06-000-002-1, la cual identifica, "
-        "documento por documento, la revisión que rige y aquello que cambió.")
+        "El paquete contiene 55 documentos de ingeniería de detalle mecánica, de obras "
+        "civiles y de especificaciones de montaje, distribuidos en 88 archivos. Esta nota "
+        "identifica, documento por documento, la revisión que rige y aquello que cambió.")
     add_para(doc, "Esta nota no modifica el Contrato ni ninguno de sus anexos.")
 
     # ------------------------------------------------ 2. Contenido del paquete
     doc.add_heading("CONTENIDO DEL PAQUETE", level=1)
     add_para(doc, "El paquete se organiza en cuatro carpetas.")
     add_para_bold_lead(doc, "0. CONTROL DE CAMBIOS. ",
-        "La planilla P22-LI-06-000-002-1, con cinco hojas: Resumen, Vigencia, Mecánica, "
-        "Civil y Cubicaciones.")
-    add_para_bold_lead(doc, "1. ING. DETALLE MECANICA, 58 archivos en cuatro subcarpetas. ",
+        "Una copia de esta misma nota en PDF, de modo que el paquete viaje siempre con el "
+        "documento que lo explica. Esta nota es el único documento de control: declara la "
+        "revisión que rige para cada documento y la cantidad vigente de cada partida.")
+    add_para_bold_lead(doc, "1. ING. DETALLE MECANICA, 59 archivos en cuatro subcarpetas. ",
         "00_GENERAL lleva el listado de entregables. 01_PROCESOS_E_INSTRUMENTACION lleva el "
         "diagrama de flujo, los cuatro P&ID, las hojas de datos y el listado de instrumentos, "
         "y la lógica de control. 02_MECANICA lleva cinco planos de montaje y el listado de "
@@ -177,11 +193,16 @@ def crear_documento():
         "Cuadernillo de Isometrías (once isometrías en 31 hojas), el Cuadernillo de Soportes "
         "(21 páginas), la especificación técnica de cañerías de fabricación "
         "P22-ET-06-006-001 y los listados de líneas, materiales y válvulas. 04_ MODELO lleva "
-        "el modelo 3D en Navisworks.")
+        "el modelo 3D en Navisworks, en dos archivos publicados el 8 de septiembre de 2026: "
+        "MODULO COMPLETO.nwd, de 21 megabytes, que federa la maqueta mecánica y el modelo "
+        "civil, y MODULO COMPLETO (nube puntos).nwd, el mismo conjunto con la nube de puntos "
+        "del levantamiento de terreno. Este último pesa 6,4 gigabytes y se entrega por "
+        "enlace, no dentro del comprimido. Para el trabajo corriente de coordinación basta "
+        "el primero.")
     add_para_bold_lead(doc, "2. OBRAS CIVILES, 18 láminas y 2 especificaciones técnicas. ",
-        "Trece láminas están en revisión 0 apta para construcción y cinco en revisión 1: "
-        "P22-DWG-00-002-002 LAM1 y LAM4, P22-DWG-00-002-003 LAM1, y P22-DWG-00-002-007 LAM1 "
-        "y LAM2. Las dos especificaciones, de Movimiento de Tierra y de Obras Civiles, van en "
+        "Diez láminas están en revisión 0 apta para construcción y ocho en revisión 1: "
+        "P22-DWG-00-001-001 LAM1 y LAM2, P22-DWG-00-002-001, P22-DWG-00-002-002 LAM1 y LAM4, "
+        "P22-DWG-00-002-003 LAM1, y P22-DWG-00-002-007 LAM1 y LAM2. Las dos especificaciones, de Movimiento de Tierra y de Obras Civiles, van en "
         "revisión 1. Las memorias de cálculo de obras civiles no forman parte del paquete.")
     add_para_bold_lead(doc, "3. ET MONTAJE. ",
         "El anexo A12, de montaje electromecánico del estanque TK-06-001 y la bomba "
@@ -199,7 +220,6 @@ def crear_documento():
         ("Código", "Documento", "Revisión"),
         ("P22-BL-06-000-001-0", "Bases de Licitación del Montaje Mecánico y Obras Civiles", "Contractual"),
         ("Anexo A9", "Formato de Presupuesto de Obras Civiles, Mecánica y Piping", "Contractual"),
-        ("P22-LI-06-000-002-1", "Ingeniería vigente y cambios, planilla de control", "1"),
         ("P22-ET-06-007-001-0", "Especificación técnica de montaje electromecánico", "0"),
         ("P22-ET-06-007-002-0", "Especificación técnica de montaje de cañerías HDPE", "0"),
     ])
@@ -253,6 +273,37 @@ def crear_documento():
         "y primer VP-215 aplicado en ambas paredes. La disposición y las dimensiones de los "
         "pernos de anclaje quedan definidas en el plano. Rige el P22-DWG-00-002-007 LAM1 en "
         "revisión 1, con su armadura en la LAM2, también en revisión 1.")
+
+    doc.add_heading("El movimiento de tierra recoge el nivel nuevo", level=2)
+    add_para(doc,
+        "Con la fundación del contenedor 250 milímetros más alta, la excavación de esa zona baja "
+        "de 38,02 a 20,95 metros cúbicos, sobre un área que pasa de 53,51 a 49,96 metros "
+        "cuadrados. Rige el P22-DWG-00-001-001 en revisión 1, con la planta en la LAM1 y las "
+        "secciones en la LAM2.")
+    add_para(doc,
+        "Las cantidades de excavación que rigen para la obra son las siguientes, cada una tomada "
+        "del plano que gobierna su zona.")
+    add_simple_table(doc, [
+        ("Zona", "Excavación", "Plano"),
+        ("Trazado 1", "5,22 m³", "P22-DWG-00-001-001 LAM1"),
+        ("Trazado 2", "34,91 m³", "P22-DWG-00-001-001 LAM1"),
+        ("Fundación del estanque TK-06-001", "4,22 m³", "P22-DWG-00-002-002 LAM1"),
+        ("Fosa de drenajes TK-06-004", "3,71 m³", "P22-DWG-00-002-004 LAM1"),
+        ("Fundación de la bomba BH-06-001", "0,62 m³", "P22-DWG-00-002-002 LAM4"),
+        ("Fundación del sistema CIP", "1,60 m³", "P22-DWG-00-002-007 LAM1"),
+        ("Fundación de la cubierta del sistema CIP", "4,25 m³", "P22-DWG-00-002-007 LAM3"),
+        ("Fundación del contenedor", "20,95 m³", "P22-DWG-00-001-001 LAM1"),
+        ("Total excavado", "75,48 m³", "-"),
+    ])
+    add_para(doc,
+        "El fondo de excavación se lleva hasta el nivel de sello de fundación menos el espesor de "
+        "la capa que va bajo el sello. Son las cotas 5,35 en el contenedor, 5,45 en el sistema "
+        "CIP, 5,30 en el estanque TK-06-001 y 4,155 en la fosa TK-06-004, donde el mejoramiento "
+        "es de 15 centímetros y no el emplantillado de 5 de las demás fundaciones.")
+    add_para(doc,
+        "Los rellenos no cambian: 9,00 metros cúbicos de relleno seleccionado de arena y 29,69 de "
+        "relleno estructural. Las cantidades de los cuadros son referenciales y se validan en "
+        "terreno.")
 
     doc.add_heading("El listado de materiales cambia accesorios y material de brida", level=2)
     add_para(doc,
@@ -320,11 +371,15 @@ def crear_documento():
         "descritos. Ambas se miden por unidad de obra, por lo que se pagan según la "
         "cubicación realmente ejecutada y verificada en terreno por la inspección técnica "
         "de obra (ITO).")
-    add_simple_table(doc, [
-        ("Partida", "Cantidad cotizada", "Cantidad vigente"),
-        ("4.2 Fundación sistema CIP (F2b)", "7,36 m³", "5,80 m³"),
-        ("4.6 Excavación común en fundaciones y zanjas de drenaje", "115,10 m³", "111,70 m³"),
-    ])
+    add_simple_table(doc,
+        [("Partida", "Unidad", "Cotizada", "Vigente")]
+        + [(f"{num} {nombre}", unidad, _num(q0), _num(q1))
+           for num, nombre, unidad, q0, q1, _ in CUBICACIONES])
+    add_para(doc,
+        "La cantidad de la partida 4.6 se mide con el mismo criterio con que se cotizó, esto "
+        "es, sobre el volumen retirado con el veinte por ciento de esponjamiento que declaran "
+        "los cuadros de excavación de los planos. El volumen excavado que la sustenta es de "
+        "75,48 metros cúbicos.")
     add_para(doc,
         "Las demás partidas del Capítulo 4 mantienen su cantidad. Las del Capítulo 1 tampoco "
         "cambian. Los 67 soportes de los once tipos del cuadernillo P22-DWG-06-006-107 se "
@@ -370,31 +425,15 @@ def crear_documento():
         "cualquier revisión anterior del mismo documento, cualquiera sea la vía por la que "
         "el contratista la haya recibido, queda reemplazada por la de esta entrega.")
     add_para(doc,
-        "La hoja Vigencia de la planilla P22-LI-06-000-002-1 lista los 54 documentos, uno "
-        "por fila, con la revisión que rige y el dossier donde se encuentra. Ante cualquier "
-        "duda de vigencia prevalece dicha hoja.")
+        "La tabla siguiente lista los 55 documentos del paquete, uno por fila, con la "
+        "revisión que rige y el dossier donde se encuentra. Ante cualquier duda de vigencia "
+        "prevalece esta tabla.")
+    add_simple_table(doc,
+        [("Código", "Lámina u hoja", "Documento", "Rev.", "Dossier")] + list(VIGENCIA))
     add_para(doc,
         "Se exceptúa el P&ID de alimentación P22-DWG-06-009-102, cuya revisión 1 el "
         "proyectista emitió solo en formato editable. El paquete mantiene la revisión 0 y "
         "la revisión 1 se remitirá en cuanto se reciba el ploteo.")
-
-    # ------------------------------------------------------------ 8. Acuse
-    doc.add_heading("ACUSE DE RECIBO", level=1)
-    add_para(doc,
-        "El contratista debe acusar recibo de esta nota y del paquete a más tardar el "
-        "viernes 11 de septiembre de 2026.")
-    add_para(doc,
-        "En dicho acuse debe confirmar que construirá según la ingeniería aquí declarada e "
-        "indicar si detecta alguna interferencia con obras ya ejecutadas, con materiales ya "
-        "adquiridos o con la programación vigente, en cuyo caso Aguas Antofagasta la "
-        "resolverá antes de que la partida afectada entre en ejecución.")
-
-    # ------------------------------------------------------------ 9. Historial
-    doc.add_heading("HISTORIAL DEL DOCUMENTO", level=1)
-    add_simple_table(doc, [
-        ("Revisión", "Fecha", "Descripción"),
-        ("0", "04-09-2026", "Emisión original"),
-    ])
 
     doc.core_properties.author = "Luis Rivera Gonzalez"
     doc.core_properties.company = "Aguas Antofagasta"

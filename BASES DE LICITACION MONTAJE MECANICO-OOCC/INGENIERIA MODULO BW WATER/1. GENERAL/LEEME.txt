@@ -1,0 +1,16 @@
+1. GENERAL - ingenieria del modulo, documentacion general
+Fecha: 09-09-2026
+================================================================================
+
+CONTENIDO
+  1 documentos, cada uno en la ultima revision que ADASA aprobo.
+
+  P22-ET-09-000-001  rev B   DS RO Container
+
+QUE MIRAR
+  La hoja de datos del contenedor fija sus dimensiones y su peso de operacion,
+  que son la entrada de la fundacion. La ingenieria civil ya recogio el cambio de
+  nivel: el modulo subio 250 mm respecto de la que se cotizo.
+
+ESTADO DE EMISION
+  Los 1 documentos estan en codigo 1, aprobados sin observaciones.

@@ -20,7 +20,10 @@ Reglas:
 import hashlib, shutil, sys
 from pathlib import Path
 
-PROY = Path("/Volumes/home/Documentos NAS/DESAROLLO PROYECTOS CLAUDE/MODULO DE SALMUERA TALTAL")
+# La raiz se deriva de la ubicacion del script, que vive en
+# <PROY>/BASES DE LICITACION MONTAJE MECANICO-OOCC/BORRADOR_REV0/script/.
+# Antes era un literal de macOS y el script no corria en los otros dos equipos.
+PROY = Path(__file__).resolve().parents[3]
 BL   = PROY / "BASES DE LICITACION MONTAJE MECANICO-OOCC"
 REV0 = BL / "Bases REV 0"
 PKG  = BL / "INGENIERIA VIGENTE PARA CONSTRUCCION"
@@ -33,8 +36,11 @@ COMP = MEC / "COMPILADO REV 0"
 E16  = MEC / "ENTREGA 16"
 E17  = MEC / "ENTREGA 17" / "ISOS"
 E15  = Path(sys.argv[1]) if len(sys.argv) > 1 else None   # carpeta con el ZIP NE°15 descomprimido
-OOCC = (PROY / "INGENIERIA DE DETALLE OOCC" / "P22-TR-00-010-01-0" / "ENTREGAS"
-        / "ENTREGA 12 (ACTUALIZACION NPT)" / "2026-09-03 TT-013 GEN, PL+3D Rev.1" / "Planos")
+ENTOOCC = PROY / "INGENIERIA DE DETALLE OOCC" / "P22-TR-00-010-01-0" / "ENTREGAS"
+OOCC12  = ENTOOCC / "ENTREGA 12 (ACTUALIZACION NPT)" / "2026-09-03 TT-013 GEN, PL+3D Rev.1" / "Planos"
+OOCC13  = ENTOOCC / "ENTREGA 13" / "Plano"
+OOCC14  = ENTOOCC / "ENTREGA 14" / "Planos"
+OOCC    = OOCC12   # alias historico
 
 errores, copiados = [], 0
 
@@ -76,6 +82,16 @@ def dossier_et():
     cp(E15 / "P22-LI-06-006-102-1 (LI Materiales).xlsx",
        o / "A13 - Montaje Canerias HDPE" / "anexos",
        "Anexo-A_P22-LI-06-006-102-1_LI-Materiales.xlsx")
+
+
+# --------------------------------------------------------------------------- 0. CONTROL DE CAMBIOS
+def dossier_control():
+    """La Nota Tecnica es el unico documento de control del paquete: absorbio a la
+    planilla P22-LI-06-000-002-1, que desde el 09-09-2026 queda como respaldo interno
+    en BORRADOR_REV0 y no viaja."""
+    nt = BL / "NOTAS_TECNICAS" / "P22-NT-06-000-001-0"
+    cp(nt / "P22-NT-06-000-001-0_Ingenieria-Vigente-para-Construccion_ADASA.pdf",
+       PKG / "0. CONTROL DE CAMBIOS")
 
 
 # --------------------------------------------------------------------------- 1. ING. DETALLE MECANICA
@@ -135,16 +151,37 @@ def dossier_mecanica():
     cp(src / "Cuadernillo_de_soportes" / "P22-DWG-06-006-107-0 (CUADERNILLO DE SOPORTES.pdf",
        ca / "Cuadernillo_de_soportes")
 
-    cp(COMP / "04_ MODELO" / "Maqueta Gral.nwd", o / "04_ MODELO")
+    # Modelo 3D: los dos NWD publicados el 08-09-2026 reemplazan a la Maqueta Gral
+    # del 23-04-2026, anterior al cambio de nivel del modulo. El de nube de puntos
+    # pesa 6,4 GB y se entrega por enlace, no dentro del comprimido.
+    for nwd in ("MODULO COMPLETO.nwd", "MODULO COMPLETO (nube puntos).nwd"):
+        cp(MEC / nwd, o / "04_ MODELO")
 
 
 # --------------------------------------------------------------------------- 2. OBRAS CIVILES
+# Lamina Rev 0 del dossier -> (carpeta de origen, nombre en el origen, nombre en el paquete).
+# El tercer campo va en None cuando el nombre del origen ya sigue la convencion del dossier,
+# que es <codigo>_<rev> LAM<n>.pdf, con guion bajo antes de la revision y sin espacio en LAM.
 REEMPLAZO_CIVIL = {
-    "P22-DWG-00-002-002_0 LAM1.pdf": "P22-DWG-00-002-002_1 LAM1.pdf",
-    "P22-DWG-00-002-002_0 LAM4.pdf": "P22-DWG-00-002-002_1 LAM4.pdf",
-    "P22-DWG-00-002-003_0 LAM1.pdf": "P22-DWG-00-002-003_1 LAM1.pdf",
-    "P22-DWG-00-002-007_0 LAM1.pdf": "P22-DWG-00-002-007_1 LAM1.pdf",
-    "P22-DWG-00-002-007_0 LAM2.pdf": "P22-DWG-00-002-007_1 LAM2.pdf",
+    # ENTREGA 12, carta 067-032-032-COR-TT-013 del 03-09-2026. El modulo sube 250 mm.
+    "P22-DWG-00-002-002_0 LAM1.pdf": (OOCC12, "P22-DWG-00-002-002_1 LAM1.pdf", None),
+    "P22-DWG-00-002-002_0 LAM4.pdf": (OOCC12, "P22-DWG-00-002-002_1 LAM4.pdf", None),
+    "P22-DWG-00-002-003_0 LAM1.pdf": (OOCC12, "P22-DWG-00-002-003_1 LAM1.pdf", None),
+    "P22-DWG-00-002-007_0 LAM1.pdf": (OOCC12, "P22-DWG-00-002-007_1 LAM1.pdf", None),
+    "P22-DWG-00-002-007_0 LAM2.pdf": (OOCC12, "P22-DWG-00-002-007_1 LAM2.pdf", None),
+    # ENTREGA 13, carta 067-032-032-COR-TT-014 del 07-09-2026. Actualiza las coordenadas
+    # UTM de once de los trece vertices de replanteo.
+    "P22-DWG-00-002-001_0.pdf": (OOCC13, "P22-DWG-00-002-001_1 LAM 1.pdf",
+                                 "P22-DWG-00-002-001_1.pdf"),
+    # ENTREGA 14, carta 067-032-032-COR-TT-015 del 08-09-2026, movimiento de tierra.
+    # Entran con reparos declarados en el LEEME del dossier civil: sus cifras del contenedor y
+    # de la zona CIP corrigen las de la revision 0, que estaban sobre el sello anterior, y a la
+    # vez contradicen al 00-002-003 y al 00-002-007. Los siete puntos abiertos con el
+    # proyectista viven en el transmittal P22-TM-00-010-005-0.
+    "P22-DWG-00-001-001_0 LAM1.pdf": (OOCC14, "P22-DWG-00-001-001-1-LAM 1.pdf",
+                                      "P22-DWG-00-001-001_1 LAM1.pdf"),
+    "P22-DWG-00-001-001_0 LAM2.pdf": (OOCC14, "P22-DWG-00-001-001-1-LAM 2.pdf",
+                                      "P22-DWG-00-001-001_1 LAM2.pdf"),
 }
 
 
@@ -155,7 +192,8 @@ def dossier_civil():
         cp(f, o / "ET")
     for f in sorted((src / "PLANOS").glob("*.pdf")):
         if f.name in REEMPLAZO_CIVIL:
-            cp(OOCC / REEMPLAZO_CIVIL[f.name], o / "PLANOS")
+            carpeta, nombre, destino = REEMPLAZO_CIVIL[f.name]
+            cp(carpeta / nombre, o / "PLANOS", destino)
             cp(f, SUP / "5. OBRAS CIVILES (A2) - PLANOS Rev 0 superadas")
         else:
             cp(f, o / "PLANOS")
@@ -198,7 +236,7 @@ def autochequeo():
 if __name__ == "__main__":
     if E15 is None or not E15.exists():
         sys.exit("Uso: construir_paquete_construccion.py <carpeta con el ZIP NE°15 descomprimido>")
-    for d in (dossier_mecanica, dossier_civil, dossier_et):
+    for d in (dossier_mecanica, dossier_civil, dossier_et, dossier_control):
         d()
     print(f"Archivos copiados y verificados por SHA256: {copiados}")
     autochequeo()

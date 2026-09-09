@@ -1,0 +1,43 @@
+2. PROCESO - ingenieria del modulo, proceso y P&ID
+Fecha: 09-09-2026
+================================================================================
+
+CONTENIDO
+  19 documentos, cada uno en la ultima revision que ADASA aprobo.
+
+  P22-BT-09-009-001   rev 1   Control Philosophy
+  P22-CD-09-009-001   rev B   Process Calculation
+  P22-DWG-09-009-002  rev 0   P&ID
+  P22-DWG-09-009-01   rev 0   PFD
+  P22-ET-09-009-001   rev B   DS UHPRO System
+  P22-ET-09-009-002   rev 0   DS HP Pump
+  P22-ET-09-009-003   rev B   DS CIP Pump
+  P22-ET-09-009-004   rev B   DS Antiscalant Pump
+  P22-ET-09-009-005   rev E   DS RO Cartridge Filter
+  P22-ET-09-009-006   rev E   DS CIP Cartridge Filter
+  P22-ET-09-009-007   rev 0   DS Feed Turbocharger
+  P22-ET-09-009-008   rev 0   DS Interstage Turbocharger
+  P22-ET-09-009-009   rev B   DS CIP Tank
+  P22-ET-09-009-010   rev B   DS Antiscalant Dosing Tank
+  P22-ET-09-009-011   rev B   DS CIP Tank Heater
+  P22-ET-09-009-012   rev 0   DS Static Mixer
+  P22-LI-09-009-001   rev C   Utility Consumption List
+  P22-LI-09-009-002   rev A   Chemical Consumption List
+  P22-LI-09-009-003   rev 1   Line List
+
+QUE MIRAR
+  El P&ID en revision 0 y el listado de lineas en revision 1 son los dos documentos
+  que gobiernan el proceso. Las presiones de diseno y de prueba de cada linea las
+  fija el listado de lineas, no el plan de ensayos.
+
+  La filosofia de control cambio de titulo al pasar a revision 1 y el proveedor la
+  emite como Control Narrative. Es el mismo documento y el mismo codigo.
+
+ESTADO DE EMISION
+  16 en codigo 1, aprobados sin observaciones.
+  3 en codigo 2: aprobados con observaciones que el proveedor incorpora
+  al emitir la revision 0. Un documento en codigo 2 rige, y va a cambiar en
+  su detalle.
+
+  La nota tecnica de la carpeta 0 dice, documento por documento, cual es la
+  observacion que queda abierta.

@@ -1,0 +1,17 @@
+4. CANERIAS - ingenieria del modulo, cañerias y pintura
+Fecha: 09-09-2026
+================================================================================
+
+CONTENIDO
+  2 documentos, cada uno en la ultima revision que ADASA aprobo.
+
+  P22-ET-09-006-001  rev A   Piping Specifications
+  P22-ET-09-006-002  rev C   Painting Specifications
+
+QUE MIRAR
+  Son las dos especificaciones del proveedor: la de cañerias en revision A y la de
+  pintura en revision C. El registro de ADASA las anota en la disciplina mecanica y
+  el documento emitido dice cañerias; manda el documento.
+
+ESTADO DE EMISION
+  Los 2 documentos estan en codigo 1, aprobados sin observaciones.

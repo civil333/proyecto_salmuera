@@ -8,6 +8,12 @@ Responde dos preguntas: que ingenieria rige hoy y que cambio respecto de la que 
 para cotizar.
 
 Fuente unica: este script. El .xlsx es derivado y no se edita a mano.
+
+Desde el 09-09-2026 el .xlsx es RESPALDO INTERNO y no viaja en el paquete: la Nota
+Tecnica P22-NT-06-000-001-0 lo absorbio y es el unico documento de control que se
+entrega. Este script se mantiene por dos razones: sus listas VIGENCIA y CUBICACIONES
+son la fuente que el generador de la nota importa, y su gate contrasta lo declarado
+contra el arbol real del paquete antes de escribir nada.
 Todos los datos estan verificados contra los archivos, no contra las cartas de remision.
 
 La hoja Vigencia se contrasta contra el arbol real del paquete antes de escribir: si un
@@ -122,6 +128,18 @@ CIVIL_CAMBIA = [
      "Carta 067-032-032-COR-TT-013, 03-09-2026",
      "Armadura renumerada completa: las marcas 1201 a 1204 pasan a 1211 a 1216, con cantidades y largos distintos.",
      "No", P_CIP + " (incluida en el m3)"),
+    ("P22-DWG-00-002-001", "LAM1", "Implantacion general de obras civiles, planta georeferenciada y cortes", "0", "1",
+     "Carta 067-032-032-COR-TT-014, 07-09-2026",
+     "Actualiza las coordenadas UTM de once de los trece vertices de replanteo. El mayor desplazamiento es el del vertice V13, de Norte 7.188.940,939 Este 350.112,089 a Norte 7.188.940,098 Este 350.118,124, unos 6 m en el Este. Los vertices V04 y V05 no cambian. El nivel de terreno natural por zona se mantiene.",
+     "Si", "Replanteo de todas las partidas del Capitulo 4"),
+    ("P22-DWG-00-001-001", "LAM1", "Excavaciones y movimiento de tierras, planta general", "0", "1",
+     "Carta 067-032-032-COR-TT-015, 08-09-2026",
+     "El cuadro de cubicaciones recoge el sello nuevo: la excavacion del contenedor baja de 38,02 a 20,95 m3 sobre un area que pasa de 53,51 a 49,96 m2, y la de la zona CIP de 5,01 a 1,03 m3. Los rellenos no cambian. Quedan abiertos con el proyectista dos puntos que afectan la cantidad: el cuadro contradice al 00-002-003 LAM1, que mantiene 38,02, y al 00-002-007 LAM1, que declara 1,60 para la zona CIP; y el cuadro no cubica la excavacion de la fundacion de la bomba BH-06-001 ni la de la fundacion de la cubierta del sistema CIP.",
+     "Si", P_EXCAV),
+    ("P22-DWG-00-001-001", "LAM2", "Excavaciones y movimiento de tierras, secciones y detalle", "0", "1",
+     "Carta 067-032-032-COR-TT-015, 08-09-2026",
+     "El fondo de excavacion del contenedor sube de EL. 5,15 a EL. 5,35, consistente con el sello +5,400 menos el emplantillado de 5 cm. Se corrige el ancho superior de la excavacion del estanque, de 3,4 a 3,7 m. El fondo de excavacion del estanque y el de la fosa quedan sobre el criterio anterior, coincidentes con su propio sello y sin descontar la capa inferior. Pendiente con el proyectista.",
+     "Si", P_EXCAV),
 ]
 
 # Cantidades del Formato de Presupuesto contractual contra la ingenieria vigente.
@@ -134,7 +152,7 @@ CUBICACIONES = [
     ("4.3", "Fundacion dinamica bomba BH-06-001 (F3)", "m3", 0.95, 0.95, "P22-DWG-00-002-002 LAM4 Rev 1"),
     ("4.4", "Fundacion estanque TK-06-001 (F4)", "m3", 6.33, 6.33, "P22-DWG-00-002-002 LAM1 Rev 1"),
     ("4.5", "Fundacion camara de drenajes TK-06-004 (F5)", "m3", 1.66, 1.66, "P22-DWG-00-002-004 Rev 0"),
-    ("4.6", "Excavacion comun en fundaciones y zanjas de drenaje", "m3", 115.1, 111.7, "Cuadros de excavacion de los planos de fundacion"),
+    ("4.6", "Excavacion comun en fundaciones y zanjas de drenaje", "m3", 115.1, 90.58, "P22-DWG-00-001-001 LAM1 Rev 1 y cuadros de excavacion de los planos de fundacion"),
     ("4.7", "Dados de hormigon G25 para pedestales de soportes a piso", "un", 17, 17, "P22-DWG-06-006-107 Rev 0"),
     ("4.7", "Relleno compactado con material seleccionado y base estabilizada", "m3", 91.5, 91.5, "Cuadros de excavacion de los planos de fundacion"),
     ("4.8", "Sistema de drenaje del modulo", "gl", 1, 1, "P22-DWG-00-002-006 Rev 0"),
@@ -189,9 +207,10 @@ VIGENCIA = [
     ("P22-LI-06-006-101", "-", "Listado de lineas", "0", D_MEC),
     ("P22-LI-06-006-102", "-", "Listado de materiales de cañerias", "1", D_MEC),
     ("P22-LI-06-006-103", "-", "Listado de valvulas", "0", D_MEC),
-    ("Maqueta Gral.nwd", "-", "Modelo 3D de coordinacion, Navisworks", "-", D_MEC),
-    ("P22-DWG-00-001-001", "LAM1 y LAM2", "Excavaciones y movimiento de tierras", "0", D_CIV),
-    ("P22-DWG-00-002-001", "unica", "Implantacion general de obras civiles", "0", D_CIV),
+    ("MODULO COMPLETO.nwd", "-", "Modelo 3D de coordinacion, Navisworks. Federa la maqueta mecanica y el modelo civil P22-3D-00-001-001 revision 1", "-", D_MEC),
+    ("MODULO COMPLETO (nube puntos).nwd", "-", "El mismo modelo con la nube de puntos del levantamiento. Se entrega por enlace: pesa 6 GB", "-", D_MEC),
+    ("P22-DWG-00-001-001", "LAM1 y LAM2", "Excavaciones y movimiento de tierras", "1", D_CIV),
+    ("P22-DWG-00-002-001", "unica", "Implantacion general de obras civiles", "1", D_CIV),
     ("P22-DWG-00-002-002", "LAM1", "Fundacion del estanque TK-06-001, formas", "1", D_CIV),
     ("P22-DWG-00-002-002", "LAM2 y LAM3", "Fundaciones de equipos exteriores, armaduras", "0", D_CIV),
     ("P22-DWG-00-002-002", "LAM4", "Fundacion de la bomba BH-06-001", "1", D_CIV),
@@ -239,7 +258,7 @@ def _laminas_declaradas(texto):
     return []
 
 
-def comprobar_vigencia_contra_paquete():
+def comprobar_vigencia_contra_paquete(tolerar_faltantes=False):
     """Aborta si la hoja Vigencia no describe el arbol real del paquete."""
     if not PAQUETE.is_dir():
         sys.exit(f"ERROR: no existe el paquete en {PAQUETE}")
@@ -282,6 +301,15 @@ def comprobar_vigencia_contra_paquete():
             continue
         if not any(p.stem.startswith(c) or c in p.name for c in declarados):
             errores.append(f"{p.name}: en el paquete y no declarado en la hoja Vigencia")
+
+    if tolerar_faltantes:
+        faltantes = [e for e in errores if e.endswith("sin archivo en el paquete")]
+        errores = [e for e in errores if e not in faltantes]
+        if faltantes:
+            print(f"    {len(faltantes)} documentos declarados sin archivo en este equipo "
+                  f"(arbol a medio sincronizar); se dejan pasar por --arbol-incompleto:")
+            for e in faltantes:
+                print("      -", e)
 
     if errores:
         print("La hoja Vigencia no coincide con el paquete:")
@@ -334,16 +362,16 @@ def hoja_resumen(wb):
     ws.column_dimensions["B"].width = 62
     filas = [
         ("Paquete", "INGENIERIA VIGENTE PARA CONSTRUCCION, montaje mecanico y obras civiles"),
-        ("Fecha", "04-09-2026"),
+        ("Fecha", "09-09-2026"),
         ("Destinatario", "Contratista adjudicado. El contrato esta adjudicado y este paquete no reabre la licitacion."),
         ("Que rige", "Para cada codigo y lamina rige la revision que este paquete entrega, listada en la hoja Vigencia. Cualquier revision anterior del mismo documento queda reemplazada."),
         ("Que NO reemplaza", "Las Bases de Licitacion ni el Formato de Presupuesto, que son contractuales y no se reemiten. Este paquete lleva solo ingenieria."),
         ("", ""),
         ("Cambio de fondo", "La fundacion del contenedor del modulo sube 250 mm de cota, de la +6,050 a la +6,300, y con ella suben las cuatro cotas de conexion con el modulo. Los tie-ins con el modulo existente no cambian."),
         ("", ""),
-        ("Documentos del paquete", 54),
+        ("Documentos del paquete", 55),
         ("Documentos mecanicos que cambian de revision", 12),
-        ("Laminas civiles que cambian de revision", 5),
+        ("Laminas civiles que cambian de revision", 8),
         ("Partidas de obra civil que cambian de cantidad", 2),
         ("Isometrias sin cambio alguno respecto de la revision cotizada", "7 de 11 (identicas byte a byte)"),
         ("Archivos del paquete", 88),
@@ -380,7 +408,15 @@ def hoja_tabla(wb, nombre, titulo, cabeceras, anchos, datos, resaltar_si=None):
 
 
 def main():
-    comprobar_vigencia_contra_paquete()
+    # El gate contrasta la hoja Vigencia contra el arbol real y aborta ante cualquier
+    # diferencia. Con --arbol-incompleto se deja pasar SOLO la falta de archivos, que en
+    # un equipo con Synology a medio sincronizar no es un defecto del paquete. Toda otra
+    # diferencia sigue abortando, y la planilla queda marcada como provisoria: hay que
+    # regenerarla sin el flag antes de entregarla.
+    incompleto = "--arbol-incompleto" in sys.argv
+    comprobar_vigencia_contra_paquete(tolerar_faltantes=incompleto)
+    if incompleto:
+        print("AVISO: planilla generada con --arbol-incompleto. NO se entrega asi.")
 
     wb = Workbook()
     hoja_resumen(wb)

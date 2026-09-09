@@ -1,0 +1,46 @@
+6. CONTROL E INSTRUMENTACION - ingenieria del modulo, control e instrumentacion
+Fecha: 09-09-2026
+================================================================================
+
+CONTENIDO
+  22 documentos, cada uno en la ultima revision que ADASA aprobo.
+
+  P22-CD-09-004-001   rev D   Control Architecture
+  P22-CD-09-008-001   rev 0   PLC-LCP Outline Panel Drawing
+  P22-CD-09-008-002   rev B   PLC/LCP Schematic Diagram
+  P22-DWG-09-008-001  rev D   Instrument Location Layout
+  P22-ET-09-008-001   rev 0   DS PLC & HMI
+  P22-LI-09-008-001   rev 6   IO List
+  P22-LI-09-008-002   rev 2   I&C Cable Schedule
+  P22-LI-09-008-003   rev F   Instrument List
+  P22-LI-09-008-004   rev 2   Data Transfer List (Modbus TCP)
+  P22-LI-09-008-005   rev B   DS Conductivity Analyzer
+  P22-LI-09-008-006   rev B   DS DP Switch
+  P22-LI-09-008-007   rev B   DS Flow Transmitter
+  P22-LI-09-008-008   rev B   DS Level Switch
+  P22-LI-09-008-009   rev A   DS Level Transmitter
+  P22-LI-09-008-010   rev B   DS pH/ORP Analyzer
+  P22-LI-09-008-011   rev B   DS Pressure Gauge
+  P22-LI-09-008-012   rev C   DS Pressure Transmitter
+  P22-LI-09-008-013   rev B   DS Temperature Transmitter
+  P22-LI-09-008-014   rev B   DS Vibration Transmitter
+  P22-LI-09-008-015   rev 0   Alarm and Interlock List
+  P22-LI-09-008-016   rev C   HMI Display Screenshot (Screen Design)
+  P22-LI-09-008-017   rev 0   Control and Sequence Chart
+
+QUE MIRAR
+  El listado de I/O en revision 6 y el listado de instrumentos en revision F son los
+  que gobiernan la interfaz de control.
+
+  El rango vinculante del transmisor de vibracion VT-09-001 es de 0 a 12 mm/s rms,
+  declarado por ADASA. El listado de instrumentos todavia arrastra 8,9 y su correccion
+  queda pendiente para la revision 0.
+
+ESTADO DE EMISION
+  19 en codigo 1, aprobados sin observaciones.
+  3 en codigo 2: aprobados con observaciones que el proveedor incorpora
+  al emitir la revision 0. Un documento en codigo 2 rige, y va a cambiar en
+  su detalle.
+
+  La nota tecnica de la carpeta 0 dice, documento por documento, cual es la
+  observacion que queda abierta.

@@ -41,3 +41,6 @@ __pycache__/
 ._*
 ~$*
 plot.log
+
+# Estado de herramientas externas, no del proyecto
+.antigravitycli/

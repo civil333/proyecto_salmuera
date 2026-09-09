@@ -1,0 +1,44 @@
+3. MECANICA - ingenieria del modulo, mecanica, disposicion y calculo
+Fecha: 09-09-2026
+================================================================================
+
+CONTENIDO
+  16 documentos, cada uno en la ultima revision que ADASA aprobo.
+
+  P22-CD-09-005-001   rev B   UHPRO Structural Calculation Report
+  P22-CD-09-005-002   rev C   A/C Thermal Calculation
+  P22-CD-09-005-003   rev 0   UHPRO Structural Design Criteria
+  P22-DWG-09-005-001  rev B   Civil and Loading Drawing
+  P22-DWG-09-005-003  rev D   Equipment Layout
+  P22-DWG-09-005-004  rev D   Piping Layout
+  P22-DWG-09-005-005  rev 0   Tie-In Point Layout
+  P22-DWG-09-005-008  rev 0   GA of SWRO System Skid
+  P22-DWG-09-005-010  rev B   GA CIP/Flushing Pump
+  P22-DWG-09-005-011  rev C   GA Antiscalant Dosing Pump
+  P22-DWG-09-005-012  rev A   GA Feed Turbocharger (SIP-09-001)
+  P22-DWG-09-005-013  rev A   GA Interstage Turbocharger (SIP-09-002)
+  P22-DWG-09-005-014  rev B   GA of CIP Flushing Tank
+  P22-DWG-09-005-015  rev C   GA Antiscalant Dosing Tank
+  P22-LI-09-005-001   rev 0   Equipment List
+  P22-LI-09-005-002   rev D   Valve List
+
+QUE MIRAR
+  El plano de necesidades civiles y cargas es el que alimenta la ingenieria de
+  fundaciones. Esta en revision B y en codigo 2.
+
+  El informe de calculo estructural del bastidor esta en revision B y en codigo 2, y
+  no lleva endoso de un profesional inscrito en Chile. El proveedor lo comprometio
+  por escrito y a la fecha no ha designado a quien lo firme.
+
+  Los dos planos generales de los turbocargadores son revision A y llegaron una sola
+  vez. El registro de ADASA los anota en revision B, que no existe en el repositorio;
+  aqui rige lo que dice el cajetin de cada plano.
+
+ESTADO DE EMISION
+  10 en codigo 1, aprobados sin observaciones.
+  6 en codigo 2: aprobados con observaciones que el proveedor incorpora
+  al emitir la revision 0. Un documento en codigo 2 rige, y va a cambiar en
+  su detalle.
+
+  La nota tecnica de la carpeta 0 dice, documento por documento, cual es la
+  observacion que queda abierta.
