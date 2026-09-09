@@ -1,0 +1,54 @@
+NO ENVIADOS — fusionados en un solo correo el 9 de septiembre de 2026
+=====================================================================
+
+Estos dos borradores NO se enviaron. Su contenido vive en:
+
+  CORREOS/Septiembre 2026/2026-09-09/2026-09-09_Transmittal-N39-and-Rev0-Issue.docx
+  REVISIONES/TRANSMITTALES/P22-TM-09-000-039-0/  (Seccion 3 del transmittal)
+
+
+POR QUE SE FUSIONARON
+
+Los dos iban a Eduardo Yamauchi, con la misma copia, el mismo dia y el mismo
+plazo, el viernes 11 de septiembre. Enviarlos por separado repartia en dos lo que
+es un solo mensaje, y dejaba la exigencia grande sin el instrumento contractual
+que la sostiene. Decision del usuario.
+
+
+QUE ERA CADA UNO
+
+  2026-09-09_Issue-for-Construction-Audit.docx  (crear_correo_rev0_audit.py)
+      Auditoria de emision para construccion. 627 palabras y cuatro tablas.
+      46 de 72 documentos de ingenieria nunca emitidos, 34 de ellos sin ninguna
+      observacion abierta. Veredicto anti-ia VERDE, persistido en la carpeta
+      .anti-ia-2026-09-09 del dia, que NO se movio aqui.
+
+  2026-09-09_Transmittal-N39.docx               (crear_correo_tm39.py)
+      Cobertura del Transmittal N39. 235 palabras, tres parrafos.
+
+
+DONDE QUEDO CADA PIEZA
+
+  Las cuatro tablas, el argumento del DDSR, los dos planos que el registro del
+  proveedor declara en Rev 0 y nunca llegaron, y los once cajetines que se
+  contradicen  ->  Seccion 3 del transmittal N39.
+
+  La exigencia y su fecha, la cita literal de BW Water, el desactivador de la
+  defensa ("I had not set a date for these reissues until now"), la reserva de
+  derechos, y el veredicto del N39 con la valvula VM-09-065  ->  el correo unico.
+
+
+POR QUE NO SE BORRAN
+
+  El correo de auditoria tiene su veredicto anti-ia y tres citas verificadas
+  sobre PDF que costaron trabajo: la regla del proveedor en la pagina 4 del
+  P22-DWG-09-007-003 Rev E, la leyenda del formulario PEM-F013 Rev 3 donde IFA
+  no aparece, y los tres datasheets Fedco de la entrega 90 que dicen IFC en el
+  formulario y lo contrario adentro.
+
+  Su _Descripcion.md conserva ademas el detalle de lo que quedo fuera a
+  proposito: el idioma de la Clausula 6, el hito de pago del 10 por ciento y la
+  multa de la Clausula 43.1 letra a).
+
+  Los scripts NO se re-corren. Si hay que regenerar algo, se regenera el correo
+  unico y el transmittal, que leen las cifras del mismo auditor.

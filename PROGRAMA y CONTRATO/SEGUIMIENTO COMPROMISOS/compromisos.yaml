@@ -33,7 +33,7 @@ meta:
   proyecto: L-12803 Suministro Modulo RO Segunda Etapa para Salmuera - PD Taltal
   contrato: C-4300
   preparado_por: Luis Rivera Gonzalez
-  corte: 2026-09-03
+  corte: 2026-09-09
   umbral_por_vencer_dias: 7
 
 compromisos:
@@ -2094,13 +2094,13 @@ compromisos:
     origen_fecha: FIJADA ADASA
     fecha_origen: 2026-09-03
     fecha_cierre: null
-    consecuencia: "La Equipment List llego en Rev 0 apto para construccion y la Valve List no, de modo que el par comprometido quedo a medias y las valvulas del modelo siguen sin respaldo en una lista aprobada"
-    accion_adasa: "Reclamado en la Seccion 3 del TM N38. El argumento mas fuerte es del propio proveedor: su hoja de comentarios del P&ID Rev 0 declara que el cambio de CIT-09-004 obliga a reemitir la lista"
-    evidencia_origen: "E90 - P22-LI-09-005-001 Rev 0 recibida sin su par; hoja de comentarios del P&ID Rev 0 en la E89"
+    consecuencia: "La Rev E llego el 4-Sep-2026 y trae dos de los tres cambios. Los cuatro TAG del modelo estan y los cuatro figuran en el P&ID Rev 0, y VRP-09-001 es la valvula reductora que reemplaza la placa de orificio en CIT-09-004. Falta el tercero: VM-09-065 sigue en PVC sobre la succion de la bomba CIP, linea CP-SS316-DN150-09-022, que la Line List Rev 1 aprobada en Codigo 1 lleva en 316L. Es la unica valvula DN150 de ese circuito y la lista es contra la que se compra"
+    accion_adasa: "Reclamado en la Seccion 3 del TM N38 y revisado en el TM N39, que devuelve la Rev E en Codigo 2 con una sola observacion, la del material de VM-09-065, a incorporar al emitir la Rev 0. El argumento mas fuerte sigue siendo del propio proveedor: su hoja de comentarios del P&ID Rev 0 declara el cambio de la succion CIP a 316L, y su Line List Rev 1 lo materializa"
+    evidencia_origen: "E90 - P22-LI-09-005-001 Rev 0 recibida sin su par; hoja de comentarios del P&ID Rev 0 en la E89. E91 - P22-LI-09-005-002 Rev E recibida el 4-Sep-2026, con los cuatro TAG y la valvula reductora incorporados y la succion CIP sin reflejar"
     ref_cruzada: "PRG-39"
     reprogramaciones: 0
-    historial_fechas: "Exigida en la entrega consolidada del 3-Sep-2026 y no entregada"
-    nota: "Va junto al cambio de succion CIP a SS316, que ADASA acepto como sustitucion menor por disponibilidad y que tiene que quedar reflejado tanto aqui como en los planos de fabricacion"
+    historial_fechas: "Exigida en la entrega consolidada del 3-Sep-2026 y no entregada. Reemitida en Rev E el 4-Sep-2026, cumpliendo dos de los tres cambios"
+    nota: "NO se cierra con la Rev E: el criterio exige los tres cambios y falta el material de la succion CIP, que ADASA acepto como sustitucion menor por disponibilidad y que tiene que quedar reflejado tanto en esta lista como en los planos de fabricacion. Cierra cuando la Rev 0 declare el cuerpo, el interior y el asiento de VM-09-065 contra la Line List aprobada, con su conexion y su rating"
 
   - id: PRG-47
     frente: PROGRAMA
@@ -2122,3 +2122,24 @@ compromisos:
     reprogramaciones: 0
     historial_fechas: "Exigido en el TM N37 y reiterado en el N38"
     nota: "No es un pendiente del procedimiento Rev C, que cerro su determinante: es un pendiente del registro del ensayo ya corrido, y por eso viaja en la Seccion 3 y no como observacion sobre la Rev C"
+
+  - id: PRG-48
+    frente: PROGRAMA
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Confirmar una fecha vinculante para emitir en revision 0, apta para construccion, el conjunto de la ingenieria de detalle de la Seccion 7 que ADASA ya aprobo en Codigo 1 o Codigo 2"
+    fecha_comprometida: 2026-09-11
+    estado: ABIERTO
+    criticidad: CRITICA
+    criterio_cierre: "Emision en revision 0 de los 46 documentos de ingenieria y los 7 de calidad que siguen en revision de letra, y fecha comprometida por documento en la columna Planned submittal date del DDSR para lo que no alcance"
+    fuente_contractual: "ET P22-ET-09-000-001-0 Seccion 7, que exige desarrollar la ingenieria para construccion y hace obligatorio el estandar de codificacion P00-IT-00-000-101-0; ese estandar define la revision 0 como Para Construccion y establece que un documento revisado en Estatus 1 o 2 debe ser emitido en revision 0"
+    origen_fecha: FIJADA ADASA
+    fecha_origen: 2026-05-07
+    fecha_cierre: null
+    consecuencia: "46 de los 72 documentos de ingenieria siguen en revision de letra pese a estar aprobados, y 34 de ellos no tienen ninguna observacion abierta. La mediana de la aprobacion es de 184 dias y cuatro documentos llevan 267, desde el TM N1 del 16-Dic-2025. El registro semanal del proveedor no lo muestra porque mide la aprobacion y no la emision: 34 de esos documentos figuran en el DDSR con peso 100 por ciento. El modulo se embarca sin que la ingenieria que lo describe este emitida para construccion"
+    accion_adasa: "El pedido se hizo el 07-May-2026 por correo a Eduardo Yamauchi y Andrew Sia, pidiendo una fecha vinculante para el conjunto de la Seccion 1, y nunca se recibio respuesta ni se registro como compromiso, de modo que dejo de seguirse. Se reactiva y se comunica con el correo ENVIADO el 09-Sep-2026, que remite el Transmittal N39 y exige la emision al viernes 11-Sep, la fecha que la reunion de ese dia fijo para cerrar los hitos documentales"
+    evidencia_origen: "Correo del 07-May-2026, Engineering Closure Proposal: BW Water commits to confirming a binding date for IFC Rev 0 of the full Section 1 set. Y la propia hoja de comentarios del P22-DWG-09-007-003 Rev E del 12-May-2026, donde BW Water declara que mantiene Issued For Approval hasta que el documento se apruebe y entonces cambia a Issued For Construction - Rev0"
+    ref_cruzada: "PRG-39, INT-08"
+    reprogramaciones: 0
+    historial_fechas: "Pedido el 07-May-2026 sin respuesta; reactivado y FIJADO al viernes 11-Sep-2026 por el correo enviado el 09-Sep-2026 junto al Transmittal N39"
+    nota: "La fecha entra el 09-Sep-2026, al enviarse el correo que la comunica. Antes figuraba SIN FECHA a proposito, porque BW Water nunca comprometio una y ADASA no la habia fijado, y escribirla sin haber enviado el correo habria afirmado un acto que no ocurrio. La exigencia viaja en la Seccion 3 del Transmittal N39, con las cuatro tablas nominales: 34 documentos en Codigo 1 sin observacion, 12 en Codigo 2 con su condicion, 7 de calidad y 7 entregables no recibidos. Lo que no alcance a emitirse el viernes debe llevar su fecha comprometida en el DDSR de ese mismo dia; el DDSR del 07-Sep ya lleva el 11-Sep en seis de sus diez filas con fecha"
