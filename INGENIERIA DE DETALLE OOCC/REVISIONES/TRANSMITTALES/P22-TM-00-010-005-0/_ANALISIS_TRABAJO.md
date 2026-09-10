@@ -1,7 +1,7 @@
 ---
-titulo: Analisis de trabajo del Transmittal N5 a L&A - ENTREGA 14 y ENTREGA 13
+titulo: Analisis de trabajo del Transmittal N5 a L&A - ENTREGA 14, ENTREGA 13 y cierre con la ENTREGA 15
 codigo: P22-TM-00-010-005-0
-fecha: 2026-09-09
+fecha: 2026-09-10
 estado: INTERNO
 type: analisis
 project: salmuera-taltal
@@ -208,6 +208,8 @@ comprimido.
 
 Hay que pedir el nativo de nuevo. Los dos PDF si sirven y no bloquean la revision.
 
+*Actualizacion 10-09-2026:* el nativo llego integro con la ENTREGA 15, sin pedirlo (ver la seccion final).
+
 ## 8. La ENTREGA 13 y el replanteo
 
 El `P22-DWG-00-002-001` revision 1 cambia **las coordenadas UTM de once de los trece vertices** de
@@ -363,3 +365,135 @@ La reemision esta pedida al **viernes 11 de septiembre**, el mismo dia en que se
 al contratista. Si algun punto no alcanza para esa fecha, se pidio a L&A avisar cual el mismo miercoles
 para resolverlo por separado. Si la reemision no llega, la Nota Tecnica sale igual con las laminas ya
 incorporadas y la correccion entra despues como actualizacion del paquete.
+
+*Actualizacion 10-09-2026:* llego el 10, un dia antes. Su verificacion esta en la seccion final.
+
+---
+
+# ENTREGA 15 (carta TT-016, 10-09-2026): cierre de las siete observaciones
+
+Registro interno del 10-09-2026. Por decision del usuario no se responde a L&A ni se emite
+transmittal: el cierre queda documentado aqui y en el README.
+
+## Que llego
+
+Carta `067-032-032-COR-TT-016` del 10-09-2026, cinco items, todos declarados "Rev 1, Para
+Construccion": `P22-DWG-00-001-001` laminas 1 y 2, `P22-DWG-00-002-002` LAM1, `P22-DWG-00-002-003`
+LAM1 y `P22-DWG-00-002-007` LAM1. Vienen ademas los cuatro nativos DWG, incluido
+`P22-DWG-00-001-001-1.dwg` de 24,7 MB, integro esta vez (`unzip -t` sin errores; el de la ENTREGA 14
+fallaba la verificacion). Los cinco PDF difieren por md5 de los que el paquete tenia desde las
+cartas TT-013 y TT-015: ninguno se deduplica.
+
+Carpeta: `INGENIERIA DE DETALLE OOCC/P22-TR-00-010-01-0/ENTREGAS/ENTREGA 15/2026-09-10 TT-016 CIV, Act. PL (coment.) Rev.1/`.
+
+## La misma revision, con contenido distinto
+
+Las cinco laminas siguen rotuladas Rev 1. La tabla de revisiones gana una fila, `SE MODIFICA LO
+INDICADO 10/09/26` en las de movimiento de tierra y `MODIFICACIONES INDICADAS 09/09/26` en las de
+fundaciones, con nube numerada (indice 2 en la LAM1 y 3 en la LAM2 del `00-001-001`; 2, 8 y 6 en
+`002-002`, `002-003` y `002-007`). En las de movimiento de tierra el bloque de ADASA del cajetin
+sigue diciendo `REV. 0` con fecha 08/09/2026 (LAM1) y 07/09/2026 (LAM2), el punto documental que el
+usuario decidio no observar el 09-09.
+
+**Decision del usuario (10-09-2026):** rige la Rev 1 de la carta TT-016, identificada por carta y
+fecha. No se objeta la numeracion repetida porque nada habia salido aun al contratista. La Rev 1
+anterior se archivo en `BORRADOR_REV0/_dossier_superseded_pre-E15/` con el sufijo de su carta
+(`_TT-013`, `_TT-015`) para que dos Rev 1 no colisionen de nombre.
+
+## Metodo
+
+Tres lecturas, cada una con su limite declarado:
+
+1. `large-pdf-reader --mode drawing` sobre las cinco laminas, salida en `md/` de la entrega: render
+   completo a 300 dpi, mosaico 3x2 a 600 dpi y `drawing.md`. El render y los tiles sirvieron para
+   leer cuadros y cotas. **El cajetin extraido por la skill no sirve en estas laminas**: asigna
+   "PABLO CASTILLO" al campo revision, toma la fecha del bloque de ADASA y mezcla la tabla de
+   revisiones en el campo "Reviso". La revision y la fecha se leyeron por render.
+2. `comparar_reemision_e15.py` (en esta carpeta): superposicion de la Rev 1 anterior y la nueva a
+   150 dpi, mascara de diferencia por cuadricula 6x4 y recortes a 300 dpi de las celdas con cambio.
+   Dos calibraciones que dejaron leccion: una erosion de la mascara borra los trazos finos y
+   declaro sin cambio a tres laminas cuyo cuadro si cambio; una dilatacion detecta los digitos pero
+   marca toda la lamina cuando el ploteo nuevo viene desplazado, que es el caso de las dos de
+   movimiento de tierra (Ghostscript las volvio a rasterizar con un corrimiento de un pixel). El
+   script elige la limpieza segun el par: dilatacion si lo comun queda pixel-identico, erosion si
+   mas de la mitad de las celdas superan el 5 por ciento.
+3. Diferencia de la capa de texto entre las dos emisiones. En las tres laminas de fundaciones los
+   cuadros de excavacion si estan en la capa de texto, de modo que el diff textual entrego los
+   valores directamente; en las de movimiento de tierra la capa de texto solo trae el cajetin.
+
+## Verificacion observacion por observacion
+
+| OBS | Lo que se pidio | Lo que trae la reemision | Resultado |
+|---|---|---|---|
+| OBS-01 y OBS-07 | Una sola cifra para la zona CIP: 1,03 en `00-001-001` LAM1 contra 1,60 en `00-002-007` LAM1 | `00-002-007` LAM1 baja su cuadro a **1,03** (retiro 1,24). El item 7 de la LAM1 sigue en 1,03 | Cerrada. L&A unifico en la cifra del plano de movimiento de tierra, no en la que ADASA venia declarando |
+| OBS-02 y OBS-06 | Una sola cifra para el contenedor: 20,95 contra 38,02 en `00-002-003` LAM1 | `00-002-003` LAM1 baja su cuadro a **20,95** (retiro 25,14; relleno de 30,03 a 13,96). El item 8 sigue en 20,95 | Cerrada |
+| OBS-03 | El cuadro no recogia la excavacion de la bomba ni la de la cubierta CIP | El cuadro pasa de 8 a 10 items: item 9 bomba BH-06-001 **0,62** (2,16 m2) e item 10 cubierta CIP **4,25** (5,20 m2) | Cerrada |
+| OBS-04 | Fondo del estanque: 5,35 en las secciones A y B contra sello +5,350 menos 5 cm | Secciones A y B en **EL. 5,30**; `00-002-002` LAM1 sube su excavacion de 4,22 a **4,84** (retiro 5,81), que es 12,49 m2 por 0,05 m mas; el item 5 de la LAM1 pasa a 4,84 | Cerrada por los dos lados |
+| OBS-05 | Fondo de la fosa: 4,30 en la seccion B contra sello +4,305 menos 15 cm de "mejoramiento M.H.A." | L&A responde en el propio plano comentado: **no aplica**. El sello se fija en +4,305 con emplantillado de 5 cm; "M.H.A. e=15" es el **muro de hormigon armado** de 15 cm de la fosa, no un mejoramiento. Verificado en la elevacion de eje 1 y 2 del `00-002-004` LAM1: N.S.F. +4,305, "EMPLANTILLADO e=5" bajo el sello y "M.H.A. e=15" sobre el muro | Cerrada, respuesta aceptada. **El error fue de ADASA**, que leyo la abreviatura como mejoramiento. Queda un residuo de 5 cm: la seccion B acota 4,30, que es el sello redondeado, y el criterio de las demas zonas da 4,255. Son 0,2 m3 sobre una cifra referencial que se valida en terreno; no se reclama |
+
+Correccion propia derivada de la OBS-05: la Nota Tecnica, los dos `LEEME.txt` y `CIVIL_CAMBIA` del
+generador declaraban 4,155 con "mejoramiento de 15 cm" para la fosa. Los cuatro se corrigieron al
+criterio uniforme, sello menos emplantillado de 5 cm.
+
+## Otros cambios que trae la reemision, no pedidos
+
+- `00-001-001` LAM2, seccion B: el ancho superior de la excavacion del estanque vuelve a rotular
+  **3,4 m** sobre un fondo de 3,5, el mismo rotulo imposible de la Rev 0 que la emision del 08-09
+  habia corregido a 3,7. Es rotulo, no cantidad: el item 5 se cubica con el area de 12,49 m2. Queda
+  registrado y no se reclama.
+- `00-002-007` LAM1: en la seccion B las cotas 95 y 125 pasan a 91 y 129; desaparece el rotulo
+  `EL.+6,000 N.T.N.` de esa seccion y las letras E, F y G de la planta de disposicion. El cuadro de
+  emplantillado sigue rotulado "TOTAL HORMIGON G25 0,41", error conocido que no se levanto.
+- `00-002-003` LAM1: entran las marcas B en la elevacion de ejes; el relleno del cuadro baja de
+  30,03 a 13,96 m3. El Formato mide el relleno por obra ejecutada y su cantidad referencial (91,5
+  m3) viene del itemizado del proyectista, no de los cuadros, asi que no se recalcula.
+- `00-002-002` LAM1: solo fecha, indice de nube y cuadro de excavacion.
+- `00-001-001` LAM1, planta: rotulos de coordenadas agregados a las excavaciones proyectadas.
+
+## Cantidades que rigen tras la reemision
+
+| Zona | Excavacion | Fuente |
+|---|---|---|
+| Trazado 1 | 5,22 | `00-001-001` LAM1 |
+| Trazado 2 | 34,91 | `00-001-001` LAM1 |
+| Estanque TK-06-001 | 4,84 | `00-002-002` LAM1 y `00-001-001` LAM1 item 5 |
+| Fosa TK-06-004 | 3,71 | `00-002-004` LAM1 y `00-001-001` LAM1 item 6 |
+| Bomba BH-06-001 | 0,62 | `00-002-002` LAM4 y `00-001-001` LAM1 item 9 |
+| Sistema CIP | 1,03 | `00-002-007` LAM1 y `00-001-001` LAM1 item 7 |
+| Cubierta CIP | 4,25 | `00-002-007` LAM3 y `00-001-001` LAM1 item 10 |
+| Contenedor | 20,95 | `00-002-003` LAM1 y `00-001-001` LAM1 item 8 |
+| **Total excavado** | **75,53** | contra 75,48 del 09-09 |
+
+Partida 4.6 con el criterio con que se licito (volumen excavado por 1,2): **90,64 m3**, contra los
+90,58 declarados el 09-09. El cuadro de la LAM1 y los cuadros de los planos de fundacion coinciden
+ahora en las ocho zonas: la contradiccion entre planos vigentes desaparecio.
+
+Fondo de excavacion, criterio uniforme sello menos emplantillado de 5 cm: 5,35 contenedor, 5,45
+sistema CIP, 5,30 estanque y 4,255 fosa.
+
+## Disposicion actualizada
+
+| Documento | Rev | Codigo | Fundamento |
+|---|---|---|---|
+| `P22-DWG-00-001-001` LAM1 | 1 (TT-016) | 1, aprobado | Cuadro de diez items consistente con los seis planos de fundacion |
+| `P22-DWG-00-001-001` LAM2 | 1 (TT-016) | 1, aprobado con registro interno | Fondos del contenedor, CIP y estanque consistentes; fosa con 5 cm de residuo; rotulo 3,4 m regresado |
+| `P22-DWG-00-002-002` LAM1 | 1 (TT-016) | 1, aprobado | Excavacion recalculada al criterio |
+| `P22-DWG-00-002-003` LAM1 | 1 (TT-016) | 1, aprobado | Cuadro sobre el sello vigente |
+| `P22-DWG-00-002-007` LAM1 | 1 (TT-016) | 1, aprobado | Cuadro unificado con el movimiento de tierra |
+
+Sin transmittal ni acuse, por decision del usuario. Las cinco laminas y sus DWG entraron al paquete
+`INGENIERIA VIGENTE PARA CONSTRUCCION` el 10-09-2026, con la Rev 1 anterior archivada.
+
+## Nativos
+
+Con la ENTREGA 15 el paquete pasa a llevar cada plano en PDF y en DWG, decision del usuario del
+10-09-2026. Los DWG civiles Rev 0 salen de la ENTREGA 10 (compilado), cuyos PDF son byte a byte los
+del paquete; los Rev 1, de la entrega que trajo cada PDF (ENTREGA 12, 13 y 15). El
+`P22-DWG-00-001-001_1.dwg` contiene las dos laminas. Apareamiento y SHA256 verificados por la
+regla 4 del autochequeo de `construir_paquete_construccion.py`: 66 planos PDF, 66 DWG, cero
+huerfanos.
+
+## Plazo
+
+La reemision llego el 10-09, un dia antes del viernes 11 pedido. No hay pendiente con L&A en este
+ciclo.

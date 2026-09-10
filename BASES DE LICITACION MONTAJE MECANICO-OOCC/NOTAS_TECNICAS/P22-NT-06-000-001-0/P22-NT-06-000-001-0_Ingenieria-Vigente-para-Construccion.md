@@ -2,7 +2,7 @@
 titulo: Nota Técnica P22-NT-06-000-001-0, Ingeniería vigente para construcción
 codigo: P22-NT-06-000-001-0
 revision: 0
-fecha: 2026-09-09
+fecha: 2026-09-10
 destinatario: Equipo de proyecto de Aguas Antofagasta, revisión interna previa
 emisor: Aguas Antofagasta S.A.
 estado: BORRADOR
@@ -17,8 +17,9 @@ base para cotizar, de modo que el contratista disponga por escrito del alcance d
 cambios antes de iniciar las obras.
 
 El paquete contiene 55 documentos de ingeniería de detalle mecánica, de obras civiles y de
-especificaciones de montaje, distribuidos en 88 archivos. Esta nota identifica, documento por
-documento, la revisión que rige y aquello que cambió.
+especificaciones de montaje, distribuidos en 154 archivos, dado que cada plano va en PDF y en su
+archivo nativo DWG. Esta nota identifica, documento por documento, la revisión que rige y aquello
+que cambió.
 
 Esta nota no modifica el Contrato ni ninguno de sus anexos.
 
@@ -30,7 +31,7 @@ El paquete se organiza en cuatro carpetas.
 siempre con el documento que lo explica. Esta nota es el único documento de control: declara la
 revisión que rige para cada documento y la cantidad vigente de cada partida.
 
-**1. ING. DETALLE MECANICA**, 59 archivos en cuatro subcarpetas. `00_GENERAL` lleva el listado de
+**1. ING. DETALLE MECANICA**, 108 archivos en cuatro subcarpetas. `00_GENERAL` lleva el listado de
 entregables. `01_PROCESOS_E_INSTRUMENTACION` lleva el diagrama de flujo, los cuatro P&ID, las hojas
 de datos y el listado de instrumentos, y la lógica de control. `02_MECANICA` lleva cinco planos de
 montaje y el listado de equipos. `03_CANERIAS` lleva seis planos de cañerías y de ubicación de
@@ -38,7 +39,7 @@ soportes, el Cuadernillo de Isometrías (once isometrías en 31 hojas), el Cuade
 (21 páginas), la especificación técnica de cañerías de fabricación P22-ET-06-006-001 y los listados
 de líneas, materiales y válvulas. `04_ MODELO` lleva el modelo 3D en Navisworks, en dos archivos publicados el 8 de septiembre de 2026: `MODULO COMPLETO.nwd`, de 21 megabytes, que federa la maqueta mecánica y el modelo civil, y `MODULO COMPLETO (nube puntos).nwd`, el mismo conjunto con la nube de puntos del levantamiento de terreno. Este último pesa 6,4 gigabytes y se entrega por enlace, no dentro del comprimido. Para el trabajo corriente de coordinación basta el primero.
 
-**2. OBRAS CIVILES**, 18 láminas y 2 especificaciones técnicas. Diez láminas están en revisión 0
+**2. OBRAS CIVILES**, 18 láminas con sus 17 archivos DWG y 2 especificaciones técnicas. Diez láminas están en revisión 0
 apta para construcción y ocho en revisión 1: P22-DWG-00-001-001 LAM1 y LAM2, P22-DWG-00-002-001,
 P22-DWG-00-002-002 LAM1 y LAM4, P22-DWG-00-002-003 LAM1, y P22-DWG-00-002-007 LAM1 y LAM2. Las dos especificaciones, de Movimiento de Tierra y de
 Obras Civiles, van en revisión 1. Las memorias de cálculo de obras civiles no forman parte del
@@ -48,9 +49,10 @@ paquete.
 BH-06-001, con sus anexos. El anexo A13, de montaje de cañerías HDPE PE100 por electrofusión,
 cuyo anexo es el Listado de Materiales en revisión 1.
 
-Los documentos van en PDF, los listados en Excel y el modelo en Navisworks. Los planos editables en
-formato DWG no se incluyen y se entregan a pedido. Para distribuir el paquete conviene comprimirlo,
-dado que algunas rutas internas del dossier mecánico son largas.
+Cada plano va en PDF y en su archivo nativo DWG, de la misma revisión, en la misma carpeta y con el
+mismo nombre. El DWG del P22-DWG-00-001-001 contiene sus dos láminas y el Cuadernillo de Soportes
+lleva dos DWG. Los listados van en Excel y el modelo en Navisworks. Para distribuir el paquete
+conviene comprimirlo, dado que algunas rutas internas del dossier mecánico son largas.
 
 # Documentos de referencia
 
@@ -101,7 +103,7 @@ P22-DWG-06-006-102, los tres en revisión 1.
 
 La fundación de los equipos del sistema CIP se reduce de 4,13 a 2,63 metros cúbicos de
 hormigón G25, con lo que el total de hormigón de la zona baja de 7,36 a 5,80 metros cúbicos
-y la excavación de dicha zona de 5,01 a 1,60 metros cúbicos.
+y la excavación de dicha zona de 5,01 a 1,03 metros cúbicos.
 
 El rediseño incorpora una junta de dilatación entre elementos de fundación. Se ejecuta con
 poliestireno expandido de 2,5 centímetros de espesor, sello Sikaflex 1A y primer VP-215
@@ -112,8 +114,11 @@ LAM2, también en revisión 1.
 ## El movimiento de tierra recoge el nivel nuevo
 
 Con la fundación del contenedor 250 milímetros más alta, la excavación de esa zona baja de 38,02 a
-20,95 metros cúbicos, sobre un área que pasa de 53,51 a 49,96 metros cuadrados. Rige el
-P22-DWG-00-001-001 en revisión 1, con la planta en la LAM1 y las secciones en la LAM2.
+20,95 metros cúbicos, sobre un área que pasa de 53,51 a 49,96 metros cuadrados. La excavación del
+estanque TK-06-001 sube de 4,22 a 4,84 metros cúbicos, porque su fondo baja al sello de fundación
+menos el emplantillado. Rige el P22-DWG-00-001-001 en revisión 1, con la planta en la LAM1 y las
+secciones en la LAM2, cuyo cuadro de cubicaciones coincide con el cuadro de excavación de cada
+plano de fundación.
 
 Las cantidades de excavación que rigen para la obra son las siguientes, cada una tomada del plano que
 gobierna su zona.
@@ -122,21 +127,22 @@ gobierna su zona.
 |---|---|---|
 | Trazado 1 | 5,22 m³ | P22-DWG-00-001-001 LAM1 |
 | Trazado 2 | 34,91 m³ | P22-DWG-00-001-001 LAM1 |
-| Fundación del estanque TK-06-001 | 4,22 m³ | P22-DWG-00-002-002 LAM1 |
+| Fundación del estanque TK-06-001 | 4,84 m³ | P22-DWG-00-002-002 LAM1 |
 | Fosa de drenajes TK-06-004 | 3,71 m³ | P22-DWG-00-002-004 LAM1 |
 | Fundación de la bomba BH-06-001 | 0,62 m³ | P22-DWG-00-002-002 LAM4 |
-| Fundación del sistema CIP | 1,60 m³ | P22-DWG-00-002-007 LAM1 |
+| Fundación del sistema CIP | 1,03 m³ | P22-DWG-00-002-007 LAM1 |
 | Fundación de la cubierta del sistema CIP | 4,25 m³ | P22-DWG-00-002-007 LAM3 |
 | Fundación del contenedor | 20,95 m³ | P22-DWG-00-001-001 LAM1 |
-| **Total excavado** | **75,48 m³** | |
+| **Total excavado** | **75,53 m³** | |
 
-El fondo de excavación se lleva hasta el nivel de sello de fundación menos el espesor de la capa que
-va bajo el sello. Son las cotas 5,35 en el contenedor, 5,45 en el sistema CIP, 5,30 en el estanque
-TK-06-001 y 4,155 en la fosa TK-06-004, donde el mejoramiento es de 15 centímetros y no el
-emplantillado de 5 de las demás fundaciones.
+El fondo de excavación se lleva hasta el nivel de sello de fundación menos el emplantillado de 5
+centímetros. Son las cotas 5,35 en el contenedor, 5,45 en el sistema CIP, 5,30 en el estanque
+TK-06-001 y 4,255 en la fosa TK-06-004.
 
-Los rellenos no cambian: 9,00 metros cúbicos de relleno seleccionado de arena y 29,69 de relleno
-estructural. Las cantidades de los cuadros son referenciales y se validan en terreno.
+Los rellenos del trazado no cambian: 9,00 metros cúbicos de relleno seleccionado de arena y 29,69
+de relleno estructural. El relleno alrededor de la fundación del contenedor baja de 30,03 a 13,96
+metros cúbicos, según el cuadro del P22-DWG-00-002-003 LAM1. Las cantidades de los cuadros son
+referenciales y se validan en terreno.
 
 ## El listado de materiales cambia accesorios y material de brida
 
@@ -191,7 +197,7 @@ El resto se mantiene en la revisión con la que se cotizó.
 | P22-LI-06-006-102 | 1 | Listado de materiales de cañerías |
 | P22-LI-06-008-101 | 1 | Listado de instrumentos |
 
-En obras civiles cambian de revisión las cinco láminas ya indicadas y las dos especificaciones
+En obras civiles cambian de revisión las ocho láminas ya indicadas y las dos especificaciones
 técnicas.
 
 # Efecto sobre las partidas del Formato de Presupuesto
@@ -205,9 +211,11 @@ sus cantidades cotizada y vigente, importada de la lista `CUBICACIONES`. Las dos
 la 4.2 Fundación sistema CIP (F2b), de 7,36 a 5,80 metros cúbicos, y la 4.6 Excavación común en
 fundaciones y zanjas de drenaje, de 115,10 a 90,58.
 
-La cantidad de la partida 4.6 se mide con el mismo criterio con que se cotizó, esto es, sobre el volumen retirado con el veinte por ciento de esponjamiento que declaran los cuadros de excavación de los planos. El volumen excavado que la sustenta es de 75,48 metros cúbicos.
+La cantidad de la partida 4.6 se mide con el mismo criterio con que se cotizó, esto es, sobre el volumen retirado con el veinte por ciento de esponjamiento que declaran los cuadros de excavación de los planos. El volumen excavado que la sustenta es de 75,53 metros cúbicos.
 
-Las demás partidas del Capítulo 4 mantienen su cantidad. Las del Capítulo 1 tampoco cambian.
+Las demás partidas del Capítulo 4 mantienen su cantidad referencial. La 4.7 Relleno compactado con
+material seleccionado y base estabilizada se mide por unidad de obra, de modo que recoge en
+terreno la reducción del relleno del contenedor. Las del Capítulo 1 tampoco cambian.
 Los 67 soportes de los once tipos del cuadernillo P22-DWG-06-006-107 se mantienen, dado que
 dicho cuadernillo y los planos de ubicación de soportes P22-DWG-06-006-105 y P22-DWG-06-006-106
 conservan su revisión 0.

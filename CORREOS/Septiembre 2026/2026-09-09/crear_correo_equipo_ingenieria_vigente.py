@@ -80,17 +80,18 @@ def crear_correo():
     doc.add_paragraph()
 
     parrafo(doc,
-        "El paquete reúne 55 documentos en 88 archivos: la ingeniería de detalle mecánica, las "
+        "El paquete reúne 55 documentos en 154 archivos: la ingeniería de detalle mecánica, las "
         "18 láminas y 2 especificaciones de obras civiles, y las dos especificaciones de "
-        "montaje. La nota es el único documento de control y lleva la tabla de vigencia "
-        "completa, documento por documento, con la revisión que rige.")
+        "montaje, con cada plano en PDF y en su archivo nativo DWG. La nota es el único "
+        "documento de control y lleva la tabla de vigencia completa, documento por documento, "
+        "con la revisión que rige.")
     doc.add_paragraph()
 
     parrafo(doc,
         "Lo que cambió respecto de la ingeniería con la que se cotizó: el módulo subió 250 "
         "milímetros y con él las cuatro cotas de conexión. Dos partidas del Capítulo 4 bajan de "
         "cantidad, la fundación del sistema CIP (4.2) de 7,36 a 5,80 metros cúbicos y la "
-        "excavación común (4.6) de 115,10 a 90,58. Las dos se miden por unidad de obra, de modo "
+        "excavación común (4.6) de 115,10 a 90,64. Las dos se miden por unidad de obra, de modo "
         "que se pagan según lo realmente ejecutado.")
     doc.add_paragraph()
 

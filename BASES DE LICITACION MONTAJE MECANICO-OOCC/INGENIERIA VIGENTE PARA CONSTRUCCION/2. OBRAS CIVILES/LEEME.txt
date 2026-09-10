@@ -1,9 +1,11 @@
 2. OBRAS CIVILES — ingenieria vigente para construccion
-Fecha: 09-09-2026
+Fecha: 10-09-2026
 ================================================================================
 
 CONTENIDO
-  PLANOS   18 laminas: diez en revision 0 apta para construccion y ocho en revision 1.
+  PLANOS   18 laminas en PDF, con sus 17 archivos DWG: diez laminas en revision 0 apta
+           para construccion y ocho en revision 1. Cada DWG va junto a su PDF con el
+           mismo nombre; el P22-DWG-00-001-001_1.dwg contiene las laminas 1 y 2.
   ET        2 especificaciones tecnicas, ambas en revision 1:
               P22-ET-00-010-101  Movimiento de Tierra
               P22-ET-00-010-102  Obras Civiles
@@ -12,34 +14,39 @@ CONTENIDO
 
 LAS OCHO LAMINAS EN REVISION 1
 
-  Carta del proyectista 067-032-032-COR-TT-013 del 03-09-2026:
-
-    P22-DWG-00-002-002 LAM1   Fundacion del estanque TK-06-001
-    P22-DWG-00-002-002 LAM4   Fundacion de la bomba BH-06-001
-    P22-DWG-00-002-003 LAM1   Fundacion del contenedor del modulo, formas
-    P22-DWG-00-002-007 LAM1   Fundacion del sistema CIP, formas
-    P22-DWG-00-002-007 LAM2   Fundacion del sistema CIP, armaduras
-
-  Carta 067-032-032-COR-TT-014 del 07-09-2026:
+  Carta del proyectista 067-032-032-COR-TT-014 del 07-09-2026:
 
     P22-DWG-00-002-001        Implantacion general, planta georeferenciada y cortes
 
-  Carta 067-032-032-COR-TT-015 del 08-09-2026:
+  Carta 067-032-032-COR-TT-013 del 03-09-2026:
+
+    P22-DWG-00-002-002 LAM4   Fundacion de la bomba BH-06-001
+    P22-DWG-00-002-007 LAM2   Fundacion del sistema CIP, armaduras
+
+  Carta 067-032-032-COR-TT-016 del 10-09-2026, que reemite en la misma revision 1 y
+  reemplaza a las emisiones de las cartas TT-013 y TT-015:
 
     P22-DWG-00-001-001 LAM1   Excavaciones y movimiento de tierras, planta general
     P22-DWG-00-001-001 LAM2   Excavaciones y movimiento de tierras, secciones y detalle
+    P22-DWG-00-002-002 LAM1   Fundacion del estanque TK-06-001
+    P22-DWG-00-002-003 LAM1   Fundacion del contenedor del modulo, formas
+    P22-DWG-00-002-007 LAM1   Fundacion del sistema CIP, formas
+
+  Para cada lamina rige la emision de este paquete; una copia anterior con el mismo
+  numero de revision queda reemplazada.
 
 QUE CAMBIA
 
   La fundacion del contenedor sube 250 mm: cara superior de la cota +6,050 a la +6,300 y
-  sello de fundacion de la +5,150 a la +5,400. Geometria y armadura sin cambio, y su
-  cubicacion de hormigon tampoco cambia.
+  sello de fundacion de la +5,150 a la +5,400. Geometria, armadura y hormigon sin cambio;
+  su excavacion se dimensiona sobre el sello nuevo, 20,95 m3, y su relleno baja de 30,03
+  a 13,96 m3.
 
   La fundacion de los equipos del sistema CIP baja de 4,13 a 2,63 m3 de hormigon G25 y el
   total de la zona de 7,36 a 5,80 m3. Entra una junta de dilatacion entre elementos de
   fundacion: poliestireno expandido de 2,5 cm, sello Sikaflex 1A y primer VP-215 en ambas
   paredes. La armadura de la zona se renumera completa, de las marcas 1201 a 1204 a las
-  1211 a 1216.
+  1211 a 1216. La excavacion de la zona queda en 1,03 m3.
 
   La implantacion general actualiza las COORDENADAS UTM DE REPLANTEO de once de los trece
   vertices. El desplazamiento mayor es el del vertice V13, que se corre unos 6 m en el
@@ -48,34 +55,36 @@ QUE CAMBIA
 
   El movimiento de tierra recoge el sello nuevo. La excavacion del contenedor baja de
   38,02 a 20,95 m3, sobre un area que pasa de 53,51 a 49,96 m2, y la de la zona del sistema
-  CIP de 5,01 a 1,03 m3. El fondo de excavacion del contenedor sube de la cota 5,15 a la
-  5,35, que es el sello +5,400 menos el emplantillado de 5 cm. Los rellenos no cambian.
+  CIP de 5,01 a 1,03 m3. La del estanque sube de 4,22 a 4,84 m3 porque su fondo baja al
+  sello menos el emplantillado. El cuadro de cubicaciones de la lamina 1 pasa a diez
+  items e incorpora la excavacion de la fundacion de la bomba y la de la fundacion de la
+  cubierta del sistema CIP. Los rellenos del trazado no cambian.
 
-  Las laminas del estanque y de la bomba solo cambian la fecha del cajetin; su cubicacion
-  es identica.
+  La lamina de la bomba solo cambia la fecha del cajetin; su cubicacion es identica.
 
 CANTIDADES DE MOVIMIENTO DE TIERRA
 
-  Cada cantidad se toma del plano que gobierna su zona.
+  El cuadro de cubicaciones del P22-DWG-00-001-001 LAM1 coincide con el cuadro de
+  excavacion del plano de fundacion de cada zona.
 
     Trazado 1                                    5,22 m3    00-001-001 LAM1
     Trazado 2                                   34,91 m3    00-001-001 LAM1
-    Fundacion del estanque TK-06-001             4,22 m3    00-002-002 LAM1
+    Fundacion del estanque TK-06-001             4,84 m3    00-002-002 LAM1
     Fosa de drenajes TK-06-004                   3,71 m3    00-002-004 LAM1
     Fundacion de la bomba BH-06-001              0,62 m3    00-002-002 LAM4
-    Fundacion del sistema CIP                    1,60 m3    00-002-007 LAM1
+    Fundacion del sistema CIP                    1,03 m3    00-002-007 LAM1
     Fundacion de la cubierta del sistema CIP     4,25 m3    00-002-007 LAM3
-    Fundacion del contenedor                    20,95 m3    00-001-001 LAM1
+    Fundacion del contenedor                    20,95 m3    00-002-003 LAM1
     ------------------------------------------------------------------------
-    Total excavado                              75,48 m3
+    Total excavado                              75,53 m3
 
-  Rellenos: 9,00 m3 de relleno seleccionado de arena y 29,69 m3 de relleno estructural,
-  segun el cuadro del P22-DWG-00-001-001 LAM1.
+  Rellenos del trazado: 9,00 m3 de relleno seleccionado de arena y 29,69 m3 de relleno
+  estructural, segun el cuadro del P22-DWG-00-001-001 LAM1. El relleno de cada fundacion
+  esta en el cuadro de su plano.
 
-  El fondo de excavacion se lleva hasta el nivel de sello de fundacion menos el espesor de
-  la capa que va bajo el sello: cota 5,35 en el contenedor, 5,45 en el sistema CIP, 5,30 en
-  el estanque TK-06-001 y 4,155 en la fosa TK-06-004, donde el mejoramiento es de 15 cm y
-  no el emplantillado de 5 de las demas fundaciones.
+  El fondo de excavacion se lleva hasta el nivel de sello de fundacion menos el
+  emplantillado de 5 cm: cota 5,35 en el contenedor, 5,45 en el sistema CIP, 5,30 en el
+  estanque TK-06-001 y 4,255 en la fosa TK-06-004.
 
   Las cantidades de los cuadros son referenciales, se validan en terreno y no consideran
   esponjamiento. Las partidas de excavacion y de relleno se miden por unidad de obra y se
@@ -83,7 +92,7 @@ CANTIDADES DE MOVIMIENTO DE TIERRA
 
 ESTADO DE EMISION
 
-  Las tres cartas de remision del proyectista declaran las ocho laminas en revision 1
+  Las cartas de remision del proyectista declaran las ocho laminas en revision 1
   "Para Construccion", y las diez laminas en revision 0 lo declaran en su cajetin. Las
   dieciocho rigen para construccion.
 

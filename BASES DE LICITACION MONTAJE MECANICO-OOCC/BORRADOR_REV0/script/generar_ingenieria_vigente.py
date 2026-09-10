@@ -109,20 +109,20 @@ MECANICA = [
 
 CIVIL_CAMBIA = [
     ("P22-DWG-00-002-002", "LAM1", "Fundaciones de equipos exteriores, fundacion del estanque TK-06-001", "0", "1",
-     "Carta 067-032-032-COR-TT-013, 03-09-2026",
-     "Solo fecha y escala del cajetin. Cubicacion identica: 6,03 m3 de G25, 0,50 m3 de G10, excavacion 4,22 m3 y retiro 5,06 m3.",
-     "No", P_ESTANQUE),
+     "Carta 067-032-032-COR-TT-016, 10-09-2026 (reemite la Rev 1 de la carta TT-013, 03-09-2026)",
+     "Cubicacion de hormigon identica: 6,03 m3 de G25 y 0,50 m3 de G10. La excavacion sube de 4,22 a 4,84 m3 y el retiro de 5,06 a 5,81, porque el fondo de excavacion baja al sello +5,350 menos el emplantillado de 5 cm, en coherencia con el plano de movimiento de tierra.",
+     "Si", P_ESTANQUE + " (cantidad sin cambio) y " + P_EXCAV),
     ("P22-DWG-00-002-002", "LAM4", "Fundaciones de equipos exteriores, fundacion de la bomba BH-06-001", "0", "1",
      "Carta 067-032-032-COR-TT-013, 03-09-2026",
      "Solo fecha del cajetin. Cubicacion identica: 0,95 m3 de G25, excavacion 0,62 m3 y retiro 0,75 m3.",
      "No", P_BOMBA),
     ("P22-DWG-00-002-003", "LAM1", "Fundacion del contenedor del modulo, formas", "0", "1",
-     "Carta 067-032-032-COR-TT-013, 03-09-2026",
-     "Las cotas suben 250 mm: cara superior de +6,050 a +6,300 y sello de +5,150 a +5,400. Geometria y armadura iguales: diez pedestales de 1,00 x 1,00 m en cinco ejes separados 3,00 m, unidos por vigas de 30 x 30 cm. La cubicacion declarada no cambia: 7,52 m3 de G25, 0,83 m3 de G10, excavacion 38,02 m3, retiro 45,62 m3 y relleno 30,03 m3.",
-     "Si", P_CONTENEDOR + " (cantidad sin cambio)"),
+     "Carta 067-032-032-COR-TT-016, 10-09-2026 (reemite la Rev 1 de la carta TT-013, 03-09-2026)",
+     "Las cotas suben 250 mm: cara superior de +6,050 a +6,300 y sello de +5,150 a +5,400. Geometria y armadura iguales: diez pedestales de 1,00 x 1,00 m en cinco ejes separados 3,00 m, unidos por vigas de 30 x 30 cm. Hormigon sin cambio: 7,52 m3 de G25 y 0,83 m3 de G10. El cuadro de excavacion se dimensiona sobre el sello nuevo: excavacion de 38,02 a 20,95 m3, retiro de 45,62 a 25,14 y relleno de 30,03 a 13,96, coincidente con el plano de movimiento de tierra.",
+     "Si", P_CONTENEDOR + " (cantidad sin cambio) y " + P_EXCAV),
     ("P22-DWG-00-002-007", "LAM1", "Fundacion del sistema CIP, formas", "0", "1",
-     "Carta 067-032-032-COR-TT-013, 03-09-2026",
-     "La fundacion de los equipos se rediseña y se reduce de 4,13 a 2,63 m3 de G25. Entra una junta de dilatacion entre elementos de fundacion: poliestireno expandido de 2,5 cm, sello Sikaflex 1A y primer VP-215 en ambas paredes. El total de G25 de la zona baja de 7,36 a 5,80 m3 y la excavacion de 5,01 a 1,60 m3. La disposicion y las dimensiones de los pernos de anclaje quedan definidas.",
+     "Carta 067-032-032-COR-TT-016, 10-09-2026 (reemite la Rev 1 de la carta TT-013, 03-09-2026)",
+     "La fundacion de los equipos se rediseña y se reduce de 4,13 a 2,63 m3 de G25. Entra una junta de dilatacion entre elementos de fundacion: poliestireno expandido de 2,5 cm, sello Sikaflex 1A y primer VP-215 en ambas paredes. El total de G25 de la zona baja de 7,36 a 5,80 m3 y la excavacion de 5,01 a 1,03 m3 (retiro 1,24), coincidente con el plano de movimiento de tierra. La disposicion y las dimensiones de los pernos de anclaje quedan definidas.",
      "Si", P_CIP + " y " + P_EXCAV),
     ("P22-DWG-00-002-007", "LAM2", "Fundacion del sistema CIP, armaduras", "0", "1",
      "Carta 067-032-032-COR-TT-013, 03-09-2026",
@@ -133,12 +133,12 @@ CIVIL_CAMBIA = [
      "Actualiza las coordenadas UTM de once de los trece vertices de replanteo. El mayor desplazamiento es el del vertice V13, de Norte 7.188.940,939 Este 350.112,089 a Norte 7.188.940,098 Este 350.118,124, unos 6 m en el Este. Los vertices V04 y V05 no cambian. El nivel de terreno natural por zona se mantiene.",
      "Si", "Replanteo de todas las partidas del Capitulo 4"),
     ("P22-DWG-00-001-001", "LAM1", "Excavaciones y movimiento de tierras, planta general", "0", "1",
-     "Carta 067-032-032-COR-TT-015, 08-09-2026",
-     "El cuadro de cubicaciones recoge el sello nuevo: la excavacion del contenedor baja de 38,02 a 20,95 m3 sobre un area que pasa de 53,51 a 49,96 m2, y la de la zona CIP de 5,01 a 1,03 m3. Los rellenos no cambian. Quedan abiertos con el proyectista dos puntos que afectan la cantidad: el cuadro contradice al 00-002-003 LAM1, que mantiene 38,02, y al 00-002-007 LAM1, que declara 1,60 para la zona CIP; y el cuadro no cubica la excavacion de la fundacion de la bomba BH-06-001 ni la de la fundacion de la cubierta del sistema CIP.",
+     "Carta 067-032-032-COR-TT-016, 10-09-2026 (reemite la Rev 1 de la carta TT-015, 08-09-2026)",
+     "El cuadro de cubicaciones pasa de ocho a diez items y recoge el sello nuevo: la excavacion del contenedor baja de 38,02 a 20,95 m3 sobre un area que pasa de 53,51 a 49,96 m2, la de la zona CIP de 5,01 a 1,03 m3, y la del estanque sube de 4,22 a 4,84 m3. Entran la excavacion de la fundacion de la bomba BH-06-001, 0,62 m3, y la de la fundacion de la cubierta del sistema CIP, 4,25 m3. Todas las cifras coinciden con el cuadro del plano de fundacion de su zona. Los rellenos del trazado no cambian.",
      "Si", P_EXCAV),
     ("P22-DWG-00-001-001", "LAM2", "Excavaciones y movimiento de tierras, secciones y detalle", "0", "1",
-     "Carta 067-032-032-COR-TT-015, 08-09-2026",
-     "El fondo de excavacion del contenedor sube de EL. 5,15 a EL. 5,35, consistente con el sello +5,400 menos el emplantillado de 5 cm. Se corrige el ancho superior de la excavacion del estanque, de 3,4 a 3,7 m. El fondo de excavacion del estanque y el de la fosa quedan sobre el criterio anterior, coincidentes con su propio sello y sin descontar la capa inferior. Pendiente con el proyectista.",
+     "Carta 067-032-032-COR-TT-016, 10-09-2026 (reemite la Rev 1 de la carta TT-015, 08-09-2026)",
+     "El fondo de excavacion del contenedor sube de EL. 5,15 a EL. 5,35 y el del estanque baja de EL. 5,35 a EL. 5,30, cada uno igual a su sello de fundacion menos el emplantillado de 5 cm. En la fosa TK-06-004 la seccion B acota EL. 4,30, el sello +4,305 del P22-DWG-00-002-004 LAM1 redondeado; bajo ese sello va emplantillado de 5 cm, no mejoramiento: el rotulo M.H.A. e=15 de ese plano es el muro de hormigon armado de la fosa.",
      "Si", P_EXCAV),
 ]
 
@@ -152,9 +152,9 @@ CUBICACIONES = [
     ("4.3", "Fundacion dinamica bomba BH-06-001 (F3)", "m3", 0.95, 0.95, "P22-DWG-00-002-002 LAM4 Rev 1"),
     ("4.4", "Fundacion estanque TK-06-001 (F4)", "m3", 6.33, 6.33, "P22-DWG-00-002-002 LAM1 Rev 1"),
     ("4.5", "Fundacion camara de drenajes TK-06-004 (F5)", "m3", 1.66, 1.66, "P22-DWG-00-002-004 Rev 0"),
-    ("4.6", "Excavacion comun en fundaciones y zanjas de drenaje", "m3", 115.1, 90.58, "P22-DWG-00-001-001 LAM1 Rev 1 y cuadros de excavacion de los planos de fundacion"),
+    ("4.6", "Excavacion comun en fundaciones y zanjas de drenaje", "m3", 115.1, 90.64, "P22-DWG-00-001-001 LAM1 Rev 1 y cuadros de excavacion de los planos de fundacion"),
     ("4.7", "Dados de hormigon G25 para pedestales de soportes a piso", "un", 17, 17, "P22-DWG-06-006-107 Rev 0"),
-    ("4.7", "Relleno compactado con material seleccionado y base estabilizada", "m3", 91.5, 91.5, "Cuadros de excavacion de los planos de fundacion"),
+    ("4.7", "Relleno compactado con material seleccionado y base estabilizada", "m3", 91.5, 91.5, "Referencial del itemizado del proyectista; se mide por obra ejecutada"),
     ("4.8", "Sistema de drenaje del modulo", "gl", 1, 1, "P22-DWG-00-002-006 Rev 0"),
     ("4.9", "Camaras de inspeccion prefabricadas", "un", 6, 6, "P22-DWG-00-002-006 Rev 0"),
     ("4.10", "Insertos y estructura embebida del contenedor RO", "kg", 405.66, 405.66, "P22-DWG-00-002-003 LAM2 Rev 0"),
@@ -265,7 +265,7 @@ def comprobar_vigencia_contra_paquete(tolerar_faltantes=False):
 
     archivos = [p for p in PAQUETE.rglob("*")
                 if p.is_file() and not p.name.startswith(".")
-                and p.suffix.lower() in {".pdf", ".xlsx", ".docx", ".nwd"}]
+                and p.suffix.lower() in {".pdf", ".xlsx", ".docx", ".nwd", ".dwg"}]
 
     errores = []
     for codigo, lamina, titulo, rev, _dossier in VIGENCIA:
@@ -362,7 +362,7 @@ def hoja_resumen(wb):
     ws.column_dimensions["B"].width = 62
     filas = [
         ("Paquete", "INGENIERIA VIGENTE PARA CONSTRUCCION, montaje mecanico y obras civiles"),
-        ("Fecha", "09-09-2026"),
+        ("Fecha", "10-09-2026"),
         ("Destinatario", "Contratista adjudicado. El contrato esta adjudicado y este paquete no reabre la licitacion."),
         ("Que rige", "Para cada codigo y lamina rige la revision que este paquete entrega, listada en la hoja Vigencia. Cualquier revision anterior del mismo documento queda reemplazada."),
         ("Que NO reemplaza", "Las Bases de Licitacion ni el Formato de Presupuesto, que son contractuales y no se reemiten. Este paquete lleva solo ingenieria."),

@@ -109,6 +109,16 @@ no sirve como verificacion.
 
 - [x] Cambiar el estado de BORRADOR a ENVIADO
 - [ ] Dejar el respaldo del enviado en esta carpeta con la hora
-- [ ] Abrir el compromiso de seguimiento con vencimiento el viernes 11 de septiembre
-- [ ] Pedir el archivo nativo al acusar la reemision
-- [ ] Registrar en la Bitacora del README
+- [x] Abrir el compromiso de seguimiento con vencimiento el viernes 11 de septiembre: no va al registro de compromisos, que es del contrato C-4300 con BW Water; el seguimiento vive en el analisis del P22-TM-00-010-005-0 y cerro el 10-09-2026 con la ENTREGA 15
+- [x] Pedir el archivo nativo al acusar la reemision: no hizo falta, la ENTREGA 15 lo trajo integro
+- [x] Registrar en la Bitacora del README
+
+## Respuesta de L&A (10-09-2026)
+
+L&A respondio con la ENTREGA 15 (carta `067-032-032-COR-TT-016`, 10-09-2026): las cinco laminas
+reemitidas en la misma revision 1 y sus cuatro DWG. Seis de las siete observaciones cierran de
+verdad; la OBS-05 la devolvio como "no aplica" con razon: el rotulo "M.H.A. e=15" del plano de la
+fosa es el muro de hormigon armado, no un mejoramiento de suelo, y bajo el sello va emplantillado
+de 5 cm como en las demas fundaciones. La verificacion completa esta en
+`INGENIERIA DE DETALLE OOCC/REVISIONES/TRANSMITTALES/P22-TM-00-010-005-0/_ANALISIS_TRABAJO.md`.
+Por decision del usuario no se responde a L&A: registro interno.

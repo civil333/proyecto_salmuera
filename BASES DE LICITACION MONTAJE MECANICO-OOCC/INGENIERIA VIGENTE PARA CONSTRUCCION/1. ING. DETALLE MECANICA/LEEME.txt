@@ -1,10 +1,17 @@
 1. ING. DETALLE MECANICA — ingenieria vigente para construccion
-Fecha: 09-09-2026
+Fecha: 10-09-2026
 ================================================================================
 
 CONTENIDO
-  59 archivos. Es el dossier mecanico completo, con las revisiones vigentes al
-  09-09-2026 incorporadas sobre el Compilado Rev 0.
+  108 archivos. Es el dossier mecanico completo, con las revisiones vigentes al
+  10-09-2026 incorporadas sobre el Compilado Rev 0: 50 planos en PDF con sus 49 archivos
+  DWG, 7 listados y hojas de datos en Excel y los 2 modelos Navisworks.
+
+NATIVOS DWG
+  Cada plano va en PDF y en su archivo nativo DWG, de la misma revision y en la misma
+  carpeta. El DWG lleva el nombre del PDF sin el sufijo de ploteo (-02, -PFD, -Model).
+  El Cuadernillo de Soportes P22-DWG-06-006-107 es un solo PDF de 21 paginas y dos DWG,
+  GR0 y GR1, que son los dos grupos de laminas con que el proyectista lo dibuja.
 
 QUE CAMBIA RESPECTO DE LA REVISION QUE SE COTIZO
   P22-DWG-06-005-103   revision 1   Plano de montaje del modulo
