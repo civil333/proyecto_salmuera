@@ -2,7 +2,7 @@
 
 Instrucciones operativas para Claude Code en el proyecto Modulo de Salmuera Taltal.
 
-**Version:** 6.32 | **Fecha:** 04-Sep-2026
+**Version:** 6.33 | **Fecha:** 10-Sep-2026
 
 > **Estado del proyecto, historial, baseline schedule y trazabilidad de documentos: ver [README.md](README.md)**
 
@@ -321,6 +321,8 @@ La revision previa se preserva fisicamente y visiblemente en el cajetin. Trazabi
 Reglas estables del paquete de licitacion `BASES DE LICITACION MONTAJE MECANICO-OOCC/` (codigo P22-BL-06-000-001-0). Estado operativo (revisiones, conteos, totales, fechas) en README.md; aprendizajes con contexto en las memorias citadas.
 
 - **Generacion:** el BL se regenera del `.md` fuente unico con `md_to_adasa_docx.py` (ver §3); el Formato (Anexo A9) con `generar_formato_presupuesto.py` (idempotente — respaldar el `.xlsx` antes de re-correr). Correr el `[CHEQUEO LAYOUT]` del conversor (v7.7: encuadre de figuras + anchos de columna) antes de distribuir; `revisor-docx` de respaldo. No re-iterar tamanos de figura ni anchos a mano (memoria `feedback_conversor_layout_check`).
+- **Paquete `INGENIERIA VIGENTE PARA CONSTRUCCION` (contrato adjudicado): cada plano viaja en PDF y en su DWG** de la misma revision, en la misma carpeta y con el mismo nombre base. Lo arma `construir_paquete_construccion.py` (argumento: la `NE°15.zip` de Van Doorn descomprimida con nombres cp437 a cp850) desde una tabla explicita de nativos: el DWG es el que viajo en la misma entrega que el PDF, nunca uno de otra revision (un nativo emitido solo en DWG queda fuera hasta que llegue su ploteo). Regla 4 del autochequeo: todo PDF con DWG apareado, cero DWG huerfanos, rutas comparadas en NFC (el NAS devuelve las tildes en NFD). El gate de vigencia de `generar_ingenieria_vigente.py` incluye `.dwg`. La Nota Tecnica de control lo declara en el contenido del paquete. Ver `project_bl_montaje_rev0_paquete`.
+- **Reemision del proyectista con la misma revision y contenido distinto:** rige la emision de la carta mas reciente, identificada por carta y fecha en la NT y en los LEEME; la anterior se archiva en `BORRADOR_REV0/_dossier_superseded_pre-<entrega>/` con el sufijo de su carta para que dos revisiones iguales no colisionen de nombre. La numeracion se objeta solo si la version anterior ya salio al contratista. Comparar las dos emisiones por superposicion y diff de la capa de texto, no por el cajetin. Ver `project_tm_oocc_005_hallazgos`.
 - **Cubierta metalica (cobertizo) CIP descopada:** en esta licitacion NO se construye la estructura metalica de la cubierta, **solo su fundacion** (24 pernos F-1554 3/4" colados + proteccion interina); el fierro lo ejecuta ADASA en etapa posterior. Los documentos del acero de la cubierta (DWG-00-003-001, MC-00-003-001, ET-00-010-103) quedan fuera del paquete (`_cubierta_excluida_del_paquete/`); la fundacion se mantiene en DWG-00-002-007 LAM3. Memoria `project_descope_cubierta_cip`.
 - **Memorias de calculo / itemizados / estimacion del consultor OOCC NO van al paquete** (decision del mandante): el dossier `5. OBRAS CIVILES (A2)` lleva solo planos + ET; la planilla economica es el Formato (A9). El BL/INDICE/LEEME no los referencian. SI se citan las memorias de **equipos** (Exfibro, KSB = base de cargas) y las **normas** (ACI 351/318 = criterio de diseno). Memoria `feedback_mc_oocc_fuera_del_paquete`.
 - **Soportes a piso:** solo los soportes con detalle de placa base cuadrada en planta van a piso (dado/pedestal de hormigon, partida Formato 4.7); el resto va anclado a muro (mensula) o a soporte existente, sin dado. Memoria `feedback_soportes_a_piso_placa_base`.
@@ -694,6 +696,6 @@ Ver `project_registro_compromisos`.
 
 ---
 
-*Version 6.32 — 4 de septiembre de 2026. Historial de cambios de metodologia: ver `git log CLAUDE.md` (este footer NO acumula changelog datado, per Seccion 12).*
+*Version 6.33 — 10 de septiembre de 2026. Historial de cambios de metodologia: ver `git log CLAUDE.md` (este footer NO acumula changelog datado, per Seccion 12).*
 
 > **Historial de cambios de metodologia:** ver `git log CLAUDE.md`. Trazabilidad operativa del proyecto (eventos, fechas, correos, schedule): [README.md](README.md). Aprendizajes no obvios: memorias del proyecto.
