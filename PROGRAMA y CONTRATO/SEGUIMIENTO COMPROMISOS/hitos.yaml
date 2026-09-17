@@ -44,7 +44,7 @@ hitos:
     ventana_fin: 2026-09-18
     firmeza: DECLARADO PROVEEDOR
     fuente: "Cronograma del 04-Ago-2026, ID 414 (11 dias). Baseline del Milestone Tracker: 13 al 18-Ago-2026"
-    estado_real: "Dos fuentes del proveedor discrepan: su correo del 28-Jul dice 'commencing 15 September' y su cronograma del 04-Ago pone 07 al 18-Sep. Manda el cronograma, que es el documento de control y coincide con el Dry Test del Fabrication Schedule del 03-Ago"
+    estado_real: "Dos fuentes del proveedor discrepan: su correo del 28-Jul dice 'commencing 15 September' y su cronograma del 04-Ago pone 07 al 18-Sep. Manda el cronograma, que es el documento de control y coincide con el Dry Test del Fabrication Schedule del 03-Ago Al 17-Sep-2026 la ventana quedo sin efecto: BW Water confirmo el 16 que el FAT no sera la semana del 21 y el 17 que lo reprogramara con el cronograma posterior al retrabajo de los spools (23 o 24-Sep). Sin ventana nueva escrita"
     consecuencia: "La ventana de 11 dias SI acomoda las 7 jornadas contratadas con Bureau Veritas, de modo que el reclamo por ventana insuficiente ya no se sostiene contra el cronograma. Lo que queda por exigir es que BW Water declare por escrito cual de sus dos fechas gobierna, porque el inspector se agenda por Bureau Veritas Chile con su oficina de Malasia y no se le puede comprometer la agenda sobre una ambiguedad de ocho dias"
     ref_compromiso: BV-13
 
