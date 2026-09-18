@@ -2172,18 +2172,18 @@ compromisos:
     beneficiario: ADASA
     compromiso: "Someter el procedimiento FAT del modulo (PROV-PROC-FAT-001) para aprobacion de ADASA antes de abrir el FAT"
     fecha_comprometida: 2026-09-18
-    estado: ABIERTO
+    estado: CERRADO PARCIAL
     criticidad: CRITICA
     criterio_cierre: "Procedimiento detallado del FAT del MODULO, con codigo de documento y revision, que cubra el alcance minimo completo de la ET Seccion 8.1: inspeccion visual, de completitud y dimensional; integridad del montaje mecanico; pruebas funcionales en seco; instrumentacion y control con loop checks y la simulacion avanzada con escenarios de falla; revision documental preliminar; conformidad SEC. Debe fijar ademas la secuencia de puntos de inspeccion de las filas 7.1 a 7.9 del ITP Rev 0. NO lo cierra el P22-PP-09-000-001 (PLC/LCP FAT Procedure - Hardware), cuya Section 3 excluye las pruebas funcionales de software y la verificacion de logica de proceso"
     fuente_contractual: "ET P22-ET-09-000-001-0 Seccion 8.1 - Alcance Minimo de Pruebas de Aceptacion en Fabrica, cuyo primer item es la aprobacion del procedimiento detallado y que exige registrar los resultados segun el Procedimiento de FAT aprobado. ITP P22-BA-09-000-004 Rev 0 (Codigo 1 en TM N26): fila 7.1 'Approval of Detailed FAT Procedure', Hold Point en la columna de ADASA; filas 7.2 a 7.5 y 7.9 (Acta de Aprobacion FAT) se ejecutan contra ese procedimiento"
     origen_fecha: FIJADA ADASA
     fecha_origen: 2026-05-05
-    fecha_cierre: null
+    fecha_cierre: 2026-09-18
     consecuencia: "Sin procedimiento aprobado el FAT no puede abrir formalmente: la fila 7.1 es Hold de ADASA. El FAT esta planificado para la semana del 21-Sep (usuario; Progress Update del 28-Ago, ID 419, del 15 al 25-Sep) con listo para despacho del 26 al 28-Sep, de modo que el procedimiento condiciona el FAT, el Acta de la fila 7.9 y la liberacion de despacho. Bajo la Clausula 37.2 la revision es de siete dias habiles: sometido el 18-Sep venceria despues del embarque del 28 Actualizacion 17-Sep-2026: el FAT ya no es la semana del 21-Sep; se reprograma con el cronograma que BW Water emitira al resolver los spools (23 o 24-Sep)"
     accion_adasa: "Correo ENVIADO el 16-Sep-2026 (CORREOS/Septiembre 2026/2026-09-16/, hilo nuevo 'URGENT - TALTAL: Module Factory Acceptance Test procedure required before the FAT', To Eduardo Yamauchi, CC siete de BW Water y Victor Gutierrez). Abre con la obligacion de la ET Seccion 8.1 y los pedidos escritos desde mayo, con tabla de trazabilidad de nueve filas (TM N17, N19, N20, N26, N34, Progress Update 28-Ago, N37, N38 y correo del 08-Sep); luego el estado y el Hold de la fila 7.1; luego por que el procedimiento del tablero Rev C no lo cubre; y fija el viernes 18-Sep. NO menciona el plazo de revision de ADASA, por decision del usuario. Superado el 17-Sep-2026: el TM N40 responde el procedimiento mismo. Plantilla del TM N40 lista (REVISIONES/TRANSMITTALES/P22-TM-09-000-040-0/), version ejecutiva solo del FAT y sin pendientes de transmittales anteriores por decision del usuario, con guia interna de revision, para que Victor Gutierrez revise y emita en Word durante la ausencia de Luis Rivera. Plazo de la Clausula 37.2: recibido el 18-Sep, vence el martes 29-Sep; objetivo interno, semana del 21-Sep"
     evidencia_origen: "TM N17 (05-May-2026) OBS-02 sobre el PQP Rev A: sin alcance ni procedimiento FAT. TM N19 (25-May-2026) Seccion 2.10: fechas firmes para los procedimientos Hydrostatic, Preservation y FAT. TM N20 (10-Jun-2026): sin entregar. TM N37 (31-Ago-2026) Seccion 3: exigido al 03-Sep, 'Never delivered'. TM N38 (03-Sep-2026) Seccion 3: 'Not received'. Correo del 08-Sep-2026 para la reunion del 09: fecha de emision pedida. Barrido de ENTREGAS_BWWATER E1 a E93 el 16-Sep-2026 (933 archivos por nombre, 390 PDF unicos por texto): no existe. El Quality Dossier Index Rev B (E77) lista el capitulo B11 'Factory Acceptance Test (FAT) Procedure' como la unica entrada de su seccion B sin codigo de documento"
-    evidencia_cierre: null
-    ref_cruzada: "BV-13, PRG-44, PRG-48"
+    evidencia_cierre: "E95, submittal 25007-0095 del 18-Sep-2026: P22-BA-09-000-017 Rev A Factory Acceptance Test Procedure, sometido para aprobacion en la fecha fijada. NO aprobado: Transmittal N40 (P22-TM-09-000-040-0, 18-Sep-2026) lo devuelve en Codigo 3, diez observaciones y dos notas; la Rev B se sigue en PRG-53"
+    ref_cruzada: "BV-13, PRG-44, PRG-48, PRG-53"
     reprogramaciones: 0
     historial_fechas: "Levantado por escrito desde el TM N17 del 05-May-2026 sin fecha comprometida por BW Water; exigido al 03-Sep-2026 en el TM N37 y no entregado. El 16-Sep-2026 ADASA FIJA el viernes 18-Sep-2026 con el correo enviado ese dia (origen FIJADA ADASA). Cuenta como fecha inicial del registro, no como reprogramacion El 17-Sep-2026 (minuta ADASA P22-MI-10-000-002-0, desde la transcripcion Plaud; no enviada al cierre) BW Water informo que el equipo de Penang preparo ese dia un procedimiento FAT basado en la Seccion 7 del ITP, en revision interna, y que si esa revision termina lo somete el 18-Sep. Mantiene la fecha: no cuenta como reprogramacion"
     nota: "NO se habia registrado como compromiso: el faltante vivia solo en las Secciones 3 de los TM N37 y N38, y el TM N39 lo dejo de arrastrar. El 18-Sep es feriado de Fiestas Patrias en Chile; para BW Water en Malasia es dia habil y el plazo se sostiene. El DDSR no sirve de evidencia de su ausencia porque no lista ningun procedimiento de calidad. El segundo FAT del tablero en Penang que BW Water comprometio en la hoja de comentarios del P22-PP-09-000-001 Rev C es otro ensayo y no cierra este compromiso En la reunion del 17-Sep ADASA pidio el procedimiento aun en version preliminar para compartirlo con Bureau Veritas y usarlo como base del procedimiento SIT de reconexion electrica en sitio: ese uso es pedido de ADASA, no requisito contractual. Verificado en la ET Seccion 8.1: los escenarios de falla simulados son obligatorios, pero los tres que nombra (perdida de senal de transmisor, disparo de bomba bajo carga, actuacion de valvula de seguridad) van como ejemplos"
@@ -2275,3 +2275,24 @@ compromisos:
     reprogramaciones: 0
     historial_fechas: "Comprometido para la semana del 21-Sep-2026, sin dia: SIN FECHA por la regla de no inferir fechas"
     nota: "El 16-Sep BW Water pidio cerrar las membranas, incluido su retiro, y los repuestos de dos anos; ADASA espera cerrarlo la semana del 21"
+  - id: PRG-53
+    frente: PROGRAMA
+    obligado: BW WATER
+    beneficiario: ADASA
+    compromiso: "Re-emitir el procedimiento FAT del modulo P22-BA-09-000-017 en Rev B, completo y ejecutable, para aprobacion de ADASA"
+    fecha_comprometida: 2026-09-25
+    estado: ABIERTO
+    criticidad: CRITICA
+    criterio_cierre: "Rev B recibida que incorpore las diez observaciones y dos notas del TM N40: hojas de prueba paso a paso con valores de aceptacion y formularios de registro en blanco por actividad 5.1 a 5.8; lista de loop checks de la I/O List Rev 6; escenarios de simulacion y de fallo contra la Control Philosophy Rev 1 y la Alarm and Interlock List Rev 0; prerrequisito de hidrostaticas aprobadas; matriz de responsabilidades; referencias por codigo y revision; un solo numero de documento. Cierra cuando ADASA la apruebe (Codigo 1 o 2) y con ella el Hold Point 7.1"
+    fuente_contractual: "ET P22-ET-09-000-001-0 Seccion 8.1 (procedimiento detallado, loop checks, escenarios de fallo obligatorios, protocolo especifico); BAE Clausula 31 a) (procedimiento detallado aprobado como Hold del 40 por ciento); ITP P22-BA-09-000-004 Rev 0 filas 7.1 (Hold de ADASA), 7.3, 7.4 y 7.5 (delegan al procedimiento los puntos clave, la secuencia y el detalle de la simulacion)"
+    origen_fecha: FIJADA ADASA
+    fecha_origen: 2026-09-18
+    fecha_cierre: null
+    consecuencia: "Sin procedimiento aprobado el FAT no abre formalmente (fila 7.1 Hold) y el tercero inspector no puede planificar el atestiguamiento; el FAT que BW Water apunta al 10-Oct depende de esta Rev B y de su aprobacion"
+    accion_adasa: "Si la Rev B no llega el 25-Sep, recordatorio el lunes 28 en la cadena del N40 y constancia en la Seccion 3 del N41 de que el Hold 7.1 sigue abierto; si llega como otro esqueleto, Codigo 3 de nuevo con la cita de la circularidad ITP-procedimiento del N40. Al recibirla, revisar contra _MARCO_REVISION_FAT_NO_ENVIAR.md seccion 2 (matriz de 27 filas) y aprobar solo si cada actividad trae paso, valor y formulario"
+    evidencia_origen: "Transmittal N40 (REVISIONES/TRANSMITTALES/P22-TM-09-000-040-0/), subseccion 2.1 y correo de cobertura del 18-Sep-2026 (CORREOS/Septiembre 2026/2026-09-18/), que fija el viernes 25-Sep-2026, cinco dias habiles de Malasia desde la emision"
+    evidencia_cierre: null
+    ref_cruzada: "PRG-50, BV-13"
+    reprogramaciones: 0
+    historial_fechas: "Fijada por ADASA el 18-Sep-2026 al viernes 25-Sep-2026 en el correo de cobertura del N40"
+    nota: "La Rev A llego el 18-Sep como esqueleto de diez paginas que repite las filas del ITP como encabezados. Codigo 3 sostenido por verificacion adversarial. El PDF anotado y el marco de revision viven en la carpeta del N40"
