@@ -2,7 +2,7 @@
 
 Instrucciones operativas para Claude Code en el proyecto Modulo de Salmuera Taltal.
 
-**Version:** 6.33 | **Fecha:** 10-Sep-2026
+**Version:** 6.34 | **Fecha:** 05-Oct-2026
 
 > **Estado del proyecto, historial, baseline schedule y trazabilidad de documentos: ver [README.md](README.md)**
 
@@ -321,7 +321,7 @@ La revision previa se preserva fisicamente y visiblemente en el cajetin. Trazabi
 Reglas estables del paquete de licitacion `BASES DE LICITACION MONTAJE MECANICO-OOCC/` (codigo P22-BL-06-000-001-0). Estado operativo (revisiones, conteos, totales, fechas) en README.md; aprendizajes con contexto en las memorias citadas.
 
 - **Generacion:** el BL se regenera del `.md` fuente unico con `md_to_adasa_docx.py` (ver §3); el Formato (Anexo A9) con `generar_formato_presupuesto.py` (idempotente — respaldar el `.xlsx` antes de re-correr). Correr el `[CHEQUEO LAYOUT]` del conversor (v7.7: encuadre de figuras + anchos de columna) antes de distribuir; `revisor-docx` de respaldo. No re-iterar tamanos de figura ni anchos a mano (memoria `feedback_conversor_layout_check`).
-- **Paquete `INGENIERIA VIGENTE PARA CONSTRUCCION` (contrato adjudicado): cada plano viaja en PDF y en su DWG** de la misma revision, en la misma carpeta y con el mismo nombre base. Lo arma `construir_paquete_construccion.py` (argumento: la `NE°15.zip` de Van Doorn descomprimida con nombres cp437 a cp850) desde una tabla explicita de nativos: el DWG es el que viajo en la misma entrega que el PDF, nunca uno de otra revision (un nativo emitido solo en DWG queda fuera hasta que llegue su ploteo). Regla 4 del autochequeo: todo PDF con DWG apareado, cero DWG huerfanos, rutas comparadas en NFC (el NAS devuelve las tildes en NFD). El gate de vigencia de `generar_ingenieria_vigente.py` incluye `.dwg`. La Nota Tecnica de control lo declara en el contenido del paquete. Ver `project_bl_montaje_rev0_paquete`.
+- **Paquete `INGENIERIA VIGENTE PARA CONSTRUCCION` (contrato adjudicado): cada plano viaja en PDF y en su DWG** de la misma revision, en la misma carpeta y con el mismo nombre base. Lo arma `construir_paquete_construccion.py` (argumento: el ZIP de la entrega vigente de Van Doorn, descomprimido con nombres cp437 a cp850; ver `project_bl_montaje_rev0_paquete`) desde una tabla explicita de nativos: el DWG es el que viajo en la misma entrega que el PDF, nunca uno de otra revision (un nativo emitido solo en DWG queda fuera hasta que llegue su ploteo). Regla 4 del autochequeo: todo PDF con DWG apareado, cero DWG huerfanos, rutas comparadas en NFC (el NAS devuelve las tildes en NFD). El gate de vigencia de `generar_ingenieria_vigente.py` incluye `.dwg`. La Nota Tecnica de control lo declara en el contenido del paquete. Ver `project_bl_montaje_rev0_paquete`.
 - **Reemision del proyectista con la misma revision y contenido distinto:** rige la emision de la carta mas reciente, identificada por carta y fecha en la NT y en los LEEME; la anterior se archiva en `BORRADOR_REV0/_dossier_superseded_pre-<entrega>/` con el sufijo de su carta para que dos revisiones iguales no colisionen de nombre. La numeracion se objeta solo si la version anterior ya salio al contratista. Comparar las dos emisiones por superposicion y diff de la capa de texto, no por el cajetin. Ver `project_tm_oocc_005_hallazgos`.
 - **Cubierta metalica (cobertizo) CIP descopada:** en esta licitacion NO se construye la estructura metalica de la cubierta, **solo su fundacion** (24 pernos F-1554 3/4" colados + proteccion interina); el fierro lo ejecuta ADASA en etapa posterior. Los documentos del acero de la cubierta (DWG-00-003-001, MC-00-003-001, ET-00-010-103) quedan fuera del paquete (`_cubierta_excluida_del_paquete/`); la fundacion se mantiene en DWG-00-002-007 LAM3. Memoria `project_descope_cubierta_cip`.
 - **Memorias de calculo / itemizados / estimacion del consultor OOCC NO van al paquete** (decision del mandante): el dossier `5. OBRAS CIVILES (A2)` lleva solo planos + ET; la planilla economica es el Formato (A9). El BL/INDICE/LEEME no los referencian. SI se citan las memorias de **equipos** (Exfibro, KSB = base de cargas) y las **normas** (ACI 351/318 = criterio de diseno). Memoria `feedback_mc_oocc_fuera_del_paquete`.
@@ -343,12 +343,12 @@ Un RFI de BW Water (form `25007-RO-RFI-NNNN`) se responde **llenando el mismo .d
 
 El PDF de un documento con TOC (transmittal, NT, consulta) **se genera abriendo el `.docx` en Microsoft Word y guardando como PDF**, porque el TOC es un campo de Word que **LibreOffice headless (`--convert-to pdf`) NO actualiza** — deja el placeholder "Right-click and select 'Update Field'". LibreOffice sirve solo para render de control interno, nunca para el PDF que se emite.
 
-- **Script (macOS):** `exportar_pdf_word_mac.sh` (raiz del proyecto). Uso: `./exportar_pdf_word_mac.sh "<entrada.docx>" ["<salida.pdf>"]`. Abre el docx en Word via `osascript`, **actualiza todas las tablas de contenido y campos**, hace `save as ... file format format PDF` y cierra. Verificado en el proyecto CURSO 19 TALLER AFE (equivalente Windows: `exportar_pdf_word.ps1`, Word COM).
+- **Script (macOS):** `_HERRAMIENTAS/exportar_pdf_word_mac.sh`. Uso: `./_HERRAMIENTAS/exportar_pdf_word_mac.sh "<entrada.docx>" ["<salida.pdf>"]`. Abre el docx en Word via `osascript`, **actualiza todas las tablas de contenido y campos**, hace `save as ... file format format PDF` y cierra. Equivalente Windows: `_HERRAMIENTAS/exportar_pdf_word.py`, Word COM.
 - **El directorio de paso debe ser una RUTA ESTABLE DENTRO DEL CONTENEDOR DE WORD**, `~/Library/Containers/com.microsoft.Word/Data/pdf_export`. Word corre en sandbox y ante cualquier ruta que el usuario no le haya autorizado levanta el dialogo Powerbox "Conceder acceso al archivo". Un `mktemp -d` produce una ruta nueva en cada corrida, de modo que la autorizacion nunca sirve para la siguiente y el dialogo aparece SIEMPRE; una carpeta fija en `/private/tmp` tampoco basta, porque sigue siendo ruta ajena al sandbox. Dentro de su contenedor Word entra sin pedir nada.
 - **No confundir ese dialogo con los otros dos.** El de **automatizacion** ("X quiere controlar Microsoft Word") se concede una vez en Ajustes del Sistema, Privacidad y seguridad, Automatizacion. El de **volumenes de red** aparece solo si Word toca `/Volumes/...`; con la escala no lo toca. Para saber cual es: `sqlite3 ~/Library/Application\ Support/com.apple.TCC/TCC.db "select service, client, auth_value from access where client like '%Word%';"`.
 - **Por que sigue habiendo escala aunque este equipo monte el NAS por SMB.** Sobre `/Volumes/` Word SI abre y guarda directo, sin -1708 (a diferencia de `~/Library/CloudStorage/`, donde es imposible y por eso existe el rodeo en el MacBook Pro). Pero hacerlo cuesta un permiso mas, porque Word no tiene acceso a volumenes de red. La escala se mantiene como default y el modo directo queda tras `WORD_DIRECTO=1`. El PDF termina igual en la carpeta del proyecto: lo mueve el shell, que si tiene el permiso.
 - **Gotchas (documentados en el script):** Word necesita permiso de Automation (System Settings > Privacy & Security > Automation) — la primera corrida puede pedir confirmacion; usar `open file name "<ruta posix>"` (no `open POSIX file`, que queda mudo); `save as` directo sobre `active document` (no via variable, da -1708); **espera activa a que aparezca el documento**, no un `delay` fijo, porque con Word arrancando en frio tres segundos no alcanzan; cerrar los documentos abiertos en Word antes de reconvertir.
-- **NO intentar automatizar el refresh del TOC con el puente UNO de LibreOffice** (rabbit hole; el usuario lo resolvio con Word real). Ver memoria global `reference_word_mac_pdf_export` (incluye el gotcha del lock `~$*.docx` ante -1712 y LibreOffice como fallback solo de medicion).
+- **NO intentar automatizar el refresh del TOC con el puente UNO de LibreOffice** (rabbit hole: lo resuelve Word real). Ver memoria global `reference_word_mac_pdf_export` (incluye el gotcha del lock `~$*.docx` ante -1712 y LibreOffice como fallback solo de medicion).
 
 ### 3.14 Revision de un entregable de modelo 3D (`.nwd`)
 
@@ -366,7 +366,7 @@ Esta seccion regula el correo **recibido**. La 3.4 regula el saliente y no aplic
 **Domicilio unico:** `CORREOS/_RECIBIDOS/`, con la convencion completa en su `_LEEME.md`, que es la **fuente unica** — tabla de ruteo, plantilla del `_correo.md`, reglas de nombre y deduplicacion. Ante discrepancia entre este CLAUDE.md y ese archivo, manda el `_LEEME.md`. Skill de operacion: **`correo-taltal`** (global), con el procedimiento de navegador en su `references/`.
 
 - **Alcance:** solo `@bw-water.com` y `@bureauveritas.com`, por dominio y no por lista de personas (las direcciones tienen capitalizacion inconsistente y hay alias cortos). Los scripts abortan con cualquier otro remitente.
-- **Se captura una vez; el payload va a su domicilio de siempre.** El `_correo.md` queda en `_RECIBIDOS/` con el puntero, y los adjuntos se rutean: submittal a `ENTREGAS_BWWATER/ENTREGA NN/`, request to witness a `REQUEST WITNESS INSPECTION/RWI NN/`, informes BV a `HITO BUREAU VERITAS/CORREOS VBV-BW/`, RFI a `PROGRAMA y CONTRATO/RFI/RFI N/`. No se duplican los arboles que ya usan el Master Register y los transmittals.
+- **Se captura una vez; el payload va a su domicilio de siempre.** El `_correo.md` queda en `_RECIBIDOS/` con el puntero, y los adjuntos se rutean: submittal a `ENTREGAS_BWWATER/ENTREGA NN/`, request to witness a `PROGRAMA y CONTRATO/HITO BUREAU VERITAS/03 SOLICITUDES BW (RWI)/RWI NNN AAAA-MM-DD/`, informes BV a `HITO BUREAU VERITAS/04 INFORMES BV/IRNNN AAAA-MM-DD/` (mapa del frente en su `_LEEME.md`), RFI a `PROGRAMA y CONTRATO/RFI/RFI N/`. No se duplican los arboles que ya usan el Master Register y los transmittals.
 - **`PAQUETE_INSPECCION_BV/` no se toca nunca.** Hay un enlace Synology publicado a Bureau Veritas; moverla o renombrarla rompe un enlace externo vivo. Si un correo trae version nueva de algo que esta ahi, queda en `adjuntos/` y se avisa.
 - **La lista real de la carpeta manda sobre la tabla del correo.** Cuando el submittal llega por enlace de OneDrive, la carpeta suele traer mas archivos de los que declara el cuerpo — tipicamente los **archivos nativos** de los planos, que el correo omite. El `_correo.md` se completa con lo que hay en la carpeta y **la diferencia se anota**: es informacion de revision. Archivar segun el correo deja archivos fuera del proyecto sin que nadie lo note (ver `feedback_correo_entrante_lista_real_manda`).
 - **Deduplicar por hash del contenido, nunca del contenedor** — misma regla que ya rige para los adjuntos de Outlook. `instalar_adjuntos.py` **se detiene** ante un archivo con mismo nombre y contenido distinto en vez de sobrescribir: eso es control de revisiones y es hallazgo.
@@ -497,7 +497,7 @@ Cada subseccion de documento en la Seccion 2 del transmittal cierra con un bloqu
 
 ### 6.5 Revision de la Hoja de Respuesta a Comentarios (CCS) — OBLIGATORIA
 
-Todo documento **re-revisado** de BW Water trae al final una **Consolidated Comment Sheet (CCS / Comment Sheet)** que declara cómo respondió a cada comentario de ADASA de la revisión anterior (columnas típicas: N° de comentario / comentario ADASA / respuesta BW Water / status). Aparece embebida como última(s) hoja(s) del documento (p.ej. Outline Rev C hoja 14; headers "Consolidated Comment Sheet" en Grounding/Instrument List; tag "(with CCS)"/"(with CSS)" en el DDSR).
+Todo documento **re-revisado** de BW Water trae al final una **Consolidated Comment Sheet (CCS / Comment Sheet)** que declara cómo respondió a cada comentario de ADASA de la revisión anterior (columnas típicas: N° de comentario / comentario ADASA / respuesta BW Water / status). Aparece embebida como última(s) hoja(s) del documento (como última hoja, con encabezado "Consolidated Comment Sheet", o marcada "(with CCS)" en el DDSR).
 
 **Norma: revisar la CCS ítem-por-ítem es obligatorio en cada transmittal.** Por cada comentario declarado en la CCS:
 
@@ -505,7 +505,7 @@ Todo documento **re-revisado** de BW Water trae al final una **Consolidated Comm
 2. **Verificar contra la fuente primaria** (el propio documento, la ET, la Oferta Rev1, el P&ID, la Line List aprobada) que el cambio **realmente se hizo** — NO tomar por buena la declaración "closed/addressed/complied" de BW Water.
 3. **Clasificar:** `cerrado real` / `declarado sin estarlo` / `parcial`.
 
-Un comentario **declarado cerrado sin estarlo** es hallazgo válido y **reincidente** — se levanta de nuevo citando que es la 2ª/3ª vez que se declara corregido (precedente: **gap 5.7.2.2 del HP/LP Pressure Test Procedure**, declarado corregido dos veces sin estarlo; y la **Line List "Rev 0" adjunta** que ordenaba 75 bar sobre PVC, un dato *nuevo* que la CCS no destacó — por eso la revisión de la CCS **no reemplaza** la verificación adversarial de lo que el proveedor *agregó*, §regla dura de revisión, ver memoria `feedback_verificacion_adversarial_encuentra_el_driver`). La CCS es además la fuente para poblar la columna "Responde a" de la disposición interna y para redactar el Status corto de la Sección 2 del transmittal (§3.2). Su ausencia en un documento que debía traerla es en sí una NOTE (calidad documental).
+Un comentario **declarado cerrado sin estarlo** es hallazgo válido y **reincidente** — se levanta de nuevo citando que es la 2ª/3ª vez que se declara corregido. La revisión de la CCS **no reemplaza** la verificación adversarial de lo que el proveedor *agregó*: un dato nuevo que la CCS no destaca puede ser el que fija el código (ver `feedback_verificacion_adversarial_encuentra_el_driver`; precedentes en `project_tm27_state` y `project_tm29_state`). La CCS es además la fuente para poblar la columna "Responde a" de la disposición interna y para redactar el Status corto de la Sección 2 del transmittal (§3.2). Su ausencia en un documento que debía traerla es en sí una NOTE (calidad documental).
 
 ---
 
@@ -576,7 +576,7 @@ Pt-100 en devanados Y rodamientos obligatorio en TODOS los motores. RTDs 3 hilos
 | Bases Tecnicas (ET, BAE, PIE) | `BASES TECNICAS/md/` |
 | Ingenieria Basica | `BASES TECNICAS/INGENIERIA BASICA/md/` |
 | Oferta Tecnica (Rev.1 VIGENTE) | `OFERTA TECNICA/md/` |
-| Contrato C-4300 | `PROGRAMA y CONTRATO/md/` |
+| Contrato C-4300 | `PROGRAMA y CONTRATO/CONTRATO C-4300/md/` |
 | Entregas BW Water | `ENTREGAS_BWWATER/ENTREGA X/md/` |
 
 ---
@@ -632,15 +632,13 @@ Otras letras de la 43.1: **c)** 0,1% diario por atraso en comisionamiento y pues
 
 ## 10. Listado Consolidado EVI
 
-**Script:** `generar_listado_consolidado.py` (raiz). **Output:** `LISTADO-CONSOLIDADO-EVI.xlsx`. Datos hardcoded.
-
-**EQUIPOS_06 = SOLO 4 items ADASA** (TK-06-001, TK-06-004, BH-06-001, BS-06-001 — ver README §1; TK-06-002 = Estanque CIP BW Water, NO ADASA). **NO duplicar equipos BW Water** (van en EQUIPOS_09 con fabricante/modelo/specs).
+**Archivado.** El listado EVI y el listado de activos ya no se usan; sus scripts y planillas estan en `_ARCHIVO/` con un `_LEEME.md`. Esos scripts rotulan la fosa de drenajes como TK-06-002: si alguna vez se reactivan, corregirla a TK-06-004 (ver Seccion 3.7).
 
 ---
 
 ## 11. Revision de Procurement vs Baseline
 
-**Carpeta:** `PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA <DD-MM-YY>/`. **Baseline:** ver README §"Baseline Schedule (05-Mar-2026)".
+**Carpeta:** `PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA <AAAA-MM-DD>/`. **Baseline:** ver README §"Baseline Schedule (05-Mar-2026)".
 
 **Status legend (BW Water tracker):** C=Committed (PO emitida), E=Enabled (Eng Code 1/2, PO pending), D=Delayed (PR/PO window cerrada sin PO, variance >10d, o blocker), N=Not in Window.
 
@@ -696,6 +694,6 @@ Ver `project_registro_compromisos`.
 
 ---
 
-*Version 6.33 — 10 de septiembre de 2026. Historial de cambios de metodologia: ver `git log CLAUDE.md` (este footer NO acumula changelog datado, per Seccion 12).*
+*Version 6.34 — 5 de octubre de 2026. Historial de cambios de metodologia: ver `git log CLAUDE.md` (este footer NO acumula changelog datado, per Seccion 12).*
 
 > **Historial de cambios de metodologia:** ver `git log CLAUDE.md`. Trazabilidad operativa del proyecto (eventos, fechas, correos, schedule): [README.md](README.md). Aprendizajes no obvios: memorias del proyecto.

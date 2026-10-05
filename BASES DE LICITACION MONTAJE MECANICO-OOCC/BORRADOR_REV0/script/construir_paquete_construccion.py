@@ -21,6 +21,11 @@ Reglas:
   - Una sola revision por codigo y lamina. Los superados se archivan, no se borran.
   - La cubierta metalica del sistema CIP quedo fuera de alcance el 18-Jun-2026 y sus
     documentos no entran al paquete.
+  - Los documentos de proveedor (5. EQUIPOS) viajan en el formato en que el fabricante los
+    emitio, sin ofertas comerciales, correos ni memorias de calculo.
+
+Despues del armado se corre generar_indice_paquete.py, que escribe 00_INDICE DEL PAQUETE.xlsx
+en la raiz del paquete.
 
 Uso: construir_paquete_construccion.py <carpeta con el NE°15.zip de Van Doorn descomprimido>
 """
@@ -52,6 +57,16 @@ OOCC13  = ENTOOCC / "ENTREGA 13" / "Plano"
 OOCC14  = ENTOOCC / "ENTREGA 14" / "Planos"
 OOCC15  = ENTOOCC / "ENTREGA 15" / "2026-09-10 TT-016 CIV, Act. PL (coment.) Rev.1" / "Planos"
 
+# Documentos que no emite el proyectista: el levantamiento del sitio y los planos y
+# folletos de proveedor de los equipos que suministra ADASA.
+ANT     = PROY / "INGENIERIA DE DETALLE OOCC" / "ANTECEDENTES"
+SITIO   = ANT / "01_SITIO" / "LEVANTAMIENTO_DIO_2026"
+EQUIPOS = ANT / "03_EQUIPOS_CON_IMPACTO_CIVIL"
+VALV    = PROY / "INGENIERIA DE DETALLE MECANICA" / "PLANOS VALVULAS"
+# ANTECEDENTES lleva la Rev C del estanque. Rige la Rev 0, que es la que citan el plano de
+# fundacion P22-DWG-00-002-002 LAM1 y el Anexo B de la ET A12.
+TK_REV0 = PROY / "INGENIERIA DE DETALLE MECANICA" / "PLANOS ESTANQUE" / "EX-26005-F01-Rev0_Copy.pdf"
+
 errores, copiados = [], 0
 PARES = {}        # PDF de plano en el paquete -> lista de DWG que lo acompanan (rutas destino)
 
@@ -64,14 +79,32 @@ def sha(p: Path) -> str:
     return h.hexdigest()
 
 
+def real(p: Path) -> Path:
+    """Ruta tal como existe en disco. El NAS guarda los nombres con tilde en NFD y los
+    literales del script van en NFC; en el montaje SMB de macOS la ruta en NFC no existe,
+    de modo que el tramo que no se encuentra se busca por su nombre normalizado."""
+    if p.exists() or p.parent == p:
+        return p
+    padre = real(p.parent)
+    objetivo = unicodedata.normalize("NFC", p.name)
+    if padre.is_dir():
+        for q in padre.iterdir():
+            if unicodedata.normalize("NFC", q.name) == objetivo:
+                return q
+    return padre / p.name
+
+
 def cp(src: Path, dst_dir: Path, nuevo_nombre: str = None):
-    """Copia verificando por SHA256. Devuelve la ruta destino, o None si fallo."""
+    """Copia verificando por SHA256. Devuelve la ruta destino, o None si fallo.
+    Fuente y destino se resuelven con real(): si el paquete ya tiene el archivo con otra
+    normalizacion, se sobrescribe ese y no se crea un segundo con el mismo nombre visible."""
     global copiados
+    src = real(src)
     if not src.exists():
         errores.append(f"FALTA FUENTE: {src}")
         return None
     dst_dir.mkdir(parents=True, exist_ok=True)
-    dst = dst_dir / (nuevo_nombre or src.name)
+    dst = real(dst_dir / (nuevo_nombre or src.name))
     shutil.copy2(src, dst)
     if sha(src) != sha(dst):
         errores.append(f"SHA256 NO COINCIDE: {dst}")
@@ -123,6 +156,33 @@ def dossier_et():
     cp(NE15 / "P22-LI-06-006-102-1 (LI Materiales).xlsx",
        o / "A13 - Montaje Canerias HDPE" / "anexos",
        "Anexo-A_P22-LI-06-006-102-1_LI-Materiales.xlsx")
+
+
+# --------------------------------------------------------------------------- 4. SITIO
+def dossier_sitio():
+    """Levantamiento del sitio de abril de 2026: plano de monografia en PDF y DWG, y el
+    ortomosaico. El PDF lleva el sufijo de ploteo -Layout1 y el DWG no."""
+    o = PKG / "4. SITIO"
+    cp_plano(SITIO / "PLANO MONOGRAFIA TALTAL-Layout1.pdf", o,
+             dwg=(SITIO / "PLANO MONOGRAFIA TALTAL.dwg", "PLANO MONOGRAFIA TALTAL.dwg"))
+    cp(SITIO / "DES TALTAL_transparent_mosaic_group1.tif", o)
+
+
+# --------------------------------------------------------------------------- 5. EQUIPOS
+def dossier_equipos():
+    """Planos y folletos de proveedor de los equipos que ADASA suministra al contratista.
+    Sin ofertas comerciales, correos ni memorias de calculo. El proveedor emitio DWG solo
+    para la bomba."""
+    o = PKG / "5. EQUIPOS"
+    cp(TK_REV0, o / "TK-06-001 ESTANQUE SALMUERA", "EX-26005-F01-Rev0.pdf")
+    bomba = EQUIPOS / "BH-06-001_BOMBA_ALIMENTACION"
+    # El DWG pasa a extension en minuscula: la regla 4 busca *.dwg y el glob distingue
+    # mayusculas.
+    cp_plano(bomba / "KSB-AAF-KNCPP11-050+160M_A.pdf", o / "BH-06-001 BOMBA ALIMENTACION",
+             dwg=(bomba / "KSB-AAF-KNCPP11-050+160M_A.DWG", "KSB-AAF-KNCPP11-050+160M_A.dwg"))
+    for n in ["ISORIA 10 844.1_11-30 folleto de la serie.pdf", "MS_MC.PDF",
+              "ALS200 - C230.pdf", "DWG-1206D-RV01.pdf"]:
+        cp(VALV / n, o / "VALVULAS")
 
 
 # --------------------------------------------------------------------------- 0. CONTROL DE CAMBIOS
@@ -294,7 +354,7 @@ def dossier_civil():
 
 
 def autochequeo():
-    """Cuatro reglas duras del paquete de construccion, verificadas sobre el arbol final."""
+    """Cinco reglas duras del paquete de construccion, verificadas sobre el arbol final."""
     from collections import defaultdict
 
     # 1. Una sola revision por codigo y lamina, en PDF, XLSX y DWG
@@ -316,10 +376,14 @@ def autochequeo():
         if f.is_file() and any(x in f.name for x in ("00-003-001", "MC-00-003-001", "ET-00-010-103")):
             errores.append(f"DOCUMENTO DE LA CUBIERTA EN EL PAQUETE: {f.name}")
 
-    # 3. Cero Bases de Licitacion y cero Formato de Presupuesto
+    # 3. Cero Bases de Licitacion, cero Formato de Presupuesto, y cero ofertas comerciales y
+    #    correos de proveedor, que traen los precios de las compras de ADASA
     for f in PKG.rglob("*"):
         if f.is_file() and ("BL_MONTAJE" in f.name or "Formato de Presupuesto" in f.name):
             errores.append(f"DOCUMENTO DE LICITACION EN EL PAQUETE: {f.name}")
+        if f.is_file() and (any(x in f.name for x in ("Oferta", "CV406762", "CV421060"))
+                            or f.suffix.lower() == ".msg"):
+            errores.append(f"OFERTA O CORREO DE PROVEEDOR EN EL PAQUETE: {f.name}")
 
     # 4. Cada plano en PDF tiene su DWG apareado y no hay DWG huerfano. Las rutas se
     #    comparan normalizadas a NFC: el NAS devuelve los nombres con tilde en NFD y los
@@ -340,15 +404,29 @@ def autochequeo():
     for d in sorted(dwgs - apareados):
         errores.append(f"DWG HUERFANO EN EL PAQUETE: {Path(d).name}")
 
+    # 5. Cada plano de proveedor tiene un solo contenido en todo el paquete. Los del estanque
+    #    y la bomba viajan en 5. EQUIPOS y tambien como anexos de la ET A12: si una de las dos
+    #    copias cambia de revision, el paquete llevaria dos planos distintos del mismo equipo.
+    vendor = defaultdict(set)
+    for f in PKG.rglob("*.pdf"):
+        for cod in ("EX-26005-F01", "KSB-AAF-KNCPP11-050+160M"):
+            if cod in f.name:
+                vendor[cod].add(sha(f))
+    for cod, hashes in sorted(vendor.items()):
+        if len(hashes) > 1:
+            errores.append(f"PLANO DE PROVEEDOR CON {len(hashes)} CONTENIDOS DISTINTOS: {cod}")
+
     if not errores:
         print(f"Autochequeo OK: {len(vistos)} codigos, una revision cada uno; sin cubierta; "
-              f"sin Bases ni Formato; {len(pdfs)} planos PDF con {len(dwgs)} DWG apareados.")
+              f"sin Bases, Formato ni ofertas; {len(pdfs)} planos PDF con {len(dwgs)} DWG "
+              f"apareados; {len(vendor)} planos de proveedor con un solo contenido.")
 
 
 if __name__ == "__main__":
     if NE15 is None or not NE15.exists():
         sys.exit("Uso: construir_paquete_construccion.py <carpeta con el NE°15.zip de Van Doorn descomprimido>")
-    for d in (dossier_mecanica, dossier_civil, dossier_et, dossier_control):
+    for d in (dossier_mecanica, dossier_civil, dossier_et, dossier_sitio, dossier_equipos,
+              dossier_control):
         d()
     print(f"Archivos copiados y verificados por SHA256: {copiados}")
     autochequeo()

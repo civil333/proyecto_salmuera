@@ -26,8 +26,8 @@ BASE = os.path.dirname(os.path.abspath(__file__))
 RAIZ = os.path.dirname(BASE)  # ...\PROGRAMA y CONTRATO
 
 SERIE = [
-    ("01-Jul", os.path.join(RAIZ, "PROGRAMA DE FABRICACION 01-07-26", "Fabrication schedule.xlsx")),
-    ("03-Ago", os.path.join(BASE, "SEMANA 03-08-26", "Fabrication schedule.xlsx")),
+    ("01-Jul", os.path.join(RAIZ, "CRONOGRAMAS", "2026-07-01 PROGRAMA DE FABRICACION", "Fabrication schedule.xlsx")),
+    ("03-Ago", os.path.join(BASE, "SEMANA 2026-08-03", "Fabrication schedule.xlsx")),
 ]
 
 HOJA = "RO system"
@@ -104,7 +104,7 @@ def dias(a, b):
 def main():
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--out", default=os.path.join(BASE, "SEMANA 03-08-26", "DIFF_FABRICATION_SCHEDULE.md"))
+    ap.add_argument("--out", default=os.path.join(BASE, "SEMANA 2026-08-03", "DIFF_FABRICATION_SCHEDULE.md"))
     args = ap.parse_args()
 
     snaps, etq, faltan = [], [], []

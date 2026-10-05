@@ -30,10 +30,10 @@ BASE = os.path.dirname(os.path.abspath(__file__))
 
 # (etiqueta, ruta relativa a BASE) en orden cronologico
 SERIE = [
-    ("13-Jul", os.path.join("SEMANA 13-07-26", "ZIP_EXTRAIDO", "Procurement tracking - BW Water 2906.xlsx")),
-    ("20-Jul", os.path.join("SEMANA 20-07-26", "Copy of Procurement tracking - BW Water 2906.xlsx")),
-    ("27-Jul", os.path.join("SEMANA 27-07-26", "Copy of Procurement tracking - BW Water 2906.xlsx")),
-    ("03-Ago", os.path.join("SEMANA 03-08-26", "Copy of Procurement tracking - BW Water 2906.xlsx")),
+    ("13-Jul", os.path.join("SEMANA 2026-07-13", "ZIP_EXTRAIDO", "Procurement tracking - BW Water 2906.xlsx")),
+    ("20-Jul", os.path.join("SEMANA 2026-07-20", "Copy of Procurement tracking - BW Water 2906.xlsx")),
+    ("27-Jul", os.path.join("SEMANA 2026-07-27", "Copy of Procurement tracking - BW Water 2906.xlsx")),
+    ("03-Ago", os.path.join("SEMANA 2026-08-03", "Copy of Procurement tracking - BW Water 2906.xlsx")),
 ]
 
 HOJA_DASH = "Weekly Dashboard (2)"
@@ -124,7 +124,7 @@ def tabla_cambios(titulo, snaps, etiquetas, extractor):
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--out", default=os.path.join(BASE, "SEMANA 03-08-26", "DIFF_TRACKERS.md"))
+    ap.add_argument("--out", default=os.path.join(BASE, "SEMANA 2026-08-03", "DIFF_TRACKERS.md"))
     args = ap.parse_args()
 
     snaps, etiquetas, faltan = [], [], []

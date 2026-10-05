@@ -203,7 +203,7 @@ def cajetin(ruta):
 # apaisada: cada palabra cae en la columna cuyo borde izquierdo es el mayor que no la
 # supera. Las cadenas IFC y Rev 0 no aparecen en el documento: el registro mide la
 # aprobacion y no la emision.
-DDSR = (PROY / "PROGRAMA y CONTRATO" / "REVISION SEMANAL PO EQUIPOS" / "SEMANA 08-09-26"
+DDSR = (PROY / "PROGRAMA y CONTRATO" / "REVISION SEMANAL PO EQUIPOS" / "SEMANA 2026-09-08"
         / "25007_Taltal_DDSR_2026.09.07.pdf")
 
 COLUMNAS = [(37, "id"), (120, "type"), (143, "cat"), (162, "curr_rev"), (230, "titulo"),

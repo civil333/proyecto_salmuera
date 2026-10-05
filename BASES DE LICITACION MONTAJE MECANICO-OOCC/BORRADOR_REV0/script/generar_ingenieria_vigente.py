@@ -34,6 +34,9 @@ from openpyxl.utils import get_column_letter
 BASE = Path(__file__).resolve().parent.parent
 SALIDA = BASE / "P22-LI-06-000-002-1_Ingenieria-Vigente-y-Cambios.xlsx"
 PAQUETE = BASE.parent / "INGENIERIA VIGENTE PARA CONSTRUCCION"
+# Indice del paquete, en su raiz. Lo escribe generar_indice_paquete.py y no es un documento
+# de la hoja Vigencia.
+INDICE = "00_INDICE DEL PAQUETE.xlsx"
 
 FUENTE = "Aptos Narrow"
 AZUL = PatternFill("solid", start_color="FF1F3864", end_color="FF1F3864")
@@ -103,7 +106,7 @@ MECANICA = [
      "No", "-"),
     ("P22-DWG-06-009-102", "-", "P&ID de alimentacion", "0", "1 no incorporada",
      "Nota de Envio N15, 17-07-2026",
-     "El proyectista emitio la revision 1 solo en formato editable. El paquete mantiene la revision 0 y la 1 se entregara en cuanto se reciba el ploteo.",
+     "Rige la revision 0 en PDF y DWG. La revision 1 existe solo como DWG en la NE 15 y no entra al paquete: un nativo no viaja en una revision distinta a la de su PDF (registro interno; pedir el ploteo a Van Doorn).",
      "No", "-"),
 ]
 
@@ -168,63 +171,73 @@ CUBICACIONES = [
 D_MEC = "1. ING. DETALLE MECANICA"
 D_CIV = "2. OBRAS CIVILES"
 D_ETM = "3. ET MONTAJE"
+D_SIT = "4. SITIO"
+D_EQU = "5. EQUIPOS"
 
 VIGENCIA = [
-    ("P22-LI-06-000-101", "-", "Listado de entregables de ingenieria mecanica", "0", D_MEC),
-    ("P22-DWG-06-009-101", "unica", "Diagrama de flujo de proceso", "0", D_MEC),
-    ("P22-DWG-06-009-102", "unica", "P&ID de alimentacion al modulo", "0", D_MEC),
-    ("P22-DWG-06-009-103", "unica", "P&ID de osmosis inversa, sistema de tratamiento de salmuera", "0", D_MEC),
-    ("P22-DWG-06-009-104", "unica", "P&ID del sistema CIP", "0", D_MEC),
-    ("P22-DWG-06-009-105", "unica", "P&ID de reactivos", "0", D_MEC),
+    ("P22-LI-06-000-101", "-", "Listado de entregables de ingeniería mecánica", "0", D_MEC),
+    ("P22-DWG-06-009-101", "única", "Diagrama de flujo de proceso", "0", D_MEC),
+    ("P22-DWG-06-009-102", "única", "P&ID de alimentación al módulo", "0", D_MEC),
+    ("P22-DWG-06-009-103", "única", "P&ID de ósmosis inversa, sistema de tratamiento de salmuera", "0", D_MEC),
+    ("P22-DWG-06-009-104", "única", "P&ID del sistema CIP", "0", D_MEC),
+    ("P22-DWG-06-009-105", "única", "P&ID de reactivos", "0", D_MEC),
     ("P22-ET-06-008-101", "-", "Hojas de datos de instrumentos", "0", D_MEC),
-    ("P22-IT-06-008-101", "-", "Logica de control", "0", D_MEC),
+    ("P22-IT-06-008-101", "-", "Lógica de control", "0", D_MEC),
     ("P22-LI-06-008-101", "-", "Listado de instrumentos", "1", D_MEC),
-    ("P22-DWG-06-005-101", "unica", "Plano de montaje del estanque y la bomba de salmuera", "0", D_MEC),
-    ("P22-DWG-06-005-102", "unica", "Plano de implantacion general", "0", D_MEC),
-    ("P22-DWG-06-005-103", "unica", "Plano de montaje del modulo de desalacion", "1", D_MEC),
-    ("P22-DWG-06-005-104", "unica", "Plano de drenajes", "0", D_MEC),
-    ("P22-DWG-06-005-105", "unica", "Plano de montaje de la fosa de drenajes", "0", D_MEC),
+    ("P22-DWG-06-005-101", "única", "Plano de montaje del estanque y la bomba de salmuera", "0", D_MEC),
+    ("P22-DWG-06-005-102", "única", "Plano de implantación general", "0", D_MEC),
+    ("P22-DWG-06-005-103", "única", "Plano de montaje del módulo de desalación", "1", D_MEC),
+    ("P22-DWG-06-005-104", "única", "Plano de drenajes", "0", D_MEC),
+    ("P22-DWG-06-005-105", "única", "Plano de montaje de la fosa de drenajes", "0", D_MEC),
     ("P22-LI-06-005-101", "-", "Listado de equipos", "0", D_MEC),
-    ("P22-DWG-06-006-001", "H.1 y H.2", "Isometria linea SA-HDPE-DN110-PN10-001", "0", D_MEC),
-    ("P22-DWG-06-006-002", "H.1 a H.4", "Isometria linea SA-HDPE-DN110-PN10-002", "0", D_MEC),
-    ("P22-DWG-06-006-003", "unica", "Isometria linea SA-HDPE-DN63-PN10-001", "0", D_MEC),
-    ("P22-DWG-06-006-004", "unica", "Isometria linea SA-HDPE-DN110-PN10-004", "0", D_MEC),
-    ("P22-DWG-06-006-005", "H.1 a H.5", "Isometria linea SA-HDPE-DN110-PN10-005", "2", D_MEC),
-    ("P22-DWG-06-006-006", "unica", "Isometria linea SA-HDPE-DN110-PN10-003", "0", D_MEC),
-    ("P22-DWG-06-006-008", "H.1 a H.5", "Isometria linea PE-HDPE-DN90-PN10-001", "1", D_MEC),
-    ("P22-DWG-06-006-009", "H.1 y H.2", "Isometria linea PE-HDPE-DN90-PN10-003", "1", D_MEC),
-    ("P22-DWG-06-006-010", "unica", "Isometria linea PE-HDPE-DN90-PN10-002", "sin sufijo de revision", D_MEC),
-    ("P22-DWG-06-006-011", "H.1 a H.8", "Isometria linea SA-HDPE-DN110-PN10-007", "2", D_MEC),
-    ("P22-DWG-06-006-012", "unica", "Isometria linea PE-HDPE-DN110-PN10-003", "sin sufijo de revision", D_MEC),
-    ("P22-DWG-06-006-101", "unica", "Plano de cañerias de interconexiones, planta", "1", D_MEC),
-    ("P22-DWG-06-006-102", "unica", "Plano de cañerias de interconexiones, cortes y detalles", "1", D_MEC),
-    ("P22-DWG-06-006-103", "unica", "Plano de cañerias TK y bomba de salmuera, planta", "1", D_MEC),
-    ("P22-DWG-06-006-104", "unica", "Plano de cañerias TK y bomba de salmuera, cortes y detalles", "1", D_MEC),
-    ("P22-DWG-06-006-105", "unica", "Plano de ubicacion de soportes, planta interconexiones", "0", D_MEC),
-    ("P22-DWG-06-006-106", "unica", "Plano de ubicacion de soportes, TK y bomba, cortes", "0", D_MEC),
-    ("P22-DWG-06-006-107", "21 paginas", "Cuadernillo de soportes", "0", D_MEC),
-    ("P22-ET-06-006-001", "-", "Especificacion tecnica de cañerias de fabricacion", "0", D_MEC),
-    ("P22-LI-06-006-101", "-", "Listado de lineas", "0", D_MEC),
-    ("P22-LI-06-006-102", "-", "Listado de materiales de cañerias", "1", D_MEC),
-    ("P22-LI-06-006-103", "-", "Listado de valvulas", "0", D_MEC),
-    ("MODULO COMPLETO.nwd", "-", "Modelo 3D de coordinacion, Navisworks. Federa la maqueta mecanica y el modelo civil P22-3D-00-001-001 revision 1", "-", D_MEC),
-    ("MODULO COMPLETO (nube puntos).nwd", "-", "El mismo modelo con la nube de puntos del levantamiento. Se entrega por enlace: pesa 6 GB", "-", D_MEC),
+    ("P22-DWG-06-006-001", "H.1 y H.2", "Isometría línea SA-HDPE-DN110-PN10-001", "0", D_MEC),
+    ("P22-DWG-06-006-002", "H.1 a H.4", "Isometría línea SA-HDPE-DN110-PN10-002", "0", D_MEC),
+    ("P22-DWG-06-006-003", "única", "Isometría línea SA-HDPE-DN63-PN10-001", "0", D_MEC),
+    ("P22-DWG-06-006-004", "única", "Isometría línea SA-HDPE-DN110-PN10-004", "0", D_MEC),
+    ("P22-DWG-06-006-005", "H.1 a H.5", "Isometría línea SA-HDPE-DN110-PN10-005", "2", D_MEC),
+    ("P22-DWG-06-006-006", "única", "Isometría línea SA-HDPE-DN110-PN10-003", "0", D_MEC),
+    ("P22-DWG-06-006-008", "H.1 a H.5", "Isometría línea PE-HDPE-DN90-PN10-001", "1", D_MEC),
+    ("P22-DWG-06-006-009", "H.1 y H.2", "Isometría línea PE-HDPE-DN90-PN10-003", "1", D_MEC),
+    ("P22-DWG-06-006-010", "única", "Isometría línea PE-HDPE-DN90-PN10-002", "sin sufijo de revision", D_MEC),
+    ("P22-DWG-06-006-011", "H.1 a H.8", "Isometría línea SA-HDPE-DN110-PN10-007", "2", D_MEC),
+    ("P22-DWG-06-006-012", "única", "Isometría línea PE-HDPE-DN110-PN10-003", "sin sufijo de revision", D_MEC),
+    ("P22-DWG-06-006-101", "única", "Plano de cañerías de interconexiones, planta", "1", D_MEC),
+    ("P22-DWG-06-006-102", "única", "Plano de cañerías de interconexiones, cortes y detalles", "1", D_MEC),
+    ("P22-DWG-06-006-103", "única", "Plano de cañerías TK y bomba de salmuera, planta", "1", D_MEC),
+    ("P22-DWG-06-006-104", "única", "Plano de cañerías TK y bomba de salmuera, cortes y detalles", "1", D_MEC),
+    ("P22-DWG-06-006-105", "única", "Plano de ubicación de soportes, planta de interconexiones", "0", D_MEC),
+    ("P22-DWG-06-006-106", "única", "Plano de ubicación de soportes, TK y bomba, cortes", "0", D_MEC),
+    ("P22-DWG-06-006-107", "21 páginas", "Cuadernillo de soportes", "0", D_MEC),
+    ("P22-ET-06-006-001", "-", "Especificación técnica de cañerías de fabricación", "0", D_MEC),
+    ("P22-LI-06-006-101", "-", "Listado de líneas", "0", D_MEC),
+    ("P22-LI-06-006-102", "-", "Listado de materiales de cañerías", "1", D_MEC),
+    ("P22-LI-06-006-103", "-", "Listado de válvulas", "0", D_MEC),
+    ("MODULO COMPLETO.nwd", "-", "Modelo 3D de coordinación, Navisworks", "-", D_MEC),
+    ("MODULO COMPLETO (nube puntos).nwd", "-", "Modelo 3D con la nube de puntos del levantamiento, Navisworks", "-", D_MEC),
     ("P22-DWG-00-001-001", "LAM1 y LAM2", "Excavaciones y movimiento de tierras", "1", D_CIV),
-    ("P22-DWG-00-002-001", "unica", "Implantacion general de obras civiles", "1", D_CIV),
-    ("P22-DWG-00-002-002", "LAM1", "Fundacion del estanque TK-06-001, formas", "1", D_CIV),
+    ("P22-DWG-00-002-001", "única", "Implantación general de obras civiles", "1", D_CIV),
+    ("P22-DWG-00-002-002", "LAM1", "Fundación del estanque TK-06-001, formas", "1", D_CIV),
     ("P22-DWG-00-002-002", "LAM2 y LAM3", "Fundaciones de equipos exteriores, armaduras", "0", D_CIV),
-    ("P22-DWG-00-002-002", "LAM4", "Fundacion de la bomba BH-06-001", "1", D_CIV),
-    ("P22-DWG-00-002-003", "LAM1", "Fundacion del contenedor del modulo, formas", "1", D_CIV),
-    ("P22-DWG-00-002-003", "LAM2 y LAM3", "Fundacion del contenedor, armaduras y anclajes", "0", D_CIV),
+    ("P22-DWG-00-002-002", "LAM4", "Fundación de la bomba BH-06-001", "1", D_CIV),
+    ("P22-DWG-00-002-003", "LAM1", "Fundación del contenedor del módulo, formas", "1", D_CIV),
+    ("P22-DWG-00-002-003", "LAM2 y LAM3", "Fundación del contenedor, armaduras y anclajes", "0", D_CIV),
     ("P22-DWG-00-002-004", "LAM1 y LAM2", "Fosa de drenajes TK-06-004", "0", D_CIV),
     ("P22-DWG-00-002-006", "LAM1, LAM2 y LAM3", "Canalizaciones y red de drenajes", "0", D_CIV),
-    ("P22-DWG-00-002-007", "LAM1", "Fundacion del sistema CIP, formas", "1", D_CIV),
-    ("P22-DWG-00-002-007", "LAM2", "Fundacion del sistema CIP, armaduras", "1", D_CIV),
-    ("P22-DWG-00-002-007", "LAM3", "Fundacion de la cubierta del sistema CIP", "0", D_CIV),
-    ("P22-ET-00-010-101", "-", "Especificacion tecnica de movimiento de tierra", "1", D_CIV),
-    ("P22-ET-00-010-102", "-", "Especificacion tecnica de obras civiles", "1", D_CIV),
-    ("P22-ET-06-007-001", "-", "Especificacion tecnica de montaje electromecanico", "0", D_ETM),
-    ("P22-ET-06-007-002", "-", "Especificacion tecnica de montaje de cañerias HDPE", "0", D_ETM),
+    ("P22-DWG-00-002-007", "LAM1", "Fundación del sistema CIP, formas", "1", D_CIV),
+    ("P22-DWG-00-002-007", "LAM2", "Fundación del sistema CIP, armaduras", "1", D_CIV),
+    ("P22-DWG-00-002-007", "LAM3", "Fundación de la cubierta del sistema CIP", "0", D_CIV),
+    ("P22-ET-00-010-101", "-", "Especificación técnica de movimiento de tierra", "1", D_CIV),
+    ("P22-ET-00-010-102", "-", "Especificación técnica de obras civiles", "1", D_CIV),
+    ("P22-ET-06-007-001", "-", "Especificación técnica de montaje electromecánico", "0", D_ETM),
+    ("P22-ET-06-007-002", "-", "Especificación técnica de montaje de cañerías HDPE", "0", D_ETM),
+    ("PLANO MONOGRAFIA TALTAL", "única", "Plano de monografía del levantamiento del sitio, abril de 2026", "-", D_SIT),
+    ("DES TALTAL_transparent_mosaic", "-", "Ortomosaico del levantamiento del sitio, abril de 2026", "-", D_SIT),
+    ("EX-26005-F01", "única", "Plano de fabricación del estanque de salmuera TK-06-001, Exfibro", "0", D_EQU),
+    ("KSB-AAF-KNCPP11-050+160M", "única", "Plano de arreglo general de la bomba de alimentación BH-06-001, KSB", "A", D_EQU),
+    ("DWG-1206D", "única", "Plano de la válvula de retención de doble placa de 4 pulgadas, VR-06-001 y VR-06-003, VATAC para KSB", "01", D_EQU),
+    ("ISORIA 10", "-", "Folleto de la serie de las válvulas mariposa VM-06, con dimensiones y pesos, KSB", "-", D_EQU),
+    ("MS_MC", "-", "Folleto del reductor manual MS/MC de las válvulas mariposa, KSB", "-", D_EQU),
+    ("ALS200", "-", "Folleto del final de carrera ALS 200 de las válvulas mariposa, KSB", "-", D_EQU),
 ]
 
 
@@ -237,11 +250,14 @@ def _rev_del_nombre(stem, codigo):
       P22-DWG-00-002-002_1 LAM1       -> 1   (civil, guion bajo)
       P22-ET-00-010-101-0_1           -> 1   (ET civil, correlativo mas revision)
       P22-DWG-06-006-010 (...)        -> None (sin sufijo de revision)
-    Se toma el ultimo token numerico anterior al primer espacio o parentesis.
+      EX-26005-F01-Rev0               -> 0   (proveedor, prefijo Rev)
+      KSB-AAF-KNCPP11-050+160M_A      -> A   (proveedor, revision de una letra)
+      DWG-1206D-RV01                  -> 01  (proveedor, prefijo RV)
+    Se toma el ultimo token de revision anterior al primer espacio o parentesis.
     """
     resto = stem[len(codigo):]
     resto = re.split(r"[ (]", resto, maxsplit=1)[0]
-    tokens = re.findall(r"[-_](\d+)", resto)
+    tokens = re.findall(r"[-_](?:Rev|RV)?(\d+|[A-Z])(?![A-Za-z])", resto)
     return tokens[-1] if tokens else None
 
 
@@ -265,7 +281,7 @@ def comprobar_vigencia_contra_paquete(tolerar_faltantes=False):
 
     archivos = [p for p in PAQUETE.rglob("*")
                 if p.is_file() and not p.name.startswith(".")
-                and p.suffix.lower() in {".pdf", ".xlsx", ".docx", ".nwd", ".dwg"}]
+                and p.suffix.lower() in {".pdf", ".xlsx", ".docx", ".nwd", ".dwg", ".tif"}]
 
     errores = []
     for codigo, lamina, titulo, rev, _dossier in VIGENCIA:
@@ -297,7 +313,7 @@ def comprobar_vigencia_contra_paquete(tolerar_faltantes=False):
 
     declarados = {c for c, *_ in VIGENCIA}
     for p in archivos:
-        if p.parent.name == "anexos" or "0. CONTROL DE CAMBIOS" in str(p):
+        if p.parent.name == "anexos" or "0. CONTROL DE CAMBIOS" in str(p) or p.name == INDICE:
             continue
         if not any(p.stem.startswith(c) or c in p.name for c in declarados):
             errores.append(f"{p.name}: en el paquete y no declarado en la hoja Vigencia")
@@ -362,14 +378,14 @@ def hoja_resumen(wb):
     ws.column_dimensions["B"].width = 62
     filas = [
         ("Paquete", "INGENIERIA VIGENTE PARA CONSTRUCCION, montaje mecanico y obras civiles"),
-        ("Fecha", "10-09-2026"),
+        ("Fecha", "14-09-2026"),
         ("Destinatario", "Contratista adjudicado. El contrato esta adjudicado y este paquete no reabre la licitacion."),
         ("Que rige", "Para cada codigo y lamina rige la revision que este paquete entrega, listada en la hoja Vigencia. Cualquier revision anterior del mismo documento queda reemplazada."),
         ("Que NO reemplaza", "Las Bases de Licitacion ni el Formato de Presupuesto, que son contractuales y no se reemiten. Este paquete lleva solo ingenieria."),
         ("", ""),
         ("Cambio de fondo", "La fundacion del contenedor del modulo sube 250 mm de cota, de la +6,050 a la +6,300, y con ella suben las cuatro cotas de conexion con el modulo. Los tie-ins con el modulo existente no cambian."),
         ("", ""),
-        ("Documentos del paquete", 55),
+        ("Documentos del paquete", 63),
         ("Documentos mecanicos que cambian de revision", 12),
         ("Laminas civiles que cambian de revision", 8),
         ("Partidas de obra civil que cambian de cantidad", 2),

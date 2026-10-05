@@ -58,8 +58,7 @@ CUADERNILLO DE ISOMETRIAS
   revision 2 las -005 y -011; en revision 1 las -008 y -009.
 
 P&ID DE ALIMENTACION
-  El P22-DWG-06-009-102 tiene una revision 1 emitida solo en formato editable. El paquete
-  lleva su revision 0 y la revision 1 se entrega en cuanto se reciba el ploteo.
+  Rige el P22-DWG-06-009-102 en revision 0, en PDF y en DWG.
 
 MODELO TRIDIMENSIONAL
   La carpeta 04_ MODELO lleva dos archivos de Navisworks, ambos publicados el 08-09-2026:

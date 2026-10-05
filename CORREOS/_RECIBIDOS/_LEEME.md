@@ -37,8 +37,8 @@ El correo entra aquí. **Los adjuntos que tienen domicilio propio en el proyecto
 | Tipo | Cómo se reconoce | Los adjuntos van a |
 |---|---|---|
 | `submittal` | Asunto `TALTAL: DOCUMENT SUBMISSION 25007-00NN` | `ENTREGAS_BWWATER/ENTREGA NN/` |
-| `rwi` | Asunto `Request to witness inspection 00N` | `REQUEST WITNESS INSPECTION/RWI NN/` |
-| `informe-bv` | Remitente `@bureauveritas.com`, informes y coordinación | `PROGRAMA y CONTRATO/HITO BUREAU VERITAS/CORREOS VBV-BW/` |
+| `rwi` | Asunto `Request to witness inspection 0NN` | Formulario de solicitud de BW: `PROGRAMA y CONTRATO/HITO BUREAU VERITAS/03 SOLICITUDES BW (RWI)/RWI NNN AAAA-MM-DD/`. Registro de prueba del fabricante del día: la carpeta del informe BV de ese día en `04 INFORMES BV/`; si el informe aún no llega, queda en `adjuntos/` hasta que llegue |
+| `informe-bv` | Remitente `@bureauveritas.com`, informes y coordinación | Informe y anexo: `PROGRAMA y CONTRATO/HITO BUREAU VERITAS/04 INFORMES BV/IRNNN AAAA-MM-DD/`, y una fila nueva en su `_REGISTRO_INSPECCIONES_BV.md`. Coordinación sin informe: `05 CORREOS/` del mismo frente. El mapa completo está en el `_LEEME.md` del frente |
 | `rfi` | Formulario `25007-RO-RFI-NNNN` | `PROGRAMA y CONTRATO/RFI/RFI N/` |
 | `programa` | Cronograma, tracker de procura, Progress Update | La carpeta del frente que corresponda |
 | `notificacion` | Avisos societarios, cambios de organización | Se quedan en `adjuntos/` |

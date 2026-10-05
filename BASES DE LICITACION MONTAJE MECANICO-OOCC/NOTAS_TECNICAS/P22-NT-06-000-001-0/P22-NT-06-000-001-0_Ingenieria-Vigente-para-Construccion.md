@@ -8,7 +8,7 @@ emisor: Aguas Antofagasta S.A.
 estado: BORRADOR
 ---
 
-# Objeto de esta nota
+# Objeto
 
 Se remite al contratista el paquete Ingeniería Vigente para Construcción del Montaje
 Mecánico y las Obras Civiles del Módulo de Segunda Etapa de Salmuera de la Planta Desaladora
@@ -16,16 +16,18 @@ Taltal, y se declara mediante esta nota qué cambió respecto de la ingeniería 
 base para cotizar, de modo que el contratista disponga por escrito del alcance de esos
 cambios antes de iniciar las obras.
 
-El paquete contiene 55 documentos de ingeniería de detalle mecánica, de obras civiles y de
-especificaciones de montaje, distribuidos en 154 archivos, dado que cada plano va en PDF y en su
-archivo nativo DWG. Esta nota identifica, documento por documento, la revisión que rige y aquello
-que cambió.
+El paquete contiene 63 documentos de ingeniería de detalle mecánica, de obras civiles, de
+especificaciones de montaje, del levantamiento del sitio y de los proveedores de los equipos que
+suministra Aguas Antofagasta, distribuidos en 166 archivos, dado que cada plano de ingeniería va en
+PDF y en su archivo nativo DWG. Esta nota identifica, documento por documento, la revisión que rige
+y aquello que cambió.
 
 Esta nota no modifica el Contrato ni ninguno de sus anexos.
 
 # Contenido del paquete
 
-El paquete se organiza en cuatro carpetas.
+El paquete se organiza en seis carpetas. En su raíz, el índice `00_INDICE DEL PAQUETE.xlsx` lista los
+documentos de cada carpeta con su revisión y su formato.
 
 **0. CONTROL DE CAMBIOS.** Una copia de esta misma nota en PDF, de modo que el paquete viaje
 siempre con el documento que lo explica. Esta nota es el único documento de control: declara la
@@ -49,10 +51,25 @@ paquete.
 BH-06-001, con sus anexos. El anexo A13, de montaje de cañerías HDPE PE100 por electrofusión,
 cuyo anexo es el Listado de Materiales en revisión 1.
 
-Cada plano va en PDF y en su archivo nativo DWG, de la misma revisión, en la misma carpeta y con el
-mismo nombre. El DWG del P22-DWG-00-001-001 contiene sus dos láminas y el Cuadernillo de Soportes
-lleva dos DWG. Los listados van en Excel y el modelo en Navisworks. Para distribuir el paquete
-conviene comprimirlo, dado que algunas rutas internas del dossier mecánico son largas.
+**4. SITIO.** El levantamiento del sitio de abril de 2026, con el plano de monografía en PDF y en
+DWG y el ortomosaico del sector en formato TIF, de 110 megabytes.
+
+**5. EQUIPOS.** Los planos y folletos de proveedor de los equipos que Aguas Antofagasta suministra
+para su montaje, en tres subcarpetas. `TK-06-001 ESTANQUE SALMUERA` lleva el plano de fabricación
+EX-26005-F01 de Exfibro, en revisión 0 aprobada para fabricación. `BH-06-001 BOMBA ALIMENTACION`
+lleva el plano de arreglo general KSB-AAF-KNCPP11-050+160M de KSB, en revisión A. `VALVULAS` lleva
+el plano de la válvula de retención de 4 pulgadas, que cubre VR-06-001 y VR-06-003, y los folletos
+de la serie de las válvulas mariposa ISORIA 10, de su reductor manual MS/MC y de su final de carrera
+ALS 200. El fabricante de las válvulas mariposa no emite plano por diámetro, de modo que sus
+dimensiones y pesos se toman del folleto de la serie. Los pernos de anclaje de la bomba y del
+estanque son los de los planos de fundación: PA-1 en el P22-DWG-00-002-002 LAM4 y PA-2 en la LAM2.
+
+Cada plano de ingeniería va en PDF y en su archivo nativo DWG, de la misma revisión, en la misma
+carpeta y con el mismo nombre. El DWG del P22-DWG-00-001-001 contiene sus dos láminas y el
+Cuadernillo de Soportes lleva dos DWG. Los documentos de proveedor van en el formato en que el
+fabricante los emitió, todos en PDF y el plano de la bomba además en DWG. Los listados van en Excel
+y el modelo en Navisworks. Para distribuir el paquete conviene comprimirlo, dado que algunas rutas
+internas del dossier mecánico son largas.
 
 # Documentos de referencia
 
@@ -63,7 +80,7 @@ conviene comprimirlo, dado que algunas rutas internas del dossier mecánico son 
 | P22-ET-06-007-001-0 | Especificación técnica de montaje electromecánico | 0 |
 | P22-ET-06-007-002-0 | Especificación técnica de montaje de cañerías HDPE | 0 |
 
-# Qué gobierna el alcance y qué gobierna la construcción
+# Alcance contratado e ingeniería vigente
 
 El alcance contratado se fija en el Formato de Presupuesto (Anexo A9), el cual no se modifica
 con esta entrega. Cada partida de dicho Formato define una obra y su forma de medición y pago.
@@ -77,9 +94,9 @@ su partida en el Formato, por lo que un documento de ingeniería sin partida aso
 constituye alcance contratado ni habilita cobro alguno, sin perjuicio de su valor como
 antecedente de coordinación.
 
-# Cambios de la ingeniería respecto de la que se cotizó
+# Cambios respecto de la ingeniería cotizada
 
-## La fundación del contenedor sube 250 milímetros
+## Elevación de la fundación del contenedor en 250 milímetros
 
 La cara superior de la fundación del contenedor del módulo pasa de la cota +6,050 a la cota
 +6,300, y el sello de fundación de la +5,150 a la +5,400. La geometría y la armadura se
@@ -99,7 +116,7 @@ Las conexiones con el módulo existente de 11 litros por segundo (tie-ins 1, 3 y
 su cota +6,204. Rigen los planos P22-DWG-00-002-003 LAM1, P22-DWG-06-005-103 y
 P22-DWG-06-006-102, los tres en revisión 1.
 
-## La fundación del sistema CIP se rediseña
+## Rediseño de la fundación del sistema CIP
 
 La fundación de los equipos del sistema CIP se reduce de 4,13 a 2,63 metros cúbicos de
 hormigón G25, con lo que el total de hormigón de la zona baja de 7,36 a 5,80 metros cúbicos
@@ -111,7 +128,7 @@ aplicado en ambas paredes. La disposición y las dimensiones de los pernos de an
 definidas en el plano. Rige el P22-DWG-00-002-007 LAM1 en revisión 1, con su armadura en la
 LAM2, también en revisión 1.
 
-## El movimiento de tierra recoge el nivel nuevo
+## Cantidades de excavación y relleno
 
 Con la fundación del contenedor 250 milímetros más alta, la excavación de esa zona baja de 38,02 a
 20,95 metros cúbicos, sobre un área que pasa de 53,51 a 49,96 metros cuadrados. La excavación del
@@ -144,7 +161,7 @@ de relleno estructural. El relleno alrededor de la fundación del contenedor baj
 metros cúbicos, según el cuadro del P22-DWG-00-002-003 LAM1. Las cantidades de los cuadros son
 referenciales y se validan en terreno.
 
-## El listado de materiales cambia accesorios y material de brida
+## Accesorios y material de brida del listado de materiales
 
 El metraje de cañería no cambia y se mantiene en 335 metros, y tampoco cambian las cantidades
 de codos, cuplas, tee, reducciones, espárragos y stub end. Los accesorios sí cambian, según el
@@ -167,7 +184,7 @@ declaran el material de la brida, para ese dato rige el listado.
 El contratista debe verificar este listado antes de emitir las órdenes de compra de
 accesorios y bridas.
 
-## El cuadernillo de isometrías cambia poco y se renumeró
+## Revisión y numeración de hojas de las isometrías
 
 Siete de las once isometrías son idénticas a las de la revisión con la que se cotizó. Cambian de
 revisión únicamente P22-DWG-06-006-005, P22-DWG-06-006-008, P22-DWG-06-006-009 y
@@ -178,7 +195,7 @@ P22-DWG-06-006-011 entra una hoja nueva en la posición H.2 y las seis siguiente
 modo que la H.2 anterior es ahora la H.3 y la H.7 es la H.8. En P22-DWG-06-006-008 la antigua H.4
 pasa a ser la H.5.
 
-## Documentos que cambian de revisión
+## Documentos con nueva revisión
 
 Once documentos del dossier mecánico están en una revisión posterior a la que sirvió para cotizar.
 El resto se mantiene en la revisión con la que se cotizó.
@@ -200,7 +217,7 @@ El resto se mantiene en la revisión con la que se cotizó.
 En obras civiles cambian de revisión las ocho láminas ya indicadas y las dos especificaciones
 técnicas.
 
-# Efecto sobre las partidas del Formato de Presupuesto
+# Cantidades de las partidas del Formato de Presupuesto
 
 Dos partidas del Capítulo 4 cambian su cantidad de obra debido a los cambios ya descritos.
 Ambas se miden por unidad de obra, por lo que se pagan según la cubicación realmente ejecutada
@@ -232,7 +249,7 @@ compactado con material seleccionado y base estabilizada.
 Debido a lo anterior, toda referencia a una partida debe consignar su número y su nombre
 completo, tanto en esta nota como en los estados de pago.
 
-# La cubierta metálica del sistema CIP
+# Cubierta metálica del sistema CIP
 
 La fundación de la cubierta se ejecuta íntegra. Corresponde a la partida 4.3 Fundación de la
 cubierta metálica del sistema CIP (cobertizo), cotizada en 2,38 metros cúbicos, la cual
@@ -254,14 +271,10 @@ Para cada código y lámina rige la revisión que este paquete entrega, por lo q
 revisión anterior del mismo documento, cualquiera sea la vía por la que el contratista la
 haya recibido, queda reemplazada por la de esta entrega.
 
-La tabla de vigencia lista los 55 documentos del paquete, uno por fila, con la revisión que rige
+La tabla de vigencia lista los 63 documentos del paquete, uno por fila, con la revisión que rige
 y el dossier donde se encuentra. Ante cualquier duda de vigencia prevalece esa tabla.
 
 > La tabla de vigencia y la de cantidades del Formato **no se transcriben en este archivo**: el
 > generador las importa de `BORRADOR_REV0/script/generar_ingenieria_vigente.py`, donde viven las
 > listas `VIGENCIA` y `CUBICACIONES`. Ese mismo script las usa para el gate que contrasta lo
 > declarado contra el árbol real del paquete, de modo que hay una sola fuente y no tres.
-
-Se exceptúa el P&ID de alimentación P22-DWG-06-009-102, cuya revisión 1 el proyectista emitió
-solo en formato editable. El paquete mantiene la revisión 0 y la revisión 1 se remitirá en
-cuanto se reciba el ploteo.

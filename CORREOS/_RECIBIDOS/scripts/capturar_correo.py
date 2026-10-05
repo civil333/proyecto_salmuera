@@ -222,6 +222,9 @@ def main() -> int:
     fecha = datetime.fromisoformat(str(p["fecha"]))
     mes = RAIZ / f"{MESES[fecha.month - 1]} {fecha.year}"
     carpeta = mes / nombre_carpeta(fecha, p.get("remitente_nombre", ""), p["asunto"], mes)
+    # Mismo dia, remitente y asunto con otro mensaje_id: se distingue por la hora
+    if (carpeta / "_correo.md").exists():
+        carpeta = carpeta.with_name(f"{carpeta.name}_{fecha.strftime('%H%M')}")
 
     if args.dry_run:
         print(f"[dry-run] crearia: {carpeta.relative_to(RAIZ)}")

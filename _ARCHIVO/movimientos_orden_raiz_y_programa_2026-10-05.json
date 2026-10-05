@@ -1,0 +1,1157 @@
+[
+ {
+  "origen": "generar_tabla_hitos.py",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/_ANALISIS/generar_tabla_hitos.py",
+  "md5": "b8877f950217ccd715b3c688216af6ce"
+ },
+ {
+  "origen": "TABLA-COMPARATIVA-HITOS.xlsx",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/_ANALISIS/TABLA-COMPARATIVA-HITOS.xlsx",
+  "md5": "b6e02d3fe5841022fc3fc3fb2a4cc857"
+ },
+ {
+  "origen": "generar_listado_consolidado.py",
+  "destino": "_ARCHIVO/generar_listado_consolidado.py",
+  "md5": "545ad47c3297283226307f09988577e9"
+ },
+ {
+  "origen": "actualizar_listado_activos.py",
+  "destino": "_ARCHIVO/actualizar_listado_activos.py",
+  "md5": "5748c6d5bb70b822ef949fbdca384cb9"
+ },
+ {
+  "origen": "LISTADO ACTIVOS.xlsx",
+  "destino": "_ARCHIVO/LISTADO ACTIVOS.xlsx",
+  "md5": "d9ad044852c1ed7f851fe466b4d9d53d"
+ },
+ {
+  "origen": "exportar_pdf_word.py",
+  "destino": "_HERRAMIENTAS/exportar_pdf_word.py",
+  "md5": "89a49fbad4623956ea3c062d66c60566"
+ },
+ {
+  "origen": "_INVENTARIO_PRE_HIGIENE_04AGO.json",
+  "destino": "_ARCHIVO/_INVENTARIO_PRE_HIGIENE_04AGO.json",
+  "md5": "9abafa4883514c21070decd3e78d309a"
+ },
+ {
+  "origen": "exportar_pdf_word_mac.sh",
+  "destino": "_HERRAMIENTAS/exportar_pdf_word_mac.sh",
+  "md5": "9817f0a9e86eddeba4acbe63eacfd159"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/02 C-4300 BW WATER - SUMINISTRO - 12803 v2_BWWA Signed (2).pdf",
+  "destino": "PROGRAMA y CONTRATO/CONTRATO C-4300/02 C-4300 BW WATER - SUMINISTRO - 12803 v2_BWWA Signed (2).pdf",
+  "md5": "d2c07f21fe4e601ab53cb416f39b8331"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/05.03.26_12803_Taltal Water Treatment Plant.pdf",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/2026-03-05 CATCH-UP/05.03.26_12803_Taltal Water Treatment Plant.pdf",
+  "md5": "60016fe40b38b7536981ab66252697b9"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/05.03.26_12803_Taltal Water Treatment Plant_extracted.txt",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/2026-03-05 CATCH-UP/05.03.26_12803_Taltal Water Treatment Plant_extracted.txt",
+  "md5": "2a12116b28086ba146490a05d33cd19c"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/05.03.26_12803_Taltal Water Treatment Plant_extracted.md",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/2026-03-05 CATCH-UP/05.03.26_12803_Taltal Water Treatment Plant_extracted.md",
+  "md5": "9aa709e6be7b94fb447cd07410698ef4"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/estado_compras_09-03-26.md",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/_ANALISIS/estado_compras_09-03-26.md",
+  "md5": "9e48ba02ecaa11c0f3da0f82ffe0970c"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/_ANALISIS_COMERCIAL_04AGO.md",
+  "destino": "PROGRAMA y CONTRATO/COMERCIAL/_ANALISIS_COMERCIAL_04AGO.md",
+  "md5": "68299fbedb1434afddd964d75d37bae7"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/pdf/PROGRAMA BASE ADASA NOVIEMBRE 2025.pdf",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/2025-10 a 2026-02 PROGRAMAS INICIALES/pdf/PROGRAMA BASE ADASA NOVIEMBRE 2025.pdf",
+  "md5": "f95d17e3de44702be4703467913aa687"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/pdf/Project TalTal-Preliminary Taltal Schedule.pdf",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/2025-10 a 2026-02 PROGRAMAS INICIALES/pdf/Project TalTal-Preliminary Taltal Schedule.pdf",
+  "md5": "8fa7faf5ffbd9d2b4d19583e149b0a6d"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/pdf/PROGRAMA ADASA ENERO 2026_Copy.pdf",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/2025-10 a 2026-02 PROGRAMAS INICIALES/pdf/PROGRAMA ADASA ENERO 2026_Copy.pdf",
+  "md5": "63bd71430ae0403098c50d6086b25dfc"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/pdf/PROGRAMA ADASA ENERO 2026_Copy_extracted.txt",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/2025-10 a 2026-02 PROGRAMAS INICIALES/pdf/PROGRAMA ADASA ENERO 2026_Copy_extracted.txt",
+  "md5": "2335263f451eed58902e6bd568c632e0"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/pdf/Project TalTal-Preliminary Taltal Schedule_extracted.txt",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/2025-10 a 2026-02 PROGRAMAS INICIALES/pdf/Project TalTal-Preliminary Taltal Schedule_extracted.txt",
+  "md5": "9b1e96eae6fa07c9b76b17186e18bd2a"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/pdf/PROGRAMA BASE ADASA NOVIEMBRE 2025_extracted.txt",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/2025-10 a 2026-02 PROGRAMAS INICIALES/pdf/PROGRAMA BASE ADASA NOVIEMBRE 2025_extracted.txt",
+  "md5": "4d4c6157dec97eaaf5c4c49a2dbf725f"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/pdf/Taltal water treatment plant base schedule 090226.pdf",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/2025-10 a 2026-02 PROGRAMAS INICIALES/pdf/Taltal water treatment plant base schedule 090226.pdf",
+  "md5": "c64319cdd46be08c4af19e1d20bc9960"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/pdf/Taltal water treatment plant base schedule 090226_extracted.md",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/2025-10 a 2026-02 PROGRAMAS INICIALES/pdf/Taltal water treatment plant base schedule 090226_extracted.md",
+  "md5": "2d2b65245b7d70de83debcbc36fbe569"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/pdf/schedule_page1.png",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/2025-10 a 2026-02 PROGRAMAS INICIALES/pdf/schedule_page1.png",
+  "md5": "733632a7b185cdf8457d14c6431ee79f"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/pdf/schedule_page_2.png",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/2025-10 a 2026-02 PROGRAMAS INICIALES/pdf/schedule_page_2.png",
+  "md5": "fadbbe5189342e087c6033ea0b67bee3"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/pdf/schedule_page_1.png",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/2025-10 a 2026-02 PROGRAMAS INICIALES/pdf/schedule_page_1.png",
+  "md5": "91e11d23ca4e692bcda9f4e98f8f3503"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/pdf/Project TalTal-Preliminary Taltal Schedule_extracted.md",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/2025-10 a 2026-02 PROGRAMAS INICIALES/pdf/Project TalTal-Preliminary Taltal Schedule_extracted.md",
+  "md5": "63d984547ac16e1ca8ac5035344dd7f2"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/md/PROGRAMA-BASE-ADASA.md",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/2025-10 a 2026-02 PROGRAMAS INICIALES/md/PROGRAMA-BASE-ADASA.md",
+  "md5": "d15eb0571601efbb5b49fe9123d3bd06"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/md/PROGRAMA-PRELIMINAR-BWWATER.md",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/2025-10 a 2026-02 PROGRAMAS INICIALES/md/PROGRAMA-PRELIMINAR-BWWATER.md",
+  "md5": "50fc6a69bcded775431050421c114bb9"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/md/CONTRATO-C4300-BWWATER-SUMINISTRO.md",
+  "destino": "PROGRAMA y CONTRATO/CONTRATO C-4300/md/CONTRATO-C4300-BWWATER-SUMINISTRO.md",
+  "md5": "f283f6bd5729b0c7152fa1075689c2d6"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISIONES/2026-01-29_Solicitud-Revised-Schedule-BW-Water.md",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/_ANALISIS/2026-01-29_Solicitud-Revised-Schedule-BW-Water.md",
+  "md5": "504805145e5a7b2b49841757b1587f0e"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISIONES/2026-02-10_Analisis-Comparativo-Programas-BW-Water.md",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/_ANALISIS/2026-02-10_Analisis-Comparativo-Programas-BW-Water.md",
+  "md5": "62e8718ad25bcc02d944bfc2e9c36d20"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISIONES/2026-03-06_Analisis-Catch-Up-Schedule-Mar2026.md",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/_ANALISIS/2026-03-06_Analisis-Catch-Up-Schedule-Mar2026.md",
+  "md5": "c2928d2b8fc52401fe19593ecf6af076"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISIONES/2026-03-10_Alertas-Procurement-Ingenieria-Sin-Aprobar.md",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/_ANALISIS/2026-03-10_Alertas-Procurement-Ingenieria-Sin-Aprobar.md",
+  "md5": "c5346603524b4e8655dd7585043ab812"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/ADICIONALES DE INGENIERIA/Taltal - Procurement status - 2026.03.13.pdf",
+  "destino": "PROGRAMA y CONTRATO/COMERCIAL/ADICIONALES DE INGENIERIA/Taltal - Procurement status - 2026.03.13.pdf",
+  "md5": "47f29d205a9423cd2226e8a6a3ab8319"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/ADICIONALES DE INGENIERIA/25007-PL-0001_rev.1.pdf",
+  "destino": "PROGRAMA y CONTRATO/COMERCIAL/ADICIONALES DE INGENIERIA/25007-PL-0001_rev.1.pdf",
+  "md5": "835789afe163da1cc771f4ebe2c23549"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/ADICIONALES DE INGENIERIA/25007-PL-0001_rev.2_extracted.md",
+  "destino": "PROGRAMA y CONTRATO/COMERCIAL/ADICIONALES DE INGENIERIA/25007-PL-0001_rev.2_extracted.md",
+  "md5": "e5bd750771cef462e08247595a559e2c"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/ADICIONALES DE INGENIERIA/25007-PL-0001_rev.2.pdf",
+  "destino": "PROGRAMA y CONTRATO/COMERCIAL/ADICIONALES DE INGENIERIA/25007-PL-0001_rev.2.pdf",
+  "md5": "d286db4ebcd70147dd1ced63352c77df"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/ADICIONALES DE INGENIERIA/25007-PL-0001_rev3.pdf",
+  "destino": "PROGRAMA y CONTRATO/COMERCIAL/ADICIONALES DE INGENIERIA/25007-PL-0001_rev3.pdf",
+  "md5": "70972252aea93260608dee29ac75d000"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/ADICIONALES DE INGENIERIA/OC-I-330.pdf",
+  "destino": "PROGRAMA y CONTRATO/COMERCIAL/ADICIONALES DE INGENIERIA/OC-I-330.pdf",
+  "md5": "5f3ea0d6013d440945556aa4f7c22e23"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/ADICIONALES DE INGENIERIA/Recibo 115982.pdf",
+  "destino": "PROGRAMA y CONTRATO/COMERCIAL/ADICIONALES DE INGENIERIA/Recibo 115982.pdf",
+  "md5": "38f8c16fe4d51c3a9432b78fa95e4543"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/ADICIONALES DE INGENIERIA/md/25007-PL-0001_rev.2_extracted.md",
+  "destino": "PROGRAMA y CONTRATO/COMERCIAL/ADICIONALES DE INGENIERIA/md/25007-PL-0001_rev.2_extracted.md",
+  "md5": "1095898bc81f4946603f16139f3a1684"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/ADICIONALES DE INGENIERIA/md/25007-PL-0001_rev3_extracted.md",
+  "destino": "PROGRAMA y CONTRATO/COMERCIAL/ADICIONALES DE INGENIERIA/md/25007-PL-0001_rev3_extracted.md",
+  "md5": "5f88e89cc01b7822bc543203fd0f4cc2"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/TALTAL_Master Document and Drawing Deliverable List for submittal.xlsx",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-04-28/TALTAL_Master Document and Drawing Deliverable List for submittal.xlsx",
+  "md5": "2eb3098012d46fed7bbe3b3ca64173cf"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/PO-0016155 UP (MEMBRANAS).pdf",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/Unprice PO/PO-0016155 UP (MEMBRANAS).pdf",
+  "md5": "df4504d87f5681d9eb7bc9fa89327144"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 04-05-26/Copy of Procurement tracking - BW Water 0405.xlsx",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-05-04/Copy of Procurement tracking - BW Water 0405.xlsx",
+  "md5": "d3befd01ab0e588d9eb7fe9a384a2965"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 04-05-26/TALTAL_Master Document and Drawing Deliverable List for submittal 0405.xlsx",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-05-04/TALTAL_Master Document and Drawing Deliverable List for submittal 0405.xlsx",
+  "md5": "31b00472897faab3355e755d20b88bd9"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 04-05-26/tracker_04-05-26_extracted.md",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-05-04/tracker_04-05-26_extracted.md",
+  "md5": "0b577be7360a1a69bf10dc25fed02567"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 28-04-26/PO Status - Taltal - 2026-04-28.xlsx",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-04-28/PO Status - Taltal - 2026-04-28.xlsx",
+  "md5": "e458d69310342808d7dda83246f86723"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 20-04-26/PO Status - Taltal - 2026-04-20.xlsx",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-04-20/PO Status - Taltal - 2026-04-20.xlsx",
+  "md5": "5d0138e700cdc535d9fecefa1af40e92"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 11-05-26/Copy of Procurement tracking - BW Water 1205.xlsx",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-05-11/Copy of Procurement tracking - BW Water 1205.xlsx",
+  "md5": "553c08598598e0f28e6b0302e4273d41"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 11-05-26/TALTAL_Master Document and Drawing Deliverable List for submittal 1205.xlsx",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-05-11/TALTAL_Master Document and Drawing Deliverable List for submittal 1205.xlsx",
+  "md5": "d807a80fa6ea30b76a6d4038aabe6c99"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 11-05-26/tracker_11-05-26_extracted.md",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-05-11/tracker_11-05-26_extracted.md",
+  "md5": "199aa370777172572723cce20c7f6b74"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 18-05-26/RE_ 25007 Taltal - Tasks update.zip",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-05-18/RE_ 25007 Taltal - Tasks update.zip",
+  "md5": "446282099448ac649b3b6d997914e499"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 18-05-26/Copy of Procurement tracking - BW Water 1805.xlsx",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-05-18/Copy of Procurement tracking - BW Water 1805.xlsx",
+  "md5": "dd9d4294030d46d44e6513fe810c09eb"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 18-05-26/TALTAL_Master Document and Drawing Deliverable List for submittal 1805.xlsx",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-05-18/TALTAL_Master Document and Drawing Deliverable List for submittal 1805.xlsx",
+  "md5": "0ccd912b3b799fc30b0dbbd3954db3b2"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 08-06-26/25007 Taltal - Procurement and Fabrication progress report - 10-JUN-2026.zip",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-06-08/25007 Taltal - Procurement and Fabrication progress report - 10-JUN-2026.zip",
+  "md5": "9156fb1c2d064b1f53dd2234a99ef656"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 08-06-26/Bandeja de entrada_ Luis Rivera Gonzalez - Outlook.pdf",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-06-08/Bandeja de entrada_ Luis Rivera Gonzalez - Outlook.pdf",
+  "md5": "805447bc11ed9157d2f5df0258990983"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 15-06-26/25007_Taltal_DDSR_2026.06.15.pdf",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-06-15/25007_Taltal_DDSR_2026.06.15.pdf",
+  "md5": "fea9b7b49d0832766b8eda1880261216"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 15-06-26/Copy of Procurement tracking - BW Water 1506.xlsx",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-06-15/Copy of Procurement tracking - BW Water 1506.xlsx",
+  "md5": "8935a6a8168f7303bccd679fd090760e"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 15-06-26/25007_Taltal_DDSR_2026.06.15_extracted.md",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-06-15/25007_Taltal_DDSR_2026.06.15_extracted.md",
+  "md5": "c45fb05b59d468da142ee9756d4bf16f"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 15-06-26/CROSS-CHECK_ADASA_15-06-26.md",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-06-15/CROSS-CHECK_ADASA_15-06-26.md",
+  "md5": "eeb395e89c718abb2110ae74fcbae160"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 15-06-26/tracker_15-06-26.md",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-06-15/tracker_15-06-26.md",
+  "md5": "cfa8d4a3cfb3bab84d37917690eb9246"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 22-06-26/Bandeja de entrada_ Luis Rivera Gonzalez - Outlook.pdf",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-06-22/Bandeja de entrada_ Luis Rivera Gonzalez - Outlook.pdf",
+  "md5": "49d2455b4eb616e7abad106b8c610b40"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 22-06-26/25007_Taltal_DDSR_2026.06.22.pdf",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-06-22/25007_Taltal_DDSR_2026.06.22.pdf",
+  "md5": "2203ff28b04372e0db6cc63f1f7b0ad5"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 22-06-26/25007 TALTAL PROGRESS REPORT (WEEK 25).pdf",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-06-22/25007 TALTAL PROGRESS REPORT (WEEK 25).pdf",
+  "md5": "146fc70304629e9ec6ed465f50a29a14"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 22-06-26/Copy of Procurement tracking - BW Water 2206.xlsx",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-06-22/Copy of Procurement tracking - BW Water 2206.xlsx",
+  "md5": "4c00c1c112a7cd02a409a575dcb6a0a3"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 22-06-26/tracker_22-06-26.md",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-06-22/tracker_22-06-26.md",
+  "md5": "38392dbc9ee3b578a41fa7f3c8c08b55"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 22-06-26/25007_Taltal_DDSR_2026.06.22_extracted.md",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-06-22/25007_Taltal_DDSR_2026.06.22_extracted.md",
+  "md5": "0ec963ab6ea2ff52817dfde94c013b90"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 22-06-26/25007 TALTAL PROGRESS REPORT (WEEK 25)_extracted.md",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-06-22/25007 TALTAL PROGRESS REPORT (WEEK 25)_extracted.md",
+  "md5": "8874d3c9eca106764fcf32371cf17da2"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 22-06-26/Bandeja de entrada_ Luis Rivera Gonzalez - Outlook_extracted.md",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-06-22/Bandeja de entrada_ Luis Rivera Gonzalez - Outlook_extracted.md",
+  "md5": "0ebe5b49f0c7131ce49d399ed587967a"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 22-06-26/CROSS-CHECK_ADASA_22-06-26.md",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-06-22/CROSS-CHECK_ADASA_22-06-26.md",
+  "md5": "bfe32adcd90777e4ec36fc2d2fbd0e1f"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 13-07-26/25007 Taltal - Project status update.zip",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-07-13/25007 Taltal - Project status update.zip",
+  "md5": "3c49c65391240580a484e66cf115ef06"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 13-07-26/25007 Taltal - Project status update_ Luis Rivera - Outlook.pdf",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-07-13/25007 Taltal - Project status update_ Luis Rivera - Outlook.pdf",
+  "md5": "0e3ded3378213691523791a979ac2cd8"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 13-07-26/ZIP_EXTRAIDO/2026-07-14_TALTAL Water Treatment Plan Project _Progress Update.pdf",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-07-13/ZIP_EXTRAIDO/2026-07-14_TALTAL Water Treatment Plan Project _Progress Update.pdf",
+  "md5": "55393c57bcd9e596578f958d01442974"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 13-07-26/ZIP_EXTRAIDO/25007 TALTAL PROGRESS REPORT (WEEK 28).pdf",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-07-13/ZIP_EXTRAIDO/25007 TALTAL PROGRESS REPORT (WEEK 28).pdf",
+  "md5": "eec10fa7ee8e669f6f2b8e97d1e593fe"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 13-07-26/ZIP_EXTRAIDO/25007_Taltal_DDSR_2026.07.13 (1).pdf",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-07-13/ZIP_EXTRAIDO/25007_Taltal_DDSR_2026.07.13 (1).pdf",
+  "md5": "7f233d91db4d5f4718f49619dc8e8607"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 13-07-26/ZIP_EXTRAIDO/Procurement tracking - BW Water 2906.xlsx",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-07-13/ZIP_EXTRAIDO/Procurement tracking - BW Water 2906.xlsx",
+  "md5": "25c936d16321c349009ecd77df1ca8aa"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 13-07-26/md/25007 Taltal - Project status update_ Luis Rivera - Outlook_extracted.md",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-07-13/md/25007 Taltal - Project status update_ Luis Rivera - Outlook_extracted.md",
+  "md5": "9bd14c0596641b4de1291a8f1869f440"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 13-07-26/md/2026-07-14_TALTAL Water Treatment Plan Project _Progress Update_extracted.md",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-07-13/md/2026-07-14_TALTAL Water Treatment Plan Project _Progress Update_extracted.md",
+  "md5": "aba32497160f78e5f0a2db4ee8dc7166"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 13-07-26/md/25007 TALTAL PROGRESS REPORT (WEEK 28)_extracted.md",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-07-13/md/25007 TALTAL PROGRESS REPORT (WEEK 28)_extracted.md",
+  "md5": "ea12da99dd7112cec8599915e502c4d2"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 13-07-26/md/25007_Taltal_DDSR_2026.07.13 (1)_extracted.md",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-07-13/md/25007_Taltal_DDSR_2026.07.13 (1)_extracted.md",
+  "md5": "a8cf8f6a5233adc11e5eb5d0a782daaa"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 20-07-26/25007 TALTAL PROGRESS REPORT (WEEK 29).pdf",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-07-20/25007 TALTAL PROGRESS REPORT (WEEK 29).pdf",
+  "md5": "234952de5d8ac04695f1286a3b8932a8"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 20-07-26/25007_Taltal_DDSR_2026.07.20.pdf",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-07-20/25007_Taltal_DDSR_2026.07.20.pdf",
+  "md5": "c307195eb4df7b40ac2f63a4d45d293f"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 20-07-26/Copy of Procurement tracking - BW Water 2906.xlsx",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-07-20/Copy of Procurement tracking - BW Water 2906.xlsx",
+  "md5": "e72a969cf686acae147df82d4b53ed71"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 20-07-26/md/25007 TALTAL PROGRESS REPORT (WEEK 29)_extracted.md",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-07-20/md/25007 TALTAL PROGRESS REPORT (WEEK 29)_extracted.md",
+  "md5": "9e6b3058f7e09bc5c4301d6e77379356"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 20-07-26/md/25007_Taltal_DDSR_2026.07.20_extracted.md",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-07-20/md/25007_Taltal_DDSR_2026.07.20_extracted.md",
+  "md5": "180875eb24a8ea5a8ae91c632bd80b27"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 03-08-26/25007 TALTAL PROGRESS REPORT (WEEK 31).pdf",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-08-03/25007 TALTAL PROGRESS REPORT (WEEK 31).pdf",
+  "md5": "6e87cc05ac3bbd8fbe89f47d0d73c560"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 03-08-26/Copy of Procurement tracking - BW Water 2906.xlsx",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-08-03/Copy of Procurement tracking - BW Water 2906.xlsx",
+  "md5": "763b9de8df27839c01a4e96b2220eefe"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 03-08-26/Fabrication schedule.xlsx",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-08-03/Fabrication schedule.xlsx",
+  "md5": "885b4cd6aa71047b8cfbb1952c309733"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 03-08-26/DIFF_TRACKERS.md",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-08-03/DIFF_TRACKERS.md",
+  "md5": "3a5afaa0ceee91b10bea960cedb02c87"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 03-08-26/DIFF_FABRICATION_SCHEDULE.md",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-08-03/DIFF_FABRICATION_SCHEDULE.md",
+  "md5": "0a11429305c0e08b457b88fe34f2f95a"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 03-08-26/_ANALISIS_PROGRAMA_04AGO.md",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-08-03/_ANALISIS_PROGRAMA_04AGO.md",
+  "md5": "c1ae9146f1ba67e0ef757865ebbe8cc0"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 03-08-26/md/25007 TALTAL PROGRESS REPORT (WEEK 31)_extracted.md",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-08-03/md/25007 TALTAL PROGRESS REPORT (WEEK 31)_extracted.md",
+  "md5": "e1c4b9b4b2322d9d490f90ecfff011ea"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 27-07-26/25007 Project Taltal - Weekly Coordination Call - Meeting Notes, schedule, and reports - 28.pdf",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-07-27/25007 Project Taltal - Weekly Coordination Call - Meeting Notes, schedule, and reports - 28.pdf",
+  "md5": "edf6caa39a002b2fbf14b58b1afa4b16"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 27-07-26/2026-07-27_TALTAL Water Treatment Plan Project _Progress Update.pdf",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-07-27/2026-07-27_TALTAL Water Treatment Plan Project _Progress Update.pdf",
+  "md5": "69e2633b088229dfbf58a743f6617139"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 27-07-26/25007 TALTAL PROGRESS REPORT (WEEK 30).pdf",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-07-27/25007 TALTAL PROGRESS REPORT (WEEK 30).pdf",
+  "md5": "eda80220c60529624c736235596aab69"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 27-07-26/Copy of Procurement tracking - BW Water 2906.xlsx",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-07-27/Copy of Procurement tracking - BW Water 2906.xlsx",
+  "md5": "a990c54db0d2bea3bbd0a9012f677097"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 27-07-26/md/25007 TALTAL PROGRESS REPORT (WEEK 30)_extracted.md",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-07-27/md/25007 TALTAL PROGRESS REPORT (WEEK 30)_extracted.md",
+  "md5": "bdae0022b08eb9a7fbb6ba8bf98d5e68"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 27-07-26/md/2026-07-27_TALTAL Water Treatment Plan Project _Progress Update_extracted.md",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-07-27/md/2026-07-27_TALTAL Water Treatment Plan Project _Progress Update_extracted.md",
+  "md5": "6c1a24805f1933f88c38fd3ba8b2b0f7"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA (32) 10-08-26/25007 Taltal_ Project report (Procurement and Fabrication) WEEK 32.zip",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-08-10/25007 Taltal_ Project report (Procurement and Fabrication) WEEK 32.zip",
+  "md5": "145a797e4b9ea0bc76cd5323488d5332"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 17-08-26/25007_Taltal_DDSR_2026.08.17.pdf",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-08-17/25007_Taltal_DDSR_2026.08.17.pdf",
+  "md5": "46b1e603099374c6c4c7df332e7fd298"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 17-08-26/2026-08-14_TALTAL Water Treatment Plan Project _Progress Update.pdf",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-08-17/2026-08-14_TALTAL Water Treatment Plan Project _Progress Update.pdf",
+  "md5": "3d04e367b8d7d3189ed82c31ad907648"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 17-08-26/25007 TALTAL PROGRESS REPORT (WEEK 33).pdf",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-08-17/25007 TALTAL PROGRESS REPORT (WEEK 33).pdf",
+  "md5": "0c52889c68a19252a615da68f88d6161"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 17-08-26/Fabrication schedule.xlsx",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-08-17/Fabrication schedule.xlsx",
+  "md5": "cc6c19c7d9a52e787effbff663f18e5d"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 17-08-26/Copy of Procurement tracking - BW Water 2906.xlsx",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-08-17/Copy of Procurement tracking - BW Water 2906.xlsx",
+  "md5": "77bc91019edd62d241c3eceae1227fd7"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 24-08-26/FW_ 25007 Taltal_ Project report (Procurement and Fabrication) WEEK 34.zip",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-08-24/FW_ 25007 Taltal_ Project report (Procurement and Fabrication) WEEK 34.zip",
+  "md5": "1df4b15ea3f6b9935a6a5e167933ac84"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 08-09-26/Bandeja de entrada_ Luis Rivera Gonzalez - Outlook.pdf",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-09-08/Bandeja de entrada_ Luis Rivera Gonzalez - Outlook.pdf",
+  "md5": "3f6297294da72936da5548c9f4667d7e"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 08-09-26/25007 TALTAL PROGRESS REPORT (WEEK 36).pdf",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-09-08/25007 TALTAL PROGRESS REPORT (WEEK 36).pdf",
+  "md5": "f9f22118453be13b149541bb255607df"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 08-09-26/25007_Taltal_DDSR_2026.09.07.pdf",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-09-08/25007_Taltal_DDSR_2026.09.07.pdf",
+  "md5": "6a9ce4ae9de528e4b3206780d56b0fe4"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 08-09-26/Copy of Procurement tracking - BW Water 2906.xlsx",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-09-08/Copy of Procurement tracking - BW Water 2906.xlsx",
+  "md5": "49f61edf7921f54220178253ec0b7f91"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA  14-09-26/WhatsApp Image 2026-09-14 at 14.12.14.jpeg",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-09-14/WhatsApp Image 2026-09-14 at 14.12.14.jpeg",
+  "md5": "be092de8fef993390c5d9fd798eedaec"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA  14-09-26/WhatsApp Image 2026-09-14 at 14.11.18.jpeg",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-09-14/WhatsApp Image 2026-09-14 at 14.11.18.jpeg",
+  "md5": "b1e34639c93c0ae50d195cb9e5136b4f"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA  14-09-26/WhatsApp Image 2026-09-14 at 14.06.56.jpeg",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-09-14/WhatsApp Image 2026-09-14 at 14.06.56.jpeg",
+  "md5": "222c3f932eaecf8bdcbe83e9476ab4b6"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA  14-09-26/WhatsApp Image 2026-09-14 at 14.09.52.jpeg",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-09-14/WhatsApp Image 2026-09-14 at 14.09.52.jpeg",
+  "md5": "aa31a170795b597b3f269035c40dbfe4"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA  14-09-26/Bandeja de entrada_ Luis Rivera Gonzalez - Outlook.pdf",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-09-14/Bandeja de entrada_ Luis Rivera Gonzalez - Outlook.pdf",
+  "md5": "a23cb91fd2464ebdf27ff6bf232aa2d7"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA  14-09-26/25007 TALTAL PROGRESS REPORT (WEEK 37).pdf",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-09-14/25007 TALTAL PROGRESS REPORT (WEEK 37).pdf",
+  "md5": "fe15becd5b41cc02ec5411e1cd0084de"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA  14-09-26/25007_Taltal_DDSR_2026.09.14.pdf",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-09-14/25007_Taltal_DDSR_2026.09.14.pdf",
+  "md5": "3d20bf77490574a312c519efc738d8fa"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA  14-09-26/Copy of Procurement tracking - BW Water 2906.xlsx",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-09-14/Copy of Procurement tracking - BW Water 2906.xlsx",
+  "md5": "8a1340d2f095f880089286747cff699b"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 21-09-26/25007 TALTAL PROGRESS REPORT (WEEK 38).pdf",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-09-21/25007 TALTAL PROGRESS REPORT (WEEK 38).pdf",
+  "md5": "e21354bb55797248d0db54369a0e6739"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 21-09-26/Copy of Procurement tracking - BW Water 2906.xlsx",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-09-21/Copy of Procurement tracking - BW Water 2906.xlsx",
+  "md5": "4f0c1fcd83961d3ed52e1864b5b42f9c"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 21-09-26/25007_Taltal_DDSR_2026.09.21.pdf",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-09-21/25007_Taltal_DDSR_2026.09.21.pdf",
+  "md5": "7dca8bbdeb71e179d3fef2fa30f1bb8b"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 21-09-26/DIFF_TRACKERS.md",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-09-21/DIFF_TRACKERS.md",
+  "md5": "21f96903b197a06e04984f11bcd2e121"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 28-09-26/25007 TALTAL PROGRESS REPORT (WEEK 39).pdf",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-09-28/25007 TALTAL PROGRESS REPORT (WEEK 39).pdf",
+  "md5": "899a63768576ad7e80bae0081399d99c"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 28-09-26/25007_Taltal_DDSR_2026.09.28.pdf",
+  "destino": "PROGRAMA y CONTRATO/REVISION SEMANAL PO EQUIPOS/SEMANA 2026-09-28/25007_Taltal_DDSR_2026.09.28.pdf",
+  "md5": "7866e3b329b27a545b0b0007c631a689"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/DOCUMENTOS PARA EL ESTADO DE PAGO/L-12803; Acta Reunión de Inicio-Arranque (Contrato Comercial de Suministros).pdf",
+  "destino": "PROGRAMA y CONTRATO/CONTRATO C-4300/L-12803; Acta Reunión de Inicio-Arranque (Contrato Comercial de Suministros).pdf",
+  "md5": "b406683c13393d1fc34a5b2d3f8087bf"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/DOCUMENTOS PARA EL ESTADO DE PAGO/FORMULARIO SOLICITUD ENVÍO B.G.pdf",
+  "destino": "PROGRAMA y CONTRATO/COMERCIAL/ESTADOS DE PAGO/DOCUMENTOS BASE/FORMULARIO SOLICITUD ENVÍO B.G.pdf",
+  "md5": "537ae8ea0cc4c4f24fca182305951c39"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/DOCUMENTOS PARA EL ESTADO DE PAGO/CORREO.msg",
+  "destino": "PROGRAMA y CONTRATO/COMERCIAL/ESTADOS DE PAGO/DOCUMENTOS BASE/CORREO.msg",
+  "md5": "c7a4203f04cbc4ba75ed1a99265b1160"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/DOCUMENTOS PARA EL ESTADO DE PAGO/Formato Estado de Pago.xlsx",
+  "destino": "PROGRAMA y CONTRATO/COMERCIAL/ESTADOS DE PAGO/DOCUMENTOS BASE/Formato Estado de Pago.xlsx",
+  "md5": "c8f12a2ae4ef0e50d26881db1e81743d"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/DOCUMENTOS PARA EL ESTADO DE PAGO/ESTADO DE PAGO 2/L-12803; C-4300; E.E.P.P. N°24786; 07-2026.pdf",
+  "destino": "PROGRAMA y CONTRATO/COMERCIAL/ESTADOS DE PAGO/EDP 2/L-12803; C-4300; E.E.P.P. N°24786; 07-2026.pdf",
+  "md5": "46de4a93711f1fbc93d893c1e3ac8e14"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/DOCUMENTOS PARA EL ESTADO DE PAGO/ESTADO DE PAGO 2/md/L-12803; C-4300; E.E.P.P. N°24786; 07-2026_extracted.md",
+  "destino": "PROGRAMA y CONTRATO/COMERCIAL/ESTADOS DE PAGO/EDP 2/md/L-12803; C-4300; E.E.P.P. N°24786; 07-2026_extracted.md",
+  "md5": "bcf75a694b6d3b531c721f2e10e7ecab"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/PROGRAMA DE MITIGACION/correo BW WATERS.pdf",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/2026-05-22 MITIGACION Y RECOVERY/correo BW WATERS.pdf",
+  "md5": "119ba5bdc0540e5290a5e622eb6f223d"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/PROGRAMA DE MITIGACION/12803_TALTAL Water Treatment Plan Project _Recovery Schedule_Updated 2026.05.22.pdf",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/2026-05-22 MITIGACION Y RECOVERY/12803_TALTAL Water Treatment Plan Project _Recovery Schedule_Updated 2026.05.22.pdf",
+  "md5": "59e4e9380dd9b33e39d9c64d5c3fa4f5"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/PROGRAMA DE MITIGACION/25007 Taltal - MItigation Plan.pdf",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/2026-05-22 MITIGACION Y RECOVERY/25007 Taltal - MItigation Plan.pdf",
+  "md5": "f2070e167252d6da6544084098acad13"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/PROGRAMA DE MITIGACION/correo BW WATERS_extracted.md",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/2026-05-22 MITIGACION Y RECOVERY/correo BW WATERS_extracted.md",
+  "md5": "83fafd63b2305d41272a85ffbb1c1f4f"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/PROGRAMA DE MITIGACION/25007 Taltal - MItigation Plan_extracted.md",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/2026-05-22 MITIGACION Y RECOVERY/25007 Taltal - MItigation Plan_extracted.md",
+  "md5": "ef1615189021c3af90077d230d5f0688"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/PROGRAMA DE MITIGACION/12803_TALTAL Water Treatment Plan Project _Recovery Schedule_Updated 2026.05.22_extracted.md",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/2026-05-22 MITIGACION Y RECOVERY/12803_TALTAL Water Treatment Plan Project _Recovery Schedule_Updated 2026.05.22_extracted.md",
+  "md5": "3b86de5731d24774b534850805a70056"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/PROGRAMA DE MITIGACION/Project Schedule 08-06-26.pdf",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/2026-05-22 MITIGACION Y RECOVERY/Project Schedule 08-06-26.pdf",
+  "md5": "a0435f779fe4ff53839bb35493368861"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/PROGRAMA DE MITIGACION/Project Schedule 08-06-26_extracted.md",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/2026-05-22 MITIGACION Y RECOVERY/Project Schedule 08-06-26_extracted.md",
+  "md5": "297bc5963b48e529efeb10300b9e390f"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/PROGRAMA DE MITIGACION/2026-08-04_TALTAL Water Treatment Plan Project _Progress Update.pdf",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/2026-05-22 MITIGACION Y RECOVERY/2026-08-04_TALTAL Water Treatment Plan Project _Progress Update.pdf",
+  "md5": "016f6a70a5c021e00743d8719c21c54e"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/PROGRAMA DE MITIGACION/_ANALISIS_CRONOGRAMA_04AGO_REVISION.md",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/2026-05-22 MITIGACION Y RECOVERY/_ANALISIS_CRONOGRAMA_04AGO_REVISION.md",
+  "md5": "433f7311a62684b295b1036026046253"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/PROGRAMA DE MITIGACION/RESPUESTA BW WATERS/P22-NT-09-000-001-0_Mitigation-Plan-Clarifications_ADASA.pdf",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/2026-05-22 MITIGACION Y RECOVERY/RESPUESTA BW WATERS/P22-NT-09-000-001-0_Mitigation-Plan-Clarifications_ADASA.pdf",
+  "md5": "59e417b572728f7eb4891a4e655ff970"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/PROGRAMA DE MITIGACION/RESPUESTA BW WATERS/correo respuesta plan de mitigacion.pdf",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/2026-05-22 MITIGACION Y RECOVERY/RESPUESTA BW WATERS/correo respuesta plan de mitigacion.pdf",
+  "md5": "2d014a476c864882ebef0716d0da1321"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/PROGRAMA DE MITIGACION/RESPUESTA BW WATERS/Letter Protec Arisawa.pdf",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/2026-05-22 MITIGACION Y RECOVERY/RESPUESTA BW WATERS/Letter Protec Arisawa.pdf",
+  "md5": "c1164f9c9a8cccdda72a9cae615aac56"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/PROGRAMA DE MITIGACION/md/2026-08-04_TALTAL Water Treatment Plan Project _Progress Update_extracted.md",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/2026-05-22 MITIGACION Y RECOVERY/md/2026-08-04_TALTAL Water Treatment Plan Project _Progress Update_extracted.md",
+  "md5": "d2b7c4897bf94b8b3179f09cf0bb0d71"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/COMPRA DE BWWATER POR NORA/Bandeja de entrada_ Luis Rivera Gonzalez - Outlook.pdf",
+  "destino": "PROGRAMA y CONTRATO/CONTRATO C-4300/VENTA BW WATER A DE NORA/Bandeja de entrada_ Luis Rivera Gonzalez - Outlook.pdf",
+  "md5": "cf45c8688c112bb19131e72ccefcf7ed"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/COMPRA DE BWWATER POR NORA/Notification of sale of BW Water-Aguas De Antofagasta S.A.-Luis Rivera Gonzalez.pdf",
+  "destino": "PROGRAMA y CONTRATO/CONTRATO C-4300/VENTA BW WATER A DE NORA/Notification of sale of BW Water-Aguas De Antofagasta S.A.-Luis Rivera Gonzalez.pdf",
+  "md5": "6e509e5bb5c1676b1b32d7f05c4396d5"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/COMPRA DE BWWATER POR NORA/Industrie De Nora acquires BW Water to build Global Water Solutions Platform.pdf",
+  "destino": "PROGRAMA y CONTRATO/CONTRATO C-4300/VENTA BW WATER A DE NORA/Industrie De Nora acquires BW Water to build Global Water Solutions Platform.pdf",
+  "md5": "515a58f93fedc508ef00104ddf0bc51a"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/COMPRA DE BWWATER POR NORA/BW Renewables announces sale of BW Water - BW Water.pdf",
+  "destino": "PROGRAMA y CONTRATO/CONTRATO C-4300/VENTA BW WATER A DE NORA/BW Renewables announces sale of BW Water - BW Water.pdf",
+  "md5": "59a337ea047e07fe4d3b221f492d7ec7"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/PROGRAMA 26-06-26/25007 Taltal - Schedule Update.eml",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/2026-06-24 PROGRESS UPDATE/25007 Taltal - Schedule Update.eml",
+  "md5": "372166c81a1d3fb8136025002ccfb627"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/PROGRAMA 26-06-26/25007 Taltal - Schedule Update.pdf",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/2026-06-24 PROGRESS UPDATE/25007 Taltal - Schedule Update.pdf",
+  "md5": "11b78c12b50ac3b87a74343d7111226b"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/PROGRAMA 26-06-26/2026-06-24_TALTAL Water Treatment Plan Project _Progress Update.pdf",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/2026-06-24 PROGRESS UPDATE/2026-06-24_TALTAL Water Treatment Plan Project _Progress Update.pdf",
+  "md5": "feb14a069d0ff271bf67307751cfc124"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/PROGRAMA 26-06-26/2026-06-24_12803_Taltal Water Treatment Plant_Progress Update .mpp",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/2026-06-24 PROGRESS UPDATE/2026-06-24_12803_Taltal Water Treatment Plant_Progress Update .mpp",
+  "md5": "7ad0feff0946042db36968c6e57ca8c2"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/PROGRAMA 26-06-26/md/2026-06-24_TALTAL Water Treatment Plan Project _Progress Update_extracted.md",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/2026-06-24 PROGRESS UPDATE/md/2026-06-24_TALTAL Water Treatment Plan Project _Progress Update_extracted.md",
+  "md5": "bfd417dee951ca4438ac1e556b73ef17"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/PROGRAMA 26-06-26/md/25007 Taltal - Schedule Update_extracted.md",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/2026-06-24 PROGRESS UPDATE/md/25007 Taltal - Schedule Update_extracted.md",
+  "md5": "963ead2c59cc8c5b9306cc23c476666a"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/ESTADOS DE PAGO/L-12803; C-4300; Carta Formal Solicitud Aumento de Monto.pdf",
+  "destino": "PROGRAMA y CONTRATO/COMERCIAL/ESTADOS DE PAGO/L-12803; C-4300; Carta Formal Solicitud Aumento de Monto.pdf",
+  "md5": "dbc59440981b0397500c65682605b304"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/ESTADOS DE PAGO/EDP 1/L-12803; C-4300; E.E.P.P. N°24625; 06-2026.pdf",
+  "destino": "PROGRAMA y CONTRATO/COMERCIAL/ESTADOS DE PAGO/EDP 1/L-12803; C-4300; E.E.P.P. N°24625; 06-2026.pdf",
+  "md5": "46b2a5c51f52e6778b57b37ee9356288"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/ESTADOS DE PAGO/EDP 1/E.E.P.P. N°24625; C-4300; BW WATER AMERICAS INC.; Período 06-2026.-::E.E.P.P. No. 24625; C-4300; BW WATER AMERICAS INC.; Period 06-2026.-.pdf",
+  "destino": "PROGRAMA y CONTRATO/COMERCIAL/ESTADOS DE PAGO/EDP 1/E.E.P.P. N°24625; C-4300; BW WATER AMERICAS INC.; Período 06-2026.-::E.E.P.P. No. 24625; C-4300; BW WATER AMERICAS INC.; Period 06-2026.-.pdf",
+  "md5": "1ac25620d6fe291967bc9939eed2b922"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/ESTADOS DE PAGO/EDP 1/Estado de Pago (EDP) No.1_ BWWAs Jun23 2026.pdf",
+  "destino": "PROGRAMA y CONTRATO/COMERCIAL/ESTADOS DE PAGO/EDP 1/Estado de Pago (EDP) No.1_ BWWAs Jun23 2026.pdf",
+  "md5": "1dda250ad42ef188571d07314a5dda51"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/ESTADOS DE PAGO/EDP 2/Estado de Pago (EDP) No.2_ BWWAs Jul23 2026 (Signed).pdf",
+  "destino": "PROGRAMA y CONTRATO/COMERCIAL/ESTADOS DE PAGO/EDP 2/Estado de Pago (EDP) No.2_ BWWAs Jul23 2026 (Signed).pdf",
+  "md5": "0f29c6a9a7080f08cccc31fa47947b6c"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/ESTADOS DE PAGO/EDP 2/RE_ E.E.P.P..msg",
+  "destino": "PROGRAMA y CONTRATO/COMERCIAL/ESTADOS DE PAGO/EDP 2/RE_ E.E.P.P..msg",
+  "md5": "a8292c12f20559e5277ee25326030066"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/ESTADOS DE PAGO/EDP 2/md/Estado de Pago (EDP) No.2_ BWWAs Jul23 2026 (Signed)_extracted.md",
+  "destino": "PROGRAMA y CONTRATO/COMERCIAL/ESTADOS DE PAGO/EDP 2/md/Estado de Pago (EDP) No.2_ BWWAs Jul23 2026 (Signed)_extracted.md",
+  "md5": "6e27864206edd0ff76cdf18ff2e7deaf"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/ESTADOS DE PAGO/EDP 2/md/Invoice #25007-02 (EEPP 24786)_Jul312026_signed_extracted.md",
+  "destino": "PROGRAMA y CONTRATO/COMERCIAL/ESTADOS DE PAGO/EDP 2/md/Invoice #25007-02 (EEPP 24786)_Jul312026_signed_extracted.md",
+  "md5": "a414a4e29560689fc13ee6bb8dc4c20b"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/ESTADOS DE PAGO/EDP 2/msg_extraido/Invoice #25007-02 (EEPP 24786)_Jul312026_signed.pdf",
+  "destino": "PROGRAMA y CONTRATO/COMERCIAL/ESTADOS DE PAGO/EDP 2/msg_extraido/Invoice #25007-02 (EEPP 24786)_Jul312026_signed.pdf",
+  "md5": "3b184787cfaefbf9a6ba8444896f8f61"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/ESTADOS DE PAGO/EDP 2/msg_extraido/RE_EEPP_N24786_extracted.md",
+  "destino": "PROGRAMA y CONTRATO/COMERCIAL/ESTADOS DE PAGO/EDP 2/msg_extraido/RE_EEPP_N24786_extracted.md",
+  "md5": "bceb30de79ff1c278e21bc12ebb6ed0c"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/ESTADOS DE PAGO/md/L-12803; C-4300; Carta Formal Solicitud Aumento de Monto_extracted.md",
+  "destino": "PROGRAMA y CONTRATO/COMERCIAL/ESTADOS DE PAGO/md/L-12803; C-4300; Carta Formal Solicitud Aumento de Monto_extracted.md",
+  "md5": "faa1441ed1c54c37878f6f92ef0cccb4"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/ESTADOS DE PAGO/EDP INGENIERIA/EDP 1.pdf",
+  "destino": "PROGRAMA y CONTRATO/COMERCIAL/ESTADOS DE PAGO/EDP INGENIERIA/EDP 1.pdf",
+  "md5": "f2fc22751f881fb81886e29300deeb20"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/RESPUESTA DE FEDCO/Report - FEDCO - Delay Assessment.pdf",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/FEDCO/Report - FEDCO - Delay Assessment.pdf",
+  "md5": "a44b0c31537e5c41ce4fc2c4cd2b0f19"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/RESPUESTA DE FEDCO/2A191Y~0.PDF",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/FEDCO/2A191Y~0.PDF",
+  "md5": "5be7ffdeb5f6119230e605c57fd9388e"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/RESPUESTA DE FEDCO/25007 Taltal: FEDCO - Pilot Testing.pdf",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/FEDCO/25007 Taltal: FEDCO - Pilot Testing.pdf",
+  "md5": "2dd576b28b642c28ab66381abf5c3c60"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/RESPUESTA DE FEDCO/19554 BW Water - Manufacturing Schedule R5.pdf",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/FEDCO/19554 BW Water - Manufacturing Schedule R5.pdf",
+  "md5": "c954bc9e4fe3cbe77216d265bbe690ea"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/RESPUESTA DE FEDCO/Bandeja de entrada_ Luis Rivera Gonzalez - Outlook.pdf",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/FEDCO/Bandeja de entrada_ Luis Rivera Gonzalez - Outlook.pdf",
+  "md5": "d9533fe404c5e95a3a85a04b6fecb772"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/RESPUESTA DE FEDCO/md/19554 BW Water - Manufacturing Schedule R5_extracted.md",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/FEDCO/md/19554 BW Water - Manufacturing Schedule R5_extracted.md",
+  "md5": "84d4d21707cd9edb261b20a832ff065b"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/RESPUESTA DE FEDCO/md/Bandeja de entrada_ Luis Rivera Gonzalez - Outlook_extracted.md",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/FEDCO/md/Bandeja de entrada_ Luis Rivera Gonzalez - Outlook_extracted.md",
+  "md5": "43f9f283e21b8b8acc395b3086d03608"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/PROGRAMA DE FABRICACION 01-07-26/Bandeja de entrada_ Luis Rivera Gonzalez - Outlook.pdf",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/2026-07-01 PROGRAMA DE FABRICACION/Bandeja de entrada_ Luis Rivera Gonzalez - Outlook.pdf",
+  "md5": "916f5367a91f5844607e1685a9fad4cf"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/PROGRAMA DE FABRICACION 01-07-26/25007 TALTAL PROGRESS REPORT (WEEK 26).pdf",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/2026-07-01 PROGRAMA DE FABRICACION/25007 TALTAL PROGRESS REPORT (WEEK 26).pdf",
+  "md5": "ac34f01df7f48ae7542d14d9746c8a5e"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/PROGRAMA DE FABRICACION 01-07-26/Preliminary Packing List.pdf",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/2026-07-01 PROGRAMA DE FABRICACION/Preliminary Packing List.pdf",
+  "md5": "02621e6c5900970e9d30297da167fbcc"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/PROGRAMA DE FABRICACION 01-07-26/Procurement tracking - BW Water 2906.xlsx",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/2026-07-01 PROGRAMA DE FABRICACION/Procurement tracking - BW Water 2906.xlsx",
+  "md5": "9a5f65e1b9bc4f9a826fc2650ecd6fd1"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/PROGRAMA DE FABRICACION 01-07-26/FABRICACION EN PDF.pdf",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/2026-07-01 PROGRAMA DE FABRICACION/FABRICACION EN PDF.pdf",
+  "md5": "b469c1507b1bad1590124159e56e2f06"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/PROGRAMA DE FABRICACION 01-07-26/Fabrication schedule.xlsx",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/2026-07-01 PROGRAMA DE FABRICACION/Fabrication schedule.xlsx",
+  "md5": "c3e99e242b98c3fe998d727976923286"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/PROGRAMA DE FABRICACION 01-07-26/PROGRAMA AJUSTADO POR RETRASO DE PLC.pdf",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/2026-07-01 PROGRAMA DE FABRICACION/PROGRAMA AJUSTADO POR RETRASO DE PLC.pdf",
+  "md5": "c91b13c45827c841b0f28ac4827188d5"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REPUESTOS DE 2 AÑOS/Recomended 2-year spare parts.pdf",
+  "destino": "PROGRAMA y CONTRATO/COMERCIAL/REPUESTOS DE 2 AÑOS/Recomended 2-year spare parts.pdf",
+  "md5": "959763016d526f3db8d4a52205678e2b"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REPUESTOS DE 2 AÑOS/RE: Formal Re-validation of Spare Parts Quotation C4300.pdf",
+  "destino": "PROGRAMA y CONTRATO/COMERCIAL/REPUESTOS DE 2 AÑOS/RE: Formal Re-validation of Spare Parts Quotation C4300.pdf",
+  "md5": "657251b04f52008a8b4b5a3ae0e1813b"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REPUESTOS DE 2 AÑOS/_ANALISIS_REPUESTOS_15JUL.md",
+  "destino": "PROGRAMA y CONTRATO/COMERCIAL/REPUESTOS DE 2 AÑOS/_ANALISIS_REPUESTOS_15JUL.md",
+  "md5": "6062fb7ebf1c37dda333c9bdc5755f14"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REPUESTOS DE 2 AÑOS/Proposal 25007-PL-0002_rev.0 - 2y spare parts_s.pdf",
+  "destino": "PROGRAMA y CONTRATO/COMERCIAL/REPUESTOS DE 2 AÑOS/Proposal 25007-PL-0002_rev.0 - 2y spare parts_s.pdf",
+  "md5": "2bf109bcf778f4d7e2de5418c8fc9ea2"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REPUESTOS DE 2 AÑOS/md/Recomended-2-year-spare-parts_extracted.md",
+  "destino": "PROGRAMA y CONTRATO/COMERCIAL/REPUESTOS DE 2 AÑOS/md/Recomended-2-year-spare-parts_extracted.md",
+  "md5": "f17a12e82b144af4137da1b1dac0c5d9"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REPUESTOS DE 2 AÑOS/md/Thread-Formal-Re-validation-Spare-Parts-C4300_extracted.md",
+  "destino": "PROGRAMA y CONTRATO/COMERCIAL/REPUESTOS DE 2 AÑOS/md/Thread-Formal-Re-validation-Spare-Parts-C4300_extracted.md",
+  "md5": "9c44b0f094c14f478d47ddb1c92b5839"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REPUESTOS DE 2 AÑOS/propuesta formal/Proposal 25007-PL-0002_rev.0 - 2y spare parts_s.pdf",
+  "destino": "PROGRAMA y CONTRATO/COMERCIAL/REPUESTOS DE 2 AÑOS/propuesta formal/Proposal 25007-PL-0002_rev.0 - 2y spare parts_s.pdf",
+  "md5": "2bf109bcf778f4d7e2de5418c8fc9ea2"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REPUESTOS DE 2 AÑOS/propuesta formal/Proposal 25007-correo.pdf",
+  "destino": "PROGRAMA y CONTRATO/COMERCIAL/REPUESTOS DE 2 AÑOS/propuesta formal/Proposal 25007-correo.pdf",
+  "md5": "60fbcc23fa70204024aee1409b4c2ca4"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REPUESTOS DE 2 AÑOS/propuesta formal/md/Proposal 25007-PL-0002_rev.0 - 2y spare parts_s_extracted.md",
+  "destino": "PROGRAMA y CONTRATO/COMERCIAL/REPUESTOS DE 2 AÑOS/propuesta formal/md/Proposal 25007-PL-0002_rev.0 - 2y spare parts_s_extracted.md",
+  "md5": "975f77e79f1956129910a61a640fb76a"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REPUESTOS DE 2 AÑOS/propuesta formal/md/Proposal 25007-correo_extracted.md",
+  "destino": "PROGRAMA y CONTRATO/COMERCIAL/REPUESTOS DE 2 AÑOS/propuesta formal/md/Proposal 25007-correo_extracted.md",
+  "md5": "9d62cc6a4f8e698aec2bc6623361a77d"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REPUESTOS DE 2 AÑOS/OC I-333/OC-I-333.pdf",
+  "destino": "PROGRAMA y CONTRATO/COMERCIAL/REPUESTOS DE 2 AÑOS/OC I-333/OC-I-333.pdf",
+  "md5": "9637ffdf3c48aa7103b830e46bf83730"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REPUESTOS DE 2 AÑOS/OC I-333/2026-09-30_Jorge-Guevara_RV-Orden-de-Compra-I-333.pdf",
+  "destino": "PROGRAMA y CONTRATO/COMERCIAL/REPUESTOS DE 2 AÑOS/OC I-333/2026-09-30_Jorge-Guevara_RV-Orden-de-Compra-I-333.pdf",
+  "md5": "3c533fb1129c77144a2b8b6e02d7194c"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/REPUESTOS DE 2 AÑOS/OC I-333/2026-09-30_ENVIADO_Victor-Gutierrez_PO-Spare-Parts.pdf",
+  "destino": "PROGRAMA y CONTRATO/COMERCIAL/REPUESTOS DE 2 AÑOS/OC I-333/2026-09-30_ENVIADO_Victor-Gutierrez_PO-Spare-Parts.pdf",
+  "md5": "5bd277374393842ed92219e70dbd80b4"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/_DUPLICADO_COTIZACION_REPUESTOS/Bandeja de entrada_ Luis Rivera Gonzalez - Outlook.pdf",
+  "destino": "PROGRAMA y CONTRATO/COMERCIAL/REPUESTOS DE 2 AÑOS/_retirado_2026-08-04/Bandeja de entrada_ Luis Rivera Gonzalez - Outlook.pdf",
+  "md5": "e6aec0028d3051107cfff7285c115346"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/_DUPLICADO_COTIZACION_REPUESTOS/Proposal 25007-PL-0002_rev.0 - 2y spare parts_s.pdf",
+  "destino": "PROGRAMA y CONTRATO/COMERCIAL/REPUESTOS DE 2 AÑOS/_retirado_2026-08-04/Proposal 25007-PL-0002_rev.0 - 2y spare parts_s.pdf",
+  "md5": "2bf109bcf778f4d7e2de5418c8fc9ea2"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/_DUPLICADO_COTIZACION_REPUESTOS/RE: Formal Re-validation of Spare Parts Quotation C4300.pdf",
+  "destino": "PROGRAMA y CONTRATO/COMERCIAL/REPUESTOS DE 2 AÑOS/_retirado_2026-08-04/RE: Formal Re-validation of Spare Parts Quotation C4300.pdf",
+  "md5": "cc864809bb5426639c5cfcff9b1d1d5a"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/_DUPLICADO_COTIZACION_REPUESTOS/_LEEME.md",
+  "destino": "PROGRAMA y CONTRATO/COMERCIAL/REPUESTOS DE 2 AÑOS/_retirado_2026-08-04/_LEEME.md",
+  "md5": "4fbd388ee8fb2c755843b8a9ad85948f"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/_DUPLICADO_COTIZACION_REPUESTOS/Recomended 2-year spare parts.pdf",
+  "destino": "PROGRAMA y CONTRATO/COMERCIAL/REPUESTOS DE 2 AÑOS/_retirado_2026-08-04/Recomended 2-year spare parts.pdf",
+  "md5": "959763016d526f3db8d4a52205678e2b"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/SEGUIMIENTO COMPROMISOS/compromisos.yaml.bak_pre-n32",
+  "destino": "PROGRAMA y CONTRATO/SEGUIMIENTO COMPROMISOS/_backups/compromisos.yaml.bak_pre-n32",
+  "md5": "318bd2732b4d5dab43fb7b04ad16c988"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/SEGUIMIENTO COMPROMISOS/compromisos.yaml.bak_pre-inspeccion004",
+  "destino": "PROGRAMA y CONTRATO/SEGUIMIENTO COMPROMISOS/_backups/compromisos.yaml.bak_pre-inspeccion004",
+  "md5": "490351d84bcdd310ee14b6059935b9ff"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/SEGUIMIENTO COMPROMISOS/compromisos.yaml.bak_pre-seguimiento004-17ago",
+  "destino": "PROGRAMA y CONTRATO/SEGUIMIENTO COMPROMISOS/_backups/compromisos.yaml.bak_pre-seguimiento004-17ago",
+  "md5": "f936e63fce89f920ecfe3b9e0f3beed3"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/SEGUIMIENTO COMPROMISOS/compromisos.yaml.bak_pre-n33",
+  "destino": "PROGRAMA y CONTRATO/SEGUIMIENTO COMPROMISOS/_backups/compromisos.yaml.bak_pre-n33",
+  "md5": "f7ae94bd25390ae5ee4d5c650ae8479c"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/SEGUIMIENTO COMPROMISOS/compromisos.yaml.bak_pre-pe-endorsement",
+  "destino": "PROGRAMA y CONTRATO/SEGUIMIENTO COMPROMISOS/_backups/compromisos.yaml.bak_pre-pe-endorsement",
+  "md5": "c316f4986720dbc67ed6810ac36ee514"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/SEGUIMIENTO COMPROMISOS/compromisos.yaml.bak_pre-n34",
+  "destino": "PROGRAMA y CONTRATO/SEGUIMIENTO COMPROMISOS/_backups/compromisos.yaml.bak_pre-n34",
+  "md5": "90ce61d270e1f1986b5bbcbea092fe43"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/SEGUIMIENTO COMPROMISOS/compromisos.yaml.bak_pre-n35",
+  "destino": "PROGRAMA y CONTRATO/SEGUIMIENTO COMPROMISOS/_backups/compromisos.yaml.bak_pre-n35",
+  "md5": "6e2430224d45db43aa54ddae4a556e28"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/SEGUIMIENTO COMPROMISOS/compromisos.yaml.bak_pre-inspeccion006",
+  "destino": "PROGRAMA y CONTRATO/SEGUIMIENTO COMPROMISOS/_backups/compromisos.yaml.bak_pre-inspeccion006",
+  "md5": "4cf6a5a36f17adbcddcddf4265279bd2"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/SEGUIMIENTO COMPROMISOS/compromisos.yaml.bak_pre-ir005",
+  "destino": "PROGRAMA y CONTRATO/SEGUIMIENTO COMPROMISOS/_backups/compromisos.yaml.bak_pre-ir005",
+  "md5": "d3c742ec5a9d2209f39b7c010ecf0df1"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/SEGUIMIENTO COMPROMISOS/compromisos.yaml.bak_pre-envio21",
+  "destino": "PROGRAMA y CONTRATO/SEGUIMIENTO COMPROMISOS/_backups/compromisos.yaml.bak_pre-envio21",
+  "md5": "6c73717cbb9aaff0065aadf7b0de8e5f"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/SEGUIMIENTO COMPROMISOS/compromisos.yaml.bak_pre-n36",
+  "destino": "PROGRAMA y CONTRATO/SEGUIMIENTO COMPROMISOS/_backups/compromisos.yaml.bak_pre-n36",
+  "md5": "fe302f8800cd30579d3f7823a0a9763e"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/SEGUIMIENTO COMPROMISOS/compromisos.yaml.bak_pre-31ago",
+  "destino": "PROGRAMA y CONTRATO/SEGUIMIENTO COMPROMISOS/_backups/compromisos.yaml.bak_pre-31ago",
+  "md5": "bdafbdb1aad604205b6d9dc4832e7054"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/SEGUIMIENTO COMPROMISOS/compromisos.yaml.bak_pre-nt003",
+  "destino": "PROGRAMA y CONTRATO/SEGUIMIENTO COMPROMISOS/_backups/compromisos.yaml.bak_pre-nt003",
+  "md5": "fe2dbb165b39d62a3162705de6082088"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/SEGUIMIENTO COMPROMISOS/compromisos.yaml.bak_pre-suavizado",
+  "destino": "PROGRAMA y CONTRATO/SEGUIMIENTO COMPROMISOS/_backups/compromisos.yaml.bak_pre-suavizado",
+  "md5": "7e8c379ca073af3f59b8f202a6128466"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/SEGUIMIENTO COMPROMISOS/compromisos.yaml.bak_pre-inspectores",
+  "destino": "PROGRAMA y CONTRATO/SEGUIMIENTO COMPROMISOS/_backups/compromisos.yaml.bak_pre-inspectores",
+  "md5": "0f1e2f0b5446edde9ad30994c3ac9c33"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/SEGUIMIENTO COMPROMISOS/compromisos.yaml.bak_pre-n37",
+  "destino": "PROGRAMA y CONTRATO/SEGUIMIENTO COMPROMISOS/_backups/compromisos.yaml.bak_pre-n37",
+  "md5": "2db793d90611c7a339511d3f021551e3"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/SEGUIMIENTO COMPROMISOS/compromisos.yaml.bak_pre-n38",
+  "destino": "PROGRAMA y CONTRATO/SEGUIMIENTO COMPROMISOS/_backups/compromisos.yaml.bak_pre-n38",
+  "md5": "e4900576dba02fa013ebecd582013e85"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/SEGUIMIENTO COMPROMISOS/compromisos.yaml.bak_pre-bl-rev1",
+  "destino": "PROGRAMA y CONTRATO/SEGUIMIENTO COMPROMISOS/_backups/compromisos.yaml.bak_pre-bl-rev1",
+  "md5": "19455759a4875df27ebefc54e9875ea5"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/SEGUIMIENTO COMPROMISOS/compromisos.yaml.bak_pre-correccion-int10",
+  "destino": "PROGRAMA y CONTRATO/SEGUIMIENTO COMPROMISOS/_backups/compromisos.yaml.bak_pre-correccion-int10",
+  "md5": "eb8800ab2c629483e1edce05a125ad0b"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/SEGUIMIENTO COMPROMISOS/compromisos.yaml.bak_pre-prg48",
+  "destino": "PROGRAMA y CONTRATO/SEGUIMIENTO COMPROMISOS/_backups/compromisos.yaml.bak_pre-prg48",
+  "md5": "4c7cfc22228116998170abb306c1b4d3"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/SEGUIMIENTO COMPROMISOS/compromisos.yaml.bak_pre-n39",
+  "destino": "PROGRAMA y CONTRATO/SEGUIMIENTO COMPROMISOS/_backups/compromisos.yaml.bak_pre-n39",
+  "md5": "3e53f9e4f622cdd33cf251441ef1284b"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/SEGUIMIENTO COMPROMISOS/compromisos.yaml.bak_pre-prg48-fijado",
+  "destino": "PROGRAMA y CONTRATO/SEGUIMIENTO COMPROMISOS/_backups/compromisos.yaml.bak_pre-prg48-fijado",
+  "md5": "0bf67bd4575a4763ed86fa77b0bc48c0"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/SEGUIMIENTO COMPROMISOS/compromisos.yaml.bak_pre-izaje",
+  "destino": "PROGRAMA y CONTRATO/SEGUIMIENTO COMPROMISOS/_backups/compromisos.yaml.bak_pre-izaje",
+  "md5": "90d38148bb7c1f9c234488d692fc40cc"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/SEGUIMIENTO COMPROMISOS/compromisos.yaml.bak_pre-envio-izaje",
+  "destino": "PROGRAMA y CONTRATO/SEGUIMIENTO COMPROMISOS/_backups/compromisos.yaml.bak_pre-envio-izaje",
+  "md5": "e48020fd53ca40fabb7f88952a9997b4"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/SEGUIMIENTO COMPROMISOS/compromisos.yaml.bak_pre-reunion17sep",
+  "destino": "PROGRAMA y CONTRATO/SEGUIMIENTO COMPROMISOS/_backups/compromisos.yaml.bak_pre-reunion17sep",
+  "md5": "5bc6eca5bf94b90b79b701c93708ac8c"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/PROGRAMA DE SEGUIMIENTO RETRASOS/2026-08-28_TALTAL Water Treatment Plan Project _Progress Update.pdf",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/2026-08-28 PROGRESS UPDATE/2026-08-28_TALTAL Water Treatment Plan Project _Progress Update.pdf",
+  "md5": "c37a81bbf80567108d5ce3212956f334"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/PROGRAMA DE SEGUIMIENTO RETRASOS/Bandeja de entrada_ Luis Rivera Gonzalez - Outlook.pdf",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/2026-08-28 PROGRESS UPDATE/Bandeja de entrada_ Luis Rivera Gonzalez - Outlook.pdf",
+  "md5": "4e4cafa554d8e11ca346bd79e91903cc"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/PROGRAMA DE SEGUIMIENTO RETRASOS/md/2026-08-28_TALTAL Water Treatment Plan Project _Progress Update_extracted.md",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/2026-08-28 PROGRESS UPDATE/md/2026-08-28_TALTAL Water Treatment Plan Project _Progress Update_extracted.md",
+  "md5": "fcafbbdb72e21d4e97655783b07cf4b4"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/PROGRAMA DE SEGUIMIENTO RETRASOS/md/Bandeja de entrada_ Luis Rivera Gonzalez - Outlook_extracted.md",
+  "destino": "PROGRAMA y CONTRATO/CRONOGRAMAS/2026-08-28 PROGRESS UPDATE/md/Bandeja de entrada_ Luis Rivera Gonzalez - Outlook_extracted.md",
+  "md5": "8bfa2ed9724d745d44536355beba5301"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/DESPACHO MEMBRANAS LG/Propuesta Comercial Matcargo COT MC1098 QTMC2450.pdf",
+  "destino": "PROGRAMA y CONTRATO/COMERCIAL/DESPACHO MEMBRANAS LG/Propuesta Comercial Matcargo COT MC1098 QTMC2450.pdf",
+  "md5": "ff70cadc9a379c5a5e0eb975a88ed15e"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/DESPACHO MEMBRANAS LG/2026-09-30_Jorge-Guevara_RE-QTMC2450-Cotizacion-Shipping-Korea.pdf",
+  "destino": "PROGRAMA y CONTRATO/COMERCIAL/DESPACHO MEMBRANAS LG/2026-09-30_Jorge-Guevara_RE-QTMC2450-Cotizacion-Shipping-Korea.pdf",
+  "md5": "978f6556b2c99b847ea0c8cd7ff54e8c"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/DESPACHO MEMBRANAS LG/2026-10-01_Matcargo_QUOTE-MC1098.pdf",
+  "destino": "PROGRAMA y CONTRATO/COMERCIAL/DESPACHO MEMBRANAS LG/2026-10-01_Matcargo_QUOTE-MC1098.pdf",
+  "md5": "b413d6e86d352970da7eef586885d186"
+ },
+ {
+  "origen": "PROGRAMA y CONTRATO/DESPACHO MEMBRANAS LG/2026-10-02_Matcargo_RE-QUOTE-MC1098-salidas-Busan.pdf",
+  "destino": "PROGRAMA y CONTRATO/COMERCIAL/DESPACHO MEMBRANAS LG/2026-10-02_Matcargo_RE-QUOTE-MC1098-salidas-Busan.pdf",
+  "md5": "5cb4b8aeb449a3f26d23e43b2fa6408a"
+ }
+]

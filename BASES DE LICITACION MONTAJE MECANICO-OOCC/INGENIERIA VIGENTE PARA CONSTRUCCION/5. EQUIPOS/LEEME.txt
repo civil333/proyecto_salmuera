@@ -1,0 +1,43 @@
+5. EQUIPOS — planos y folletos de proveedor
+Fecha: 14-09-2026
+================================================================================
+
+CONTENIDO
+  6 documentos de proveedor en 7 archivos, de los equipos que Aguas Antofagasta
+  suministra al contratista para su montaje. Van en el formato en que el fabricante los
+  emitio: todos en PDF y el plano de la bomba ademas en DWG.
+
+TK-06-001 ESTANQUE SALMUERA
+  EX-26005-F01-Rev0.pdf
+      Plano de fabricacion del estanque de salmuera, Exfibro. Revision 0 "Aprobado para
+      fabricacion" del 12-03-2026. Estanque vertical de PRFV de 10 m3, diametro interior
+      2.600 mm. Incluye planta de anclajes, silla de anclaje, tope sismico y orejas de
+      izaje.
+
+BH-06-001 BOMBA ALIMENTACION
+  KSB-AAF-KNCPP11-050+160M_A.pdf
+  KSB-AAF-KNCPP11-050+160M_A.dwg
+      Plano de arreglo general del grupo KSB KNCPP 11-050 5A M con motor WEG de 11 kW,
+      acoplamiento NORMEX E-97 y base BD-0502-B. Revision A del 20-03-2026, en PDF y DWG.
+      Incluye dimensiones de la base, bridas de succion y descarga y cargas admisibles en
+      toberas.
+
+VALVULAS
+  ISORIA 10 844.1_11-30 folleto de la serie.pdf
+      Valvulas mariposa wafer KSB ISORIA 10: dimensiones, pesos y esparragos por diametro.
+      Cubre las valvulas mariposa VM-06 del Listado de Valvulas P22-LI-06-006-103. El
+      fabricante no emite plano por diametro, de modo que el folleto de la serie es su
+      documento dimensional.
+  MS_MC.PDF
+      Reductor manual MS/MC con volante de las valvulas mariposa.
+  ALS200 - C230.pdf
+      Final de carrera ALS 200 de las valvulas mariposa.
+  DWG-1206D-RV01.pdf
+      Valvula de retencion de doble placa wafer de 4 pulgadas, ASME clase 150, cuerpo
+      A995 5A y asiento EPDM, fabricada por VATAC para KSB, revision 00. Cubre VR-06-001
+      y VR-06-003.
+
+ANCLAJE DE LOS EQUIPOS
+  Los pernos de anclaje de la bomba y del estanque son los de los planos de fundacion:
+  PA-1 en P22-DWG-00-002-002 LAM4 y PA-2 en P22-DWG-00-002-002 LAM2, ambos en la carpeta
+  2. OBRAS CIVILES.
